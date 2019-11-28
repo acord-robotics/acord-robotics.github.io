@@ -1,0 +1,11 @@
+---
+ID: 55630
+post_title: Complete Registration
+author: seanfirth007
+post_excerpt: ""
+layout: page
+permalink: >
+  http://allianceofdroids.org.au/aod/complete-registration/
+published: true
+post_date: 2018-07-03 10:31:12
+---
