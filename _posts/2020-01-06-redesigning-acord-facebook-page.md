@@ -95,7 +95,7 @@ http://instagram.com/p/B65ZXRNly2X/
 <h3>Check out my latest novel here!</h3>
 <!-- /wp:heading -->
 
-<!-- wp:core-embed/twitter {"url":"https://twitter.com/OpusTheRobot/status/1207214010786992128","type":"rich","providerNameSlug":"twitter","align":"center","className":""} -->
+<!-- wp:core-embed/twitter {"url":"https://twitter.com/OpusTheRobot/status/1207214010786992128","type":"rich","providerNameSlug":"twitter","align":"center"} -->
 <figure class="wp-block-embed-twitter aligncenter wp-block-embed is-type-rich is-provider-twitter"><div class="wp-block-embed__wrapper">
 https://twitter.com/OpusTheRobot/status/1207214010786992128
 </div></figure>
