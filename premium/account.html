@@ -26,7 +26,15 @@
   <div class="page-wrapper">
     <div data-collapse="medium" data-animation="default" data-duration="400" class="navbar w-nav"><a href="../index.html" class="brand w-nav-brand"><img src="../images/heart.svg" alt=""></a>
       <nav role="navigation" class="homepage-nav-menu w-nav-menu"><a href="https://acord-robotics.github.io/" class="nav-link w-nav-link">Exit Portal</a><a href="../basic/account.html" class="nav-link w-nav-link">Basic Member</a>
-        <a ms-hide="premium" href="../premium/account.html" class="nav-link w-inline-block">
+        <div data-hover="1" data-delay="100" class="nav-dropdown w-dropdown">
+          <div class="nav-link dropdown-toggle w-dropdown-toggle">
+            <div class="inline-block">Home</div><img src="images/Down.svg" width="9" alt="" class="dropdown-icon">
+            <div class="div-extender"></div>
+          </div>
+          <nav class="nav-dropdown-list w-dropdown-list">
+            <div class="dropdown-diamond"></div><a href="index.html" class="nav-link dropdown-nav-link w-nav-link w--current">Home</a><a href="#" class="nav-link dropdown-nav-link w-nav-link">Blog</a></nav>
+            <!--<div class="dropdown-diamond"></div><a href="index.html" class="nav-link dropdown-nav-link w-nav-link w--current">About this site</a><a href="http://acord-robotics.github.io/index.html#website-section" class="nav-link dropdown-nav-link w-nav-link">Portal</a></nav> -->  
+        <a ms-hide="premium" href="../premium/account.html" class="nav-link w-inline-block w--current">
           <div class="inline-block">ACORD Member</div>
           <div class="black-tooltip">
             <div>This link is only visible to ACORD members/employees 😁</div>
@@ -51,25 +59,23 @@
                 <div class="div-extender"></div>
               </div>
               <nav class="nav-dropdown-list w-dropdown-list"> -->
-                <div class="dropdown-diamond"></div><a href="http://allianceofdroids.org.au/portal" class="nav-link dropdown-nav-link w-nav-link w--current">Portal</a><a href="hhttp://reddit.com/r/ACORDRobotics" class="nav-link dropdown-nav-link w-nav-link">allianceofdroids.org.au</a></nav> -->  
+                <div class="dropdown-diamond"></div><a href="#" class="nav-link dropdown-nav-link w-nav-link">Community</a><a href="hhttp://reddit.com/r/ACORDRobotics" class="nav-link dropdown-nav-link w-nav-link">Reddit</a></nav> 
         </a><a href="#" ms-profile="true" class="nav-link w-nav-link">Profile</a><a href="http://github.com/acord-robotics" class="button navbar-cta w-nav-link">Github/Acord-Robotics</a></nav>
       <div class="menu-button w-nav-button">
         <div class="w-icon-nav-menu"></div>  
       </div>
     </div>
     <div class="delete-me-section">
-      <h1>Premium Account</h1> 
+      <h1>Hi, <span ms-data="first-name">friend</span></h1>
       <div class="w-richtext">
-        <p>Member&#x27;s only areas can be any combination of the following:</p>
-        <ul>
-          <li>an individual page</li>
-          <li>a group of pages</li>
-          <li>folders</li>
-          <li>CMS items</li>
-          <li>or entire CMS collections</li>
-        </ul>
+        <p>This page is specifically for ACORD members. Now that you have an account you can access any URL that starts with /acord</p>
+        <p>‍</p>
+        <h4>What you can do:</h4>
+        <p>Browse the  <a href="http://allianceofdroids.org.au">ACORD Portal</a>, which houses our knowledge base, forums, online RPG and much more</p>
+        <p>Write small activity feeds on your profile</p>
+        <p>To find out more about your membership plan, head to <a href="http://acord-robotics.github.io/premium/welcome.html">/premium/welcome</a></p>
       </div>
-    </div> 
+    </div>
 
     <h1>ACORD Portal</h1>
 
