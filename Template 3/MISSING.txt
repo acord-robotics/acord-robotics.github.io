@@ -1,4 +1,0 @@
-The following files failed to download during site export. Please check them in the designer assets view (images) or dashboard (fonts).
-
-icons/favicon.png
-icons/webclip.png
