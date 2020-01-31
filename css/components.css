@@ -1800,3 +1800,9 @@ textarea.w-select {
 .w-condition-invisible {
   display: none !important;
 }
+iframe {
+  overflow: scroll;
+  width: 725px;
+  height: 725px;
+  border: 3px solid black; 
+} /*https://stackoverflow.com/questions/18355060/how-to-add-scrollbars-in-iframe */
