@@ -21,8 +21,85 @@
   <!-- DELETE ↑↑ -->
   <noscript>
   <meta http-equiv="refresh" content="0;url=/">
-   
-	
+    
+    .cards-list {
+  z-index: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.card {
+  margin: 30px auto;
+  width: 300px;
+  height: 300px;
+  border-radius: 40px;
+box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.card .card_image {
+  width: inherit;
+  height: inherit;
+  border-radius: 40px;
+}
+
+.card .card_image img {
+  width: inherit;
+  height: inherit;
+  border-radius: 40px;
+  object-fit: cover;
+}
+
+.card .card_title {
+  text-align: center;
+  border-radius: 0px 0px 40px 40px;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  margin-top: -80px;
+  height: 40px;
+}
+
+.card:hover {
+  transform: scale(0.9, 0.9);
+  box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25), 
+    -5px -5px 30px 15px rgba(0,0,0,0.22);
+}
+
+.title-white {
+  color: white;
+}
+
+.title-black {
+  color: black;
+}
+
+@media all and (max-width: 500px) {
+  .card-list {
+    /* On small screens, we are no longer using row direction but column */
+    flex-direction: column;
+  }
+}
+
+
+/*
+.card {
+  margin: 30px auto;
+  width: 300px;
+  height: 300px;
+  border-radius: 40px;
+  background-image: url('https://i.redd.it/b3esnz5ra34y.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-repeat: no-repeat;
+box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
+  transition: 0.4s;
+}
+*/
 </noscript></head>
 <body>
   <div class="page-wrapper">
@@ -64,96 +141,111 @@
       <div class="w-richtext">
         <p>This page is specifically for ACORD members. Now that you have an account you can access any URL that starts with /acord</p>
         <p>‍</p>
-        
-
-       <!-- <h4>What you can do:</h4>
+        <h4>What you can do:</h4>
         <p>Browse the  <a href="http://allianceofdroids.org.au">ACORD Portal</a>, which houses our knowledge base, forums, online RPG and much more</p>
         <p>Write small activity feeds on your member profile</p>
         <p>Download our software</p>
         <p>Talk on the forums!</p>
         <p>Play our online RPG - a galactic scavenger hunt & adventure!</p>
         <p>To find out more about your membership plan, head to <a href="http://acord-robotics.github.io/premium/welcome.html">/premium/welcome</a> or contact <a href="mailto:droidology@allianceofdroids.org.au">ACORD</a>. Head to the "community" tab to get started!</p>
-        -->
         
-       <!-- <h3>Our software</h3>
+        
+        <h3>Our software</h3>
         <a align="center" href="https://github.com/acord-robotics/stellarios"><img src="https://github-link-card.s3.ap-northeast-1.amazonaws.com/acord-robotics/stellarios.png" width="460px"></a>
         
         
         <a align="center" href="https://github.com/irisdroidology/manacaster"><img src="https://github-link-card.s3.ap-northeast-1.amazonaws.com/irisdroidology/manacaster.png" width="460px"></a>
       </div>
-    </div>-->
-<!--<div class="options">
-   <div class="option active" style="--optionBackground:url(https://66.media.tumblr.com/6fb397d822f4f9f4596dff2085b18f2e/tumblr_nzsvb4p6xS1qho82wo1_1280.jpg);">
-      <div class="shadow"></div>
-      <div class="label">
-         <div class="icon">
-            <i class="fas fa-walking"></i>
-         </div>
-         <div class="info">
-            <div class="main"><a href="http://acord-robotics.github.io/premium/portal.html">Blonkisoaz</div>
-            <div class="sub"><a href="http://acord-robotics.github.io/premium/portal.html">Omtrughte a otufta</div>
-         </div>
-      </div>
-   </div>
-   <div class="option" style="--optionBackground:url(https://66.media.tumblr.com/8b69cdde47aa952e4176b4200052abf4/tumblr_o51p7mFFF21qho82wo1_1280.jpg);">
-      <div class="shadow"></div>
-      <div class="label">
-         <div class="icon">
-            <i class="fas fa-snowflake"></i>
-         </div>
-         <div class="info">
-            <div class="main">Oretemauw</div>
-            <div class="sub">Omuke trughte a otufta</div>
-         </div>
-      </div>
-   </div>
-   <div class="option" style="--optionBackground:url(https://66.media.tumblr.com/5af3f8303456e376ceda1517553ba786/tumblr_o4986gakjh1qho82wo1_1280.jpg);">
-      <div class="shadow"></div>
-      <div class="label">
-         <div class="icon">
-            <i class="fas fa-tree"></i>
-         </div>
-         <div class="info">
-            <div class="main">Iteresuselle</div>
-            <div class="sub">Omuke trughte a otufta</div>
-         </div>
-      </div>
-   </div>
-   <div class="option" style="--optionBackground:url(https://66.media.tumblr.com/5516a22e0cdacaa85311ec3f8fd1e9ef/tumblr_o45jwvdsL11qho82wo1_1280.jpg);">
-      <div class="shadow"></div>
-      <div class="label">
-         <div class="icon">
-            <i class="fas fa-tint"></i>
-         </div>
-         <div class="info">
-            <div class="main">Idiefe</div>
-            <div class="sub">Omuke trughte a otufta</div>
-         </div>
-      </div>
-   </div>
-   <div class="option" style="--optionBackground:url(https://66.media.tumblr.com/f19901f50b79604839ca761cd6d74748/tumblr_o65rohhkQL1qho82wo1_1280.jpg);">
-      <div class="shadow"></div>
-      <div class="label">
-         <div class="icon">
-            <i class="fas fa-sun"></i>
-         </div>
-         <div class="info">
-            <div class="main">Inatethi</div>
-            <div class="sub">Omuke trughte a otufta</div>
-         </div>
-      </div>
-   </div>
-</div>
+    </div>
 
-<a href="http://victorofvalencia-blog.tumblr.com" target="_blank" class="credit">Photos from Victor of Valencia on tumblr</a>-->
+  <div class="cards-list">
+    <div class="card 1">
+      <div class="card_image"> <img src="https://i.redd.it/b3esnz5ra34y.jpg" /> </div>
+      <div class="card_title title-white">
+      <p>Portal</p>
+   </div>
+  </div>
+
+  <div class="card 2">
+  <div class="card_image">
+    <img src="https://i.ytimg.com/vi/RFYZJtFbIRU/maxresdefault.jpg" />
+    </div>
+    <div class="card_title title-white">
+    <p><a href="http://acord-robotics.github.io/premium/portal.html">ACORD Portal</p>
+  </div>
+</div>
+  
+
+<!--<div class="card 3">
+  <div class="card_image">
+    <img src="https://media.giphy.com/media/10SvWCbt1ytWCc/giphy.gif" />
+  </div>
+  <div class="card_title">
+    <p>ACORD Portal</p>
+  </div>
+</div>
+  
+  <div class="card 4">
+  <div class="card_image">
+    <img src="https://media.giphy.com/media/LwIyvaNcnzsD6/giphy.gif" />
+    </div>
+  <div class="card_title title-black">
+    <p>Card Title</p>
+  </div>
+  </div>
+
+</div>-->
+  
+  <!--
+Card imgs
+https://i.ytimg.com/vi/RFYZJtFbIRU/maxresdefault.jpg
+
+Remember to search for the img on google?
+
+-->
+  
+    <!--<p></p>
+  
+    <h1>ACORD Portal</h1>-->
     
-<iframe src="https://allianceofdroids.org.au/portal" style="border:0px #ffffff none;" name="myiFrame" scrolling="yes" frameborder="1" marginheight="0px" marginwidth="0px" height="1200px" width="100%" allowfullscreen></iframe>
-      
-    <iframe src="https://allianceofdroids.org.au/portal" style="border:0px #ffffff none;" name="myiFrame" scrolling="yes" frameborder="1" marginheight="0px" marginwidth="0px" height="1200px" width="49%" allowfullscreen></iframe>
+
+
+    <!--<iframe src="http://allianceofdroids.org.au" style="border:0px #ffffff none;" name="myiFrame" scrolling="no" frameborder="1" marginheight="0px" marginwidth="0px" height="400px" width="600px" allowfullscreen></iframe>() -->
+
+   <!-- <iframe src="http://allianceofdroids.org.au/portal" style="border:0px #ffffff none;" name="myiFrame" scrolling="no" frameborder="1" marginheight="0px" marginwidth="0px" height="725px" width="725px" allowfullscreen scrolling="yes"></iframe> -->
+
+    <!--<iframe src="http://acord-robotics.github.io/stellarios" style="border:0px #ffffff none;" name="myiFrame" scrolling="no" frameborder="1" marginheight="0px" marginwidth="0px" height="725px" width="725px" allowfullscreen></iframe>        -->
+    <!--<iframe src="https://allianceofdroids.org.au/portal" style="border:0px #ffffff none;" name="myiFrame" scrolling="yes" frameborder="1" marginheight="0px" marginwidth="0px" height="1200px" width="49%" allowfullscreen></iframe>
     <iframe src="https://acord-robotics.github.io/stellarios" style="border:0px #ffffff none;" name="myiFrame" scrolling="yes" frameborder="1" marginheight="0px" marginwidth="0px" height="1200px" width="49%" allowfullscreen></iframe>
 
+    <h1>
+      ACORD Community 
+    </h1>
+    <!--<div id="SFctr" class="SF" data-org="24340" data-ini="!directory" data-scl="0" data-sfi="1" style="position:relative;height:auto"><div id="SFpne" style="position:relative"><div class="SFpne">Loading...</div></div><div style="clear:both"></div></div><script type="text/javascript" src="https://cdn.membershipworks.com/mfm.js"></script> 
+    <h2>
+      Write blog posts
+    </h2>
+  
+  <iframe src="https://prose.io/#acord-robotics/acord-robotics.github.io" style="border:0px #ffffff none;" name="myiFrame" scrolling="no" frameborder="1" marginheight="0px" marginwidth="0px" height="1200px" width="100%" allowfullscreen></iframe> -->
+  
+  <!--<h2> Community Forums </h2>
+  <iframe src="https://allianceofdroids.org.au/portal/index.php/forums" style="border:0px #ffffff none;" name="myiFrame" scrolling="yes" frameborder="1" marginheight="0px" marginwidth="0px" height="1200px" width="100%" allowfullscreen></iframe> 
+    
+    <h4>Important Links</h4>
+    <ul>
+      <li>
+        <p>Portal Backup: https://drive.google.com/open?id=1Xi3PV7nwNUUcQ3VGtLTm2fuXyPTMel6H</p>
+      </li>
+      <li>
+        <p>Other links in header menu ^^ </p>
+      </li>
+    </ul>
+    <h3>
+      Our software
+  </h3>-->
+  <!--<div class="github-card" data-github="irisdroidology/manacaster" data-width="400" data-height="299" data-theme="medium"></div>-->
 <script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
-   <h1>
+   <!-- <h1>
       Manage Account
     </h1>
     <div id="SFctr" class="SF" data-org="24340" data-ini="myaccount" data-scl="0" data-sfi="1" style="position:relative;height:auto"><div id="SFpne" style="position:relative"><div class="SFpne">Loading...</div></div><div style="clear:both"></div></div><script type="text/javascript" src="https://cdn.membershipworks.com/mfm.js"></script>
@@ -248,10 +340,3 @@ box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.2
   transition: 0.4s;
 }
 */-->
-
-<script>$(".option").click(function(){
-   $(".option").removeClass("active");
-   $(this).addClass("active");
-   
-});
-</script>
