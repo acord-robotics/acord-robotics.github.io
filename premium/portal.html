@@ -22,6 +22,381 @@
   <noscript>
   <meta http-equiv="refresh" content="0;url=/">
     
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    
+@import url(https://fonts.googleapis.com/css?family=Roboto:500);
+h1,p{
+    font-family: 'Roboto', sans-serif;
+    text-align:center;
+}
+button{
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+}
+
+button:focus {
+  outline: none !important;
+}
+.btn {
+  border-radius: 2px;
+  border: 0;
+  transition: .2s ease-out;
+  color: #fff;
+  margin: 6px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+.btn:hover {
+  color: #fff;
+  box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+}
+
+.btn:active, .btn:focus, .btn.active {
+  outline: 0;
+  color: #fff;
+}
+
+/*Primary*/
+.btn-primary {
+  background: #4285F4;
+}
+
+.btn-primary:hover, .btn-primary:focus {
+  background-color: #5a95f5 !important;
+}
+
+.btn-primary.active {
+  background-color: #0b51c5 !important;
+}
+/*Secondary*/
+.btn-secondary {
+  background-color: #aa66cc;
+}
+.btn-secondary:hover, .btn-secondary:focus {
+  background-color: #b579d2 !important;
+  color: #fff;
+}
+.btn-secondary.active {
+  background-color: #773399 !important;
+}
+.btn-secondary.active:hover {
+  color: #fff;
+}
+.btn-secondary.active:focus {
+  color: #fff;
+}
+
+/*Default*/
+.btn-default {
+  background: #2BBBAD;
+}
+.btn-default:hover, .btn-default:focus {
+  background-color: #30cfc0 !important;
+}
+.btn-default.active {
+  background-color: #186860 !important;
+}
+
+/*Success*/
+.btn-success {
+  background: #00C851;
+}
+.btn-success:hover, .btn-success:focus {
+  background-color: #00d255 !important;
+}
+.btn-success.active {
+  background-color: #006228 !important;
+}
+
+/*Info*/
+.btn-info {
+  background: #33b5e5;
+}
+.btn-info:hover, .btn-info:focus {
+  background-color: #4abde8 !important;
+}
+.btn-info.active {
+  background-color: #14799e !important;
+}
+
+/*Warning*/
+.btn-warning {
+  background: #FF8800;
+}
+.btn-warning:hover, .btn-warning:focus {
+  background-color: #ff961f !important;
+}
+.btn-warning.active {
+  background-color: #cc8800 !important;
+}
+
+/*Danger*/
+.btn-danger {
+  background: #CC0000;
+}
+.btn-danger:hover, .btn-danger:focus {
+  background-color: #db0000 !important;
+}
+.btn-danger.active {
+  background-color: maroon !important;
+}
+
+/*Link*/
+.btn-link {
+  background-color: transparent;
+  color: #000;
+}
+.btn-link:hover, .btn-link:focus {
+  background-color: transparent;
+  color: #000;
+}
+    
+    @import url(https://fonts.googleapis.com/css?family=Lato:400,700,900);
+
+$border-radius-size: 14px;
+$barbarian: #EC9B3B;
+$archer: #EE5487;
+$giant: #F6901A;
+$goblin: #82BB30;
+$wizard: #4FACFF;
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(to bottom, rgba(140,122,122,1) 0%, rgba(175,135,124,1) 65%, rgba(175,135,124,1) 100%) fixed;
+  background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/coc-background.jpg') no-repeat center center fixed;
+  background-size: cover;
+  font: 14px/20px "Lato", Arial, sans-serif;
+  color: #9E9E9E;
+  margin-top: 30px;
+}
+
+.slide-container {
+  margin: auto;
+  width: 600px;
+  text-align: center;
+}
+
+.wrapper {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  
+  &:focus {
+    outline: 0;
+  }
+}
+
+
+
+.clash-card {
+  background: white;
+  width: 300px;
+  display: inline-block;
+  margin: auto;
+  border-radius: $border-radius-size + 5;
+  position: relative;
+  text-align: center;
+  box-shadow: -1px 15px 30px -12px black;
+  z-index: 9999;
+}
+
+.clash-card__image {
+  position: relative;
+  height: 230px;
+  margin-bottom: 35px;
+  border-top-left-radius: $border-radius-size;
+  border-top-right-radius: $border-radius-size;
+}
+
+.clash-card__image--barbarian {
+  background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/barbarian-bg.jpg');
+  img {
+    width: 400px;
+    position: absolute;    
+    top: -65px;
+    left: -70px;
+  }
+}
+
+.clash-card__image--archer {
+  background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/archer-bg.jpg');
+  img {
+    width: 400px;
+    position: absolute;    
+    top: -34px;
+    left: -37px;
+  }
+}
+
+.clash-card__image--giant {
+  background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/giant-bg.jpg');
+  img {
+    width: 340px;
+    position: absolute;    
+    top: -30px;
+    left: -25px;
+  }
+}
+
+.clash-card__image--goblin {
+  background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/goblin-bg.jpg');
+  img {
+    width: 370px;
+    position: absolute;    
+    top: -21px;
+    left: -37px;
+  }
+}
+
+.clash-card__image--wizard {
+  background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/wizard-bg.jpg');
+  img {
+    width: 345px;
+    position: absolute;    
+    top: -28px;
+    left: -10px;
+  }
+}
+
+.clash-card__level {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 700;
+  margin-bottom: 3px;
+}
+
+.clash-card__level--barbarian {
+  color: $barbarian;
+}
+
+.clash-card__level--archer {
+  color: $archer;
+}
+
+.clash-card__level--giant {
+  color: $giant;
+}
+
+.clash-card__level--goblin {
+  color: $goblin;
+}
+
+.clash-card__level--wizard {
+  color: $wizard;
+}
+
+.clash-card__unit-name {
+  font-size: 26px;
+  color: black;
+  font-weight: 900;
+  margin-bottom: 5px;
+}
+
+.clash-card__unit-description {
+  padding: 20px;
+  margin-bottom: 10px;  
+}
+
+.clash-card__unit-stats--barbarian {
+  background: $barbarian;
+  
+  .one-third {
+     border-right: 1px solid #BD7C2F;
+  }
+}
+
+.clash-card__unit-stats--archer {
+  background: $archer;
+  
+  .one-third {
+     border-right: 1px solid #D04976;
+  }
+}
+
+.clash-card__unit-stats--giant {
+  background: $giant;
+  
+  .one-third {
+     border-right: 1px solid darken($giant, 8%);
+  }
+}
+
+.clash-card__unit-stats--goblin {
+  background: $goblin;
+  
+  .one-third {
+     border-right: 1px solid darken($goblin, 6%);
+  }
+}
+
+.clash-card__unit-stats--wizard {
+  background: $wizard;
+  
+  .one-third {
+     border-right: 1px solid darken($wizard, 6%);
+  }
+}
+
+.clash-card__unit-stats {
+  
+  color: white;
+  font-weight: 700;
+  border-bottom-left-radius: $border-radius-size;
+  border-bottom-right-radius: $border-radius-size;
+  
+  .one-third {
+    width: 33%;
+    float: left;
+    padding: 20px 15px;
+  }
+  
+  sup {
+    position: absolute;
+    bottom: 4px; 
+    font-size: 45%;
+    margin-left: 2px;
+  }
+  
+  .stat {
+    position: relative;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .stat-value {
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 12px;
+  }
+
+  .no-border {
+    border-right: none;
+  }
+}
+
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+}
+
+.slick-prev {
+  left: 100px;
+  z-index: 999;
+}
+
+.slick-next {
+  right: 100px;
+  z-index: 999;
+}
+    
     .cards-list {
   z-index: 0;
   width: 100%;
@@ -159,7 +534,169 @@ box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.2
         <a align="center" href="https://github.com/irisdroidology/manacaster"><img src="https://github-link-card.s3.ap-northeast-1.amazonaws.com/irisdroidology/manacaster.png" width="460px"></a>
       </div>
     </div>
+<div class="slide-container">
+  
+  <div class="wrapper">
+    <div class="clash-card barbarian">
+      <div class="clash-card__image clash-card__image--barbarian">
+        <img src="https://images.vexels.com/media/users/3/155361/isolated/preview/a1fd038a20cde75486f3389136c7962d-simplistic-astronaut-illustration-by-vexels.png" alt="barbarian" />
+      </div>
+      <div class="clash-card__level clash-card__level--barbarian">Community</div>
+      <div class="clash-card__unit-name">ACORD Community</div>
+      <div class="clash-card__unit-description">
+        The ACORD community is a part of the portal. Members can communicate, share code, design projects and create content. 
+      </div>
 
+      <div class="clash-card__unit-stats clash-card__unit-stats--barbarian clearfix">
+        <div class="one-third">
+          <div class="stat">3<sup></sup></div>
+          <div class="stat-value">Groups</div>
+        </div>
+
+        <div class="one-third">
+          <div class="stat">200+</div>
+          <div class="stat-value">Forums</div>
+        </div>
+
+        <div class="one-third no-border">
+          <div class="stat">2</div>
+          <div class="stat-value">Droids</div>
+        </div>
+          <button class="btn btn-lg btn-primary"><a href="http://acord-robotics.github.io/premium/portal.html">ACORD Community</button>
+      </div>
+
+    </div> <!-- end clash-card barbarian-->
+  </div> <!-- end wrapper -->
+  
+  <div class="wrapper">
+    <div class="clash-card archer">
+      <div class="clash-card__image clash-card__image--archer">
+        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/archer.png" alt="archer" />
+      </div>
+      <div class="clash-card__level clash-card__level--archer">Level 5</div>
+      <div class="clash-card__unit-name">The Archer</div>
+      <div class="clash-card__unit-description">
+        The Archer is a female warrior with sharp eyes. She wears a short, light green dress, a hooded cape, a leather belt and an attached small pouch.
+      </div>
+
+      <div class="clash-card__unit-stats clash-card__unit-stats--archer clearfix">
+        <div class="one-third">
+          <div class="stat">25<sup>S</sup></div>
+          <div class="stat-value">Training</div>
+        </div>
+
+        <div class="one-third">
+          <div class="stat">24</div>
+          <div class="stat-value">Speed</div>
+        </div>
+
+        <div class="one-third no-border">
+          <div class="stat">300</div>
+          <div class="stat-value">Cost</div>
+        </div>
+
+      </div>
+
+    </div> <!-- end clash-card archer-->
+  </div> <!-- end wrapper -->
+  
+  <div class="wrapper">
+    <div class="clash-card giant">
+      <div class="clash-card__image clash-card__image--giant">
+        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/giant.png" alt="giant" />
+      </div>
+      <div class="clash-card__level clash-card__level--giant">Level 5</div>
+      <div class="clash-card__unit-name">The Giant</div>
+      <div class="clash-card__unit-description">
+        Slow, steady and powerful, Giants are massive warriors that soak up huge amounts of damage. Show them a turret or cannon and you'll see their fury unleashed!
+      </div>
+
+      <div class="clash-card__unit-stats clash-card__unit-stats--giant clearfix">
+        <div class="one-third">
+          <div class="stat">2<sup>M</sup></div>
+          <div class="stat-value">Training</div>
+        </div>
+
+        <div class="one-third">
+          <div class="stat">12</div>
+          <div class="stat-value">Speed</div>
+        </div>
+
+        <div class="one-third no-border">
+          <div class="stat">2250</div>
+          <div class="stat-value">Cost</div>
+        </div>
+
+      </div>
+
+    </div> <!-- end clash-card giant-->
+  </div> <!-- end wrapper -->
+  
+   <div class="wrapper">
+    <div class="clash-card goblin">
+      <div class="clash-card__image clash-card__image--goblin">
+        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/goblin.png" alt="goblin" />
+      </div>
+      <div class="clash-card__level clash-card__level--goblin">Level 5</div>
+      <div class="clash-card__unit-name">The Goblin</div>
+      <div class="clash-card__unit-description">
+        These pesky little creatures only have eyes for one thing: LOOT! They are faster than a Spring Trap, and their hunger for resources is limitless.
+      </div>
+
+      <div class="clash-card__unit-stats clash-card__unit-stats--goblin clearfix">
+        <div class="one-third">
+          <div class="stat">30<sup>S</sup></div>
+          <div class="stat-value">Training</div>
+        </div>
+
+        <div class="one-third">
+          <div class="stat">32</div>
+          <div class="stat-value">Speed</div>
+        </div>
+
+        <div class="one-third no-border">
+          <div class="stat">100</div>
+          <div class="stat-value">Cost</div>
+        </div>
+
+      </div>
+
+    </div> <!-- end clash-card goblin-->
+  </div> <!-- end wrapper -->
+  
+  <div class="wrapper">
+    <div class="clash-card wizard">
+      <div class="clash-card__image clash-card__image--wizard">
+        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/wizard.png" alt="wizard" />
+      </div>
+      <div class="clash-card__level clash-card__level--wizard">Level 6</div>
+      <div class="clash-card__unit-name">The Wizard</div>
+      <div class="clash-card__unit-description">
+        The Wizard is a terrifying presence on the battlefield. Pair him up with some of his fellows and cast concentrated blasts of destruction on anything, land or sky!
+      </div>
+
+      <div class="clash-card__unit-stats clash-card__unit-stats--wizard clearfix">
+        <div class="one-third">
+          <div class="stat">5<sup>M</sup></div>
+          <div class="stat-value">Training</div>
+        </div>
+
+        <div class="one-third">
+          <div class="stat">16</div>
+          <div class="stat-value">Speed</div>
+        </div>
+
+        <div class="one-third no-border">
+          <div class="stat">4000</div>
+          <div class="stat-value">Cost</div>
+        </div>
+
+      </div>
+
+    </div> <!-- end clash-card wizard-->
+  </div> <!-- end wrapper -->
+  
+</div> <!-- end container -->
     <div class="cards-list">
     <div class="card 1">
       <div class="card_image"> <img src="https://i.redd.it/b3esnz5ra34y.jpg" /> </div>
