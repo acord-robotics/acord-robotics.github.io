@@ -2,7 +2,8 @@
 
 * [Home](README.md)
 * [Archives](archives.md)
-* [Changelog](changelog.md)
+* [Changelog](changelog/README.md)
+  * [Manacaster](changelog/manacaster.md)
 
 ## Links
 
