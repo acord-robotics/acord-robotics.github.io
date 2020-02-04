@@ -45,3 +45,12 @@ Don't forget your password for the website - currently there is no password retr
 | Saliya Hasantha | 2020 |
 | Nate Malaki | 2020 |
 
+## Get Social
+
+* Facebook: @Droidology
+* Twitter: @OpusTheRobot
+* Instagram: @ACORDRobotics
+* Reddit: r/ACORDRobotics
+
+
+
