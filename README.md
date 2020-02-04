@@ -18,10 +18,16 @@ Gitbook is a free and open-source knowledge base system, which all ACORD members
 * Instructions for all the apps & services we use
 * …and more
 
-This wiki is full of information about the Portal \(http://portal.acord.org.u\) as well, so if you're having trouble finding something, you can easily search through here to find your solution.
+
 
 {% hint style="info" %}
 The navigation for this knowledge base is  located to the left of the content.
+{% endhint %}
+
+{% page-ref page="changelog/" %}
+
+{% hint style="danger" %}
+Don't forget your password for the website - currently there is no password retrieval system! \(as of 4th February 2020\)
 {% endhint %}
 
 ## Members
