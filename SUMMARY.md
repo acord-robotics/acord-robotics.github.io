@@ -17,9 +17,9 @@
 
 ## Development <a id="dev"></a>
 
-* [Github](dev/github.md)
+* [Github](dev/github/README.md)
+  * [Zenhub](dev/github/zenhub.md)
 * [Codepen](dev/codepen.md)
-* [Zenhub](dev/zenhub.md)
 * [Liam Arbuckle](http://larbuckle.tech)
 
 ## Projects
