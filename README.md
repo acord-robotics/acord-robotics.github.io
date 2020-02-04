@@ -24,5 +24,18 @@ This wiki is full of information about the Portal \(http://portal.acord.org.u\) 
 The navigation for this knowledge base is  located to the left of the content.
 {% endhint %}
 
+## Members
 
+| Name | Year Joined |
+| :--- | :--- |
+| Liam Arbuckle | 2015 |
+| Nicholas Antipas | 2015 |
+| Ian Arbuckle | 2016 |
+| Sean Firth | 2016 |
+| Rishabh Chakrabarty | 2019 |
+| Farid Nurrahman | 2019 |
+| Joel Brooker | 2019 |
+| Dylan Vekaria | 2019 |
+| Saliya Hasantha | 2020 |
+| Nate Malaki | 2020 |
 
