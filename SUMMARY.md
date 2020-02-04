@@ -14,11 +14,12 @@
 ## Portal Help
 
 * [The ACORD Portal](portal-help/the-acord-portal.md)
+* [Getting started with ACORD](portal-help/getting-started-with-acord.md)
 
 ## Development <a id="dev"></a>
 
-* [Github](dev/github/README.md)
-  * [Zenhub](dev/github/zenhub.md)
+* [Github](dev/github.md)
+  * [Zenhub](dev/zenhub.md)
 * [Codepen](dev/codepen.md)
 * [Liam Arbuckle](http://larbuckle.tech)
 
