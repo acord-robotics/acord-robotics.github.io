@@ -1,28 +1,21 @@
 # Table of contents
 
 * [Home](README.md)
+* [Archives](archives.md)
 
 ## Links
 
-* [Gitlab](http://gitlab.com/acord-robotics)
 * [Github](http://github.com/acord-robotics)
-* [Portal](http://allianceofdroids.org.au)
-* [New Portal](http://portal.acord.org.au)
-* [Blog \(Jekyll\)](http://blog.acord.org.au)
-* [Blog](http://news.acord.org.au)
-* [Stellarios](http://stellarios.acord.org.au)
-* [ACORD Landing Page](http://acord.org.au)
+* [Blog](http://acord-robotics.github.io/acord-robotics.github11)
 
 ## Portal Help
 
 * [The ACORD Portal](portal-help/the-acord-portal.md)
 
-## Git Clients
+## Development <a id="dev"></a>
 
-* [Github](git-clients/github.md)
-* [Git](git-clients/git.md)
-
-## User Tasks
-
-* [Farid's Tasks](user-tasks/farids-tasks.md)
+* [Github](dev/github.md)
+* [Codepen](dev/codepen.md)
+* [Zenhub](dev/zenhub.md)
+* [Liam Arbuckle](http://larbuckle.tech)
 
