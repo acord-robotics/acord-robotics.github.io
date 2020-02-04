@@ -4,6 +4,7 @@
 * [Archives](archives.md)
 * [Changelog](changelog/README.md)
   * [Manacaster](changelog/manacaster.md)
+  * [Untitled](changelog/untitled.md)
 
 ## Links
 
@@ -20,4 +21,8 @@
 * [Codepen](dev/codepen.md)
 * [Zenhub](dev/zenhub.md)
 * [Liam Arbuckle](http://larbuckle.tech)
+
+## Projects
+
+* [Open Source Rover Challenge](projects/open-source-rover-challenge.md)
 
