@@ -2,6 +2,7 @@
 
 * [Home](README.md)
 * [Archives](archives.md)
+* [Changelog](changelog.md)
 
 ## Links
 
