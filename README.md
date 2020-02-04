@@ -45,6 +45,10 @@ Don't forget your password for the website - currently there is no password retr
 | Saliya Hasantha | 2020 |
 | Nate Malaki | 2020 |
 
+## Mailing List
+
+## Blog
+
 ## Get Social
 
 * Facebook: @Droidology
