@@ -23,6 +23,29 @@
   <meta http-equiv="refresh" content="0;url=/">
 </noscript></head>
 <body>
+  <!-- Load Facebook SDK for JavaScript -->
+      <div id="fb-root"></div>
+      <script>
+        window.fbAsyncInit = function() {
+          FB.init({
+            xfbml            : true,
+            version          : 'v6.0'
+          });
+        };
+
+        (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));</script>
+
+      <!-- Your customer chat code -->
+      <div class="fb-customerchat"
+        attribution=setup_tool
+        page_id="1060897510699328">
+      </div>
   <div class="page-wrapper">
     <div data-collapse="medium" data-animation="default" data-duration="400" class="navbar w-nav"><a href="../index.html" class="brand w-nav-brand"><img src="../images/heart.svg" alt=""></a>
       <nav role="navigation" class="homepage-nav-menu w-nav-menu"><a href="https://acord-robotics.github.io/" class="nav-link w-nav-link">Exit Portal</a><a href="../basic/account.html" class="nav-link w-nav-link">Basic Member</a>
