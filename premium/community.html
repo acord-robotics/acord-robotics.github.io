@@ -80,7 +80,7 @@
         <p>To find out more about your membership plan, head to <a href="http://acord-robotics.github.io/premium/welcome.html">/premium/welcome</a> or contact <a href="mailto:droidology@allianceofdroids.org.au">ACORD</a>. Head to the "community" tab to get started!</p>
         <h3>Your account</h3>
   <!--<iframe src="https://acord-robotics.github.io/premium/account" style="border:0px #ffffff none;" name="myiFrame" scrolling="yes" frameborder="1" marginheight="0px" marginwidth="0px" height="1200px" width="100%" allowfullscreen></iframe>--> 
-      <iframe src="https://gitlab.com/acord-robotics" style="border:0px #ffffff none;" name="myiFrame" scrolling="yes" frameborder="1" marginheight="0px" marginwidth="0px" height="1200px" width="100%" allowfullscreen></iframe>
+     <!-- <iframe src="https://gitlab.com/acord-robotics" style="border:0px #ffffff none;" name="myiFrame" scrolling="yes" frameborder="1" marginheight="0px" marginwidth="0px" height="1200px" width="100%" allowfullscreen></iframe> -->
         <div id="SFctr" class="SF" data-org="24340" data-ini="myaccount" data-scl="0" data-sfi="1" style="position:relative;height:auto"><div id="SFpne" style="position:relative"><div class="SFpne">Loading...</div></div><div style="clear:both"></div></div><script type="text/javascript" src="https://cdn.membershipworks.com/mfm.js"></script>
         <h3>Our software</h3>
         <a href="https://github.com/acord-robotics/stellarios"><img src="https://github-link-card.s3.ap-northeast-1.amazonaws.com/acord-robotics/stellarios.png" width="460px"></a>
@@ -89,6 +89,1659 @@
         <a href="https://github.com/irisdroidology/manacaster"><img src="https://github-link-card.s3.ap-northeast-1.amazonaws.com/irisdroidology/manacaster.png" width="460px"></a>
       </div>
     </div>
+    %h1.logo
+    Solar explorer
+    %span in only CSS
+%input.planet9{:type => 'radio', :id => 'pluto', :name => 'planet'}
+%label.pluto.menu{:for => 'pluto'}
+    .preview
+    .info
+        %h2 
+            .pip
+            Pluto
+        %h3 39.5 AU
+%input.planet8{:type => 'radio', :id => 'neptune', :name => 'planet'}
+%label.neptune.menu{:for => 'neptune'}
+    .preview
+    .info
+        %h2 
+            .pip
+            Neptune
+        %h3 30.06 AU
+        
+%input.planet7{:type => 'radio', :id => 'uranus', :name => 'planet'}
+%label.uranus.menu{:for => 'uranus'}
+    .preview
+    .info
+        %h2 
+            .pip
+            Uranus
+        %h3 19.18 AU
+        
+%input.planet6{:type => 'radio', :id => 'saturn', :name => 'planet'}
+%label.saturn.menu{:for => 'saturn'}
+    .preview
+    .info
+        %h2 
+            .pip
+            Saturn
+        %h3 9.539 AU
+        
+%input.planet5{:type => 'radio', :id => 'jupiter', :name => 'planet'}
+%label.jupiter.menu{:for => 'jupiter'}
+    .preview
+    .info
+        %h2 
+            .pip
+            Jupiter
+        %h3 5.203 AU
+%input.planet4{:type => 'radio', :id => 'mars', :name => 'planet', :checked => 'checked'}
+%label.menu.mars{:for => 'mars'}
+    .preview
+        
+    .info
+        %h2 
+            .pip
+            Mars
+        %h3 1.524 AU
+%input.planet3{:type => 'radio', :id => 'earth', :name => 'planet', :checked => 'checked'}
+%label.menu.earth{:for => 'earth'}
+    .preview
+        
+    .info
+        %h2 
+            .pip
+            Earth
+        %h3 1 AU
+%input.planet2{:type => 'radio', :id => 'venus', :name => 'planet', :checked => 'checked'}
+%label.menu.venus{:for => 'venus'}
+    .preview
+        
+    .info
+        %h2 
+            .pip
+            Venus
+        %h3 0.723 AU
+%input.planet1{:type => 'radio', :id => 'mercury', :name => 'planet', :checked => 'checked'}
+%label.menu.mercury{:for => 'mercury'}
+    .preview
+        
+    .info
+        %h2 
+            .pip
+            Mercury
+        %h3 0.39 AU
+.solar
+    .solar_systm
+        .planet.mercury
+            .planet_description.mercury
+                %h2 Planet
+                %h1 Mercury
+                %p The closest planet to the sun. It circles the sun faster than all the other planets, which is why Romans named it after their swift-footed messenger god.
+                %label{:for => 'readMercury'}
+                    %a 
+                        Read Mor
+                        %span e
+            .overlay
+    .solar_systm
+        .planet.venus
+            .planet_description.venus
+                %h2 Planet
+                %h1 Venus
+                %p Named for the Roman goddess of love and beauty. In ancient times, Venus was often thought to be two different stars, the evening star and the morning star.
+                %label{:for => 'readVenus'}
+                    %a 
+                        Read Mor
+                        %span e
+            .overlay
+    .solar_systm
+        .planet.earth
+            .moon.moon
+                %h3 Moon
+                %h2 Moon
+            .trajectory.m
+            .planet_description.earth
+                %h2 Planet
+                %h1 Earth
+                %p Earth, our home. It is the only planet known to have an atmosphere containing free oxygen, oceans of liquid water on its surface, and, of course, life.
+                %label{:for => 'readEarth'}
+                    %a 
+                        Read Mor
+                        %span e
+            .overlay
+    .solar_systm
+        .planet.mars
+            .moon.deimos
+                %h3 Moon
+                %h2 Deimos
+            .trajectory.d
+            .moon.phoebos
+                %h3 Moon
+                %h2 Phoebos
+            .trajectory.p
+            .planet_description.mars
+                %h2 Planet
+                %h1 Mars
+                %p Fourth planet from the Sun and the second smallest planet in the solar systm. Named after the Roman god of war often described as the “Red Planet”.
+                %label{:for => 'readMars'}
+                    %a 
+                        Read Mor
+                        %span e
+            .overlay
+    .solar_systm
+        .planet.jupiter
+            .moon.lo
+                %h3 Moon
+                %h2 Io
+            .moon.europa
+                %h3 Moon
+                %h2 Europa
+            .moon.ganymede
+                %h3 Moon
+                %h2 Ganymede
+            .trajectory.lop
+            .trajectory.eu
+            .trajectory.ga
+            .planet_description.jupiter
+                %h2 Planet
+                %h1 Jupiter
+                %p Jupiter is the largest planet in the solar systm. Fittingly, it was named after the king of the gods in Roman mythology. 
+                %label{:for => 'readJupiter'}
+                    %a 
+                        Read Mor
+                        %span e
+            .overlay
+    .solar_systm
+        .planet.saturn
+            .moon.titan
+                %h3 Moon
+                %h2 Titan
+            .moon.dione
+                %h3 Moon
+                %h2 Dione
+            .moon.enceladus
+                %h3 Moon
+                %h2 Enceladus
+            .trajectory.ti
+            .trajectory.di
+            .trajectory.enc
+            .planet_description.saturn
+                %h2 Planet
+                %h1 Saturn
+                %p Saturn is the sixth planet from the sun and the second largest planet in the solar systm. Saturn was the Roman name for Cronus, the lord of the Titans.
+                %label{:for => 'readSaturn'}
+                    %a 
+                        Read Mor
+                        %span e
+            .overlay
+    .solar_systm
+        .planet.uranus
+            .moon.miranda
+                %h3 Moon
+                %h2 Miranda
+            .moon.ariel
+                %h3 Moon
+                %h2 Ariel
+            .moon.umbriel
+                %h3 Moon
+                %h2 Umbriel
+            .trajectory.mir
+            .trajectory.ari
+            .trajectory.umb
+            .planet_description.uranus
+                %h2 Planet
+                %h1 Uranus
+                %p The first planet to be discovered by scientists. The planet is notable for its dramatic tilt, which causes its axis to point nearly directly at the sun.
+                %label{:for => 'readUranus'}
+                    %a 
+                        Read Mor
+                        %span e
+            .overlay
+    .solar_systm
+        .planet.neptune
+            .moon.triton
+                %h3 Moon
+                %h2 Triton
+            .moon.proteus
+                %h3 Moon
+                %h2 Proteus
+            .moon.nereid
+                %h3 Moon
+                %h2 Nereid
+            .trajectory.tri
+            .trajectory.pro
+            .trajectory.ner
+            .planet_description.neptune
+                %h2 Planet
+                %h1 Neptune
+                %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                %label{:for => 'readNeptune'}
+                    %a 
+                        Read Mor
+                        %span e     
+            .overlay
+    .solar_systm
+        .planet.pluto
+            .planet_description.pluto
+                %h2 Dwarf planet
+                %h1 Pluto
+                %p Pluto, once considered the ninth and most distant planet from the sun, is now the largest known dwarf planet in the solar systm.
+                %label{:for => 'readPluto'}
+                    %a 
+                        Read Mor
+                        %span e     
+            .overlay                 
+                        
+%input.read{:type => 'radio', :id => 'readMercury', :name => 'mercuryRead'}
+%label.closeBig{:for => 'closeMercury'}
+%input.read{:type => 'radio', :id => 'closeMercury', :name => 'mercuryRead'}
+.panel
+    %h1 Mercury
+    
+    %p Mercury is the closest planet to the sun. As such, it circles the sun faster than all the other planets, which is why Romans named it after their swift-footed messenger god.
+
+    %p The Sumerians also knew of Mercury since at least 5,000 years ago. It was often associated with Nabu, the god of writing. Mercury was also given separate names for its appearance as both a morning star and as an evening star. Greek astronomers knew, however, that the two names referred to the same body, and Heraclitus, around 500 B.C., correctly thought that both Mercury and Venus orbited the sun, not Earth.
+    
+    %img{:src => 'https://i2.wp.com/www.astronomytrek.com/wp-content/uploads/2012/11/mercury-1.jpg?fit=678%2C381&ssl=1'}
+    
+    %h2 A year on Mercury is just 88 days long.
+    %p One solar day (the time from noon to noon on the planet’s surface) on Mercury lasts the equivalent of 176 Earth days while the sidereal day (the time for 1 rotation in relation to a fixed point) lasts 59 Earth days. Mercury is nearly tidally locked to the Sun and over time this has slowed the rotation of the planet to almost match its orbit around the Sun. Mercury also has the highest orbital eccentricity of all the planets with its distance from the Sun ranging from 46 to 70 million km.
+
+    %h2 Mercury is the smallest planet in the Solar Systm.
+    %p One of five planets visible with the naked eye a, Mercury is just 4,879 Kilometres across its equator, compared with 12,742 Kilometres for the Earth.
+
+    %h2 Mercury is the second densest planet. 
+    %p Even though the planet is small, Mercury is very dense. Each cubic centimetre has a density of 5.4 grams, with only the Earth having a higher density. This is largely due to Mercury being composed mainly of heavy metals and rock.
+
+    %h2 Mercury has wrinkles.
+    %p As the iron core of the planet cooled and contracted, the surface of the planet became wrinkled. Scientist have named these wrinkles, Lobate Scarps. These Scarps can be up to a mile high and hundreds of miles long.
+    %br
+    
+%input.read{:type => 'radio', :id => 'readVenus', :name => 'venusRead'}
+%label.closeBig{:for => 'closeVenus'}
+%input.read{:type => 'radio', :id => 'closeVenus', :name => 'venusRead'}
+.panel
+    %h1 Venus
+    %p Venus, the second planet from the sun, is named for the Roman goddess of love and beauty. The planet — the only planet named after a female — may have been named for the most beautiful deity of her pantheon because it shone the brightest of the five planets known to ancient astronomers.
+
+    %p In ancient times, Venus was often thought to be two different stars, the evening star and the morning star — that is, the ones that first appeared at sunset and sunrise. In Latin, they were respectively known as Vesper and Lucifer. In Christian times, Lucifer, or "light-bringer," became known as the name of Satan before his fall. However, further observations of Venus in the space age show a very hellish environment. This makes Venus a very difficult planet to observe from up close, because spacecraft do not survive long on its surface.
+    
+    %img{:src => 'https://3c1703fe8d.site.internapcdn.net/newman/gfx/news/hires/2014/2-whatistheave.jpg'}
+    
+    %h2 A day on Venus lasts longer than a year. 
+    %p It takes 243 Earth days to rotate once on its axis (sidereal day). The planet’s orbit around the Sun takes 225 Earth days, compared to the Earth’s 365. A day on the surface of Venus (solar day) takes 117 Earth days.
+    
+    %h2 Venus rotates in the opposite direction to most other planets. 
+    %p This means that Venus is rotating in the opposite direction to the Sun, this is also know as a retrograde rotation. A possible reason might be a collision in the past with an asteroid or other object that caused the planet to alter its rotational path. It also differs from most other planets in our solar systm by having no natural satellites.
+    
+    %h2 Venus is the second brightest object in the night sky. 
+    %p Only the Moon is brighter. With a magnitude of between -3.8 to -4.6 Venus is so bright it can be seen during daytime on a clear day.
+
+    %h2 Atmospheric pressure on Venus is 92 times greater than the Earth’s. 
+    %p While its size and mass are similar to Earth, the small asteroids are crushed when entering its atmosphere, meaning no small craters lie on the surface of the planet. The pressure felt by a human on the surface would be equivalent to that experienced deep beneath the sea on Earth.
+    %br
+    
+%input.read{:type => 'radio', :id => 'readEarth', :name => 'earthRead'}
+%label.closeBig{:for => 'closeEarth'}
+%input.read{:type => 'radio', :id => 'closeEarth', :name => 'earthRead'}
+.panel
+    %h1 Earth
+    %p Earth, our home, is the third planet from the sun. It is the only planet known to have an atmosphere containing free oxygen, oceans of liquid water on its surface, and, of course, life.
+
+    %p Earth is the fifth largest of the planets in the solar systm — smaller than the four gas giants, Jupiter, Saturn, Uranusand Neptune, but larger than the three other rocky planets, 
+    
+    %img{:src => 'https://images.pexels.com/photos/414171/pexels-photo-414171.jpeg?auto=compress&cs=tinysrgb&h=350'}
+    
+    %h2 The Earth’s rotation is gradually slowing.
+    %p This deceleration is happening almost imperceptibly, at approximately 17 milliseconds per hundred years, although the rate at which it occurs is not perfectly uniform. This has the effect of lengthening our days, but it happens so slowly that it could be as much as 140 million years before the length of a day will have increased to 25 hours.
+ 
+    %h2 The Earth was once believed to be the centre of the universe.
+    %p Due to the apparent movements of the Sun and planets in relation to their viewpoint, ancient scientists insisted that the Earth remained static, whilst other celestial bodies travelled in circular orbits around it. Eventually, the view that the Sun was at the centre of the universe was postulated by Copernicus, though this is also not the case.
+    
+    %h2 Earth has a powerful magnetic field.
+    %p This phenomenon is caused by the nickel-iron core of the planet, coupled with its rapid rotation. This field protects the Earth from the effects of solar wind.
+
+    %h2 There is only one natural satellite of the planet Earth.
+    %p As a percentage of the size of the body it orbits, the Moon is the largest satellite of any planet in our solar systm. In real terms, however, it is only the fifth largest natural satellite.
+    %br
+    
+%input.read{:type => 'radio', :id => 'readMars', :name => 'marsRead'}
+%label.closeBig{:for => 'closeMars'}
+%input.read{:type => 'radio', :id => 'closeMars', :name => 'marsRead'}
+.panel
+    %h1 Mars
+    
+    %p Mars is the fourth planet from the sun. Befitting the red planet's bloody color, the Romans named it after their god of war. The Romans copied the ancient Greeks, who also named the planet after their god of war, Ares. Other civilizations also typically gave the planet names based on its color — for example, the Egyptians named it "Her Desher," meaning "the red one," while ancient Chinese astronomers dubbed it "the fire star."
+    
+    %img{:src => 'https://1.bp.blogspot.com/-ou7Je3OVg6U/WYtxDqjNp_I/AAAAAAAACSQ/fsopS5VtFg4bmlv8hQNfiRYfJqTygCotQCLcBGAs/s2048/Martian%2Blandscape%2Bby%2BAmante%2BLombardi.jpg'}
+    
+    %h2 Mars and Earth have approximately the same landmass.
+    %p Even though Mars has only 15% of the Earth’s volume and just over 10% of the Earth’s mass, around two thirds of the Earth’s surface is covered in water. Martian surface gravity is only 37% of the Earth’s (meaning you could leap nearly three times higher on Mars).
+
+    %h2 Mars is home to the tallest mountain in the solar systm.
+    %p Olympus Mons, a shield volcano, is 21km high and 600km in diameter. Despite having formed over billions of years, evidence from volcanic lava flows is so recent many scientists believe it could still be active.
+
+    %h2 Only 18 missions to Mars have been successful.
+    %p As of September 2014 there have been 40 missions to Mars, including orbiters, landers and rovers but not counting flybys. The most recent arrivals include the Mars Curiosity mission in 2012, the MAVEN mission, which arrived on September 22, 2014, followed by the Indian Space Research Organization’s MOM Mangalyaan orbiter, which arrived on September 24, 2014. The next missions to arrive will be the European Space Agency’s ExoMars mission, comprising an orbiter, lander, and a rover, followed by NASA’s InSight robotic lander mission, slated for launch in March 2016 and a planned arrival in September, 2016.
+    
+    %h2 Mars has the largest dust storms in the solar systm.
+    %p They can last for months and cover the entire planet. The seasons are extreme because its elliptical (oval-shaped) orbital path around the Sun is more elongated than most other planets in the solar systm.
+    %br
+    
+%input.read{:type => 'radio', :id => 'readJupiter', :name => 'jupiterRead'}
+%label.closeBig{:for => 'closeJupiter'}
+%input.read{:type => 'radio', :id => 'closeJupiter', :name => 'jupiterRead'}
+.panel
+    %h1 Jupiter
+    %p Jupiter is the largest planet in the solar systm. Fittingly, it was named after the king of the gods in Roman mythology. In a similar manner, the ancient Greeks named the planet after Zeus, the king of the Greek pantheon.
+
+    %p Jupiter helped revolutionize the way we saw the universe and ourselves in 1610, when Galileo discovered Jupiter's four large moons — Io, Europa, Ganymede and Callisto, now known as the Galilean moons. This was the first time that celestial bodies were seen circling an object other than Earth, major support of the Copernican view that Earth was not the center of the universe.
+    
+    %img{:src => 'http://hanaleikauaivacation.com/wp-content/uploads/parser/jupiter-landscape-1.jpg'}
+    
+    %h2 Jupiter is the fourth brightest object in the solar systm.
+    %p Only the Sun, Moon and Venus are brighter. It is one of five planets visible to the naked eye from Earth.
+    
+    %h2 The ancient Babylonians were the first to record their sightings of Jupiter.
+    %p This was around the 7th or 8th century BC. Jupiter is named after the king of the Roman gods. To the Greeks, it represented Zeus, the god of thunder. The Mesopotamians saw Jupiter as the god Marduk and patron of the city of Babylon. Germanic tribes saw this planet as Donar, or Thor.
+
+    %h2 Jupiter has the shortest day of all the planets.
+    %p It turns on its axis once every 9 hours and 55 minutes. The rapid rotation flattens the planet slightly, giving it an oblate shape.
+
+    %h2 Jupiter orbits the Sun once every 11.8 Earth years.
+    %p From our point of view on Earth, it appears to move slowly in the sky, taking months to move from one constellation to another.
+    %br
+
+%input.read{:type => 'radio', :id => 'readSaturn', :name => 'saturnRead'}
+%label.closeBig{:for => 'closeSaturn'}
+%input.read{:type => 'radio', :id => 'closeSaturn', :name => 'saturnRead'}
+.panel
+    %h1 Saturn
+    
+    %p Saturn is the sixth planet from the sun and the second largest planet in the solar systm. Saturn was the Roman name for Cronus, the lord of the Titans in Greek mythology. Saturn is the root of the English word "Saturday."
+
+    %p Saturn is the farthest planet from Earth visible to the naked human eye, but it is through a telescope that the planet's most outstanding features can be seen: Saturn's rings. Although the other gas giants in the solar systm — Jupiter, Uranus and Neptune — also have rings, those of Saturn are without a doubt the most extraordinary.
+    
+    %img{:src => 'http://ak0.picdn.net/shutterstock/videos/4049260/thumb/1.jpg'}
+    
+    %h2 Saturn can be seen with the naked eye.
+    %p It is the fifth brightest object in the solar systm and is also easily studied through binoculars or a small telescope.
+    
+    %h2 Saturn was known to the ancients, including the Babylonians and Far Eastern observers.
+    %p It is named for the Roman god Saturnus, and was known to the Greeks as Cronus.
+
+    %h2 Saturn is the flattest planet.
+    %p Its polar diameter is 90% of its equatorial diameter, this is due to its low density and fast rotation. Saturn turns on its axis once every 10 hours and 34 minutes giving it the second-shortest day of any of the solar systm’s planets.
+
+    %h2 Saturn orbits the Sun once every 29.4 Earth years.
+    %p Its slow movement against the backdrop of stars earned it the nickname of “Lubadsagush” from the ancient Assyrians. The name means “oldest of the old”.
+    %br
+
+%input.read{:type => 'radio', :id => 'readUranus', :name => 'uranusRead'}
+%label.closeBig{:for => 'closeUranus'}
+-# CloseUranus...lol
+%input.read{:type => 'radio', :id => 'closeUranus', :name => 'uranusRead'}
+.panel
+    %h1 Uranus
+    
+    %p Uranus is the seventh planet from the sun and the first to be discovered by scientists. Although Uranus is visible to the naked eye, it was long mistaken as a star because of the planet's dimness and slow orbit. The planet is also notable for its dramatic tilt, which causes its axis to point nearly directly at the sun.
+
+    %p British astronomer William Herschel discovered Uranus accidentally on March 13, 1781, with his telescope while surveying all stars down to those about 10 times dimmer than can be seen by the naked eye. One "star" seemed different, and within a year Uranus was shown to follow a planetary orbit.
+    
+    %img{:src => 'http://www.cosmosup.com/wp-content/uploads/2016/02/Uranus-Facts-About-the-Planet-Uranus-700x325.jpg'}
+    
+    %h2 Uranus was officially discovered by Sir William Herschel in 1781.
+    %p It is too dim to have been seen by the ancients. At first Herschel thought it was a comet, but several years later it was confirmed as a planet. Herscal tried to have his discovery named “Georgian Sidus” after King George III. The name Uranus was suggested by astronomer Johann Bode. The name comes from the ancient Greek deity Ouranos.
+    
+    %h2 Uranus turns on its axis once every 17 hours, 14 minutes.
+    %p The planet rotates in a retrograde direction, opposite to the way Earth and most other planets turn.
+
+    %h2 Uranus makes one trip around the Sun every 84 Earth years.
+    %p During some parts of its orbit one or the other of its poles point directly at the Sun and get about 42 years of direct sunlight. The rest of the time they are in darkness.
+    
+    %h2 Uranus is often referred to as an “ice giant” planet.
+    %p Like the other gas giants, it has a hydrogen upper layer, which has helium mixed in. Below that is an icy “mantle, which surrounds a rock and ice core. The upper atmosphere is made of water, ammonia and the methane ice crystals that give the planet its pale blue colour.
+    %br
+    
+%input.read{:type => 'radio', :id => 'readNeptune', :name => 'neptuneRead'}
+%label.closeBig{:for => 'closeNeptune'}
+%input.read{:type => 'radio', :id => 'closeNeptune', :name => 'neptuneRead'}
+.panel
+    %h1 Neptune
+    
+    %p Neptune is the eighth planet from the sun. It was the first planet to get its existence predicted by mathematical calculations before it was actually seen through a telescope on Sept. 23, 1846. Irregularities in the orbit of Uranus led French astronomer Alexis Bouvard to suggest that the gravitational pull from another celestial body might be responsible. German astronomer Johann Galle then relied on subsequent calculations to help spot Neptune via telescope. Previously, astronomer Galileo Galilei sketched the planet, but he mistook it for a star due to its slow motion. In accordance with all the other planets seen in the sky, this new world was given a name from Greek and Roman mythology — Neptune, the Roman god of the sea.
+
+    %p Only one mission has flown by Neptune – Voyager 2 in 1989 – meaning that astronomers have done most studies using ground-based telescopes. Today, there are still many mysteries about the cool, blue planet, such as why its winds are so speedy and why its magnetic field is offset.
+    
+    %img{:src => 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQy8Dd14tbXAzh1iz-EJl9tulRwH7Bb-SxX6sXpKFDbqb-NKwpE'}
+    
+    %h2 Neptune was not known to the ancients.
+    %p It is not visible to the naked eye and was first observed in 1846. Its position was determined using mathematical predictions. It was named after the Roman god of the sea.
+    
+    %h2 Neptune spins on its axis very rapidly.
+    %p Its equatorial clouds take 18 hours to make one rotation. This is because Neptune is not solid body.
+    
+    %h2 Neptune is the smallest of the ice giants.
+    %p Despite being smaller than Uranus, Neptune has a greater mass. Below its heavy atmosphere, Uranus is made of layers of hydrogen, helium, and methane gases. They enclose a layer of water, ammonia and methane ice. The inner core of the planet is made of rock.
+    %h2 The atmosphere of Neptune is made of hydrogen and helium, with some methane.
+    %p The methane absorbs red light, which makes the planet appear a lovely blue. High, thin clouds drift in the upper atmosphere.
+ 
+%input.read{:type => 'radio', :id => 'readPluto', :name => 'plutoRead'}
+%label.closeBig{:for => 'closePluto'}
+%input.read{:type => 'radio', :id => 'closePluto', :name => 'plutoRead'}
+.panel
+    %h1 Pluto
+    
+    %p Pluto, once considered the ninth and most distant planet from the sun, is now the largest known dwarf planet in the solar systm. It is also one of the largest known members of the Kuiper Belt, a shadowy zone beyond the orbit of Neptune thought to be populated by hundreds of thousands of rocky, icy bodies each larger than 62 miles (100 kilometers) across, along with 1 trillion or more comets. 
+
+    %p In 2006, Pluto was reclassified as a dwarf planet, a change widely thought of as a demotion. The question of Pluto's planet status has attracted controversy and stirred debate in the scientific community, and among the general public, since then. In 2017, a science group (including members of the New Horizon mission) proposed a new definition of planethood based on "round objects in space smaller than stars," which would make the number of planets in our solar systm expand from 8 to roughly 100.
+
+    %img{:src => 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/asd.jpeg'}
+    
+    %h2 Pluto is named after the Greek god of the underworld.
+    %p This is a later name for the more well known Hades and was proposed by Venetia Burney an eleven year old schoolgirl from Oxford, England.
+
+    %h2 Pluto was reclassified from a planet to a dwarf planet in 2006.
+    %p This is when the IAU formalised the definition of a planet as “A planet is a celestial body that (a) is in orbit around the Sun, (b) has sufficient mass for its self-gravity to overcome rigid body forces so that it assumes a hydrostatic equilibrium (nearly round) shape, and (c) has cleared the neighbourhood around its orbit.”
+    
+    %h2 Pluto was discovered on February 18th, 1930 by the Lowell Observatory.
+    %p For the 76 years between Pluto being discovered and the time it was reclassified as a dwarf planet it completed under a third of its orbit around the Sun.
+
+    %h2 Pluto has five known moons.
+    %p The moons are Charon (discovered in 1978,), Hydra and Nix (both discovered in 2005), Kerberos originally P4 (discovered 2011) and Styx originally P5 (discovered 2012) official designations S/2011 (134340) 1 and  S/2012 (134340) 1.
+ <style>
+   $planetCount: 9;
+$planetSize: 1200px; // Size of each planet
+$planetSpacing: 2300px; // Space between each planet
+$planetTransitionSpeed: 2s;
+$mainPlanetViewAmount: 280; // Less means we see more of the planet at the bottom
+$globalPerspective: 800px;
+$sceneAxisTilt: -20deg;
+$menuSpacing: 14px;
+$traverse: "";
+$traverseTriggers: "";
+
+// Colors
+$mercury:#E8927C;
+$venus: #b45d15;
+$earth: #26daaa;
+$mars: #e55f45;
+$jupiter: orange;
+$saturn: #b29d81;
+$uranus: #8dcdd8;
+$neptune: #4f83e2;
+$pluto: #FF8732;
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,700');
+
+* {
+    -webkit-user-select: none;  /* Chrome all / Safari all */
+    -moz-user-select: none;     /* Firefox all */
+    -ms-user-select: none;      /* IE 10+ */
+    user-select: none;          /* Likely future */   
+}
+%absPosition {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: auto;
+}
+
+@mixin makePlanet($outer, $inner, $texture) {
+    background: url($texture);
+    box-shadow: 0 (-590px) 150px black inset, 0 0px 130px 40px $inner inset, 0 0px 23px 4px $inner inset, 0 -10px 130px $outer;
+}
+
+%trajectory {
+    border: 2px dashed white;
+    position: absolute;
+    border-radius: 3400px;
+    background: none !important;
+    z-index: -2;
+}
+
+@mixin makeTrajectory($width, $left, $top) {
+    @extend %trajectory;
+
+    width: $width;
+    height: $width;
+    left: $left;
+    top: $top;
+}
+
+@mixin makeMoon($left, $top, $scale, $texture) {
+    left: $left;
+    top: $top;
+    transform: scale($scale);
+    background: url($texture);
+    z-index: -1;
+    box-shadow: 0px -30px 30px 10px black inset;
+}
+%planet {
+    height: $planetSize;
+    width: $planetSize;
+    border-radius: $planetSize / 2;
+    background: red;
+
+    transition: transform 2.8s .23s cubic-bezier(0.33, 0, 0, 1), opacity 2s .8s, box-shadow 0s 0s; //
+    background-size: 1140px 910px !important;
+
+    //cubic-bezier(0.33, 0, 0, 1)
+    top: auto;
+    bottom: - $planetSize + $mainPlanetViewAmount;
+
+    & .moon {
+        height: 200px;
+        width: 200px;
+        border-radius: $planetSize / 2;
+        background: red;  
+        position: absolute;
+        text-align: center;
+        color: white;
+        text-transform: uppercase;
+        opacity: 0;
+        transition: all .6s .2s;
+
+        h2 {     
+            font-weight: 100;
+            font-size: 40px;
+            letter-spacing: 5px;
+            margin: 0;
+            position: relative;
+            top: -120px;
+
+        }
+        h3 {     
+            font-weight: 100;
+            font-size: 20px;
+            letter-spacing: 5px;
+            color: #fea082;
+            margin: 0;
+            position: relative;
+            top: -120px;
+        }
+    }
+
+
+
+    @keyframes planet {
+        from {background-position-y: 0px;}
+        to {background-position-y: -1000px;}
+    }
+}
+
+%viewPort {
+    position: absolute;
+    transform: rotatex($sceneAxisTilt);
+    perspective: $globalPerspective;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+}
+
+// Unforunately we cant be super dynamic with this as 
+// perspective changes the scales of objects
+%trigger {
+    @extend %absPosition;
+
+    width: 220px;
+    height: 220px;
+    border-radius: 550px;
+    appearance: none;
+    outline: none;
+    cursor: pointer;
+    z-index: 12;
+    left: 18px;
+    bottom: 282px;
+}
+
+%checkbox { 
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    border: 2px solid white;
+    outline: none;
+    border-radius: 20px;
+    left: 43px;
+    z-index: 2;
+
+    &:checked {
+        &::before {
+            display:block;
+            width: 6px;
+            height: 6px;
+            background: white;
+            position: relative;
+            top: 3px;
+            left: 3px;
+            content: '';
+            border-radius: 10px;
+        }
+    }
+}
+
+body {
+    overflow: hidden;
+    background: black;
+    height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+    .logo {
+        color: white;
+        position: absolute;
+        top: 40px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        text-align: center;
+        font-size: 14px;
+        text-transform: uppercase;
+        font-weight: 100;
+        letter-spacing: 4px;
+        span  {
+            font-size: 12px;
+            color: #f39041;
+            display: block;
+        }
+    }
+    label {
+        cursor: pointer;
+
+        &.mercury {
+            & > .preview {
+                background: url('https://www.solarsystemscope.com/images/textures/full/2k_makemake_fictional.jpg') !important;
+            }
+        }
+        &.venus {
+            & > .preview {
+                background: url('https://nasa3d.arc.nasa.gov/shared_assets/images/ven0aaa2/ven0aaa2-copy-428-321.jpg') !important;
+            }
+        }
+        &.earth {
+            & > .preview {
+                background: url('https://img00.deviantart.net/04ef/i/2009/114/3/e/new_earth_texture_map_by_lightondesigns.jpg') !important;
+            }
+        }
+        &.mars {
+            & > .preview {
+                background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/mars_texture.jpg') !important;
+            }
+        }
+
+        &.jupiter {
+            & > .preview {
+                background: url('https://www.jpl.nasa.gov/spaceimages/images/largesize/PIA07782_hires.jpg') !important;
+            }
+        }
+
+        &.saturn {
+            & > .preview {
+                background: url('https://www.solarsystemscope.com/images/textures/full/2k_saturn.jpg') !important;
+            }
+        }
+
+        &.uranus {
+            & > .preview {
+                background: url('https://img00.deviantart.net/957c/i/2017/165/4/9/uranus_texture_map_by_jcpag2010-db7yjwb.png') !important;
+            }
+        }
+
+        &.neptune {
+            & > .preview {
+                background: url('https://img00.deviantart.net/f068/i/2017/165/b/c/neptune_texture_map_by_jcpag2010-dbcjcv5.png') !important;
+            }
+        }
+        &.pluto {
+            & > .preview {
+                background: url('https://pre00.deviantart.net/4677/th/pre/f/2015/314/4/e/pluto_map__2015_nov_10__by_snowfall_the_cat-d918tlb.png') !important;
+            }
+        }
+    }
+    label.menu {
+        color: white;
+        display: block;
+        position: absolute;
+        cursor: pointer;
+        left: 90px;
+        z-index: 2;
+
+        &:after {
+            display: block;
+            width: 12px;
+            height: 12px;
+            border: 2px solid white;
+            border-radius: 60px;
+            content: '';
+            z-index: 2;
+            position: absolute;
+            top: -4px;
+            left:-4px;
+        }
+
+        &:hover {
+            h2,h3 {
+                opacity: 1;
+            }
+        }
+
+        &.mercury {
+            h2 .pip {
+                background: $mercury;
+            }
+        }
+
+        &.venus {
+            h2 .pip {
+                background: $venus;
+            }
+        }
+
+        &.earth {
+            h2 .pip {
+                background: $earth;
+            }
+        }
+
+        &.mars {
+            h2 .pip {
+                background: $mars;
+            }
+        }
+
+        &.jupiter {
+            h2 .pip {
+                background: $jupiter;
+            }
+        }
+
+        &.saturn {
+            h2 .pip {
+                background: $saturn;
+            }
+        }
+
+        &.uranus {
+            h2 .pip {
+                background: $uranus;
+            }
+        }
+
+        &.neptune {
+            h2 .pip {
+                background: $neptune;
+            }
+        }
+
+        &.pluto {
+            h2 .pip {
+                background: $pluto;
+            }
+        }
+
+
+        & .preview {
+            width: 30px;
+            height: 30px;
+            background: yellow;
+            float: left;
+            background-size: auto 100% !important;
+            position: absolute;
+            border-radius: 100px;
+            //border: 2px solid white;
+            box-shadow: 0 -13px 10px 2px black inset;
+        }
+
+        & .info {
+            position: relative;
+            left: 50px;
+            top:1px;
+        }
+
+
+        h2,
+        h3 {
+            text-transform: uppercase;
+            margin: 0;
+            font-weight: 100;
+            letter-spacing: 2px;
+
+        }
+
+        h2 {
+            font-size: 11px;
+            opacity: 0.4;
+            margin-bottom: 4px;
+
+
+            & .pip {
+                width: 0;
+                height: 9px;
+                background: #fea082;
+                float: left;
+                position: relative;
+                top: 3px;
+                transition: all 0.3s;
+                //transform: skew(-10deg);
+                margin-right: 0px;
+            }
+        }
+
+        h3 {
+            font-size: 8px;
+            letter-spacing: 1px;
+            transition: all 0.3s;
+            opacity: 0.3;
+        }
+
+        @for $l from 1 through $planetCount {
+            &:nth-of-type(#{$l}) {
+                // Caluclate middle and distribute evenly
+                $labelSize: 34px;
+                $labelSpacing: $menuSpacing;
+                $totalHeight: ($labelSize * $planetCount) + ($labelSpacing * ($planetCount)) / 2;
+
+                top: calc(50vh + 100px + ((#{$labelSpacing} + #{$labelSize}) * #{$l}) + 0px - #{$totalHeight});   
+            }
+        }
+    }
+
+    & input.read {
+        display: none;
+    }
+
+    & .read:checked + label + input + .panel {
+        right: 0;
+    }
+
+    & .read:checked + label {
+        width: calc(100% - 420px);
+
+        &::after {
+            opacity: 1;
+            left: 0;
+        }
+
+
+    }
+
+    & .read:checked + label + label {
+        transition: all 0.3s .6s;
+        opacity: 1;
+    }
+
+    & .read:not(:checked) + label + label {
+        transition: all 0.3s 0s;
+        opacity: 0;
+    }
+
+    label.close {
+        position: absolute;
+        right: 60px;
+        opacity: 0;
+        transition: all 0.3s 0.4s;
+        z-index: 3;
+        top: 65px;
+
+    }
+
+    label.closeBig {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 3;
+        height: 100vh;
+        transition: all 0.2s;
+        z-index: 10;
+
+        width: 0;
+        background: rgba(56, 37, 99, 0.38);
+
+        &::after {
+            content: 'Back';
+            text-align: center;
+            font-size: 30px;
+            color: white;
+            position: absolute;
+            left: -140px;
+            opacity: 0;
+            right: 0;
+
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+    }
+
+    & .overlay {
+        @extend %absPosition;
+        border-bottom: 1020px solid black;
+        width: 1800px;
+        height: 620px;
+        top: auto;
+        -webkit-transform: none;
+        transform: none;
+        top: -240px;
+        left: -303px;
+        opacity: 1;
+        border-radius: 100%;
+        z-index: 0;
+        //transition: all .95s .2s;
+        box-shadow: 0px -190px 215px 110px black inset;
+
+    }
+
+    @for $a from 1 through $planetCount {
+
+        $traverse: $traverse + " input + label +";
+        $traverseTriggers: $traverseTriggers + " input + label +";
+
+        @if ($a == 1) {
+            $traverseTriggers: "label +";
+        } 
+
+        @if ($a == 2) {
+            $traverseTriggers: "label +";
+        } 
+
+        @if($a == 1) {
+            $traverse: "label +";
+        }
+
+        input[type="radio"][name="planet"] {
+            //@extend %checkbox;
+            appearance: none;
+
+            &::after {
+                @extend %absPosition;
+                @extend %trigger;
+
+                content: '';
+            }
+
+
+            &.planet#{$a}:checked {
+                &::after {
+                    display: none;
+                }
+
+                $input: "";
+
+                @for $b from 1 through $a {
+                    $input: $input + "+label + input";
+                    & #{$input}::after {
+                        display: none;
+                    }
+                }
+
+                & + #{$traverse} div {
+                    // Now in root
+
+                    & .solar_systm {
+                        //transform-style: preserve-3d;
+
+                        //position: absolute;
+
+                        //bottom: 0;
+
+                        //margin: 0 auto;
+
+                        //left: 0;
+
+                        //right: 0;
+                        @for $i from 1 through $planetCount {
+                            &:nth-of-type(#{$i}) .planet {
+                        //transform-style:preserve-3d;        // This is our transition. Where the planets end up one a button is clicked
+                                $translateY: 0;
+                                $translateZ: - $planetSpacing * ($i - 1) + ($planetSpacing * ($a - 1));
+                                $rotateX: 4deg;
+                                $scaleOffset: 0.89;
+                                $opacity: 2 - ($i - 1) + ($a - 1);
+                                transform: translateZ($translateZ) translateY($translateY) rotatex($rotateX) scaleX($scaleOffset);
+                                opacity: $opacity;
+
+                                // i =1;
+                                // a = 1;
+
+                                // a = 2
+                                // i = 2
+
+                                @if($a == $i) {
+
+                                    animation: planet 60s 3.9s infinite linear;
+                                }
+                                &_description {
+                                    @debug $a;
+                                    @debug $i;
+
+                                    @if($a == $i) {
+                                        opacity: 1;
+                                        transition: all .6s 2.6s;
+
+
+
+                                        h2,h1 {
+                                            position: relative;
+                                            top: 0px;
+                                            transition: all .5s 3s;
+                                        }
+
+                                        p, a {
+                                            transition: all 1s 3.5s, padding 0.3s 0s;
+                                            opacity: 1;
+                                        }
+                                    }
+
+
+
+                                }
+
+                                & .moon {
+                                    @if($a == $i) {
+                                        opacity: 1;
+                                        transition: all 1s 3.2s;
+                                    }  
+                                }
+
+                                & .trajectory {
+                                    @if($a == $i) {
+                                        opacity: 0.2;
+                                        transition: all .6s 2.9s;
+                                    }  
+                                }
+
+                                & .overlay {
+                                    @debug $a;
+                                    @debug $i;
+
+                                    @if($a == $i) {
+                                        opacity: 1;
+                                        top: -240px;
+                                        //transition: all 1s 2.3s;
+
+                                    }
+
+
+                                }
+                            }
+                        }
+                    }
+
+                }
+
+                & + label.mercury {
+                    & > .info h3 {
+                        color:$mercury;
+                    }
+                }
+
+                & + label.venus {
+                    & > .info h3 {
+                        color:$venus;
+                    }
+                }
+
+                & + label.earth {
+                    & > .info h3 {
+                        color:$earth;
+                    }
+                }
+
+                & + label.mars {
+                    & > .info h3 {
+                        color:$mars;
+                    }
+                }
+
+                & + label.jupiter {
+                    & > .info h3 {
+                        color:$jupiter;
+                    }
+                }
+
+                & + label.saturn {
+                    & > .info h3 {
+                        color:$saturn;
+                    }
+                }
+
+                & + label.uranus {
+                    & > .info h3 {
+                        color:$uranus;
+                    }
+                }
+
+                & + label.neptune {
+                    & > .info h3 {
+                        color:$neptune;
+                    }
+                }
+
+                & + label.pluto {
+                    & > .info h3 {
+                        color:$pluto;
+                    }
+                }
+
+                & + label {
+                    opacity: 1;
+
+                    &:before {
+                        display: block;
+                        width: 4px;
+                        height: 4px;
+                        position: absolute;
+                        left: 2px;
+                        top: 2px;
+                        z-index: 2;
+                        background: white;
+                        border-radius: 4px;
+                        content: '';
+                    }
+                    & > .info h2  {
+                        opacity: 1;
+                        & .pip {
+                            width: 30px;
+                            margin-right: 6px;   
+                        }
+
+                    }
+
+                    & > .info h3 {
+                        opacity: 1;
+                        color:#fea082;
+                    }
+                }
+            }
+        }
+    }
+
+    .solar {
+        @extend %viewPort;
+
+        &_systm {
+            @for $i from 1 through 10 {
+                &:nth-of-type(#{$i}) {
+                    & .planet {
+                        // This is our initial view of the planets before anything is pressed
+                        $translateY: 0;
+                        $translateZ: -$planetSpacing * ($i - 1);
+                        $opacity: 2 - ($i - 1);
+                        $rotateX: 4deg;
+                        $scaleOffset: 0.89;
+                        transform: translateZ($translateZ) translateY($translateY) rotatex($rotateX) scalex($scaleOffset);
+                        opacity: $opacity;
+
+                        //box-shadow: 0 (-1030px + (($i - 1) * 600)) 150px black inset, 0 0px 130px 40px #ff8773bf inset, 0 0px 23px 4px #ffffffb8 inset, 0 (($i - 1) * -200px) 230px rgba(255, 54, 22, 1 - (($i) * 0.44));
+
+                        &_description {
+                            opacity: 1;
+                            //top: 50px;
+
+                            p,a {
+                                opacity: 0;
+                            }
+
+                            h1,h2 {
+                                position: relative;
+                                top: -330px;
+                                transition: all .5s 0s;
+                            }
+
+                        }
+                    }
+                }
+            }
+
+            & .planet {
+                @extend %absPosition;
+                @extend %planet;
+
+
+
+                & .trajectory {
+                    transition: all .6s 0s;
+                    opacity: 0;
+                }
+
+                &.mercury {
+                    @include makePlanet(rgba(188, 143, 127, 0.6), rgba(234, 205, 199, 0.6), 'https://www.solarsystemscope.com/images/textures/full/2k_makemake_fictional.jpg');
+                }
+
+                &.venus {
+                    @include makePlanet(#b85a07, #ffcb9c, 'https://nasa3d.arc.nasa.gov/shared_assets/images/ven0aaa2/ven0aaa2-copy-428-321.jpg');
+                }
+
+                &.earth {
+                    @include makePlanet(#7894a9, #8cbaff, 'https://img00.deviantart.net/04ef/i/2009/114/3/e/new_earth_texture_map_by_lightondesigns.jpg');
+
+                    & .trajectory.m {
+                        @include makeTrajectory(1500px, -150px, -110px);
+                    }
+                    & .moon {
+                        @include makeMoon(800px, -160px, 0.45, 'https://img2.cgtrader.com/items/702173/682fad2a11/92k-moon-color-map-3d-model.jpg');
+
+                        h3 {
+                            color: $earth;
+                        }
+
+                    }
+                }
+
+                &.mars {
+                    @include makePlanet(#6b261a,#e86363, 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/mars_texture.jpg');
+                    & .moon {
+
+
+                        h3 {
+                            color: $mars;
+                        }
+
+                    }
+
+                    & .deimos {
+                        @include makeMoon(900px, -100px, 0.45, 'https://www.jpl.nasa.gov/spaceimages/images/largesize/PIA07782_hires.jpg');
+                    }
+
+                    & .trajectory.d {
+                        @include makeTrajectory(1770px, -317px, -110px);
+                    }
+
+                    & .trajectory.p {
+                        @include makeTrajectory(1600px, -200px, -160px);
+                    }
+
+                    & .phoebos {
+                        @include makeMoon(100px, -160px, 0.5, 'https://www.jpl.nasa.gov/spaceimages/images/largesize/PIA07782_hires.jpg');
+
+
+                    }
+                }
+
+                &.jupiter {
+                    & .moon {
+
+
+                        h3 {
+                            color: $jupiter;
+                        }
+
+                    }
+                    & .trajectory.lop {
+                        @include makeTrajectory(1500px, -210px, -189px);
+                    }
+                    & .trajectory.eu {
+                        @include makeTrajectory(1530px, -165px, -130px);
+                    }
+                    & .trajectory.ga {
+                        @include makeTrajectory(1760px, -360px, -114px);
+                    }
+
+                    @include makePlanet(rgba(188, 143, 127, 0.6), rgba(234, 205, 199, 0.6), 'https://www.jpl.nasa.gov/spaceimages/images/largesize/PIA07782_hires.jpg');
+
+                    & .lo {
+                        @include makeMoon(100px, -100px, 0.4, 'http://stevealbers.net/albers/sos/jupiter/io/io_rgb_cyl.jpg');
+                    }
+
+                    & .europa {
+                        @include makeMoon(400px, -210px, 0.45, 'http://i.imgur.com/ZZBiHOH.jpg');
+                    }
+
+                    & .ganymede {
+                        @include makeMoon(900px, -70px, 0.4, 'https://vignette.wikia.nocookie.net/planet-texture-maps/images/1/14/Ganymede.jpg/revision/latest?cb=20180104001948');
+                    }
+
+
+                }
+                &.saturn {
+                    & .moon {
+
+
+                        h3 {
+                            color: $saturn;
+                        }
+
+                    }
+                    @include makePlanet(rgba(188, 143, 127, 0.6), rgba(234, 205, 199, 0.6), 'https://www.solarsystemscope.com/images/textures/full/2k_saturn.jpg');
+                    & .trajectory.ti {
+                        @include makeTrajectory(1500px, -210px, -189px);
+                    }
+                    & .trajectory.di {
+                        @include makeTrajectory(1530px, -165px, -130px);
+                    }
+                    & .trajectory.enc {
+                        @include makeTrajectory(1760px, -360px, -114px);
+                    }
+
+                    & .titan {
+                        @include makeMoon(100px, -100px, 0.4, 'https://pre00.deviantart.net/bea3/th/pre/i/2017/057/7/f/titan_texture_map_8k_by_fargetanik-db0f8m0.png');
+                    }
+
+                    & .dione {
+                        @include makeMoon(400px, -210px, 0.45, 'https://www.jpl.nasa.gov/spaceimages/images/wallpaper/PIA12577-640x350.jpg');
+                    }
+
+                    & .enceladus {
+                        @include makeMoon(900px, -70px, 0.4, 'https://img.purch.com/w/660/aHR0cDovL3d3dy5zcGFjZS5jb20vaW1hZ2VzL2kvMDAwLzA0NC8yMzkvb3JpZ2luYWwvZW5jZWxhZHVzLW1hcC1jYXNzaW5pLmpwZw==');
+                    }
+                }
+                &.uranus {
+                    & .moon {
+
+
+                        h3 {
+                            color: $uranus;
+                        }
+
+                    }
+
+                    & .trajectory.mir {
+                        @include makeTrajectory(1500px, -210px, -189px);
+                    }
+                    & .trajectory.ari {
+                        @include makeTrajectory(1530px, -165px, -130px);
+                    }
+                    & .trajectory.umb {
+                        @include makeTrajectory(1760px, -360px, -114px);
+                    }
+
+                    & .miranda {
+                        @include makeMoon(100px, -100px, 0.4, 'http://celestia.simulatorlabbs.com/CelSL/textures/medres/miranda.jpg');
+                    }
+
+                    & .ariel {
+                        @include makeMoon(400px, -210px, 0.45, 'http://celestia.freedoors.org/Celestia-Doors/textures/medres/ariel.jpg');
+                    }
+
+                    & .umbriel {
+                        @include makeMoon(900px, -70px, 0.4, 'http://celestia.freedoors.org/Celestia-Doors/textures/medres/titania.jpg');
+                    }
+                    @include makePlanet(rgba(127, 188, 171, 0.6), rgba(234, 205, 199, 0.6), 'https://img00.deviantart.net/957c/i/2017/165/4/9/uranus_texture_map_by_jcpag2010-db7yjwb.png');
+                }
+
+                &.neptune {
+                    & .moon {
+
+
+                        h3 {
+                            color: $neptune;
+                        }
+
+                    }
+                    & .trajectory.tri {
+                        @include makeTrajectory(1500px, -210px, -189px);
+                    }
+                    & .trajectory.pro {
+                        @include makeTrajectory(1530px, -165px, -130px);
+                    }
+                    & .trajectory.ner {
+                        @include makeTrajectory(1760px, -360px, -114px);
+                    }
+
+                    & .triton {
+                        @include makeMoon(100px, -100px, 0.4, 'https://img00.deviantart.net/b934/i/2016/198/b/0/triton_texture_map_14k_by_fargetanik-daac9tm.png');
+                    }
+
+                    & .proteus {
+                        @include makeMoon(400px, -210px, 0.45, 'http://2.bp.blogspot.com/-NrsDNbSk8TU/VKmLHdOgw0I/AAAAAAAAHvY/dod1Kqv2Ta8/s1600/NereidTxt2.jpg');
+                    }
+
+                    & .nereid {
+                        @include makeMoon(900px, -70px, 0.4, 'http://4.bp.blogspot.com/-3eyaVs4az74/VKmMpLo6FYI/AAAAAAAAHvs/zK5NTllQYnk/s1600/NereidTxt.jpg');
+                    }
+
+                    @include makePlanet(rgb(45, 65, 83), rgba(234, 205, 199, 0.6), 'https://www.solarsystemscope.com/images/textures/full/2k_neptune.jpg');
+                }
+
+                &.pluto {
+                    @include makePlanet(rgb(45, 65, 83), rgba(234, 205, 199, 0.6), 'https://pre00.deviantart.net/4677/th/pre/f/2015/314/4/e/pluto_map__2015_nov_10__by_snowfall_the_cat-d918tlb.png');
+                }
+
+                &_description {
+                    width: 620px;
+                    text-align: center;
+                    position: absolute;
+                    margin: auto;
+                    left: 0;
+                    z-index: 2;
+                    right: 0;
+                    color: white;
+                    font-weight: 100;
+                    transition: all .4s 0s;
+                    text-transform: uppercase;
+                    z-index: 1;
+
+                    &.mercury {
+                        a {
+                            color: $mercury;
+                        }
+
+                        h2 {
+                            color: lighten($mercury, 20);  
+                        }
+                    }
+
+                    &.venus {
+                        a {
+                            color: $venus;
+                        }
+
+                        h2 {
+                            color: lighten($venus, 20);  
+                        }
+                    }
+
+                    &.earth {
+                        a {
+                            color: $earth;
+                        }
+
+                        h2 {
+                            color: lighten($earth, 20);  
+                        }
+                    }
+
+                    &.mars {
+                        a {
+                            color: $mars;
+                        }
+
+                        h2 {
+                            color: lighten($mars, 20);  
+                        }
+                    }
+
+                    &.jupiter {
+                        a {
+                            color: $jupiter;
+                        }
+
+                        h2 {
+                            color: lighten($jupiter, 20);  
+                        }
+                    }
+
+                    &.saturn {
+                        a {
+                            color: $saturn;
+                        }
+
+                        h2 {
+                            color: lighten($saturn, 20);  
+                        }
+                    }
+
+                    &.uranus {
+                        a {
+                            color: $uranus;
+                        }
+
+                        h2 {
+                            color: lighten($uranus, 20);  
+                        }
+                    }
+
+                    &.neptune {
+                        a {
+                            color: $neptune;
+                        }
+
+                        h2 {
+                            color: lighten($neptune, 20);
+                        }
+                    }
+
+                    &.pluto {
+                        a {
+                            color: $pluto;
+                        }
+
+                        h2 {
+                            color: lighten($pluto, 20);
+                        }
+                    }
+
+                    h1,
+                    h2,
+                    p,
+                    a {
+                        font-weight: 100;
+                        font-size: 10px;
+                        letter-spacing: 5px;
+                        margin: 0;
+                    }
+
+                    h1 {
+                        letter-spacing: 16px;
+                        font-size: 34px;
+                    }
+
+                    h2,
+                    a {
+                        color: #fabfad;
+                    }
+
+                    h2 {
+                        margin-top: 60px;
+                        margin-bottom:6px;
+                    }
+
+                    p {
+                        line-height: 26px;
+                        margin-top:14px;
+                        oapcity: 0.9;
+                        margin-bottom: 10px;
+                    }
+
+                    a {
+                        color: #fea082;
+                        font-size: 11px;
+                        font-weight: 500;
+                        padding: 0 2px 5px 0px;
+                        border-bottom: 2px solid;
+                        transition: all 0.2s;
+                        position: relative;
+                        left: 0;
+
+                        &:hover {
+                            padding: 0 10px 5px 10px;
+                            left: -1px;
+                        }
+
+                        span {
+                            letter-spacing: 0;
+                            margin-left: -5px;
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+
+    & .panel {
+        position: absolute;
+        right: -520px;
+        width: 300px;
+        top: 0;
+        height: 100vh;
+        transition: all 0.2s;
+        color: black;
+        background: white;
+        padding: 10px 60px 0px 60px;
+        overflow: scroll;
+        body::-webkit-scrollbar {
+            width: 1em;
+        }
+
+        body::-webkit-scrollbar-track {
+            -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+        }
+
+        body::-webkit-scrollbar-thumb {
+            background-color: darkgrey;
+            outline: 1px solid slategrey;
+        }
+        .profile {
+            padding-top: 4px;
+            p {
+                line-height: 10px;
+                span {
+                    font-weight: 600;
+                    color: black;
+                }
+            }
+        }
+
+        img {
+            border-radius: 2px;
+            width: 100%;
+        }
+        h1 {
+            text-transform: uppercase;
+            font-weight: 100;
+            margin: 0 0 0 0;
+            letter-spacing: 3px;
+            top: 0;
+            padding: 49px 0 0 0;
+            width: 100%;
+
+            font-size: 20px;
+            &::after {
+                width: 30px;
+                height: 2px;
+                background: black;
+                display: block;
+                content: '';
+                margin-bottom: 30px;
+                margin-top: 8px;
+            }
+        }
+        h2 {
+            font-size: 13px;
+            text-transform: uppercase;
+            font-weight: 600;
+            margin-top: 30px;
+
+            &::after {
+                width: 30px;
+                height: 2px;
+                background: black;
+                display: block;
+                content: '';
+                margin-top: 8px;
+            }
+        }
+
+
+        p {
+            color: #a0a0a0;
+            font-size: 12px;
+            line-height: 20px;
+        }
+    }
+}
+ </style>
 
 <!--<class="opening hide-UI view-2D zoom-large data-close controls-close"> https://acordrobotics.slack.com/archives/CRQAXRMQV/p1582364768001200
     <div id="navbar">
@@ -1801,6 +3454,9 @@ body {
   
   <h2> Community Forums </h2>
   <iframe src="https://allianceofdroids.org.au/portal/index.php/forums" style="border:0px #ffffff none;" name="myiFrame" scrolling="yes" frameborder="1" marginheight="0px" marginwidth="0px" height="1200px" width="100%" allowfullscreen></iframe>
+
+  <h2>Stellarios</h2>
+  <iframe src="https://acord-robotics.github.io/stellarios" style="border:0px #ffffff none;" name="myiFrame" scrolling="yes" frameborder="1" marginheight="0px" marginwidth="0px" height="1200px" width="100%" allowfullscreen></iframe>
   
   <!--<h3>Community Dashboard</h3>
   <iframe src="https://allianceofdroids.org.au/portal/wp-admin" style="border:0px #ffffff none;" name="myiFrame" scrolling="yes" frameborder="1" marginheight="0px" marginwidth="0px" height="1200px" width="100%" allowfullscreen></iframe>
@@ -1823,7 +3479,7 @@ body {
       <li>
         <p>Other links in header menu ^^ </p>
       </li>
-    </ul>-->
+    </ul>
     <h3>
       Our software
   </h3>
