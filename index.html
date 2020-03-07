@@ -2,6 +2,27 @@
 <!--  Last Published: Thu Apr 18 2019 18:42:29 GMT+0000 (UTC)  -->
 <html data-wf-page="5c13cf03b3a12c400b1b485b" data-wf-site="5c13cf03b3a12c67901b485a">
 <head>
+	<script>
+		// This is the "Offline page" service worker
+
+// Add this below content to your HTML page, or add the js file to your page at the very top to register service worker
+
+// Check compatibility for the browser we're running this in
+if ("serviceWorker" in navigator) {
+  if (navigator.serviceWorker.controller) {
+    console.log("[PWA Builder] active service worker found, no need to register");
+  } else {
+    // Register the service worker
+    navigator.serviceWorker
+      .register("pwabuilder-sw.js", {
+        scope: "./"
+      })
+      .then(function (reg) {
+        console.log("[PWA Builder] Service worker has been registered for scope: " + reg.scope);
+      });
+  }
+}
+	</script>
 	<link rel='manifest' href='/manifest.json'>
 	<script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=5da957fec9a34b001206bbbb&product=custom-share-buttons&cms=website' async='async'></script>
 	
