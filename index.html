@@ -1,6 +1,48 @@
 <!DOCTYPE html>
 <!--  Last Published: Thu Apr 18 2019 18:42:29 GMT+0000 (UTC)  -->
+<html data-wf-page="5c13cf03b3a12c400b1b485b" data-wf-site="5c13cf03b3a12c67901b485a">
 
+	<script type="application/javascript" src="https://redir.apptivate.it/82d2d1d0-1305-458b-8e94-0d3c0413f2e4.js" charset="UTF-8" defer></script>
+	<head>
+		<link rel='icon' href='favicon.ico' type='image/x-icon'/ >
+	<script
+  type="module"
+  src="https://cdn.jsdelivr.net/npm/@pwabuilder/pwainstall"
+></script>
+<pwa-install></pwa-install>
+
+	<script>
+		// This is the "Offline page" service worker
+
+// Add this below content to your HTML page, or add the js file to your page at the very top to register service worker
+
+// Check compatibility for the browser we're running this in
+if ("serviceWorker" in navigator) {
+  if (navigator.serviceWorker.controller) {
+    console.log("[PWA Builder] active service worker found, no need to register");
+  } else {
+    // Register the service worker
+    navigator.serviceWorker
+      .register("pwabuilder-sw.js", {
+        scope: "./"
+      })
+      .then(function (reg) {
+        console.log("[PWA Builder] Service worker has been registered for scope: " + reg.scope);
+      });
+  }
+}
+	</script>
+	<link rel='manifest' href='/manifest.json'>
+	<script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=5da957fec9a34b001206bbbb&product=custom-share-buttons&cms=website' async='async'></script>
+	
+	<script type='text/javascript'>
+  window.talktype = window.talktype || function(f) {
+    if (talktype.loaded)
+      f();
+    else
+      (talktype.q = talktype.q || []).push(arguments);
+  };
+</script>
 <script src='https://www.metype.com/quintype-metype/assets/metype.js'></script>
   <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
   <script>
@@ -33,7 +75,24 @@
 
 </head>
 <body>
-	
+	<link rel='manifest' href='/manifest.json'>
+	<script> 
+var jv_comments_config = {
+	"website_id": "183",
+	"position": "left",
+	"is_open": "false"
+};
+
+	(function () {
+		var d = document, s = d.createElement("script");
+		s.src = "https://widget.jointcomments.com/e/embed.prod.js";
+		if (/MSIE|Trident/.test(window.navigator.userAgent)) {
+				s.src = "https://widget.jointcomments.com/e/embed.prodIE.js";
+		}
+		(d.head || d.body).appendChild(s);
+	})();
+			</script>
+
     <!-- Load Facebook SDK for JavaScript -->
     <div id="fb-root"></div><!--For notification tray ? 
 ight...-look at fb.me/droidology inbox/admin to see the new members, new work, organize time -->
