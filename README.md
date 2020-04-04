@@ -8,7 +8,6 @@ description: >-
 
 ACORD Robotics is a software, scientific engineering and writing organisation that is based and was founded in Australia by Nicholas Antipas \(COO\) & Liam Arbuckle \(Chairman\), originally under the name Alliance of Droids. We create and contribute to open-source software that is used in scientific projects like the Open Source Rover by NASA's Jet Propulsion Laboratory.
 
-> Join a team full of talented individuals from around the globe. Chat, code, write, consume, repeat.
 
 
 
