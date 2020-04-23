@@ -1,6 +1,6 @@
 <?php
-    $to = 'myemail@email.com';
-    $subject = 'New message from SOLID';
+    $to = 'liam@acordsoftware.tech';
+    $subject = 'New message from AC0/RD';
 
     if(isset($_SERVER['HTTP_X_REQUESTED_WITH']) && $_SERVER['HTTP_X_REQUESTED_WITH']  == 'XMLHttpRequest') {
         $name = $_POST["fullname"];
