@@ -1,0 +1,10 @@
+{
+    "generationTool": "pwabuilder-api",
+    "generationToolVersion": "2.0.1-rc.0",
+    "platformId": "web",
+    "platformPackage": "pwabuilder-web",
+    "platformVersion": "2.0.0-rc.4",
+    "generatedFrom": "Website Wizard",
+    "generationDate": "2020-03-08 16:24:56 Z",
+    "generatedURL": "https://acord.software/manifest.json"
+}
