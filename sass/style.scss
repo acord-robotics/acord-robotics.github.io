@@ -1,0 +1,3204 @@
+/*
+* TYCAN - Timeless Coming Soon Template
+* Build Date: May-October 2019
+* Last Update: October 2019
+* Author: Madeon08
+* Copyright (C) 2019-2XXX Madeon08
+* This is a premium product available exclusively here : https://themeforest.net/user/Madeon08/portfolio
+*/
+
+/*  TABLE OF CONTENTS
+       ----------------------------
+        *. @Import & Reset
+        1. LOADING SCREEN
+        2. GENERIC STYLES
+        3. NAV
+        4. FULLPAGE
+        5. FULLPAGE NAV (Hidden)
+        6. FOOTER + ALERTS FORM
+        7. PHOTOS GALLERY
+       ----------------------------
+            VARIANTS
+
+            V1. SLIDESHOW
+            V2. KEN BURNS
+            V3. YOUTUBE
+            V4. WAVES
+            V5. PARTICLES
+       ----------------------------
+        8. MEDIA QUERIES 
+*/
+
+/* ------------------------------------- */
+/* *. @Import & Reset .................. */
+/* ------------------------------------- */
+
+// colors, fonts, sizes etc...
+@import "vars";
+
+// custom mixins
+@import "mixins";
+
+/* custom CSS files */
+@import "fontawesome-all.min.css";
+@import "ionicons.min.css";
+
+@import "bootstrap.min.css";
+
+@import "vegas.css";
+@import "slick.css";
+@import "slick-theme.css";
+@import "jquery.fullPage.css";
+@import "featherlight.css";
+@import "featherlight.gallery.css";
+
+/* Google Fonts */
+@import url("http://fonts.googleapis.com/css?family=Montserrat:400,700");
+
+/*
+* http://meyerweb.com/eric/tools/css/reset/ 
+* v2.0 | 20110126
+* License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    padding: 0;
+    border: 0;
+    margin: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+main {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+.bigger_container {
+    @include notebookup {
+        max-width: 1420px;
+    }
+}
+
+/* ------------------------------------- */
+/* 1. LOADING SCREEN ................... */
+/* ------------------------------------- */
+
+#loading {
+    position: fixed;
+    z-index: 999999;
+    top: 100%;
+    left: 0;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background: $black;
+    transition: all $average-transition ease-in-out;
+    justify-content: center;
+    align-items: center;
+
+    &:before {
+        position: absolute;
+        content: '';
+        z-index: -10;
+        top: -100vh;
+        left: 0;
+        display: block;
+        width: 100%;
+        height: 100vh;
+        background: $white;
+    }
+
+    &.show {
+        top: 0;
+    }
+
+    &.hide {
+        opacity: 0;
+    }
+
+    img {
+        display: block;
+        opacity: 0;
+        transition: all $average-transition ease-in-out;
+        flex: auto;
+        max-width: 120px;
+    }
+}
+
+/* ------------------------------------- */
+/* 2. GENERIC STYLES ................... */
+/* ------------------------------------- */
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    position: relative;
+    height: 100%;
+    background: $black;
+    color: $black;
+    font-family: $montserrat-font;
+    font-size: 1.4rem;
+    line-height: 1.8;
+    font-weight: normal;
+    font-weight: $normal;
+    font-style: normal;
+    letter-spacing: 0;
+
+    &.elmt_hovr {
+        overflow: hidden !important;
+    }
+}
+
+.scroll-touch {
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+body,
+html {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    text-rendering: optimizeLegibility;
+}
+
+body,
+input,
+select,
+textarea {
+    transition: all $fast-transition ease-in-out;
+}
+
+a {
+    color: $white;
+    transition: all $fast-transition ease-in-out;
+    cursor: pointer;
+    text-decoration: none;
+
+    &:hover {
+        color: darken($Tulip_Tree, 5%);
+        text-decoration: none !important;
+        outline: none !important;
+    }
+
+    &:active,
+    &:focus {
+        color: $white;
+        text-decoration: none !important;
+        outline: none !important;
+    }
+
+    &.light-btn {
+        position: relative;
+        display: inline-flex;
+        height: 60px;
+        padding: 0 25px;
+        border: 1px solid $Tulip_Tree;
+        margin: 15px 0 0 0;
+        background: $Tulip_Tree;
+        color: $white;
+        font-size: 2rem;
+        text-align: center;
+        font-weight: $bold;
+        text-transform: uppercase;
+        border-radius: 0;
+        align-items: center;
+        justify-content: center;
+
+        &#button-newsletter {
+            position: fixed;
+            z-index: 100;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+        }
+
+        &:hover {
+            border: 1px solid $white;
+            background: $white;
+            color: $black;
+
+            .ask-to-scroll {
+                .arrow {
+                    span {
+                        background: $black;
+                    }
+                }
+            }
+        }
+
+        &:active,
+        &:focus {
+            border: 1px solid transparent;
+            background: $Tulip_Tree;
+            color: $white;
+            text-decoration: none !important;
+            outline: none !important;
+
+            .ask-to-scroll {
+                .arrow {
+                    span {
+                        background: $white;
+                    }
+                }
+            }
+        }
+    }
+}
+
+button {
+    transition: all $fast-transition ease-in-out;
+    cursor: pointer;
+
+    &:hover,
+    &:active,
+    &:focus {
+        color: $shark;
+        text-decoration: none !important;
+        outline: none !important;
+    }
+
+    &.light-btn {
+        position: relative;
+        display: inline-flex;
+        height: 60px;
+        padding: 0 25px;
+        border: 1px solid $Tulip_Tree;
+        margin: 15px 0 0 0;
+        background: $Tulip_Tree;
+        color: $white;
+        font-size: 2rem;
+        text-align: center;
+        font-weight: $bold;
+        text-transform: uppercase;
+        border-radius: 0;
+        align-items: center;
+        justify-content: center;
+
+        &#button-newsletter {
+            position: fixed;
+            z-index: 100;
+            bottom: 0;
+            left: 0;
+            display: none;
+            width: 100%;
+
+            @include medium {
+                display: block;
+            }
+        }
+
+        &:hover {
+            border: 1px solid $Tulip_Tree;
+            background: $Tulip_Tree;
+            color: $white;
+
+            .ask-to-scroll {
+                .arrow {
+                    span {
+                        background: $black;
+                    }
+                }
+            }
+        }
+
+        &:active,
+        &:focus {
+            border: 1px solid $Tulip_Tree;
+            background: $Tulip_Tree;
+            color: $white;
+            text-decoration: none !important;
+            outline: none !important;
+        }
+
+        &.colored {
+            border: none;
+            background: $Tulip_Tree;
+            background: $Tulip_Tree;
+            background: linear-gradient(to right, $Tulip_Tree, $Tulip_Tree);
+            margin-right: 15px;
+
+            &:active,
+            &:focus {
+                color: $white;
+            }
+        }
+    }
+
+    &.submit {
+        position: relative;
+        height: 60px;
+        padding: 0 25px;
+        border: 1px solid $Tulip_Tree;
+        margin: 15px 0 0 0;
+        margin: 0;
+        background: $Tulip_Tree;
+        color: $white;
+        font-size: 2rem;
+        text-align: center;
+        font-weight: $bold;
+        text-transform: uppercase;
+        border-radius: 0;
+        flex: auto;
+        max-width: 300px;
+
+        &:after {
+            position: absolute;
+            content: 'Submit';
+            z-index: 5;
+            top: 10px;
+            left: 0;
+            display: block;
+            width: 100%;
+            height: 100%;
+            color: $white !important;
+            line-height: 60px;
+            opacity: 0;
+            transform: none !important;
+            transition: all $fast-transition ease-in-out;
+
+            @include medium {
+                display: none;
+            }
+        }
+
+        i {
+            position: relative;
+            display: inline-block;
+            transform-origin: center;
+        }
+
+        &:active {
+            border: 1px solid $Tulip_Tree;
+            background: $white;
+            color: $black;
+
+            &:before {
+                opacity: 0;
+            }
+        }
+
+        &:focus {
+            background: $Tulip_Tree;
+            outline: none !important;
+            box-shadow: none !important;
+
+            &:before {
+                opacity: 1;
+            }
+        }
+
+        &:hover {
+            color: transparent;
+
+            &:after {
+                top: 0;
+                opacity: 1;
+            }
+        }
+
+        &:disabled {
+            color: $white;
+            cursor: not-allowed;
+
+            &:after {
+                display: none;
+            }
+        }
+
+        @media (hover: none) {
+            &:hover {
+                border: 1px solid $Tulip_Tree;
+                color: $white;
+
+                &:before {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+
+strong,
+b {
+    font-weight: $bold;
+}
+
+em,
+i {
+    font-style: italic;
+}
+
+p {
+    margin: 0;
+    color: $black;
+    line-height: 1.6;
+    font-weight: $normal;
+
+    @include fluid("font-size", 16, 18);
+
+    @include large {
+        font-size: 18px;
+    }
+
+
+    &.subtitle {
+        margin-bottom: 3rem;
+    }
+
+    &.copyright {
+        position: absolute;
+        bottom: 70px;
+        left: -50px;
+        display: block;
+        color: lighten($cod-gray, 60%);
+        font-size: 1.2rem;
+        line-height: 5rem;
+        opacity: 0.5;
+        transform: rotate(-90deg);
+
+        &.dark {
+            color: $black;
+            opacity: 0.25;
+        }
+
+        @include medium {
+            position: relative;
+            bottom: auto;
+            left: auto;
+            color: $black;
+            text-align: center;
+            opacity: 1;
+            transform: none;
+        }
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 1.5rem 0;
+    color: $white;
+    line-height: 1;
+    font-weight: $bold;
+
+    a {
+        color: inherit;
+        text-decoration: none;
+    }
+
+    small {
+        display: block;
+        color: rgba($white, 0.7);
+        font-size: 1.6rem;
+        font-style: italic;
+        margin-top: .8rem;
+        text-transform: none;
+    }
+}
+
+h1 {
+    color: $white;
+    line-height: 1.35;
+    font-weight: $bold;
+
+    @include fluid("font-size", 35, 70);
+
+    @include large {
+        font-size: 70px;
+    }
+
+
+    @include landscape-phone {
+        font-size: 40px;
+    }
+
+
+    span {
+        color: $Tulip_Tree;
+        white-space: nowrap;
+
+        @include phone {
+            display: block;
+        }
+    }
+}
+
+h2 {
+    @include fluid("font-size", 35, 70);
+
+    @include large {
+        font-size: 65px;
+    }
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+h4 {
+    color: $Tulip_Tree;
+    font-size: 1.8rem;
+    margin-bottom: .5rem;
+    text-transform: uppercase;
+}
+
+h5 {
+    font-size: 1.6rem;
+}
+
+h6 {
+    font-size: 1.5rem;
+}
+
+sub {
+    position: relative;
+    top: .5em;
+    font-size: .8em;
+}
+
+sup {
+    position: relative;
+    top: -.5em;
+    font-size: .8em;
+}
+
+.clear {
+    clear: both;
+}
+
+.display-none {
+    display: none !important;
+}
+
+.align-left {
+    text-align: left;
+}
+
+.align-center {
+    text-align: center;
+}
+
+.align-right {
+    text-align: right;
+}
+
+.no-margin-bottom {
+    margin-bottom: 0;
+}
+
+.opacity-0,
+.before-loading {
+    opacity: 0 !important;
+    visibility: hidden !important;
+}
+
+.opacity-03 {
+    opacity: .3 !important;
+}
+
+.opacity-1 {
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+.index-999 {
+    z-index: -999 !important;
+}
+
+.row-no-margin {
+    margin: 0;
+}
+
+.no-padding {
+    padding: 0;
+}
+
+.ask-to-scroll {
+    position: relative;
+    top: 0;
+    left: 8px;
+    display: inline-block;
+    width: 16px;
+    height: 20px;
+    text-align: left;
+    vertical-align: middle;
+
+    .arrow {
+        position: absolute;
+        width: 9px;
+        height: 5px;
+
+        span {
+            position: absolute;
+            width: 7px;
+            height: 2px;
+            background: $white;
+            transition: all $fast-transition ease-in-out;
+
+            &:nth-child(1) {
+                transform: rotate(45deg);
+            }
+
+            &:nth-child(2) {
+                left: 4px;
+                transform: rotate(-45deg);
+            }
+        }
+
+        &:nth-child(1) {
+            top: 0;
+            opacity: 0;
+            animation: chevron1 0.95s infinite cubic-bezier(0.5, -0.8, 0.5, 1.8);
+        }
+
+        &:nth-child(2) {
+            top: 7px;
+            animation: chevron2 0.95s infinite cubic-bezier(0.47, 0, 0.745, 0.715);
+        }
+
+        &:nth-child(3) {
+            top: 12px;
+            animation: chevron3 0.95s infinite cubic-bezier(0.47, 0, 0.745, 0.715);
+        }
+    }
+}
+
+@keyframes chevron1 {
+    0%,
+    10% {
+        opacity: 0;
+        transform: translateY(0);
+    }
+
+    100%,
+    58% {
+        opacity: 1;
+        transform: translateY(7px);
+    }
+}
+
+@keyframes chevron2 {
+    0%,
+    5% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    100%,
+    37% {
+        opacity: 1;
+        transform: translateY(5px);
+    }
+}
+
+@keyframes chevron3 {
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    100%,
+    32% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+}
+
+/* SPECIFIC OVERLAY TO APPLY OVER THE VARIANT YOU'RE USING (if needed) */
+.custom-overlay {
+    position: absolute;
+    content: '';
+    z-index: -20;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: $black;
+    opacity: 0.5;
+    backface-visibility: hidden;
+
+    &.light {
+        opacity: 0.2;
+    }
+}
+
+/* ------------------------------------- */
+/* 3. NAV .............................. */
+/* ------------------------------------- */
+
+.navbar {
+    position: fixed;
+    z-index: 200;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    margin: 0 auto;
+    padding-left: 35px;
+    padding-right: 20px;
+
+    @include fluid("padding-top", 10, 30);
+    @include fluid("padding-bottom", 10, 0);
+
+    @include large {
+        padding-top: 30px;
+        padding-bottom: 0;
+    }
+
+
+    .navbar-toggler {
+        padding: 15px;
+        border: none;
+        background: transparent;
+        color: $Tulip_Tree;
+        font-size: 1.2em;
+        border-radius: 0;
+
+        .navbar-toggler-icon {
+            height: auto;
+            background: none;
+
+            .menu-icon-bar {
+                display: inline-block;
+                display: block;
+                width: 100%;
+                height: 2px;
+                transition: all 0.3s;
+                background-color: $white;
+                border-radius: 0;
+                margin-bottom: 6px;
+                backface-visibility: hidden;
+                transform-style: preserve-3d;
+                perspective: 1000;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+
+                &:nth-child(2) {
+                    transition: all 0.2s;
+                }
+            }
+
+            &.opened-close {
+                .menu-icon-bar {
+                    &:first-child {
+                        transform: translateY(8px) rotate(-45deg);
+                    }
+
+                    &:nth-child(2) {
+                        background-color: transparent;
+                    }
+
+                    &:last-child {
+                        transform: translateY(-8px) rotate(45deg);
+                    }
+                }
+            }
+
+            &.opened-expanded {
+                .menu-icon-bar {
+                    &:first-child {
+                        transform: translateY(-4px);
+                    }
+
+                    &:last-child {
+                        transform: translateY(4px);
+                    }
+                }
+            }
+        }
+    }
+
+    .in-nav {
+        position: relative;
+        display: flex;
+        width: 100%;
+        margin: 0 auto;
+        max-width: 1860px;
+        justify-content: space-between;
+        align-items: center;
+
+        .brand-logo {
+            position: relative;
+            padding: 0;
+            line-height: initial;
+            transition: all 1.5s cubic-bezier(0.19, 1, 0.22, 1);
+            max-width: 130px;
+            margin-right: 0;
+
+            img {
+                display: block;
+            }
+        }
+
+        @include small {
+            .navbar-collapse {
+                position: absolute;
+                z-index: -1;
+                left: -35px;
+                display: flex;
+                overflow: hidden;
+                width: 100vw;
+                height: 100vh;
+                background: $black;
+                transition: none;
+                transition: opacity 0.2s ease-in-out;
+
+                &:not(.show) {
+                    display: flex;
+                    height: 0;
+                    opacity: 0;
+                }
+
+                &.collapsing {
+                    height: 100vh;
+                }
+
+                @include fluid("top", -10, -30);
+            }
+
+            .navbar-nav {
+                width: 100%;
+                text-align: left;
+                padding-left: 35px;
+
+                li {
+                    margin: 0 0 0 0;
+                    text-align: left;
+
+                    a {
+                        padding: 1rem .5rem;
+                        font-size: 20px;
+
+                        &:after {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    ul.navbar-nav {
+        padding: 0;
+        margin: 0;
+
+        li {
+            display: inline;
+
+            a {
+                &.trigger {
+                    color: $Tulip_Tree;
+                }
+
+                &:after {
+                    position: absolute;
+                    content: '';
+                    right: 0;
+                    bottom: 0px;
+                    left: calc(50% - 2.5px);
+                    width: 5px;
+                    height: 5px;
+                    background: currentcolor;
+                    opacity: 0;
+                    transform: translateY(15px);
+                    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+                    border-radius: 5px;
+                }
+            }
+
+            &.active,
+            &:hover {
+                a {
+                    color: $Tulip_Tree;
+
+                    &:after {
+                        opacity: 1;
+                        transform: translateY(5px);
+                    }
+                }
+            }
+        }
+
+        &.on-right {
+            text-align: right;
+
+            li {
+                display: inline;
+            }
+        }
+
+        li {
+            position: relative;
+            display: block;
+            margin: 0 2rem;
+            text-align: center;
+            transition: all $slow-transition cubic-bezier(0, 0, 0.58, 1);
+
+            a {
+                position: relative;
+                display: inline-block;
+                width: auto;
+                padding: 0 .5rem;
+                color: rgba($white, 1);
+                font-size: 16px;
+                text-align: center;
+                transition: all $slow-transition cubic-bezier(0, 0, 0.58, 1);
+                letter-spacing: 0;
+                -webkit-backface-visibility: hidden;
+
+                &:hover {
+                    color: $Tulip_Tree;
+                }
+
+                i {
+                    position: relative;
+                    top: 0;
+                    left: 0;
+                }
+            }
+        }
+
+        &.next_home {
+            li {
+                a, button {
+                    color: $black;
+                }
+
+                button {
+                    background: rgba($black, 0.05);
+
+                    &:hover {
+                        color: $Tulip_Tree;
+                        background: rgba($black, 1);
+                    }
+                }
+
+                &.active,
+                &:hover {
+                    a {
+                        color: $Tulip_Tree;
+                    }
+                }
+            }
+        }
+    }
+
+    &.next_home {
+        @include medium {
+            background: $white;
+            border-bottom: 1px solid darken($Alabaster, 5%);
+
+            .navbar-collapse {
+                background: $white;
+            }
+        }
+
+
+        @include landscape-tablet {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+
+        @include vertical {
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+
+
+        @include landscape-phone {
+            padding-top: 10px;
+            padding-bottom: 5px;
+        }
+
+
+        .navbar-toggler {
+            background: transparent;
+
+            .navbar-toggler-icon {
+                .menu-icon-bar {
+                    background: $black;
+                }
+            }
+        }
+    }
+}
+
+/* ------------------------------------- */
+/* 4. FULLPAGE ......................... */
+/* ------------------------------------- */
+
+#fullpage {
+    left: 0;
+    width: 100%;
+
+    &.fullpage-present {
+        z-index: 20;
+        left: 0;
+    }
+
+    p {
+        font-weight: $normal;
+
+        &.on-home {
+            margin: 0;
+            color: $gallery;
+            font-weight: $normal;
+        }
+    }
+
+    .home_info {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 1050px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .section {
+        overflow: hidden;
+        width: 100vw;
+        background: transparent;
+        transition: all $slow-transition ease-in-out;
+
+        @include landscape-phone {
+            padding: 100px 0 !important;
+        }
+
+
+        &.fp-table {
+            left: 0;
+            display: table;
+            overflow: visible;
+            width: 100%;
+            opacity: 0;
+            table-layout: fixed;
+        }
+
+        &#section0 {
+            @include medium {
+                min-height: 100vh;
+            }
+        }
+
+        &:not(#section0) {
+            padding: 0 15px;
+            background: $white;
+
+            @include vertical {
+                padding-left: 50px;
+                padding-right: 50px;
+            }
+
+
+            @include medium {
+                padding-top: 100px;
+            }
+
+
+            @include small {
+                padding-left: 30px;
+                padding-right: 30px;
+            }
+
+
+            @include tablet {
+                padding-top: 50px;
+                padding-bottom: 50px;
+            }
+
+
+            @include landscape-tablet {
+                padding-top: 100px;
+                padding-bottom: 0;
+            }
+
+
+            @include landscape-phone {
+                padding: 100px 0 0 !important;
+            }
+
+
+            @include phone {
+                padding: 50px 15px 0;
+            }
+
+
+            &.no_back {
+                background: transparent;
+
+                &:after {
+                    position: absolute;
+                    content: '';
+                    z-index: -1;
+                    top: -10px;
+
+                    /* Used to remove thin line at top of the section on different browsers */
+                    right: 0;
+                    display: block;
+                    width: 55vw;
+                    height: calc(100% + 20px);
+                    background: $white;
+
+                    @include notebook {
+                        width: 70vw;
+                    }
+
+
+                    @include medium {
+                        width: 100vw;
+                    }
+                }
+            }
+
+            .container-inside {
+                padding: 0;
+            }
+
+            .main-content {
+                padding-right: 0;
+
+                h1, h2, h3, h4, h5, h6, p {
+                    color: $black;
+                    flex: auto;
+                    align-self: flex-start;
+
+                    @include fluid("margin-bottom", 25, 0);
+
+                    @include large {
+                        margin-bottom: 0;
+                    }
+                }
+
+                a {
+                    color: $Tulip_Tree;
+
+                    &:hover {
+                        color: darken($Tulip_Tree, 10%);
+                    }
+                }
+
+                .contact_block {
+                    display: flex;
+                    height: 70vh;
+                    justify-content: space-between;
+                    flex-direction: column;
+                    padding-left: 0;
+                    flex: 0 0 66.666667%;
+                    max-width: 66.666667%;
+                    margin-left: 50%;
+                    max-height: 810px;
+
+                    @include large {
+                        padding-left: 100px;
+                    }
+
+
+                    @include notebook {
+                        padding-left: 50px;
+                        margin-left: 30%;
+                    }
+
+
+                    @include medium {
+                        height: auto;
+                        flex: 0 0 100%;
+                        max-width: 100%;
+                        margin-left: 0;
+                        padding-bottom: 100px;
+                        max-height: none;
+                    }
+
+
+                    @include landscape-tablet {
+                        padding-left: 0;
+                        max-width: 60vw;
+                        padding-bottom: 50px;
+                    }
+
+
+                    @include small {
+                        padding-left: 0;
+                    }
+
+
+                    @include vertical {
+                        padding-left: 0;
+                        max-width: none;
+                    }
+
+
+                    @include tablet {
+                        max-width: 100%;
+                        min-height: 0;
+                        padding-bottom: 0;
+                    }
+
+
+                    h2 {
+                        margin-bottom: 10px;
+                    }
+
+                    .location {
+                        h4 {
+                            @include fluid("margin-bottom", 0, 20);
+
+                            @include large {
+                                margin-bottom: 20px;
+                            }
+                        }
+
+                        .contact-address {
+                            @include fluid("margin-bottom", 50, 0);
+
+                            @include large {
+                                margin-bottom: 0;
+                            }
+                        }
+                    }
+
+                    #contact-form {
+                        flex: auto;
+
+                        @include medium {
+                            margin-bottom: 100px;
+                        }
+
+
+                        @include tablet {
+                            margin-bottom: 50px;
+                        }
+                    }
+
+                    .bottom_text {
+                        margin-top: 10px;
+                        flex: none;
+                    }
+                }
+
+                .flex_element {
+                    display: flex;
+                    justify-content: space-between;
+                    flex-direction: column;
+
+                    .bottom_text {
+                        margin-top: auto;
+                        flex: none;
+                    }
+
+                    .flex_space {
+                        margin-bottom: 30px;
+                    }
+
+                    &.list_on_right {
+                        @include small {
+                            flex-direction: row;
+                            flex-wrap: wrap;
+                        }
+                    }
+
+                    .top_block {
+                        @include fluid("margin-top", 20, 0);
+
+                        @include large {
+                            margin-top: 0;
+                        }
+
+
+                        @include small {
+                            margin-top: 50px;
+                            margin-bottom: 50px;
+                        }
+
+
+                        @include tablet {
+                            margin-top: 50px;
+                            margin-bottom: 0;
+                        }
+
+
+                        flex: auto;
+
+                        h1, h2, h3, h4, h5, h6, p {
+                            flex: none;
+                        }
+
+                        h3 {
+                            margin-bottom: 10px;
+                        }
+
+                        p {
+                            @include fluid("margin-bottom", 10, 0);
+
+                            @include large {
+                                margin-bottom: 0;
+                            }
+                        }
+
+                        i {
+                            display: block;
+                            font-size: 35px;
+                            font-weight: 100;
+                            margin-bottom: 10px;
+                        }
+
+                        @include small {
+                            flex: 0 0 33.33333%;
+                            max-width: 33.33333%;
+                        }
+
+
+                        @include tablet {
+                            flex: 0 0 100%;
+                            max-width: 100%;
+                        }
+                    }
+
+                    &.on_right {
+                        text-align: right;
+                    }
+
+                    #demo {
+                        max-height: 50vh;
+
+                        .carousel-inner {
+                            overflow: visible;
+
+                            .carousel-item {
+                                display: block;
+                                opacity: 1;
+                                float: left;
+                            }
+                        }
+                    }
+
+                    .slick-prev, .slick-next {
+                        position: relative;
+                        top: auto;
+                        top: 8px;
+                        display: inline-block;
+                        width: 30px;
+                        height: 30px;
+                        transform: none;
+
+                        &:before {
+                            color: $black;
+                            opacity: 0.25;
+                            transition: all $fast-transition ease-in-out;
+
+                            @include small {
+                                opacity: 1 !important;
+                            }
+                        }
+
+                        &:hover {
+                            &:before {
+                                opacity: 1;
+                            }
+                        }
+                    }
+
+                    .slick-prev {
+                        left: 0;
+                        margin-right: 150px;
+
+                        @include tablet {
+                            margin-right: 50px;
+                        }
+                    }
+
+                    .slick-next {
+                        right: auto;
+                        margin-left: 150px;
+
+                        @include tablet {
+                            margin-left: 50px;
+                        }
+                    }
+
+                    .slick-list {
+                        overflow: visible;
+                    }
+
+                    .slick-dots {
+                        bottom: -35px;
+                        left: -10px;
+                        text-align: left;
+
+                        li {
+                            button {
+                                width: 30px;
+                                height: 30px;
+
+                                &:before {
+                                    top: 5px;
+                                    left: 0;
+                                    width: 30px;
+                                    height: 30px;
+                                    transition: all $fast-transition ease-in-out;
+                                }
+                            }
+                        }
+
+                        @include medium {
+                            left: 50%;
+                            text-align: center;
+                            transform: translateX(-50%);
+                        }
+
+
+                        @include phone {
+                            bottom: -40px;
+                        }
+                    }
+
+                    .slick-slider {
+                        width: 0;
+                        min-width: 100%;
+                        margin-bottom: 40px;
+
+                        @include phone {
+                            left: -30px;
+                            min-width: 100vw;
+                        }
+                    }
+
+                    @keyframes zoomy {
+                        0% {
+                            transform: scale(1);
+                        }
+
+                        100% {
+                            transform: scale(1.2);
+                        }
+                    }
+
+                    .slick-slide {
+                        max-width: 100vw;
+
+                        &:nth-child(1) {
+                            img {
+                                animation-delay: 1s;
+                            }
+                        }
+
+                        &:nth-child(2) {
+                            img {
+                                animation-delay: 2s;
+                            }
+                        }
+
+                        &:nth-child(3) {
+                            img {
+                                animation-delay: 3s;
+                            }
+                        }
+
+                        &:nth-child(4) {
+                            img {
+                                animation-delay: 4s;
+                            }
+                        }
+
+                        &:nth-child(5) {
+                            img {
+                                animation-delay: 5s;
+                            }
+                        }
+
+                        img {
+                            height: 50vh;
+                            transition: all 0.6s ease-in-out;
+                            animation: zoomy 10s ease-in-out infinite alternate;
+
+                            @include phone {
+                                animation: none;
+                            }
+
+
+                            @include landscape-phone {
+                                height: 80vh;
+                            }
+                        }
+
+                        figure {
+                            position: relative;
+                            display: flex !important;
+                            overflow: hidden;
+                            background: $black;
+                            align-items: center;
+                            justify-content: center;
+
+                            @include phone {
+                                height: 50vh;
+                            }
+                        }
+
+                        figcaption {
+                            position: absolute;
+                            z-index: 9999;
+                            bottom: 35px;
+                            left: 0;
+                            width: 100%;
+                            color: rgba($white, 0.5);
+                            font-size: 16px;
+                            text-align: center;
+                            transition: all 0.6s ease-in-out;
+                            text-transform: uppercase;
+                            letter-spacing: 2px;
+
+                            @include phone {
+                                bottom: 0;
+                                padding: 10px;
+                                background: rgba($black, 0.75);
+                                color: $white;
+                            }
+                        }
+
+                        &:hover {
+                            img {
+                                opacity: 0.5;
+                            }
+
+                            figcaption {
+                                color: $white;
+                            }
+                        }
+
+                        @include phone {
+                            width: 100vw;
+                            height: 50vh;
+
+                            img {
+                                height: auto;
+                                margin: 0 auto;
+                                max-width: 100vw;
+                                max-height: 50vh;
+                            }
+                        }
+                    }
+                }
+
+                .flex_element_img {
+                    display: flex;
+                    align-items: flex-end;
+                    flex-direction: column;
+
+                    img {
+                        max-height: 70vh;
+
+                        @include small {
+                            max-height: none;
+                            margin-top: 25px;
+                        }
+                    }
+                }
+
+                .carousel_block {
+                    ol {
+                        position: absolute;
+                        top: auto;
+                        right: auto;
+                        bottom: 0;
+                        left: -30px;
+                        width: 10px;
+                        height: 0;
+                        margin: auto;
+                        transform: rotate(90deg);
+                        justify-content: flex-end;
+
+                        @include small {
+                            bottom: -25px;
+                            left: 0;
+                            width: 100%;
+                            transform: none;
+                        }
+
+
+                        li {
+                            position: relative;
+                            display: inline-block;
+                            width: 6px;
+                            height: 6px;
+                            padding: 0;
+                            border: none;
+                            margin: 0 15px;
+                            color: black;
+                            cursor: pointer;
+                            border-radius: 6px;
+                            text-indent: 0;
+                            opacity: 1;
+
+                            &:before {
+                                position: absolute;
+                                content: "•";
+                                top: 0;
+                                left: -10px;
+                                width: 20px;
+                                height: 20px;
+                                color: black;
+                                font-family: 'slick';
+                                font-size: 6px;
+                                line-height: 20px;
+                                text-align: center;
+                                opacity: 0.25;
+                                -webkit-font-smoothing: antialiased;
+                                -moz-osx-font-smoothing: grayscale;
+                                transition: all $fast-transition ease-in-out;
+                            }
+
+                            &:hover, &.active {
+                                background: transparent;
+
+                                &:before {
+                                    opacity: 1;
+                                }
+                            }
+                        }
+                    }
+
+                    .carousel, .carousel-inner, .carousel-item {
+                        width: 100%;
+                        height: 100%;
+                        min-height: 400px;
+                        background-position: center center;
+                        background-size: cover;
+                    }
+
+                    .carousel {
+                        .carousel-inner {
+                            .carousel-item {
+                                &.carousel-item-next {
+                                    transform: translate3d(0, 100%, 0);
+                                }
+
+                                img {
+                                    display: block;
+                                    margin: 0 auto;
+                                    max-height: 70vh;
+
+                                    @include vertical {
+                                        max-height: none;
+                                    }
+
+
+                                    @include small {
+                                        max-height: none;
+                                    }
+                                }
+
+                                &.active {
+                                    &.carousel-item-right {
+                                        transform: translate3d(0, 100%, 0);
+                                    }
+                                }
+
+                                &.carousel-item-prev {
+                                    transform: translate3d(0, -100%, 0);
+                                }
+
+                                &.active {
+                                    &.carousel-item-left {
+                                        transform: translate3d(0, -100%, 0);
+                                    }
+                                }
+
+                                &.next {
+                                    &.carousel-item-left {
+                                        transform: translate3d(0, 0, 0);
+                                    }
+                                }
+
+                                &.active {
+                                    transform: translate3d(0, 0, 0);
+                                }
+
+                                &.carousel-item-prev {
+                                    &.carousel-item-right {
+                                        transform: translate3d(0, 0, 0);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .flex_horizontal {
+                    display: flex;
+                    justify-content: space-between;
+                    flex-direction: row;
+                    max-height: 50vh;
+                }
+            }
+        }
+
+        &.active {
+            visibility: visible;
+        }
+
+        .fp-tableCell {
+            padding: 0;
+        }
+
+        .content-inside-section {
+            position: relative;
+            z-index: 999;
+            left: 0;
+            display: flex;
+            width: 100%;
+            height: 100%;
+            justify-content: center;
+            align-items: center;
+
+            .background-left {
+                position: absolute;
+                top: 0;
+                left: -15px;
+                width: 45vw;
+                height: 100vh;
+                background: url("../img/contact.jpg") center center;
+                background-size: cover;
+
+                @include notebook {
+                    width: 30vw;
+                }
+
+
+                @include medium {
+                    display: none;
+                }
+            }
+
+            .container-inside {
+                position: relative;
+                width: 100%;
+                height: auto;
+                margin: 0 auto;
+                text-align: left;
+
+                .main-content {
+                    &.in_home_part {
+                        @include fluid("padding-left", 15, 200);
+                        @include fluid("padding-right", 15, 200);
+
+                        display: flex;
+                        height: auto;
+                        min-height: 90vh;
+                        align-items: center;
+                        justify-content: start;
+                        max-width: 1860px;
+
+                        @include desktop {
+                            margin: 0 auto;
+                            padding-left: 165px;
+                            padding-right: 200px;
+                        }
+
+
+                        @include landscape-phone {
+                            padding-left: 50px;
+                            padding-right: 50px;
+                            min-height: 70vh;
+                        }
+                    }
+
+                    a {
+                        font-weight: $bold;
+                    }
+
+                    .alert {
+                        position: absolute;
+                        z-index: 100;
+                        top: 0;
+                        right: 0;
+                    }
+
+                    .parsley-errors-list {
+                        position: absolute;
+                        top: 1px;
+                        right: 105%;
+                        white-space: nowrap;
+
+                        li {
+                            padding: 15px 20px;
+                            border: 1px solid rgba($black, 0.15);
+                            background: $white;
+                            color: $black;
+                            border-radius: 35px;
+                        }
+
+                        &.filled {
+                            &:before {
+                                color: $black !important;
+                            }
+
+                            &:hover {
+                                li {
+                                    color: rgba($black, 0.2) !important;
+                                }
+                            }
+                        }
+
+                        @include medium {
+                            position: relative;
+                            right: auto;
+                            left: 0;
+
+                            li {
+                                padding: 0;
+                                border: none;
+                                border-radius: 0;
+                            }
+                        }
+                    }
+
+                    .form-group {
+                        position: relative;
+                        margin-bottom: 2rem;
+                    }
+
+                    #contact-form {
+                        ::placeholder {
+                            color: rgba($black, 0.15) !important;
+                            font-weight: $bold;
+                            text-transform: uppercase;
+                        }
+
+                        .sub_validated, .sub_error {
+                            width: 100%;
+                            color: $white;
+                            text-align: left !important;
+                            opacity: 0;
+                            transition: all $fast-transition ease-in-out;
+                            border-radius: 8px;
+                            margin-top: 50px;
+
+                            i {
+                                color: $Tulip_Tree;
+                                font-size: 100px;
+                            }
+
+                            h4 {
+                                font-size: 30px;
+                                line-height: 1.4;
+                                margin-top: 20px;
+                                margin-left: 10px;
+                            }
+
+                            p {
+                                margin-top: 10px;
+                                margin-left: 10px;
+                            }
+                        }
+
+                        .form-control {
+                            display: block;
+                            height: auto;
+                            padding: 1.5rem 0 1.5rem 0;
+                            border: none;
+                            margin: 0 25px 50px;
+                            margin: 0;
+                            background: transparent;
+                            color: $white;
+                            color: $black;
+                            font-size: 1.4rem;
+                            font-size: 2rem;
+                            line-height: 1.4;
+                            text-align: left;
+                            transition: all $fast-transition ease-in-out;
+                            font-weight: $bold;
+                            margin-bottom: 0;
+                            border-bottom: 1px solid rgba($black, 0.05);
+                            border-radius: 0;
+                            outline: medium none;
+                            box-shadow: none;
+                            flex: auto;
+                            font-weight: bold;
+                            flex: auto;
+                            min-width: 300px;
+                            max-width: 100%;
+                            align-self: center;
+
+                            &:-internal-autofill-selected, &:-webkit-autofill {
+                                background-color: $white !important;
+                                -webkit-box-shadow: 0 0 0 1000px white inset !important;
+                            }
+
+                            @include medium {
+                                min-width: 0;
+                            }
+
+
+                            &:hover,
+                            &:focus {
+                                background-color: $white !important;
+                                box-shadow: none;
+                                border-bottom: 1px solid rgba($black, 0.25);
+                            }
+                        }
+
+                        textarea.form-control {
+                            min-height: 12rem;
+                            resize: none;
+                        }
+
+                        span.sub-text {
+                            position: absolute;
+                            right: 1.5rem;
+                            bottom: 0;
+                            color: $regent-gray;
+                            font-size: 1.1rem;
+                        }
+
+                        button#valid-form {
+                            margin: 15px 0 0 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ------------------------------------- */
+/* 5. FULLPAGE NAV ..................... */
+/* ------------------------------------- */
+
+/* This navigation is hidden by default, you can activate it by setting: navigation: true, line 110 in jquery.fullPage.js file */
+#fp-nav {
+    position: fixed;
+    z-index: 1200;
+    top: 25vh;
+    display: table !important;
+    height: 50vh;
+    padding: 0 1rem;
+    background: transparent;
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+    transition: all 1.5s cubic-bezier(0.19, 1, 0.22, 1);
+    margin-top: 0 !important;
+
+    &.notransition {
+        transition: none;
+    }
+
+    &.transition-desktop-mobile {
+        transition: all $slow-transition ease-in-out !important;
+    }
+
+    &.nav-position {
+        right: 0;
+    }
+
+    ul {
+        display: table-cell;
+        padding: 0;
+        margin: 0;
+        vertical-align: middle;
+
+        li {
+            position: relative;
+            display: block;
+            width: 3rem;
+            height: 2.5rem;
+
+            a {
+                position: relative;
+                z-index: 1;
+                display: block;
+                width: 100%;
+                height: 100%;
+                cursor: pointer;
+                text-decoration: none;
+
+                &.active {
+                    span {
+                        background: $Tulip_Tree;
+                        opacity: 1;
+                    }
+                }
+
+                span {
+                    position: absolute;
+                    z-index: 1;
+                    top: calc(50% - 2px);
+                    left: calc(50% - 2px);
+                    display: block;
+                    width: 5px;
+                    height: 5px;
+                    background: $white;
+                    opacity: .3;
+                    transition: all $slow-transition ease-in-out;
+                    border-radius: 5px;
+                }
+            }
+
+            &:hover {
+                a {
+                    span {
+                        background: $Tulip_Tree;
+                        opacity: 1;
+                    }
+                }
+            }
+
+            .fp-tooltip {
+                position: absolute;
+                top: -1px;
+                right: 0;
+                display: block;
+                overflow: hidden;
+                padding: .3rem 1rem;
+                background: transparent;
+                color: $Tulip_Tree;
+                font-size: 1.2rem;
+                opacity: 0;
+                transition: all $fast-transition ease-in-out;
+                cursor: pointer;
+                max-width: 22rem;
+                white-space: nowrap;
+                text-transform: uppercase;
+                border-radius: 10rem;
+            }
+
+            &:hover {
+                .fp-tooltip {
+                    right: 3rem;
+                    opacity: 1;
+                }
+            }
+        }
+    }
+
+    &.next_home {
+        ul {
+            li {
+                a {
+                    span {
+                        background: $black;
+                    }
+
+                    &.active {
+                        span {
+                            background: $Tulip_Tree;
+                            opacity: 1;
+                        }
+                    }
+                }
+
+                &:hover {
+                    a {
+                        span {
+                            background: $Tulip_Tree;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &.fp-show-active a.active + .fp-tooltip {
+        animation: fade-tooltip 1.5s $smooth-transition cubic-bezier(0, 0, 0.58, 1);
+        animation-delay: .4s;
+        animation-iteration-count: 1;
+    }
+}
+
+@keyframes fade-tooltip {
+    0% {
+        opacity: 0;
+    }
+
+    10% {
+        top: -1px;
+        right: 3rem;
+        opacity: 1;
+    }
+
+    90% {
+        top: -1px;
+        right: 3rem;
+        opacity: 1;
+    }
+
+    100% {
+        right: 6rem;
+        opacity: 0;
+    }
+}
+
+/* ------------------------------------- */
+/* 6. FOOTER + ALERTS FORM ............. */
+/* ------------------------------------- */
+
+footer {
+    position: absolute;
+    z-index: 30;
+    right: 0;
+    bottom: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    margin: 30px auto 0;
+
+    @include fluid("padding-left", 0, 80);
+    @include fluid("padding-right", 0, 80);
+
+    @include large {
+        padding: 0 200px;
+    }
+
+
+    @include medium {
+        position: relative;
+        z-index: 0;
+        padding: 30px 30px 90px;
+        margin: 0;
+        background: $white;
+        border-top: 1px solid darken($Alabaster, 5%);
+
+        &.showing {
+            z-index: 90;
+        }
+    }
+
+
+    .footer-newsletter {
+        position: relative;
+        width: 100%;
+        padding: 25px 50px;
+        margin: 0 auto;
+        background: $white;
+        max-width: 1860px;
+
+        @include medium {
+            position: fixed;
+            z-index: -100;
+            top: 0;
+            left: 0;
+            display: block;
+            width: 100vw;
+            height: 0;
+            padding: 100px 30px;
+            background: $black;
+            opacity: 0;
+            transition: none;
+            transition: opacity 0.2s ease-in-out;
+
+            &.showing {
+                z-index: 90;
+                height: 100vh !important;
+            }
+
+            &.show_newsletter {
+                height: 100vh;
+                opacity: 1;
+            }
+        }
+
+
+        .news_validated, .news_error {
+            position: absolute;
+            z-index: 10;
+            bottom: -200%;
+            left: 0;
+            width: 100%;
+            padding: 25px 50px;
+            background: $white;
+            color: $black;
+            text-align: center;
+            opacity: 0;
+            transition: all $smooth-transition ease-in-out;
+
+            i {
+                color: $Tulip_Tree;
+                font-size: 100px;
+            }
+
+            h4 {
+                font-size: 30px;
+                line-height: 1.4;
+                margin-top: 20px;
+                margin-left: 10px;
+            }
+
+            p {
+                margin-top: 10px;
+                margin-left: 10px;
+            }
+
+            @include medium {
+                bottom: -100vh;
+                display: flex;
+                height: 100vh;
+                background: $black;
+                color: $white;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+
+                p {
+                    color: white;
+                }
+            }
+        }
+
+        #subscribe {
+            p {
+                font-weight: 400;
+            }
+
+            @include medium {
+                display: flex;
+                height: 100%;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: center;
+            }
+
+
+            #newsletter-form {
+                padding: 0;
+
+                @include medium {
+                    width: 100%;
+
+                    ::placeholder {
+                        white-space: pre-line;
+                    }
+                }
+
+
+                ::placeholder {
+                    color: lighten($regent-gray, 20%) !important;
+                    font-weight: $bold;
+                    text-transform: uppercase;
+                }
+
+                .form-group {
+                    margin-bottom: 0;
+
+                    .controls {
+                        display: flex;
+                        justify-content: space-between;
+
+                        h6 {
+                            display: block;
+                            margin: 0 25px 0 0;
+                            color: $black;
+                            font-size: 2rem;
+                            align-self: center;
+                            text-transform: uppercase;
+                        }
+
+                        @include medium {
+                            display: block;
+                            text-align: center;
+
+                            h6 {
+                                margin: 0;
+                                color: $white;
+                            }
+                        }
+                    }
+
+                    .fa {
+                        position: absolute;
+                        top: 15px;
+                        left: 15px;
+                        text-align: center;
+                    }
+
+                    .form-control {
+                        display: block;
+                        width: 40%;
+                        height: auto;
+                        padding: 1.5rem 2rem;
+                        border: none;
+                        margin: 0 25px;
+                        margin: 0;
+                        background: transparent;
+                        color: $white;
+                        color: $black;
+                        font-size: 1.4rem;
+                        font-size: 2rem;
+                        line-height: 1.4;
+                        text-align: left;
+                        transition: all $fast-transition ease-in-out;
+                        font-weight: $bold;
+                        margin-bottom: 0;
+                        border-bottom: 1px solid transparent;
+                        border-radius: 0;
+                        outline: medium none;
+                        box-shadow: none;
+                        flex: auto;
+                        font-weight: bold;
+                        flex: auto;
+                        min-width: 300px;
+                        max-width: 100%;
+                        align-self: center;
+
+                        &:-internal-autofill-selected, &:-webkit-autofill {
+                            background-color: $white !important;
+                            -webkit-box-shadow: 0 0 0 1000px white inset !important;
+                        }
+
+                        &:hover,
+                        &:focus {
+                            background: $Alabaster;
+                            box-shadow: none;
+                        }
+
+                        @include medium {
+                            width: 100%;
+                            padding: 2rem 0 5rem;
+                            color: $white;
+                            text-align: center;
+                            min-width: 0;
+                            min-height: 80px;
+
+                            &:hover,
+                            &:focus {
+                                background: transparent;
+                                box-shadow: none;
+                            }
+                        }
+                    }
+                }
+
+                .parsley-errors-list {
+                    position: absolute;
+                    bottom: calc(100% + 10px);
+                    left: 0;
+                    width: auto;
+                    white-space: nowrap;
+
+                    li {
+                        width: auto;
+                        padding: 15px 20px;
+                        border: 1px solid rgba($black, 0.15);
+                        background: $black;
+                        color: $white;
+                        border-radius: 35px;
+                    }
+
+                    &.filled {
+                        &:before {
+                            color: $white !important;
+                        }
+
+                        &:hover {
+                            li {
+                                color: rgba($white, 0.2) !important;
+                            }
+                        }
+                    }
+
+                    @include medium {
+                        position: fixed;
+                        bottom: 100px;
+                        left: 0;
+                        width: 100vw;
+                        white-space: normal;
+
+                        li {
+                            border: none;
+                            border-radius: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.parsley-errors-list {
+    li {
+        display: none;
+    }
+
+    &.filled {
+        li {
+            display: block;
+            transition: all $fast-transition ease-in-out;
+            cursor: pointer;
+        }
+
+        &:before {
+            position: absolute;
+            content: "\f057";
+            bottom: 20px;
+            left: 0;
+            width: 100%;
+            font-family: "Font Awesome 5 Free";
+            font-size: 18px;
+            line-height: 1;
+            text-align: center;
+            opacity: 0;
+            transition: all $fast-transition ease-in-out;
+            cursor: pointer;
+            text-transform: uppercase;
+
+            @include medium {
+                display: none;
+            }
+        }
+
+        &:hover {
+            &:before {
+                opacity: 1;
+            }
+        }
+    }
+}
+
+/* ------------------------------------- */
+/* 7. PHOTOS GALLERY ................... */
+/* ------------------------------------- */
+
+.featherlight-content {
+    .caption {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        padding: 15px 0 14px 20px;
+        background: linear-gradient(to left, rgba($black, 0), rgba($black, 0.8));
+        max-width: 90%;
+
+        &.video-set {
+            position: fixed;
+        }
+
+        .title-gallery {
+            color: $white;
+            margin-bottom: 5px;
+
+            @include fluid("font-size", 18, 24);
+
+            @include large {
+                font-size: 24px;
+            }
+        }
+
+        .text-gallery {
+            width: 100%;
+            color: $white;
+            max-width: 500px;
+        }
+
+        @include medium {
+            position: relative;
+        }
+
+
+        @include landscape-phone {
+            padding-left: 0;
+        }
+    }
+}
+
+.featherlight-iframe {
+    .featherlight-content {
+        .caption {
+            position: fixed;
+        }
+    }
+}
+
+.custom_loader {
+    position: fixed;
+    z-index: -10;
+    top: calc(50% - 10px);
+    left: 0;
+    display: block;
+    width: 100%;
+    font-size: 2rem;
+    text-align: center;
+    opacity: 0;
+    animation: infinite-spinning 2s linear infinite;
+}
+
+.featherlight-loading {
+    .featherlight-content {
+        .custom_loader {
+            opacity: 1;
+        }
+    }
+}
+
+.featherlight .featherlight-close-icon:hover, .featherlight-next:hover span,
+.featherlight-previous:hover span {
+    color: $Tulip_Tree;
+}
+
+@keyframes infinite-spinning {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* ------------------------------------- */
+/* V1. SLIDESHOW ....................... */
+/* ------------------------------------- */
+
+.slideshow {
+    position: fixed !important;
+    z-index: -10;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100% !important;
+    max-height: 100vh;
+}
+
+/* Used by default, set overlay on : true OR false in js/vegas.js OR js/vegas-video.js */
+.vegas-overlay {
+    background: rgba($black,0.5);
+
+    /* If you want to use a pattern, you can use the following CSS rule, all overlays available are in the css/overlays folder*/
+    /* background: transparent url("overlays/01.png") center center repeat; */
+}
+
+/* ------------------------------------- */
+/* V2. KEN BURNS ....................... */
+/* ------------------------------------- */
+
+$slide-distance: calc((4vw + 4vh + 4%)/3);
+
+$slide-distance-ms: 4%;
+
+$slide-distance-negative: calc((-4vw + -4vh + -4%)/3);
+
+$zoom-scale: 1.15;
+
+@keyframes right {
+    from {
+        -ms-transform: translateX(-$slide-distance-ms);
+        transform: translateX($slide-distance-negative) rotate(0.01deg);
+    }
+
+    to {
+        -ms-transform: translateX($slide-distance-ms);
+        transform: translateX($slide-distance) rotate(0.01deg);
+    }
+}
+
+@keyframes left {
+    from {
+        -ms-transform: translateX($slide-distance-ms);
+        transform: translateX($slide-distance) rotate(0.01deg);
+    }
+
+    to {
+        -ms-transform: translateX(-$slide-distance-ms);
+        transform: translateX($slide-distance-negative) rotate(0.01deg);
+    }
+}
+
+@keyframes down {
+    from {
+        -ms-transform: translateY(-$slide-distance-ms);
+        transform: translateY($slide-distance-negative) rotate(0.01deg);
+    }
+
+    to {
+        -ms-transform: translateY($slide-distance-ms);
+        transform: translateY($slide-distance) rotate(0.01deg);
+    }
+}
+
+@keyframes up {
+    from {
+        -ms-transform: translateY($slide-distance-ms);
+        transform: translateY($slide-distance) rotate(0.01deg);
+    }
+
+    to {
+        -ms-transform: translateY(-$slide-distance-ms);
+        transform: translateY($slide-distance-negative) rotate(0.01deg);
+    }
+}
+
+@keyframes out {
+    from {
+        transform: scale($zoom-scale);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
+@keyframes in {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale($zoom-scale);
+    }
+}
+
+#slides {
+    position: fixed;
+    left: -9999px;
+    width: 1px;
+    height: 1px;
+}
+
+#slideshow {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+
+    .slide, span, .static-content {
+        position: absolute;
+        z-index: -2;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        display: block;
+    }
+
+    .slide {
+        span {
+            background-size: cover;
+            background-position: center;
+        }
+
+        span.animate.right, span.animate.left {
+            right: $slide-distance-negative;
+            left: $slide-distance-negative;
+        }
+
+        span.animate.up, span.animate.down {
+            top: $slide-distance-negative;
+            bottom: $slide-distance-negative;
+        }
+    }
+
+    span.animate {
+        animation-fill-mode: forwards;
+        animation-timing-function: linear;
+    }
+
+    span.animate.right {
+        animation-name: right;
+    }
+
+    span.animate.left {
+        animation-name: left;
+    }
+
+    span.animate.up {
+        animation-name: up;
+    }
+
+    span.animate.down {
+        animation-name: down;
+    }
+
+    span.animate.in {
+        animation-name: in;
+    }
+
+    span.animate.out {
+        animation-name: out;
+    }
+
+    span.animate.paused {
+        animation-play-state: paused;
+    }
+}
+
+.kb-overlay {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    border: none;
+    margin: 0;
+    background: rgba($black,0.5);
+
+    /* If you want to use a pattern, you can use the following CSS rule, all overlays available are in the css/overlays folder*/
+    /* background: transparent url("overlays/01.png") center center repeat; */
+}
+
+/* ------------------------------------- */
+/* V3. YOUTUBE ......................... */
+/* ------------------------------------- */
+
+#video {
+    position: relative;
+    background: transparent;
+}
+
+.ytplayer-container {
+    position: absolute;
+    z-index: -2;
+    top: 0;
+}
+
+.video-overlay {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    border: none;
+    margin: 0;
+    background: rgba($black,0.5);
+
+    /* If you want to use a pattern, you can use the following CSS rule, all overlays available are in the css/overlays folder*/
+    background: transparent url("overlays/01.png") center center repeat;
+
+    .img_fallback {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: url("../img/home-slide-1.jpg") center center;
+        background-size: cover;
+    }
+}
+
+li.player_command {
+    button {
+        position: relative;
+        display: inline-block;
+        width: auto;
+        width: 50px;
+        height: 50px;
+        padding: 10px;
+        border: none;
+        background: rgba($white, 0.2);
+        color: rgba($white, 1);
+        font-size: 18px;
+        text-align: center;
+        transition: all $fast-transition ease-in-out;
+        letter-spacing: 0;
+        -webkit-backface-visibility: hidden;
+        margin-left: 10px;
+        border-radius: 5px;
+
+        &:first-child {
+            margin-left: 0;
+        }
+
+        &:hover {
+            background: rgba($white, 1);
+            color: $Tulip_Tree;
+        }
+
+        i {
+            position: relative;
+            top: 0;
+            left: 0;
+        }
+    }
+
+    @include medium {
+        display: none !important;
+    }
+}
+
+/* ------------------------------------- */
+/* V4. WAVES ........................... */
+/* ------------------------------------- */
+
+.waves {
+    position: fixed;
+    z-index: -10;
+    bottom: 15vh;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    margin-bottom: -7px;
+
+    /*Fix for safari gap*/
+    min-height: 100px;
+    max-height: 200px;
+}
+
+.under_waves {
+    position: fixed;
+    z-index: -10;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 15vh;
+    background: $Tulip_Tree;
+}
+
+.parallax > use {
+    animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+}
+
+.parallax > use:nth-child(1) {
+    animation-delay: -2s;
+    animation-duration: 7s;
+}
+
+.parallax > use:nth-child(2) {
+    animation-delay: -3s;
+    animation-duration: 10s;
+}
+
+.parallax > use:nth-child(3) {
+    animation-delay: -4s;
+    animation-duration: 13s;
+}
+
+.parallax > use:nth-child(4) {
+    animation-delay: -5s;
+    animation-duration: 20s;
+}
+
+@keyframes move-forever {
+    0% {
+        transform: translate3d(-90px, 0, 0);
+    }
+
+    100% {
+        transform: translate3d(85px, 0, 0);
+    }
+}
+
+@include tablet {
+    .waves {
+        height: 100px;
+    }
+}
+
+
+/* ------------------------------------- */
+/* V5. PARTICLES ....................... */
+/* ------------------------------------- */
+
+.part_cont {
+    position: fixed;
+    z-index: -10;
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    background-color: #000000;
+}
+
+/* ------------------------------------- */
+/* 11. Media Queries ................... */
+/* ------------------------------------- */
+
+/* Large Devices, Wide Screens */
+@include desktop {
+    /* EMPTY */
+}
+
+
+/* Notebook devices */
+@include notebook {
+    /* EMPTY */
+}
+
+
+/* Medium Devices */
+@include medium {
+    #fullpage {
+        height: auto !important;
+    }
+
+    #fullpage {
+        position: relative !important;
+        z-index: 10;
+        top: 0;
+        left: 0;
+        width: 100%;
+        transition: all $slow-transition ease-in-out !important;
+
+        .section {
+            height: auto !important;
+            padding: 0;
+            opacity: 1 !important;
+
+            .fp-tableCell {
+                height: auto !important;
+                vertical-align: baseline;
+            }
+
+            .content-inside-section {
+                height: auto;
+            }
+        }
+    }
+
+    #fp-nav {
+        z-index: -5;
+        top: 0;
+        right: auto;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: rgba($black, 0.8);
+        opacity: 1;
+        opacity: 0;
+
+        ul {
+            display: table-cell;
+            padding: 0;
+            margin: 0;
+            vertical-align: middle;
+
+            li {
+                position: relative;
+                display: block;
+                width: auto;
+                height: auto;
+                margin-bottom: 20px;
+
+                a {
+                    position: relative;
+                    z-index: 1;
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    cursor: pointer;
+                    text-decoration: none;
+
+                    span {
+                        display: none;
+                    }
+                }
+
+                .fp-tooltip {
+                    position: relative;
+                    top: 0;
+                    right: auto;
+                    left: 0;
+                    width: 100%;
+                    background: transparent;
+                    font-size: 1.7rem;
+                    text-align: center;
+                    opacity: 0;
+                    transform: translate3d(0, 50px, 0);
+                    transition: all 1.2s cubic-bezier(0.19, 1, 0.22, 1);
+                    max-width: none;
+                    text-transform: uppercase;
+                    border-radius: 0;
+
+                    &:hover {
+                        color: $Tulip_Tree;
+                    }
+                }
+
+                &.active {
+                    .fp-tooltip {
+                        color: $Tulip_Tree;
+                    }
+                }
+            }
+        }
+
+        &.menu-opened {
+            z-index: 1000;
+            opacity: 1;
+
+            ul {
+                li {
+                    .fp-tooltip {
+                        opacity: 1;
+                        transform: translate3d(0, 0, 0);
+                    }
+                }
+            }
+        }
+
+        &.fp-show-active a.active + .fp-tooltip {
+            color: $Tulip_Tree;
+        }
+    }
+
+    @keyframes fade-tooltip {
+        0%,
+        100% {
+            opacity: 1;
+        }
+    }
+
+    .featherlight {
+        &:last-of-type {
+            background: $black;
+        }
+    }
+}
+
+
+/* Small Devices, Tablets */
+@include tablet {
+    /* EMPTY */
+}
+
+
+/* Extra Small Devices, Phones */
+@include phone {
+    /* EMPTY */
+}
+
+
+/* Only for tablet in landscape mode */
+@include landscape-tablet {
+    /* EMPTY */
+}
+
+
+/* Only for phone in landscape mode */
+@include landscape-phone {
+    /* EMPTY */
+}
