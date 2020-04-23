@@ -1,5 +1,5 @@
 <?php
-    $to = 'myemail@email.com';
+    $to = 'liam@acordsoftware.tech';
     $subject = 'New subscriber';
 
     if(isset($_SERVER['HTTP_X_REQUESTED_WITH']) && $_SERVER['HTTP_X_REQUESTED_WITH']  == 'XMLHttpRequest') {
