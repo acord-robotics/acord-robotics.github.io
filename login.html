@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <!--  Last Published: Thu Apr 18 2019 19:53:35 GMT+0000 (UTC)  -->
-<html data-wf-page="5c16c3e88f69203174f817af" data-wf-site="5c16c3e88f69205300f817ae">
+<html data-wf-page="5c1707075ba956167fb6312b" data-wf-site="5c16c3e88f69205300f817ae">
 <head>
   <meta charset="utf-8">
-  <title>#3 - Login and Signup w/ a Slider</title>
+  <title>Login</title>
+  <meta content="Login" property="og:title">
   <meta content="width=device-width, initial-scale=1" name="viewport">
   <link href="css/normalize.css" rel="stylesheet" type="text/css">
   <link href="css/components.css" rel="stylesheet" type="text/css">
@@ -33,23 +34,17 @@
         </div>
         <div class="login-section">
           <div class="login-container w-form"><img src="images/Green-Freebie-Webclip.png" alt="" class="login-image">
-            <h1 class="login-head">Start your 14-day free trial</h1>
-            <div class="have-an-account-text">Already have an account? <a href="login.html" class="login-page-link">Login</a></div>
-            <form method="post" ms-signup="true" class="memberstack-form">
-              <div class="sign-up-field-wrapper">
-                <div class="field-wrapper first-name-wrapper"><label for="node" class="login-label">First name</label><input type="text" maxlength="256" required="" ms-field="first-name" class="login-field w-input">
-                  <div class="field-status"></div>
-                </div>
-                <div class="field-wrapper"><label class="login-label">Last name</label><input type="text" class="login-field w-input" maxlength="256" name="lastName" data-name="lastName" ms-field="last-name" id="lastName" required="">
-                  <div class="field-status"></div>
-                </div>
-              </div>
+            <h1 class="login-head">Welcome back!</h1>
+            <div class="have-an-account-text">New here? Click here to <a href="signup.html" class="login-page-link">create an account</a></div>
+            <form method="post" ms-login="true" class="memberstack-form">
+              <div data-w-id="ab7c6e3c-a8ef-4bc1-0ffc-62ae71f0ad29" class="memberstack-tag">
+                <div class="memberstack-tag-label">MemberStack Attribute<span class="memberstack-diamond"></span></div><img src="https://uploads-ssl.webflow.com/5bbfaf3252489b4c484ba9b9/5c1162df667366ba153d889c_bolt.svg" alt="" class="memberstack-bolt"></div>
               <div class="field-wrapper"><label for="node" class="login-label">Email address</label><input type="email" maxlength="256" required="" ms-field="email" class="login-field w-input">
                 <div class="field-status"></div>
               </div>
               <div class="field-wrapper"><label for="node-2" class="login-label">Password</label><input type="password" maxlength="256" required="" ms-field="password" class="login-field w-input">
                 <div class="field-status"></div>
-              </div><input type="submit" value="Start my free trial" data-wait="Please wait..." class="login-button w-button">
+              </div><a ms-forgot="true" href="#" class="forgot-password">Reset my password</a><input type="submit" value="Login" data-wait="Please wait..." class="login-button w-button">
               <div class="terms-text">By joining, you are agreeing to our <a href="#" class="login-page-link">Terms</a> and <a href="#" class="login-page-link">Privacy Policy</a></div>
             </form>
             <div class="w-form-done">
@@ -75,7 +70,7 @@ input:invalid + .field-status {
 </style>
     </div>
   </div>
-  <div data-w-id="4bafb697-8427-37e8-5f3e-e861ba63a9ea" class="ms-iframe">
+  <div class="ms-iframe">
     <div class="ms-iframe-embed w-embed w-iframe"><iframe src="https://memberstack-embeds.webflow.io/branding" class="iframe" sandbox="allow-same-origin"></iframe>
       <style>
 iframe {
