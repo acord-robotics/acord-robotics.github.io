@@ -44,6 +44,19 @@
     })(document, window, 'Chatra');
 </script>
 <!-- /Chatra {/literal} -->
+
+<script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+<script>
+  var OneSignal = window.OneSignal || [];
+  OneSignal.push(function() {
+    OneSignal.init({
+      appId: "1ff96b35-0938-402b-bfbb-44ae471d10f7",
+      notifyButton: {
+        enable: true,
+      },
+    });
+  });
+</script>
 	</head>
 
 	<body>
