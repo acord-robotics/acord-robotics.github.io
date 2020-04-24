@@ -3458,6 +3458,8 @@ li.player_command button i {
   #fp-nav.fp-show-active a.active + .fp-tooltip {
     color: #EAB543;
   }
+
+  
   @-webkit-keyframes fade-tooltip {
     0%,
     100% {
