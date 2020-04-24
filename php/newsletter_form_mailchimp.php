@@ -8,7 +8,7 @@
 $STORE_MODE = "mailchimp";
 
  MailChimp API Key findable in your Mailchimps dashboard
- $API_KEY =  "79dfd4cc7976b49b8b5e8d0923d57115-us20";
+ $API_KEY =  "aac91c2d0f449dc17cb85cf3ad3c3b6a-us20";
              
 // MailChimp List/Audience ID  findable in your Mailchimp's dashboard
  $LIST_ID =  "013ee71369";
