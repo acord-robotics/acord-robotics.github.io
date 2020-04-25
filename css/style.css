@@ -2072,6 +2072,16 @@ sup {
   background-size: cover;
 }
 
+#fullpage .section .content-inside-section .background-tribe {
+  position: absolute;
+  top: 0;
+  left: -15px;
+  width: 45vw;
+  height: 100vh;
+  background: url("../img/cool-background.png") center center;
+  background-size: cover;
+}
+
 #fullpage .section .content-inside-section .background-music {
   position: absolute;
   top: 0;
