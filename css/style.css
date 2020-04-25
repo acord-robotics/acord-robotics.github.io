@@ -2078,7 +2078,7 @@ sup {
   left: -15px;
   width: 45vw;
   height: 100vh;
-  background: url("../img/cool-background.png") center center;
+  background: url("../img/cool-background.png ") center center;
   background-size: cover;
 }
 
