@@ -238,6 +238,6 @@
 });
 
                               // Year/Month/Day Hour:Minute:Second
-$("#getting-started").countdown("2021/11/24 15:30:30", function(a) {
+$("#getting-started").countdown("2020/05/29 15:30:30", function(a) {
     $(this).html(a.strftime('%D days %H:%M:%S'));
 });

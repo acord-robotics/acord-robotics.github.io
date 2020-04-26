@@ -2123,8 +2123,10 @@ sup {
 }
 
 #fullpage .section .content-inside-section .container-inside .main-content.in_home_part {
-  padding-left: calc(11.9741100324vw + -29.9029126214px);
-  padding-right: calc(11.9741100324vw + -29.9029126214px);
+  /*padding-left: calc(11.9741100324vw + -29.9029126214px);
+  padding-right: calc(11.9741100324vw + -29.9029126214px);*/
+  padding-right: 80px
+  padding-left: 80px
   display: -webkit-box;
   display: flex;
   height: auto;
@@ -3941,4 +3943,14 @@ hr{
 /* Only for phone in landscape mode */
 @media screen and (max-device-height: 414px) and (max-device-width: 896px) {
   /* EMPTY */
+}
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "-50px";
+  }
+  prevScrollpos = currentScrollPos;
 }
