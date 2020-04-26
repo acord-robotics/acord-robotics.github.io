@@ -2123,10 +2123,8 @@ sup {
 }
 
 #fullpage .section .content-inside-section .container-inside .main-content.in_home_part {
-  /*padding-left: calc(11.9741100324vw + -29.9029126214px);
-  padding-right: calc(11.9741100324vw + -29.9029126214px);*/
-  padding-right: 80px
-  padding-left: 80px
+  padding-left: calc(11.9741100324vw + -29.9029126214px);
+  padding-right: calc(11.9741100324vw + -29.9029126214px);
   display: -webkit-box;
   display: flex;
   height: auto;
