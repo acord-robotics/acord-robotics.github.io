@@ -1,0 +1,152 @@
+/**
+ * Featherlight Gallery – an extension for the ultra slim jQuery lightbox
+ * Version 1.7.12 - http://noelboss.github.io/featherlight/
+ *
+ * Copyright 2017, Noël Raoul Bossart (http://www.noelboss.com)
+ * MIT Licensed.
+**/
+
+.featherlight-next,
+.featherlight-previous {
+	display: block;
+	position: fixed;
+	z-index: 99999;
+	right: 0;
+	top: calc(50% - 15px);
+	cursor: pointer;
+	padding: 0 15px;
+	/* preventing text selection */
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	/* IE9 hack, otherwise navigation doesn't appear */
+	background: rgba(0,0,0,0);
+}
+
+.featherlight-previous {
+	left: 0;
+	right: auto;
+}
+
+
+
+@media (hover: none) {
+   .featherlight-next:hover,
+	.featherlight-previous:hover {
+		color: #FFFFFF;
+	}
+}
+
+
+.featherlight-next span,
+.featherlight-previous span {
+	/*display: none;*/
+	/*position: absolute;
+
+	top: 50%;
+	left: 5%;
+	width: 82%;*/
+
+	/* center horizontally */
+	/*text-align: center;*/
+
+	font-size: 4.5rem;
+	-webkit-transition: all 0.2s ease-in-out;
+  	transition: all 0.2s ease-in-out;
+	/*line-height: 80px;*/
+
+	/* center vertically */
+	/*margin-top: -40px;*/
+
+	/*text-shadow: 0px 0px 5px #fff;*/
+	color: #fff;
+	/*font-style: normal;
+	font-weight: normal;*/
+}
+.featherlight-next span {
+	/*right: 5%;
+	left: auto;*/
+}
+
+
+.featherlight-next:hover span,
+.featherlight-previous:hover span {
+	display: inline-block;
+}
+
+/*.featherlight-swipe-aware .featherlight-next,
+.featherlight-swipe-aware .featherlight-previous {
+	display: none;
+}*/
+
+/* Hide navigation while loading */
+.featherlight-loading .featherlight-previous, .featherlight-loading .featherlight-next {
+	display:none;
+}
+
+/* Hide navigation in case of single image */
+.featherlight-first-slide.featherlight-last-slide .featherlight-previous,
+.featherlight-first-slide.featherlight-last-slide .featherlight-next {
+	display:none;
+}
+
+
+/* Always display arrows on touch devices */
+/*@media only screen and (max-device-width: 1024px){
+	.featherlight-next:hover,
+	.featherlight-previous:hover {
+		background: none;
+	}
+	.featherlight-next span,
+	.featherlight-previous span {
+		display: block;
+	}
+}*/
+
+/* handling phones and small screens */
+@media only screen and (max-width: 1024px) {
+	.featherlight-next,
+	.featherlight-previous {
+		top: 0;
+		right: 0;
+		left: auto;
+		padding: 0;
+		background: #000;
+		color: #FFF;
+		width: 45%;
+		height: 40px;
+		line-height: 40px;
+		text-align: center;
+	}
+
+	.featherlight .featherlight-close-icon {
+		top: 0;
+		right: 45%;
+		padding: 0;
+		background: #000;
+		color: #FFF;
+		width: 10%;
+		height: 40px;
+		line-height: 40px;
+		text-align: center;
+		font-size: 3rem;
+	}
+
+	.featherlight-next span, .featherlight-previous span {
+		font-size: 3rem;
+	}
+
+	.featherlight-previous {
+		left: 0;
+		right: auto;
+	}
+
+	/*.featherlight-next span,
+	.featherlight-previous span {
+		margin-top: -30px;
+		font-size: 40px;
+	}*/
+}
