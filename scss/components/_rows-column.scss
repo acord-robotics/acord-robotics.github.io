@@ -1,0 +1,197 @@
+/*============================
+Row And Column 
+================================*/
+
+
+.vc_row-separator{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    z-index: 1;
+    line-height: 0;
+    &.tilt_right--bottom{
+        bottom: 0;
+        -webkit-transform: scaleX(-1);
+        -ms-transform: scaleX(-1);
+        transform: scaleX(-1);
+    }
+    &.tilt_right--top{
+        -webkit-transform: scaleY(-1);
+        -ms-transform: scaleY(-1);
+        transform: scaleY(-1);
+    }
+
+    &.tilt_style--bottom{
+        bottom: 0;
+        -webkit-transform: inherit;
+        -ms-transform: inherit;
+        transform: inherit;
+    }
+    &.tilt_style--top{
+        -webkit-transform: scale(-1);
+        -ms-transform: scale(-1);
+        transform: scale(-1);
+        top: 0;
+    }
+
+    &.triangle{
+        -webkit-transform: scaleY(-1);
+        -ms-transform: scaleY(-1);
+        transform: scaleY(-1);
+        svg{
+            height: 40px;
+            fill: #fff;
+            width: 100%;
+        }
+        &.triangle--top{
+            -webkit-transform: inherit;
+            -ms-transform: inherit;
+            transform: inherit;
+            svg{
+                height: 27px;
+                fill: #fff;
+                width: 100%;
+            }
+        }
+
+        &.bottom{
+            bottom: 0;
+        }
+        &.triangle-bg-gray{
+            -webkit-transform: inherit;
+            -ms-transform: inherit;
+            transform: inherit;
+            svg{
+                fill: #f7f7f7;
+                height: 27px;
+            }
+        }
+        &.top{
+            top: 0;
+        }
+
+    }
+
+    &.curve{
+        svg{
+            height: 50px;
+            fill: #69afed;
+            width: 100%; 
+        }
+        &.bottom{
+            bottom: 0;
+        }
+    }
+
+    &.clouds{
+        -webkit-transform: scale(-1);
+        -ms-transform: scale(-1);
+        transform: scale(-1);
+        svg{
+            height: 60px;
+            fill: #69afed;
+            width: 100%;
+        }
+        &.top{
+            top: 0;
+        }
+    }
+
+    &.waves{
+        svg{
+            height: 30px;
+            fill: #69afed;
+            width: 100%;
+        }
+        &.bottom{
+            bottom: 0;
+        }
+    }
+
+    &.circle{
+        svg{
+            fill: #69afed;
+            width: 100%;
+            height: 30px;
+        }
+        &.top{
+            top: 0;
+        }
+    }
+
+    &.square{
+        -webkit-transform: translate(-50%,50%);
+        -ms-transform: translate(-50%,50%);
+        transform: translate(-50%,50%);
+        width: auto;
+        left: 50%;
+        &.bottom{
+            bottom: 0;
+        }
+        svg{
+            height: 90px;
+            fill: #0038E3;
+            width: auto;
+        }
+    }
+
+}
+
+.wavify-activation{
+    z-index: 2;
+}
+
+
+.row-column-content{
+    .separator{
+        height: 200px;
+    }
+    .separator2{
+
+    }
+
+}
+
+.vc_row-separator svg {
+    fill: #69afed;
+    height: 200px;
+}
+
+
+#firefly {
+    width: 100%;
+    height: 100%;
+}
+
+.constellation-effect{
+    position: relative;
+    canvas {
+        height: 580px !important;
+        width: 100% !important;
+    }
+    .row-column-content{
+        position: absolute;
+        top: 50%;
+        width: 100%;
+        text-align: center;
+        transform: translateY(-50%);
+        z-index: 2;
+    }
+}
+
+
+.bg-svg--1{
+    background-image: url(img/icons/home-digital-agency-image-03.jpg);
+    background-repeat: no-repeat;
+    background-position: top 122px center;
+    position: relative;
+}
+
+
+
+
+
+
+
+
+

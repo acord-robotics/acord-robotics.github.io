@@ -1,0 +1,62 @@
+/*======================
+    Career Area 
+==========================*/
+.brook-career-area{
+    position: relative;
+    z-index: 2;
+}
+.career{
+    padding-top: 69px;
+    padding-right: 50px;
+    padding-bottom: 80px;
+    padding-left: 50px;
+    -moz-box-shadow: 0 0 40px rgba(0,0,0,0.07);
+    -webkit-box-shadow: 0 0 40px rgba(0,0,0,0.07);
+    box-shadow: 0 0 40px rgba(0,0,0,0.07);
+    background-color: #fff;
+    .inner{
+
+        .content{
+            .desc{
+                p{
+
+                }
+            }
+        }
+
+    }
+    .title{
+        h3{
+            &.heading{
+                border-bottom-width: 1px !important;
+                padding-bottom: 20px !important;
+                border-bottom-color: #eeeeee !important;
+                border-bottom-style: solid !important;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

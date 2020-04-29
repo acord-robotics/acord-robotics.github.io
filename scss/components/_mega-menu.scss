@@ -1,0 +1,259 @@
+/* ========================
+    Mega Menu 
+==========================*/
+
+
+.header-mega-menu{
+    .row ,
+    [class*="col-"]{
+        position: static;
+    }
+}
+
+// For Hover
+.mainmenu{
+    li{
+        &.with--drop{
+            position: relative;
+            &.slide--megamenu{
+                position: static;
+                &:hover{
+                    .mega__width--fullscreen{
+                        display: block;
+                        -webkit-animation: show-animation .5s;
+                        animation: show-animation .5s
+                    }
+                }
+            }
+            &.slide-dropdown{
+                position: relative;
+                &:hover{
+                    .dropdown__menu{
+                        display: block;
+                        -webkit-animation: show-animation .5s;
+                        animation: show-animation .5s;
+                        top: 100%;
+                    }
+                }
+            }
+            
+        }
+    }
+}
+
+/* -------------------------
+Start Dropdown Menu 
+--------------------------*/
+.dropdown__menu{
+    box-shadow: 0 10px 37px rgba(0,0,0,.07);
+    position: absolute;
+    list-style: none;
+    background-color: #222222;
+    -webkit-animation: hide-animation .5s;
+    animation: hide-animation .5s;
+    left: 0px;
+    display: none;
+    width: 300px;
+    margin: 0;
+    padding: 35px 0 50px;
+    min-width: 300px;
+    li{
+        padding: 0 40px;
+        a{
+            display: block;
+            span{
+                position: relative;
+                padding: 2px 0;
+                overflow: hidden;
+                z-index: 1;
+                font-weight: 500;
+                line-height: 1.58;
+                color: #ffffff;
+                font-size: 14px;
+                -webkit-transition: width .6s cubic-bezier(.25,.8,.25,1) 0s;
+                transition: width .6s cubic-bezier(.25,.8,.25,1) 0s;
+                display: inline-block;
+                margin: 6px 0;
+                &::after{
+                    content: "";
+                    width: 0;
+                    height: 1px;
+                    bottom: 0;
+                    position: absolute;
+                    left: auto;
+                    right: 0;
+                    z-index: -1;
+                    -webkit-transition: width .6s cubic-bezier(.25,.8,.25,1) 0s;
+                    transition: width .6s cubic-bezier(.25,.8,.25,1) 0s;
+                    background: currentColor;
+                }
+                &:hover{
+                     &::after{
+                        width: 100%;
+                        left: 0;
+                        right: auto;
+                     }
+                }
+                &:hover{
+                    color: #ffffff;
+                }
+            }
+        }
+        &.drop-lavel--2{
+            position: relative;
+            > a{
+                position: relative;
+                &::before{
+                    content: "\f105";
+                    font-size: 14px;
+                    position: absolute;
+                    top: 50%;
+                    right: 0;
+                    -webkit-transform: translateY(-50%);
+                    -ms-transform: translateY(-50%);
+                    transform: translateY(-50%);
+                    font-family: Font Awesome\ 5 Free;
+                    font-weight: 900;
+                    background: transparent !important;
+                }
+            }
+            .lavel--2{
+                position: absolute;
+                list-style: none;
+                display: none;
+                padding: 30px 0 50px;
+                margin: 0;
+                background: #222222;
+                width: 300px;
+                -webkit-animation: slide-out-to-right .3s;
+                animation: slide-out-to-right .3s;
+                left: 100%;
+                top: 0;
+                @media #{$lg-layout} {
+                    width: 230px;
+                }
+                
+                li{
+                    a{
+                        span{
+
+                        }
+                    }
+                }
+            }
+            &:hover{
+                > .lavel--2{
+                    display: block;
+                    -webkit-animation: slide-in-to-left .3s;
+                    animation: slide-in-to-left .3s;
+                }
+            }
+        }
+    }
+}
+
+
+
+/* For Menu Style */
+.mega__width--fullscreen{
+    width: auto;
+    display: none;
+    top: 100%;
+    left: 0px;
+    margin-left: -643.563px;
+    margin-top: 0px;
+    min-width: 10em;
+    max-width: 20em;
+    right: 0;
+    margin-left: 0;
+    max-width: none;
+    padding: 70px 0;
+    box-shadow: 0 10px 37px rgba(0,0,0,.07);
+    position: absolute;
+    list-style: none;
+    background-color: #222222;
+    -webkit-animation: hide-animation .5s;
+    animation: hide-animation .5s;
+
+    // Start Single List
+    .mega__list{
+        text-align: left;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        li{
+            &.mega--title{
+                display: block;
+                margin: 0 30px 18px 0;
+                padding-bottom: 12px;
+                text-transform: uppercase;
+                font-weight: 600;
+                font-size: 14px;
+                border: 0 solid transparent;
+                border-bottom: 1px solid #444;
+                color: #ffffff;
+                font-family: $body-font;
+            }
+            a{
+                span{
+                    position: relative;
+                    padding: 2px 0;
+                    overflow: hidden;
+                    z-index: 1;
+                    font-weight: 500;
+                    line-height: 1.58;
+                    color: #fff;
+                    font-size: 14px;
+                    -webkit-transition: width .6s cubic-bezier(.25,.8,.25,1) 0s;
+                    transition: width .6s cubic-bezier(.25,.8,.25,1) 0s;
+                    display: inline-block;
+                    margin: 6px 0;
+                    &::after{
+                        content: "";
+                        width: 0;
+                        height: 1px;
+                        bottom: 0;
+                        position: absolute;
+                        left: auto;
+                        right: 0;
+                        z-index: -1;
+                        -webkit-transition: width .6s cubic-bezier(.25,.8,.25,1) 0s;
+                        transition: width .6s cubic-bezier(.25,.8,.25,1) 0s;
+                        background: currentColor;
+                    }
+                    &:hover{
+                         &::after{
+                            width: 100%;
+                            left: 0;
+                            right: auto;
+                         }
+                    }
+                    &:hover{
+                        color: #ffffff;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

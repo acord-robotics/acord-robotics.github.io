@@ -1,0 +1,632 @@
+/*=================================
+ Type Hover Portfolio Animation 
+===================================*/
+
+.portfolio-type-hover {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    height: 100vh;
+
+    @media #{$md-layout} {
+        padding-bottom: 0 !important;
+        height: auto;
+        padding: 150px 0;
+        padding-top: 115px !important;
+    }
+
+    @media #{$sm-layout} {
+        padding-bottom: 0 !important;
+        height: auto;
+        padding: 150px 0;
+        padding-top: 115px !important;
+    }
+
+    .row-xs-center {
+        height: 100%;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+}
+
+.type-portfolio-wrapper {
+    padding: 30px 100px;
+    
+    @media #{$lg-layout} {
+        padding: 30px 50px;
+    }
+
+    @media #{$md-layout} {
+        padding: 30px 50px;
+    }
+
+    @media #{$sm-layout} {
+        padding: 30px 50px;
+    }
+
+    .type-portfolio {
+        margin-top: 55px;
+
+        @media #{$lg-layout} {
+            margin-top: 22px;
+        }
+
+        @media #{$md-layout} {
+            margin-top: 22px;
+        }
+
+        @media #{$sm-layout} {
+            margin-top: 22px;
+        }
+
+        h3 {
+            a {
+                font-size: 36px;
+                line-height: 1.23;
+                vertical-align: top;
+                color: #666;
+                margin-bottom: 0;
+                -webkit-transition: all .3s cubic-bezier(.645, .045, .355, 1);
+                transition: all .3s cubic-bezier(.645, .045, .355, 1);
+                font-family: Montserrat, Helvetica, Arial, sans-serif;
+                font-weight: 600;
+
+                @media #{$lg-layout} {
+                    font-size: 30px
+                }
+
+                @media #{$md-layout} {
+                    font-size: 30px
+                }
+
+                @media #{$sm-layout} {
+                    font-size: 24px
+                }
+
+            }
+        }
+
+        h3 {
+            a {
+                &.active {
+                    color: #222;
+                    -webkit-transition: all .3s cubic-bezier(.645, .045, .355, 1);
+                    transition: all .3s cubic-bezier(.645, .045, .355, 1);
+                }
+            }
+        }
+
+    }
+}
+
+/* Type Hover Thumbnail */
+
+.type-portfolio-thumbnail {
+    position: relative;
+    padding: 75px 75px 75px 35px;
+    
+    @media #{$md-layout} {
+        padding-top: 0;
+    }
+    @media #{$sm-layout} {
+        padding-top: 0;
+    }
+    .inner {
+        position: relative;
+        width: 850px;
+        max-width: 100%;
+        
+        @media #{$md-layout} {
+            width: 500px;
+            margin: auto;
+        }
+        @media #{$sm-layout} {
+            width: 100%;
+            margin: auto;
+        }
+        &::before {
+            content: "";
+            display: block;
+            width: 100%;
+            padding-top: 100%;
+        }
+        .type-thumbnail-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            -webkit-transition: all 1s;
+            transition: all 1s;
+            opacity: 0;
+            z-index: -1;
+            overflow: hidden;
+
+            .bg-thumb {
+                width: 100%;
+                height: 100%;
+                background-repeat: no-repeat;
+                background-position: 50%;
+                background-size: cover;
+                -webkit-transform: scale(.9);
+                -ms-transform: scale(.9);
+                transform: scale(.9);
+                border-radius: 50%;
+                -webkit-transition: all 1.5s;
+                transition: all 1.5s;
+
+                &.bg-image--1{
+                    background-image: url(img/portfolio/type-hover/type-hover-1.jpg)
+                }
+
+                &.bg-image--2{
+                    background-image: url(img/portfolio/type-hover/type-hover-2.jpg)
+                }
+
+                &.bg-image--3{
+                    background-image: url(img/portfolio/type-hover/type-hover-3.jpg)
+                }
+
+                &.bg-image--4{
+                    background-image: url(img/portfolio/type-hover/type-hover-4.jpg)
+                }
+
+                &.bg-image--5{
+                    background-image: url(img/portfolio/type-hover/type-hover-5.jpg)
+                }
+
+            }
+
+            &.active {
+                z-index: 1;
+                opacity: 1;
+
+                .bg-thumb {
+                    -webkit-transform: scale(1);
+                    -ms-transform: scale(1);
+                    transform: scale(1);
+                }
+            }
+        }
+    }
+}
+
+
+
+/* ===============================
+    Portfolio Type Two 
+==================================*/
+
+.portfolio-type2-container {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    height: 100vh;
+    
+    @media #{$laptop-device} {
+        height: auto;
+    }
+
+    @media #{$lg-layout} {
+        height: auto;
+    }
+
+    @media #{$md-layout} {
+        height: auto;
+    }
+
+    @media #{$sm-layout} {
+        height: auto;
+    }
+
+    .row-xs-center {
+        height: 100%;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+}
+
+
+/* Type Hover Wrapper */
+
+.portfolio-type2-content {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+    margin-top: 70px;
+
+    @media #{$sm-layout} {
+        margin-top: 101px
+    }
+
+    .type-portfolio-wrapper-2 {
+        padding: 80px 30px;
+        text-align: center;
+        position: relative;
+        z-index: 3;
+
+        @media #{$large-mobile} {
+            padding: 19px 30px;
+        }
+
+        .type-portfolio2 {
+            display: block;
+            padding: 20px;
+
+            h3 {
+                margin: 0;
+                a {
+                    font-size: 70px;
+                    line-height: 1.4;
+                    color: hsla(0,0%,100%,.3);
+                    margin-bottom: 0;
+                    -webkit-transition: all .3s cubic-bezier(.645,.045,.355,1);
+                    transition: all .3s cubic-bezier(.645,.045,.355,1);
+                    font-family: Poppins, Helvetica, Arial, sans-serif;
+                    font-weight: 600;
+
+                    @media #{$lg-layout} {
+                        font-size: 50px;
+                    }
+
+                    @media #{$md-layout} {
+                        font-size: 40px;
+                    }
+
+                    @media #{$sm-layout} {
+                        font-size: 30px;
+                    }
+
+                    @media #{$large-mobile} {
+                        font-size: 22px;
+                    }
+
+                    span{
+                        font-size: 18px;
+                        vertical-align: middle;
+                        margin-right: 20px;
+                    }
+                }
+            }
+
+            h3 {
+                a {
+                    &.active {
+                        color: #fff;
+                    }
+                }
+            }
+
+        }
+    }
+
+    /* Type Hover Thumbnail */
+
+    .type-portfolio-thumbnail-2 {
+        position: absolute;
+        height: 800px;
+        width: 1060px;
+        z-index: 1;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: 0 auto;
+        top: 50%;
+        transform: translateY(-50%);
+
+        @media #{$lg-layout} {
+            width: 100%;
+            height: 675px;
+        }
+
+        @media #{$md-layout} {
+            width: 100%;
+            height: 600px;
+        }
+
+        @media #{$sm-layout} {
+            width: 100%;
+            height: 600px;
+        }
+
+        @media #{$large-mobile} {
+            height: 430px;
+        }
+
+        .inner {
+            .type-thumbnail-bg2 {
+                display: -webkit-box;
+                display: -webkit-flex;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-align: center;
+                -webkit-align-items: center;
+                -ms-flex-align: center;
+                align-items: center;
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                padding: 30px;
+                -webkit-transition: all .5s;
+                transition: all .5s;
+                opacity: 0;
+                z-index: -1;
+                overflow: hidden;
+                -webkit-box-pack: center;
+                -webkit-justify-content: center;
+                -ms-flex-pack: center;
+                justify-content: center;
+
+                .bg-thumb {
+                    -webkit-transition: all 1s;
+                    transition: all 1s;
+                    -webkit-transform: scale(0.9);
+                    -ms-transform: scale(0.9);
+                    transform: scale(0.9);
+                    height: 100%;
+                    width: 100%;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    background-position: center center;
+
+                    &.bg-image--1 {
+                        background-image: url(img/portfolio/type-hover/type2-hover-1.jpg)
+                    }
+
+                    &.bg-image--2 {
+                        background-image: url(img/portfolio/type-hover/type2-hover-2.jpg)
+                    }
+
+                    &.bg-image--3 {
+                        background-image: url(img/portfolio/type-hover/type2-hover-3.jpg)
+                    }
+
+                    &.bg-image--4 {
+                        background-image: url(img/portfolio/type-hover/type2-hover-4.jpg)
+                    }
+
+                    &.bg-image--5 {
+                        background-image: url(img/portfolio/type-hover/type2-hover-5.jpg)
+                    }
+
+                }
+
+                &.active {
+                    z-index: 1;
+                    opacity: 1;
+                    .bg-thumb {
+                        -webkit-transform: scale(1);
+                        -ms-transform: scale(1);
+                        transform: scale(1);
+                       
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+/* ===============================
+    Portfolio Type 3 
+==================================*/
+
+.portfolio-type3-container {
+    padding-top: 0!important;
+    padding-bottom: 0!important;
+    padding-left: 100px;
+    padding-right: 100px;
+    @media #{$sm-layout} {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+
+/* Type Hover Wrapper */
+
+.portfolio-type3-content {
+    .type-portfolio-wrapper-3 {
+        position: relative;
+        z-index: 1;
+        display: flex;
+        justify-content: space-between;
+        
+        @media #{$lg-layout} {
+            flex-wrap: wrap;
+            margin-top: 40px;
+        }
+
+        @media #{$md-layout} {
+            flex-wrap: wrap;
+            margin-top: 40px;
+        }
+
+        @media #{$sm-layout} {
+            flex-wrap: wrap;
+            margin-top: 40px;
+        }
+
+        .type-portfolio3 {
+            text-align: left;
+            padding: 56px 0;
+            margin-right: 105px;
+            flex-basis: 25%;
+            
+            @media #{$lg-layout} {
+                padding-right: 20px;
+                flex-basis: 50%;
+                margin-right: 0;
+                padding: 32px 0;
+            }
+            
+            @media #{$md-layout} {
+                padding-right: 20px;
+                flex-basis: 50%;
+                margin-right: 0;
+                padding-top: 20px;
+                padding-bottom: 20px;
+            }
+            
+            @media #{$sm-layout} {
+                padding-right: 20px;
+                flex-basis: 100%;
+                margin-right: 0;
+                padding-top: 20px;
+                padding-bottom: 20px;
+            }
+
+            h3 {
+                margin: 0;
+                a {
+                    position: relative;
+                    font-size: 40px;
+                    line-height: 1.1;
+                    margin-bottom: 0;
+                    padding-left: 40px;
+                    color: rgba(0,0,0,.3);
+                    -webkit-transition: all .3s cubic-bezier(.645,.045,.355,1);
+                    transition: all .3s cubic-bezier(.645,.045,.355,1);
+                    font-family: $heading-font;
+                    font-weight: 700;
+                    display: inline-block;
+
+                    @media #{$laptop-device} {
+                        font-size: 29px;
+                        padding-left: 27px;
+                    }
+
+                    @media #{$md-layout} {
+                        font-size: 29px;
+                        padding-left: 27px;
+                    }
+
+                    @media #{$sm-layout} {
+                        font-size: 29px;
+                        padding-left: 27px;
+                    }
+
+
+                    &::before{
+                        content: "";
+                        width: 80px;
+                        height: 1px;
+                        background: #ddd;
+                        position: absolute;
+                        top: 22px;
+                        left: -95px;
+
+                        @media #{$lg-layout} {
+                            display: none;
+                        }
+
+                        @media #{$md-layout} {
+                            display: none;
+                        }
+
+                        @media #{$sm-layout} {
+                            display: none;
+                        }
+                    }
+                    span{
+                        position: absolute;
+                        top: 13px;
+                        left: 0;
+                        font-size: 18px;
+                        vertical-align: middle;
+                        margin-right: 20px;
+                        color: rgba(0,0,0,.3); 
+                        -webkit-transition: all .3s cubic-bezier(.645,.045,.355,1);
+                        transition: all .3s cubic-bezier(.645,.045,.355,1);
+                    }
+                }
+
+            }
+            &:first-child{
+                h3{
+                    a{
+                        &::before{
+                            display: none;
+                        }
+                    }
+                }
+            }
+
+            h3 {
+                a {
+                    &.active {
+                        color: #222222;
+                        span{
+                            color: #222222; 
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+
+    /* Type Hover Thumbnail */
+
+    .type-portfolio-thumbnail-3 {
+        position: relative;
+        width: 100%;
+        height: 560px;
+        .inner {
+            .type-thumbnail-bg3 {
+                .bg-thumb {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    -webkit-transition: all .5s;
+                    transition: all .5s;
+                    opacity: 0;
+                    z-index: -1;
+                    overflow: hidden;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    background-position: 50%;
+                    
+                    &.bg-image--1{
+                        background-image: url(img/portfolio/type-hover/type3-hover-1.jpg)
+                    }
+
+                    &.bg-image--2{
+                        background-image: url(img/portfolio/type-hover/type3-hover-2.jpg)
+                    }
+
+                    &.bg-image--3{
+                        background-image: url(img/portfolio/type-hover/type3-hover-3.jpg)
+                    }
+
+                    &.bg-image--4{
+                        background-image: url(img/portfolio/type-hover/type3-hover-4.jpg)
+                    }
+                }
+
+                &.active {
+                    .bg-thumb {
+                        z-index: 1;
+                        opacity: 1;
+                       
+                    }
+                }
+            }
+        }
+    }
+}

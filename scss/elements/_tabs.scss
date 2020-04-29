@@ -1,0 +1,56 @@
+/*================
+Tabs Area 
+==================*/
+
+
+.tab ,
+.scrollspy {
+    border: 2px solid #fafafa;
+    padding: 30px;
+}
+.nav-pills .nav-link {
+    color: $heading-color;
+}
+
+.tab-content>.tab-pane {
+    font-size: 14px;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #fff;
+    background-color: $theme-color;
+}
+
+.tab{
+    &.vertical{
+        .tab-nav{
+            flex-basis: 200px;
+            @media #{$sm-layout} {
+                flex-basis: 100%;
+            }
+        }
+        .tab-content{
+            flex-basis: calc(100% - 200px);
+            padding-left: 30px;
+            padding-right: 30px;
+
+            @media #{$sm-layout} {
+                flex-basis: 100%;
+                padding-left: 0;
+                padding-right: 0;
+                padding-top: 20px;
+                padding-bottom: 10px;
+            }
+        }
+    }
+}
+
+
+@media (min-width: 768px){
+    .flex-md-column {
+        -webkit-box-orient: vertical!important;
+        -webkit-box-direction: normal!important;
+        -ms-flex-direction: column!important;
+        flex-direction: column!important;
+    }
+}

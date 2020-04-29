@@ -1,0 +1,111 @@
+// Photo Slide
+
+
+
+
+.single-photo-slider{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+
+    @media #{$lg-layout} {
+        display: block;
+    }
+
+    @media #{$md-layout} {
+        display: block;
+    }
+
+    @media #{$sm-layout} {
+        display: block;
+    }
+
+    .image-wrapper{
+        -webkit-flex-shrink: 0;
+        -ms-flex-negative: 0;
+        flex-shrink: 0;
+        width: 50%;
+
+        @media #{$lg-layout} {
+            width: 100%;
+            padding: 0px 52px;
+        }
+        @media #{$md-layout} {
+            width: 100%;
+            padding: 0px 52px;
+        }
+        @media #{$sm-layout} {
+            width: 100%;
+            padding: 0px 52px;
+        }
+    }
+    .text-wrapper{
+        -webkit-flex-shrink: 0;
+        -ms-flex-negative: 0;
+        flex-shrink: 0;
+        width: 50%;
+        padding: 50px 100px;
+
+        @media #{$laptop-device} {
+            padding: 35px 52px;
+        }
+
+        @media #{$lg-layout} {
+            padding: 35px 52px;
+            width: 100%;
+        }
+
+        @media #{$md-layout} {
+            padding: 35px 52px;
+            width: 100%;
+        }
+
+        @media #{$sm-layout} {
+            padding: 35px 52px;
+            width: 100%;
+        }
+
+        .text{
+            h1{
+                &.heading{
+                    font-size: 70px;
+                    letter-spacing: -3px;
+                    line-height: 1.22;
+                    font-weight: 400;
+                    max-width: 400px;
+                    margin-bottom: 0;
+                    
+                    @media #{$lg-layout} {
+                        max-width: 100%;
+                    }
+
+                    @media #{$md-layout} {
+                        max-width: 100%;
+                        font-size: 58px;
+                    }
+
+                    @media #{$sm-layout} {
+                        max-width: 100%;
+                        font-size: 40px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+

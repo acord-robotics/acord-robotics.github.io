@@ -1,0 +1,285 @@
+/* ======================
+    Brand Area
+==========================*/
+
+.brook-brand-area{
+    &.bg-shape{
+        background-image: url(img/slider/revolution/slider-4.png);
+        background-repeat: no-repeat;
+        background-position: top 80px right;
+    }
+}
+
+
+// Brand Default
+.brand-default{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+
+    &.brand-style--3{
+        grid-template-columns: repeat( 3,1fr);
+        display: -ms-grid;
+        display: grid;
+
+    }
+    .brand{
+        text-align: center;
+        a{
+            img{
+                -webkit-filter: grayscale(100%);
+                filter: grayscale(100%);
+                opacity: .3;
+                -webkit-transition: all .3s linear;
+                transition: all .3s linear;
+                display: inline-block;
+            }
+            &:hover{
+                img{
+                    -webkit-filter: none;
+                    filter: none;
+                    opacity: 1;
+                }
+            }
+        }
+    }
+    &.brand-style--2{
+        grid-template-columns: repeat( 3,1fr);
+        display: -ms-grid;
+        display: grid;
+        @media #{$large-mobile} {
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+        .brand{
+            position: relative;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-pack: center;
+            -webkit-justify-content: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            padding: 15px;
+            min-height: 200px;
+            &::after{
+                display: block;
+                position: absolute;
+                content: "";
+                left: -1px;
+                top: -1px;
+                right: 0;
+                bottom: 0;
+                border: 1px solid #eee;
+                pointer-events: none;
+            }
+        }
+        &.no-border{
+            .brand{
+                &::after{
+                    display: none;
+                }
+            }
+        }
+    }
+    &.brand-business{
+        grid-template-columns: repeat( 4,1fr) !important;
+        display: -ms-grid;
+        display: grid;
+        margin: 0 -25px;
+        @media #{$md-layout} {
+            grid-template-columns: repeat(2, 1fr) !important;
+        }
+        @media #{$sm-layout} {
+            grid-template-columns: repeat(1, 1fr) !important;
+            margin: 0px;
+        }
+        .brand{
+            margin: 0 25px;
+            margin-bottom: 50px;
+            // Responsive
+            @media #{$lg-layout}{
+                margin: 0 10px;
+                margin-bottom: 20px;
+            }
+            @media #{$md-layout}{
+                margin: 0 10px;
+                margin-bottom: 20px;
+            }
+            @media #{$sm-layout}{
+                margin: 0 0px;
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+
+
+// Social Media Clint
+.social-clint{
+    grid-template-columns: repeat( 4,1fr);
+    display: -ms-grid;
+    display: grid;
+    
+    @media #{$sm-layout} {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .clint-grid{
+        .grid-inner{
+            position: relative;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-pack: center;
+            -webkit-justify-content: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            padding: 15px;
+            min-height: 115px;
+            height: 100%;
+            .inner{
+                a{
+                    -webkit-transition: all .3s cubic-bezier(.645,.045,.355,1);
+                    transition: all .3s cubic-bezier(.645,.045,.355,1);
+                    img{
+                        -webkit-transition: all .3s linear;
+                        transition: all .3s linear;
+                        height: auto;
+                        max-width: 100%;
+                    }
+                }
+                &:hover{
+                    a{
+                        img{
+                            -webkit-transform: translateY(-5px);
+                            -ms-transform: translateY(-5px);
+                            transform: translateY(-5px);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+// Brand Arrow Style
+
+.brand-arrow{
+    position: relative;
+    .slick-btn{
+        position: absolute;
+        top: 50%;
+        display: block;
+        width: 20px;
+        height: 20px;
+        padding: 0;
+        -webkit-transform: translate(0,-50%);
+        -ms-transform: translate(0,-50%);
+        transform: translate(0,-50%);
+        cursor: pointer;
+        color: transparent;
+        border: none;
+        outline: none;
+        background: transparent;
+        -webkit-transition: all .3s cubic-bezier(.645,.045,.355,1),visibility .3s linear 2s,opacity .3s linear 2s;
+        transition: all .3s cubic-bezier(.645,.045,.355,1),visibility .3s linear 2s,opacity .3s linear 2s;
+        left: -70px;
+        z-index: 9;
+        
+        @media #{$md-layout} {
+            left: 0px;
+        }
+
+        @media #{$sm-layout} {
+            left: 0px;
+        }
+        i{
+            color: $heading-color;
+            font-size: 20px;
+            -webkit-transition: all .3s cubic-bezier(.645,.045,.355,1),visibility .3s linear 2s,opacity .3s linear 2s;
+            transition: all .3s cubic-bezier(.645,.045,.355,1),visibility .3s linear 2s,opacity .3s linear 2s;
+        }
+        &:hover{
+            i{
+                color: $theme-color;
+            }
+        }
+
+        &.slick-next{
+            right: -70px;
+            left: auto;
+            
+            @media #{$md-layout} {
+                right: 0px;
+                left: auto;
+            }
+
+            @media #{$sm-layout} {
+                right: 0px;
+                left: auto;
+            }
+        }
+    }
+    &:hover{
+        .slick-btn{
+            opacity: 1;
+        }
+    }
+}
+
+.brand-dots{
+    position: relative;
+    .slick-dots{
+        position: absolute;
+        bottom: -65px;
+        li{
+            width: auto;
+            height: auto;
+            margin: 0 9px;
+            padding: 0;
+            button{
+                &::before{
+                    display: none;
+                }
+                width: 10px;
+                height: 10px;
+                padding: 0;
+                cursor: pointer;
+                border: 0;
+                outline: none;
+                background: #d8d8d8;
+                border-radius: 100%;
+            }
+            &.slick-active{
+                button{
+                    background: $heading-color;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+.slick-prev:before ,
+.slick-next:before{
+    display: none;
+}
+

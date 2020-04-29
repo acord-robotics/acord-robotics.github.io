@@ -1,0 +1,104 @@
+/* ========================
+    One pge Contact 
+==========================*/
+
+.onepage-contact-inner{
+    box-sizing: border-box;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    @media #{$sm-layout} {
+        display: block;
+    }
+    .page-address-inner{
+        padding-top: 80px !important;
+        padding-right: 70px !important;
+        padding-bottom: 67px !important;
+        padding-left: 70px !important;
+        width: 50%;
+
+        @media #{$lg-layout} {
+            padding-top: 81px !important;
+            padding-right: 34px !important;
+            padding-bottom: 53px !important;
+            padding-left: 55px !important;
+        }
+
+        @media #{$md-layout} {
+            padding-top: 81px !important;
+            padding-right: 34px !important;
+            padding-bottom: 53px !important;
+            padding-left: 55px !important;
+        }
+
+        @media #{$sm-layout} {
+            padding-top: 81px !important;
+            padding-right: 34px !important;
+            padding-bottom: 53px !important;
+            padding-left: 55px !important;
+            width: 100%;
+        }
+
+    }
+    .googlemap{
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        width: 50%;
+        @media #{$sm-layout} {
+            width: 100%;
+        }
+    }
+
+}
+
+// Landing Page
+
+.brook-professonal-design{
+    .thumbnail{
+        margin-left: -81px;
+    }
+}
+.brook-contagion-area{
+    .thumbnail{
+        margin-left: -130px;
+        // Responsive
+        @media #{$laptop-device}{
+            margin-left: 0px;
+        }
+        @media #{$lg-layout}{
+            margin-left: 0px;
+        }
+        @media #{$md-layout}{
+            margin-left: 0px;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        @media #{$sm-layout}{
+            margin-left: 0px;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
