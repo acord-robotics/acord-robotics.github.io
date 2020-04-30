@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<!--  Last Published: Wed Jun 26 2019 02:37:24 GMT+0000 (UTC)  -->
+<html data-wf-page="5d0ae18e3ea9153981591b31" data-wf-site="5d0adac73ea915bdaf58dba7">
+<head>
+  <meta charset="utf-8">
+  <title>Step 2</title>
+  <meta content="Step 2" property="og:title">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <link href="../css/normalize.css" rel="stylesheet" type="text/css">
+  <link href="../css/components.css" rel="stylesheet" type="text/css">
+  <link href="../css/multi-step-signup-form.css" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
+  <script type="text/javascript">WebFont.load({  google: {    families: ["Karla:regular,700"]  }});</script>
+  <!-- [if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" type="text/javascript"></script><![endif] -->
+  <script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script>
+  <link href="https://daks2k3a4ib2z.cloudfront.net/img/favicon.ico" rel="shortcut icon" type="image/x-icon">
+  <link href="https://daks2k3a4ib2z.cloudfront.net/img/webclip.png" rel="apple-touch-icon">
+  <!--  Memberstack  -->
+  <script src="https://api.memberstack.io/static/memberstack.js" data-memberstack-id="6e8820e746e95607728c7802b94dd067"></script>
+  <script>
+  UPLOADCARE_PUBLIC_KEY = 'ede7ec5c2dc36c9da7bc';
+  UPLOADCARE_IMAGES_ONLY = true;
+</script>
+  <script src="https://ucarecdn.com/libs/widget/3.x/uploadcare.full.min.js"></script>
+</head>
+<body>
+  <div class="page-wrapper">
+    <div class="top-nav">
+      <a href="#" class="logo-link w-nav-brand">
+        <div class="fake-logo">
+          <div class="dot"></div>
+        </div>
+        <div class="logo-text">Onboarding UI</div>
+      </a>
+      <div class="signup-navigation-wrap">
+        <div class="signup-nav-step">
+          <div class="nav-step done">1</div>
+          <div>Account</div>
+        </div>
+        <div class="signup-nav-step">
+          <div class="nav-step done">2</div>
+          <div>Company</div>
+        </div>
+        <div class="signup-nav-step current">
+          <div class="nav-step done">3</div>
+          <div>Socials</div>
+        </div>
+      </div>
+      <div class="button-wrapper"></div>
+    </div>
+    <div class="login-page-wrapper">
+      <div class="login-container w-form">
+        <h1 data-membership-id="5ce1e15cc3ea550017f15700" class="login-head">Almost done!</h1>
+        <h2 data-membership-id="5ce1e15cc3ea550017f15700" class="login-head sub-head">Please link to your social accounts.</h2>
+        <form id="sign-up" name="wf-form-Sign-up-Form" data-name="Sign up Form" method="post" redirect="/user/dashboard" data-redirect="/user/dashboard" ms-update="profile" class="memberstack-form">
+          <div class="field-wrapper"><label for="twitter-2" class="signup-label">Twitter</label><input type="text" class="signup-field w-input" maxlength="256" name="twitter" data-name="twitter" placeholder="@MemberStackApp" ms-field="twitter" id="twitter"></div>
+          <div class="field-wrapper"><label for="facebook" class="signup-label">Facebook</label><input type="text" class="signup-field w-input" maxlength="256" name="facebook" data-name="facebook" placeholder="www.facebook.com/duncan.hamra.7" ms-field="facebook" id="facebook"></div>
+          <div class="field-wrapper"><label for="linkedin" class="signup-label">Linkedin</label><input type="text" class="signup-field w-input" maxlength="256" name="linkedin" data-name="linkedin" placeholder="https://www.linkedin.com/in/tyler-bell-129711158/" ms-field="linkedin" id="linkedin"></div><input type="submit" value="Continue to the final step" data-wait="Please wait..." class="login-button w-button"></form>
+        <div class="w-form-done">
+          <div>Thank you! Your submission has been received!</div>
+        </div>
+        <div class="error-message w-form-fail">
+          <div>Oops! Something went wrong while submitting the form.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://d1tdp7z6w94jbb.cloudfront.net/js/jquery-3.3.1.min.js" type="text/javascript" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="../js/multi-step-signup-form.js" type="text/javascript"></script>
+  <!-- [if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif] -->
+  <div memberstack-template="Client Dashboard Template"></div>
+  <!-- Crisp + MemberStack -->
+  <script>
+    MemberStack.onReady.then(function(member) {
+    var email = member["email"]
+    var name = member["first-name"]
+    if (member.loggedIn) {
+        try{
+            $crisp.push(["set", "user:email", [email] ])
+            $crisp.push(["set", "user:nickname", [name] ])
+          } catch(e) {}
+    }
+})
+</script>
+</body>
+</html>
