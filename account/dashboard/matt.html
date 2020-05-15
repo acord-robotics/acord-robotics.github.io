@@ -60,8 +60,8 @@
           <div>Overview</div>
         </a>
         <a data-w-tab="Tab 9" class="navigation-item w-inline-block w-tab-link">
-          <div class="navigation-icon"></div>
-          <div>Project</div>
+          <div class="navigation-icon">🤖</div>
+          <div>Dashboard</div>
         </a>
         <a data-w-tab="Tab 2" class="navigation-item w-inline-block w-tab-link">
           <div class="navigation-icon"></div>
@@ -88,21 +88,21 @@
               <div class="white-box third">
                 <div class="box-padding">
                   <div class="colorful-icon green"></div>
-                  <h3 class="large-number">$<span ms-data="budget">25,000</span></h3>
-                  <div>Starting budget</div>
+                  <h3 class="large-number"><span ms-data="budget">8</span></h3>
+                  <div>Running Projects</div>
                 </div>
               </div>
               <div class="white-box third">
                 <div class="box-padding">
                   <div class="colorful-icon green"></div>
-                  <h3 class="large-number">$<span ms-data="spend">5,030</span></h3>
-                  <div>Total spend</div>
+                  <h3 class="large-number"><span ms-data="spend">11</span></h3>
+                  <div>Current members</div>
                 </div>
               </div>
               <div class="white-box third mobile-full-box">
                 <div class="box-padding">
                   <div class="colorful-icon purple"></div>
-                  <h3 ms-data="launch" class="large-number">21 June 2019</h3>
+                  <h3 ms-data="launch" class="large-number">1st June 2020</h3>
                   <div>Target launch</div>
                 </div>
               </div>
@@ -116,17 +116,17 @@ var chart = new Chart(ctx, {
     type: 'line',
     // The data for our dataset
     data: {
-        labels: ['January - 1', 'February', 'March', 'April', 'May', 'June', 'July'],
+        labels: ['January - 1', 'February', 'March', 'April', 'May',],
         datasets: [{
-            label: 'Random Chart',
+            label: 'Commits',
             backgroundColor: 'rgb(255, 99, 132, 0.5)',
             borderColor: 'rgb(255, 99, 132, 0.5)',
-            data: [0, 10, 5, 2, 20, 10, 50]
+            data: [95, 100, 27, 200, 210, 197, 50]
         }, {
-            label: 'Super Chart',
+            label: 'Contributions',
             backgroundColor: 'rgb(255, 127, 80, 0.5)',
             borderColor: 'rgb(255, 127, 80, 0.5)',
-            data: [0, 23, 6, 38, 20, 50, 10]
+            data: [128, 213, 97, 238, 220, 250, 90]
         }]
     },
     // Configuration options go here
@@ -136,7 +136,7 @@ var chart = new Chart(ctx, {
                   </div>
                 </div>
               </div>
-              <div class="white-box third">
+             <!-- <div class="white-box third">
                 <div class="box-padding">
                   <div class="w-embed w-script"><canvas id="myDonut"></canvas>
                     <script>
@@ -174,19 +174,19 @@ var promisedDeliveryChart = new Chart(document.getElementById('myDonut'), {
                   </div>
                   <div class="center-label">Random donut chart</div>
                 </div>
-              </div>
+              </div>-->
             </div>
           </div>
         </div>
         <div data-w-tab="Tab 9" class="dashboard-section w-tab-pane">
           <div class="container">
-            <h3>Project Overview</h3>
+            <h3>Forums</h3>
             <div class="project-grid">
               <div class="template-left">
                 <div class="white-box full-width">
                   <div class="box-padding">
                     <h4>Hi <span ms-data="first-name">name</span>!</h4>
-                    <div class="project-message">To the right, you&#x27;ll find a live preview of your site. Please take some time to look it over, and submit your thoughts via the chat. <br><br>You can check in for updates at any time. </div>
+                    <div class="project-message">To the right, you&#x27;ll find the community forums for AC0/RD, as well as the documentation. The Integrated Development Environment, Games, & Administration dashboards are coming soon</div>
                   </div>
                 </div>
               </div>
