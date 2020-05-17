@@ -711,6 +711,21 @@ label {
 
 .white-box.two-third {
   width: 64%;
+  height: 1000px;
+  margin-right: 1%;
+  margin-left: 1%;
+}
+
+.white-box.two-tthird {
+  width: 64%;
+  height: 100px;
+  margin-right: 1%;
+  margin-left: 1%;
+}
+
+.white-box.twoo-third {
+  width: 100%;
+  height: 1000px;
   margin-right: 1%;
   margin-left: 1%;
 }
@@ -739,15 +754,7 @@ label {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
-  -webkit-box-align: start;
-  -webkit-align-items: flex-start;
-  -ms-flex-align: start;
+  -ms-flex-directin: start;
   align-items: flex-start;
 }
 
