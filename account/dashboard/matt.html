@@ -27,8 +27,8 @@
 <body>
   <div class="page-wrapper">
     <div class="top-nav">
-      <a href="http://acord.software" class="logo-link w-nav-brand">
-        <div>AC0/RD</div>
+      <a href="http://acord.software/index1.html" class="logo-link w-nav-brand">
+        <div>AC0/RD0/RD</div>
       </a>
       <div data-hover="1" data-delay="100" class="dropdown w-dropdown">
         <div class="navigation-item profile-nav w-dropdown-toggle"><img src="users-1.svg" alt="" class="profile-pic">
@@ -80,41 +80,11 @@
           <div>Apps</div>
         </a>
       </div>
-      <div class="top-nav footer-nav">
-        <div class="contain">
-          <a href="http://acord.software" class="logo-link w-nav-brand">
-            <div>AC0/RD Software</div>
-          </a>
-          
-        </div>
-        <!--<div class="footer-menu"><a href="https://webflow.com?rfsn=1495911.39ce0" target="_blank" class="navigation-item footer-nav-item w-inline-block"><img src="../images/5cbcc29efad96cf6f89a0d61_Webflow-round.svg" alt="" class="navigation-icon"><div>Webflow</div></a>--><a href="https://acordrobotics.slack.com/" target="_blank" class="navigation-item footer-nav-item w-inline-block"><img src="../images/slack-new-logo.svg" alt="" class="navigation-icon"><div>Slack Community</div></a><a href="https://www.memberstack.io" target="_blank" class="navigation-item footer-nav-item w-inline-block"><img src="../images/Logo.svg" alt="" class="navigation-icon memberstack-logo"><div>Powered by MemberStack in collaboration with AC0/RD</div></a></div>
-        <!--<div class="social-row"><a href="#" class="social-link w-inline-block"><img src="https://uploads-ssl.webflow.com/5cd9dbe554fe38a1c05e6a9b/5cda1f38c90d43d1dc53de2e_Facebook.svg" alt=""></a><a href="#" class="social-link w-inline-block"><img src="https://uploads-ssl.webflow.com/5cd9dbe554fe38a1c05e6a9b/5cda1f38c6b14fc86a26b25f_Twitter.svg" alt=""></a><a href="#" class="social-link w-inline-block"><img src="https://uploads-ssl.webflow.com/5cd9dbe554fe38a1c05e6a9b/5cda1f47ec31a1854e1cf128_Youtube.svg" alt=""></a><a href="#" class="social-link w-inline-block"><img src="https://uploads-ssl.webflow.com/5cd9dbe554fe38a1c05e6a9b/5cda1fe7b775662acf936ca5_Dribbble.svg" alt=""></a><a href="#" class="social-link w-inline-block"><img src="https://uploads-ssl.webflow.com/5cd9dbe554fe38a1c05e6a9b/5cda21dec6b14f2e4826b7e3_Spotify.svg" alt=""></a><a href="#" class="social-link w-inline-block"><img src="https://uploads-ssl.webflow.com/5cd9dbe554fe38a1c05e6a9b/5cda1f4ac90d43b98853de4c_Behance.svg" alt=""></a></div>-->
-      </div>
-      <div class="mobile-footer-spacing"></div>
-    </div>
-    <script src="https://d1tdp7z6w94jbb.cloudfront.net/js/jquery-3.3.1.min.js" type="text/javascript" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <script src="../js/user-dashboard.js" type="text/javascript"></script>
-    <!-- [if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif] -->
-    <div memberstack-template="Client Dashboard Template"></div>
-    <!-- Crisp + MemberStack -->
-    <script>
-      MemberStack.onReady.then(function(member) {
-      var email = member["email"]
-      var name = member["first-name"]
-      if (member.loggedIn) {
-          try{
-              $crisp.push(["set", "user:email", [email] ])
-              $crisp.push(["set", "user:nickname", [name] ])
-            } catch(e) {}
-      }
-  })
-  </script>
       <div class="dash-tab-wrapper w-tab-content">
         <div data-w-tab="Tab 1" class="dashboard-section w-tab-pane w--tab-active">
           <div class="container">
             <h3>Welcome back, <span ms-data="first-name">Matt</span>!</h3>
             <div class="dash-row">
-              
               <div class="white-box third">
                 <div class="box-padding">
                   <div class="colorful-icon green"></div>
@@ -122,7 +92,6 @@
                   <div>Running Projects</div>
                 </div>
               </div>
-              
               <div class="white-box third">
                 <div class="box-padding">
                   <div class="colorful-icon green"></div>
@@ -137,11 +106,8 @@
                   <div>Target launch</div>
                 </div>
               </div>
-
-              <div class="white-box twoo-third">
-                <iframe src="https://tribe.acord.software" style="border:0px #ffffff none;" name="myiFrame" scrolling="yes" frameborder="1" marginheight="0px" marginwidth="0px" height="1000px" width="100%" allowfullscreen></iframe>
-              
-              <div class="white-box two-tthird">
+              <div class="white-box twoo-third"> <iframe src="https://tribe.acord.software" style="border:0px #ffffff none;" name="myiFrame" scrolling="yes" frameborder="1" marginheight="0px" marginwidth="0px" height="1000px" width="100%" allowfullscreen></iframe> </div>
+              <div class="white-box two-third">
                 <div class="box-padding">
                   <div class="w-embed w-script"><canvas id="lineChart"></canvas>
                     <script>
@@ -171,12 +137,9 @@ var chart = new Chart(ctx, {
                   </div>
                 </div>
               </div>
-              
-              
-            
+             <!-- <div class="white-box third">
                 <div class="box-padding">
-                  
-             <!--     <div class="w-embed w-script"><canvas id="myDonut"></canvas>
+                  <div class="w-embed w-script"><canvas id="myDonut"></canvas>
                     <script>
   var data = {
   labels: [
@@ -319,31 +282,31 @@ iframe {
                         <div class="progress-icon">
                           <div>1</div>
                         </div>
-                        <div>Formation</div>
+                        <div>Research</div>
                       </div>
                       <div class="progress-text-column">
                         <div class="progress-icon">
                           <div>2</div>
                         </div>
-                        <div>Recruit</div>
+                        <div>Define</div>
                       </div>
                       <div class="progress-text-column">
                         <div class="progress-icon">
                           <div>3</div>
                         </div>
-                        <div>Project Proposals</div>
+                        <div>Ideate</div>
                       </div>
                       <div class="progress-text-column">
                         <div class="progress-icon">
                           <div>4</div>
                         </div>
-                        <div>Launch</div>
+                        <div>Prototype</div>
                       </div>
                       <div class="progress-text-column">
                         <div class="progress-icon">
                           <div>5</div>
                         </div>
-                        <div>Collaborate</div>
+                        <div>Test</div>
                       </div>
                     </div>
                     <div class="progress-bar-wrap">
@@ -355,36 +318,36 @@ iframe {
             </div>
           </div>
           <div class="container">
-            <h3 class="heading">Formation</h3>
+            <h3 class="heading">Testing</h3>
             <div class="dash-row">
               <div class="white-box full-width">
                 <div class="box-padding w-richtext">
-                  <h4>December 23, 2015</h4>
+                  <h4>ETA: June 10th</h4>
                 </div>
               </div>
             </div>
           </div>
           <div class="container">
-            <h3 class="heading">Projects</h3>
+            <h3 class="heading">Prototyping</h3>
             <div class="dash-row">
               <div class="white-box full-width">
                 <div class="box-padding w-richtext">
-                  <h4>Project Arcadia | Star Sailors | HeroX | AI For Good </h4>
+                  <h4>ETA: May 10th</h4>
                 </div>
               </div>
             </div>
           </div>
           <div class="container">
-            <h3 class="heading">Public Launch</h3>
+            <h3 class="heading">Ideation</h3>
             <div class="dash-row">
               <div class="white-box full-width">
                 <div class="box-padding w-richtext">
-                  <h4>ETA: June 1 2020</h4>
+                  <h4>ETA: April 25th</h4>
                 </div>
               </div>
             </div>
           </div>
-          <!--<div class="container">
+          <div class="container">
             <h3 class="heading">Definition</h3>
             <div class="dash-row">
               <div class="white-box full-width">
@@ -414,7 +377,7 @@ iframe {
               </div>
             </div>
           </div>
-        </div>-->
+        </div>
         <div data-w-tab="Tab 4" class="dashboard-section w-tab-pane">
           <div class="container">
             <h3 class="heading">Documents</h3>
@@ -475,6 +438,34 @@ iframe {
         </div>
       </div>
     </div>
-    
+    <div class="top-nav footer-nav">
+      <div class="contain">
+        <a href="http://acord.software" class="logo-link w-nav-brand">
+          <div>AC0/RD Software</div>
+        </a>
+        
+      </div>
+      <!--<div class="footer-menu"><a href="https://webflow.com?rfsn=1495911.39ce0" target="_blank" class="navigation-item footer-nav-item w-inline-block"><img src="../images/5cbcc29efad96cf6f89a0d61_Webflow-round.svg" alt="" class="navigation-icon"><div>Webflow</div></a>--><a href="https://acordrobotics.slack.com/" target="_blank" class="navigation-item footer-nav-item w-inline-block"><img src="../images/slack-new-logo.svg" alt="" class="navigation-icon"><div>Slack Community</div></a><a href="https://www.memberstack.io" target="_blank" class="navigation-item footer-nav-item w-inline-block"><img src="../images/Logo.svg" alt="" class="navigation-icon memberstack-logo"><div>Powered by MemberStack in collaboration with AC0/RD</div></a></div>
+      <!--<div class="social-row"><a href="#" class="social-link w-inline-block"><img src="https://uploads-ssl.webflow.com/5cd9dbe554fe38a1c05e6a9b/5cda1f38c90d43d1dc53de2e_Facebook.svg" alt=""></a><a href="#" class="social-link w-inline-block"><img src="https://uploads-ssl.webflow.com/5cd9dbe554fe38a1c05e6a9b/5cda1f38c6b14fc86a26b25f_Twitter.svg" alt=""></a><a href="#" class="social-link w-inline-block"><img src="https://uploads-ssl.webflow.com/5cd9dbe554fe38a1c05e6a9b/5cda1f47ec31a1854e1cf128_Youtube.svg" alt=""></a><a href="#" class="social-link w-inline-block"><img src="https://uploads-ssl.webflow.com/5cd9dbe554fe38a1c05e6a9b/5cda1fe7b775662acf936ca5_Dribbble.svg" alt=""></a><a href="#" class="social-link w-inline-block"><img src="https://uploads-ssl.webflow.com/5cd9dbe554fe38a1c05e6a9b/5cda21dec6b14f2e4826b7e3_Spotify.svg" alt=""></a><a href="#" class="social-link w-inline-block"><img src="https://uploads-ssl.webflow.com/5cd9dbe554fe38a1c05e6a9b/5cda1f4ac90d43b98853de4c_Behance.svg" alt=""></a></div>-->
+    </div>
+    <div class="mobile-footer-spacing"></div>
+  </div>
+  <script src="https://d1tdp7z6w94jbb.cloudfront.net/js/jquery-3.3.1.min.js" type="text/javascript" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="../js/user-dashboard.js" type="text/javascript"></script>
+  <!-- [if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif] -->
+  <div memberstack-template="Client Dashboard Template"></div>
+  <!-- Crisp + MemberStack -->
+  <script>
+    MemberStack.onReady.then(function(member) {
+    var email = member["email"]
+    var name = member["first-name"]
+    if (member.loggedIn) {
+        try{
+            $crisp.push(["set", "user:email", [email] ])
+            $crisp.push(["set", "user:nickname", [name] ])
+          } catch(e) {}
+    }
+})
+</script>
 </body>
 </html>
