@@ -1434,3 +1434,96 @@ p {
   .back-to-top:hover {
     background-color: rgba(8, 152, 231, 0.5);
     color: #fff; }
+/* ==========================================================================
+  8. Features Section Style
+   ========================================================================== */
+   #features {
+    background: #fff;
+  }
+  
+  #features .icon {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    border-radius: 4px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+  }
+  
+  #features .content-left span {
+    float: right;
+  }
+  
+  #features .content-left .text {
+    text-align: right;
+  }
+  
+  #features .content-right span {
+    float: left;
+  }
+  
+  #features .box-item {
+    box-shadow: 0 0 12px #F4F4F4;
+    padding: 15px;
+    line-height: 22px;
+    margin-top: 30px;
+    border-radius: 3px;
+    background-color: #fff;
+    -webkit-transition: all .3s ease-in-out;
+    -mox-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    position: relative;
+    top: 0;
+  }
+  
+  #features .box-item .icon {
+    text-align: center;
+    margin: 12px;
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+  }
+  
+  #features .box-item .icon i {
+    color: #F63854;
+    font-size: 30px;
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+  }
+  
+  #features .box-item .text h4 {
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px;
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+  }
+  
+  #features .box-item .text p {
+    font-size: 14px;
+    line-height: 26px;
+  }
+  
+  #features .box-item:hover {
+    box-shadow: 0 10px 22px 10px rgba(27, 38, 49, 0.1);
+  }
+  
+  #features .box-item:hover h4 {
+    color: #F63854;
+  }
+  
+  #features .show-box {
+    margin-top: 50px;
+  }
+  
+  #features .show-box img {
+    width: 100%;
+  }
+  
