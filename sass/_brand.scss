@@ -1,0 +1,48 @@
+.brand-style-one {
+	position: relative;
+    [class*=bubble-] {
+        position: absolute;
+        animation-name: bubbleMover;
+        animation-duration: 4s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        transition: all .4s ease;
+        perspective: 400px;
+    }
+
+    .bubble-1 {
+        top: 15%;
+        left: 18%;
+    }
+
+    .bubble-2 {
+        top: 30%;
+        right: 20%;
+    }
+}
+
+.brand-carousel-one {
+    padding: 119.5px 0;
+    padding-left: 45px;
+    padding-right: 45px;
+
+    .item {
+        img {
+            width: auto;
+            max-width: none;
+            margin-left: auto;
+            margin-right: auto;
+            opacity: .3;
+            transition: all .4s ease;
+
+            &:hover {
+                opacity: .6;
+            }
+        }
+    }
+
+    .owl-dots,
+    .owl-nav {
+        display: none;
+    }
+}

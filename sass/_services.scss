@@ -1,0 +1,200 @@
+.service-one {
+	padding-top: 120px;
+    &__single {
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        border-radius: 4px;
+        background-color: rgb(255, 255, 255);
+        box-shadow: 0px 10px 60px 0px rgba(46, 61, 98, 0.1);
+        overflow: hidden;
+        position: relative;
+        transition: all .4s ease;
+
+        &:before,
+        &:after {
+            content: '';
+            width: 191px;
+            height: 191px;
+            border-radius: 50%;
+            background-color: #fff;
+            opacity: .1;
+            position: absolute;
+            transition: all .4s ease .2s;
+        }
+
+        &:before {
+            top: 0;
+            right: 0;
+            transform: translate(60%, -60%);
+        }
+
+        &:after {
+            bottom: 0;
+            left: 0;
+            transform: translate(-60%, 60%);
+        }
+    }
+
+    &__icon {
+        font-size: 60px;
+        transition: all .4s ease;
+        color: #5DD8D3;
+    }
+
+    &__title {
+        margin: 0;
+        font-size: 20px;
+        line-height: 34px;
+        font-weight: 600;
+        margin-top: 10px;
+        margin-bottom: 40px;
+
+        a {
+            color: #2E3D62;
+            transition: all .4s ease;
+
+            &:hover {
+                color: #fff;
+            }
+        }
+    }
+
+    &__text {
+        color: #666E82;
+        font-size: 16px;
+        line-height: 34px;
+        margin: 0;
+        margin-bottom: 25px;
+        transition: all .4s ease;
+    }
+
+    &__link {
+        display: inline-block;
+        vertical-align: middle;
+        font-size: 32px;
+        color: #BCBFC7;
+        transform: rotate(180deg);
+        transition: all .4s ease;
+    }
+}
+
+[class*=col-]:nth-child(1) {
+    .service-one__icon {
+    	color: #5DD8D3;
+    }
+
+    .service-one__single:hover {
+        background-color: #5DD8D3;
+
+        .service-one__icon,
+        .service-one__title a,
+        .service-one__text,
+        .service-one__link {
+            color: #fff;
+        }
+
+        &:before {
+            top: 0;
+            right: 0;
+            transform: translate(30%, -30%);
+        }
+
+        &:after {
+            bottom: 0;
+            left: 0;
+            transform: translate(-30%, 30%);
+        }
+    }
+}
+
+
+[class*=col-]:nth-child(2) {
+    .service-one__icon {
+    	color: #9364D4;
+    }
+
+    .service-one__single:hover {
+        background-color: #9364D4;
+
+        .service-one__icon,
+        .service-one__title a,
+        .service-one__text,
+        .service-one__link {
+            color: #fff;
+        }
+
+        &:before {
+            top: 0;
+            right: 0;
+            transform: translate(30%, -30%);
+        }
+
+        &:after {
+            bottom: 0;
+            left: 0;
+            transform: translate(-30%, 30%);
+        }
+    }
+}
+
+
+[class*=col-]:nth-child(3) {
+    .service-one__icon {
+    	color: #EE539B;
+    }
+
+    .service-one__single:hover {
+        background-color: #EE539B;
+
+        .service-one__icon,
+        .service-one__title a,
+        .service-one__text,
+        .service-one__link {
+            color: #fff;
+        }
+
+        &:before {
+            top: 0;
+            right: 0;
+            transform: translate(30%, -30%);
+        }
+
+        &:after {
+            bottom: 0;
+            left: 0;
+            transform: translate(-30%, 30%);
+        }
+    }
+}
+
+
+[class*=col-]:nth-child(4) {
+    .service-one__icon {
+    	color: #FDDD6E;
+    }
+
+    .service-one__single:hover {
+        background-color: #FDDD6E;
+
+        .service-one__icon,
+        .service-one__title a,
+        .service-one__text,
+        .service-one__link {
+            color: #fff;
+        }
+
+        &:before {
+            top: 0;
+            right: 0;
+            transform: translate(30%, -30%);
+        }
+
+        &:after {
+            bottom: 0;
+            left: 0;
+            transform: translate(-30%, 30%);
+        }
+    }
+}

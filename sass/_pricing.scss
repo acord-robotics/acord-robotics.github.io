@@ -1,0 +1,112 @@
+.pricing-one {
+	position: relative;
+	z-index: 10;
+	padding-top: 60px;
+    &__single {
+    	padding-bottom: 50px;
+        text-align: center;
+        margin-bottom: 50px;
+
+        border-radius: 4px;
+        background-color: rgb(255, 255, 255);
+        box-shadow: 0px 10px 60px 0px rgba(46, 61, 98, 0.1);
+
+        border-top: 5px solid #9364D4;
+    }
+
+    &__top {
+        border-bottom: 1px solid #E8E8E8;
+        padding-top: 50px;
+    }
+
+    &__title {
+        margin: 0;
+        color: #9364D4;
+        font-size: 60px;
+        font-weight: 300;
+        line-height: 1em;
+    }
+
+    &__pack {
+        margin: 0;
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 1em;
+        letter-spacing: .2em;
+        margin-top: 20px;
+        margin-bottom: 60px;
+        color: #2E3D62;
+    }
+
+    &__feature {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        margin-top: 60px;
+        margin-bottom: 60px;
+
+        &-item {
+            font-size: 16px;
+            color: #666E82;
+            line-height: 1em;
+        }
+        &-item+ &-item {
+        	margin-top: 20px;
+        }
+    }
+
+    &__btn {
+        display: inline-block;
+        vertical-align: middle;
+        border-radius: 27px;
+        border: 1px solid #EAEAEA;
+        padding: 9px 49px;
+        background-color: #fff;
+        color: #666E82;
+        font-size: 16px;
+        font-weight: 600;
+        transition: all .4s ease;
+
+        &:hover {
+            border-color: #9364D4;
+            background-color: #9364D4;
+            color: #fff;
+        }
+    }
+
+    &__note {
+        text-transform: uppercase;
+        color: #666E82;
+        font-weight: 600;
+        font-size: 12px;
+        letter-spacing: .2em;
+        margin-top: 25px;
+    }
+}
+
+[class*=col-]:nth-child(2) {
+	.pricing-one__single {
+		border-top-color: #EE539B;
+	}
+	.pricing-one__title {
+		color: #EE539B;
+	}
+	.pricing-one__btn:hover {
+		background-color: #EE539B;
+		border-color: #EE539B;
+	}
+}
+
+[class*=col-]:nth-child(3) {
+	.pricing-one__single {
+		border-top-color: #FDDD6E;
+	}
+	.pricing-one__title {
+		color: #FDDD6E;
+	}
+	.pricing-one__btn:hover {
+		background-color: #FDDD6E;
+		border-color: #FDDD6E;
+	}
+}

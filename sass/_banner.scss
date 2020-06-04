@@ -1,0 +1,120 @@
+.banner-one {
+    background: transparent url(../images/banner-bg-1-1.png) right top no-repeat;
+    background-size: cover;
+    padding-top: 315px;
+    padding-bottom: 147px;
+
+    position: relative;
+
+
+
+    [class*=bubble-] {
+        position: absolute;
+        animation-name: bubbleMover;
+        animation-duration: 4s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        transition: all .4s ease;
+        perspective: 400px;
+    }
+
+    .bubble-1 {
+        top: 15%;
+        left: 13%;
+    }
+
+    .bubble-2 {
+        top: 25%;
+        left: 35%;
+    }
+
+    .bubble-3 {
+        top: 60%;
+        left: 15%;
+    }
+
+    .bubble-4 {
+        bottom: 10%;
+        left: 45%;
+    }
+
+    .bubble-5 {
+        top: 10%;
+        right: 15%;
+    }
+
+    .bubble-6 {
+        top: 30%;
+        right: 40%;
+    }
+
+    &__moc {
+        position: absolute;
+        top: 245px;
+        right: 0;
+    }
+
+    .block-title {
+        margin-bottom: 35px;
+    }
+    .block-title__text {
+        font-size: 60px;
+        line-height: 70px;
+    }
+
+    &__text {
+        margin: 0;
+        font-size: 16px;
+        line-height: 34px;
+        color: #666E82;
+        margin-bottom: 50px;
+    }
+
+    &__btn {
+        display: inline-block;
+        vertical-align: middle;
+        border-radius: 32px;
+        text-align: center;
+        background-color: #FF8257;
+        color: #FFFFFF;
+        font-size: 16px;
+        font-weight: 600;
+        padding: 15px 59.5px;
+        transition: all .4s ease;
+        box-shadow: 0px 10px 30px 0px rgba(255, 130, 87, 0.3);
+
+        &:hover {
+            background-color: $thm_black;
+            color: #fff;
+            box-shadow: 0px 10px 30px 0px rgba($thm_black, 0.3);
+        }
+    }
+}
+
+
+.banner-one__home-two {
+    background-image: url(../images/banner-bg-1-2.jpg);
+    .block-title__text {
+        color: #fff;
+    }
+    .block-title__text span:before {
+        background-color: #fff;
+        opacity: .1;
+    }
+
+    .banner-one__text {
+        color: #fff;
+    }
+    .banner-one__btn {
+        background-color: #fff;
+        color: #2E3D62;
+        &:hover {
+            background-color: #2E3D62;
+            color: #fff;
+        }
+    }
+    .banner-one__moc {
+        top: auto;
+        bottom: 0;
+    }
+}

@@ -1,0 +1,231 @@
+.site-footer {
+    position: relative;
+
+    [class*=bubble-] {
+        position: absolute;
+        animation-name: bubbleMover;
+        animation-duration: 4s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        transition: all .4s ease;
+        perspective: 400px;
+    }
+
+    .bubble-1 {
+        top: 15%;
+        left: 13%;
+    }
+
+    .bubble-2 {
+        top: 15%;
+        right: 20%;
+    }
+
+    .bubble-3 {
+        bottom: 20%;
+        left: 10%;
+    }
+
+    .bubble-4 {
+        bottom: 15%;
+        right: 13%;
+    }
+}
+
+@keyframes bubbleMover {
+    0% {
+        transform: rotate3d(0, 1, 0, 15deg) translateY(0px) translateX(0px);
+    }
+
+    30% {
+        transform: rotate3d(0, 0, 1, 20deg) translateY(10px) translateX(10px);
+    }
+
+    60% {
+        transform: rotate3d(1, 0, 0, 15deg) translateY(20px) translateX(20px);
+    }
+
+    80% {
+        transform: rotate3d(0, 0, 1, 20deg) translateY(10px) translateX(10px);
+    }
+
+    100% {
+        transform: rotate3d(0, 1, 0, 15deg) translateY(0px) translateX(0px);
+    }
+}
+
+.site-footer__main-footer {
+    padding-bottom: 120px;
+}
+
+.site-footer__bottom-footer {
+    background-color: #FAFAFA;
+    padding: 44px 0;
+
+    p {
+        margin: 0;
+        color: #666E82;
+        font-size: 16px;
+
+        a {
+            color: #FF8257;
+            transition: all .4s ease;
+
+            &:hover {
+                color: #9364D4;
+            }
+        }
+    }
+}
+
+.footer-widget {
+    p {
+        margin: 0;
+        color: #666E82;
+        font-size: 15px;
+        line-height: 26px;
+
+        +p {
+            margin-top: 16px;
+        }
+    }
+
+    .social-block {
+        margin-top: -20px;
+
+        a {
+            display: inline-block;
+            vertical-align: middle;
+            color: #666E82;
+            font-size: 22px;
+            transition: all .4s ease;
+
+            +a {
+                margin-left: 22px;
+            }
+
+            &:hover {
+                color: #FF8257;
+            }
+        }
+    }
+}
+
+.footer-widget__footer-logo {
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: -8px;
+    margin-bottom: 28px;
+}
+
+.footer-widget__title {
+    margin: 0;
+    color: #2E3D62;
+    font-size: 18px;
+    line-height: 1em;
+    font-weight: 600;
+    margin-bottom: 35px;
+}
+
+.footer-widget__link-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    li {
+        line-height: 1em;
+
+        +li {
+            margin-top: 24px;
+        }
+
+        a {
+            color: #666E82;
+            font-size: 15px;
+            display: inline-block;
+            position: relative;
+            transition: all .4s ease;
+
+            &:before {
+                content: '\f101';
+                font-family: 'FontAwesome';
+                color: #FF8257;
+                font-size: 14px;
+                position: absolute;
+                top: 50%;
+                left: 0;
+                transform: translateY(-50%) translateX(-15px);
+                opacity: 0;
+                transition: all .4s ease;
+            }
+
+            &:hover {
+                color: #9364D4;
+                transform: translateX(20px);
+
+                &:before {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+
+.site-footer__subscribe {
+    padding-bottom: 125px;
+    padding-top: 110px;
+}
+
+.site-footer__subscribe-form {
+    width: 100%;
+    max-width: 685px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 84px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(234, 234, 234);
+    border-radius: 42px;
+    position: relative;
+    overflow: hidden;
+
+    input {
+        border: none;
+        outline: none;
+        background-color: transparent;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        color: #666E82;
+        font-size: 16px;
+        padding-left: 60px;
+
+        @include placeholder {
+            color: #666E82;
+        }
+    }
+
+    button[type=submit] {
+        border: none;
+        outline: none;
+        cursor: pointer;
+        background-color: #FF8257;
+        width: 211px;
+        height: 64px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 10px;
+        border-radius: 32px;
+        font-size: 16px;
+        font-weight: 600;
+        color: #fff;
+        transition: all .4s ease;
+
+        &:hover {
+            background-color: #9364D4;
+        }
+    }
+}
