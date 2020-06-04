@@ -1,0 +1,97 @@
+/***************************************************************************************************************
+||||||||||||||||||||||||||||            MASTER STYLESHEET FOR Nonid         ||||||||||||||||||||||||||||||||||||
+****************************************************************************************************************
+||||||||||||||||||||||||||||              TABLE OF CONTENT                  ||||||||||||||||||||||||||||||||||||
+****************************************************************************************************************
+****************************************************************************************************************
+* 1. imported styles
+* 2. common styles
+* 3. header styles
+* 4. banner styles
+* 5. footer styles
+* 6. blog styles
+* 7. fun fact styles
+* 8. brand styles
+* 9. testimonials styles
+* 10. inner-banner styles
+* 11. pricing styles
+* 12. cta styles
+* 13. services styles
+* 14. sidebar styles
+****************************************************************************************************************
+||||||||||||||||||||||||||||            End TABLE OF CONTENT                ||||||||||||||||||||||||||||||||||||
+****************************************************************************************************************/
+
+
+// helper functions
+@import 'helper-functions';
+
+/*
+* 1. imported styles
+*/
+@import 'imported';
+
+/*
+* 2. common styles
+*/
+@import 'common';
+
+/*
+* 3. header styles
+*/
+@import 'header';
+
+/*
+* 4. banner styles
+*/
+@import 'banner';
+
+/*
+* 5. footer styles
+*/
+@import 'footer';
+
+/*
+* 6. blog styles
+*/
+@import 'blog';
+
+/*
+* 7. fun fact styles
+*/
+@import 'fun-fact';
+
+/*
+* 8. brand styles
+*/
+@import 'brand';
+
+/*
+* 9. testimonials styles
+*/
+@import 'testimonials';
+
+/*
+* 10. inner-banner styles
+*/
+@import 'inner-banner';
+
+/*
+* 11. pricing styles
+*/
+@import 'pricing';
+
+/*
+* 12. cta styles
+*/
+@import 'cta';
+
+/*
+* 13. services styles
+*/
+@import 'services';
+
+/*
+* 14. sidebar styles
+*/
+@import 'sidebar';

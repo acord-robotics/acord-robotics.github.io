@@ -1,0 +1,121 @@
+.fun-fact-one {
+    position: relative;
+    padding-top: 110px;
+    padding-bottom: 120px;
+
+    [class*=bubble-] {
+        position: absolute;
+        animation-name: bubbleMover;
+        animation-duration: 4s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        transition: all .4s ease;
+        perspective: 400px;
+    }
+
+    .bubble-1 {
+        top: 25%;
+        left: 23%;
+    }
+
+    .bubble-2 {
+        top: 15%;
+        right: 30%;
+    }
+
+    .bubble-3 {
+        bottom: 20%;
+        left: 10%;
+    }
+
+    .bubble-4 {
+        bottom: 15%;
+        right: 13%;
+    }
+
+    &__box-wrapper {
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__single {
+        .inner-block {
+            border-radius: 50%;
+            background-color: rgb(255, 255, 255);
+            box-shadow: 0px 25px 60px 0px rgba(46, 61, 98, 0.05);
+            width: 220px;
+            height: 220px;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+
+
+            &:before {
+                content: '';
+                position: absolute;
+                top: 15px;
+                left: 15px;
+                right: 15px;
+                bottom: 15px;
+                border: 1px solid #EF4059;
+                border-radius: 50%;
+            }
+
+        }
+
+
+            &:nth-child(2n) {
+                margin-top: 80px;
+            }
+    }
+
+    &__title {
+        margin: 0;
+        color: #EF4059;
+        font-size: 40px;
+        font-weight: 300;
+        line-height: 1em;
+    }
+
+    &__text {
+        margin: 0;
+        font-size: 12px;
+        line-height: 1em;
+        color: #666E82;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: .2em;
+        margin-top: 20px;
+    }
+
+    &__single:nth-child(2) .inner-block:before {
+        border-color: #5DD8D3;
+    }
+
+    &__single:nth-child(2) .inner-block &__title {
+        color: #5DD8D3;
+    }
+
+    &__single:nth-child(3) .inner-block:before {
+        border-color: #9364D4;
+    }
+
+    &__single:nth-child(3) .inner-block &__title {
+        color: #9364D4;
+    }
+
+    &__single:nth-child(4) .inner-block:before {
+        border-color: #FF8257;
+    }
+
+    &__single:nth-child(4) .inner-block &__title {
+        color: #FF8257;
+    }
+}

@@ -1,0 +1,194 @@
+.testimonials-style-one {
+    background: transparent url(../images/testi-bg-1-1.png) center top no-repeat;
+    padding-top: 530px;
+    padding-bottom: 120px;
+    background-size: cover;
+    position: relative;
+    margin-top: -380px;
+
+
+
+    .block-title {
+        margin-bottom: 45px;
+    }
+
+    .single-testi-one {
+        p {
+            margin: 0;
+            color: #666E82;
+            font-size: 22px;
+            line-height: 46px;
+        }
+
+        h3 {
+            color: #FF8257;
+            font-weight: 600;
+            font-size: 20px;
+            margin: 0;
+            margin-top: 40px;
+        }
+    }
+
+    .bx-wrapper {
+        border: none;
+        box-shadow: none;
+        background-color: transparent;
+        margin-bottom: 0;
+
+        ul.slider {
+            padding: 0;
+            margin: 0;
+        }
+    }
+
+    .bx-wrapper .bx-controls-direction {
+        position: absolute;
+        bottom: -10px;
+        right: 0;
+    }
+
+    .bx-wrapper .bx-controls-direction a {
+        text-indent: 0;
+        background-image: none;
+        font-size: 32px;
+        position: relative;
+        top: 0px;
+        opacity: .3;
+        color: #666E82;
+        z-index: 10;
+        transition: all .4s ease;
+
+        &:hover {
+            opacity: 1;
+            color: #FF8257;
+        }
+    }
+
+    .bx-wrapper .bx-prev {
+        left: 0px;
+        margin-right: 25px;
+    }
+
+    .bx-wrapper .bx-next {
+        right: 0px;
+    }
+}
+
+#testimonials-slider-pager {
+    width: 536px;
+    height: 536px;
+    position: relative;
+    margin-top: -80px;
+    animation-name: tesiMove;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    transition: all .4s ease;
+    transform-origin: center center;
+
+    @keyframes tesiMove {
+        0% {
+            transform: rotate(0deg);
+        }
+
+        15% {
+            transform: rotate(2deg);
+        }
+
+        33% {
+            transform: rotate(4deg);
+        }
+
+        66% {
+            transform: rotate(2deg);
+        }
+
+        100% {
+            transform: rotate(0deg);
+        }
+    }
+
+    .testi-icon {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%) translateX(-50%);
+        width: 99px;
+        height: 99px;
+        border-radius: 50%;
+        background-color: #FF8257;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 10;
+
+        &:after,
+        &:before {
+            width: 99px;
+            height: 99px;
+            border-radius: 50%;
+            background-color: #FF8257;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            animation-delay: .9s;
+            content: "";
+            position: absolute;
+            box-shadow: 0 0 0 0 rgba(#000000, .2);
+            animation: ripple 3s infinite;
+            transition: all .4s ease;
+        }
+
+        &:after {
+            animation-delay: .6s;
+        }
+
+
+        @-webkit-keyframes ripple {
+            70% {
+                box-shadow: 0 0 0 40px rgba(#000000, 0);
+            }
+
+            100% {
+                box-shadow: 0 0 0 0 rgba(#000000, 0);
+            }
+        }
+
+        @keyframes ripple {
+            70% {
+                box-shadow: 0 0 0 40px rgba(#000000, 0);
+            }
+
+            100% {
+                box-shadow: 0 0 0 0 rgba(#000000, 0);
+            }
+        }
+
+        img {
+            position: relative;
+            z-index: 11;
+        }
+    }
+
+
+
+    .testimonials-slider-pager-one {
+        .pager-item {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(0);
+            opacity: 0;
+            transition: all .4s ease;
+
+            &.active {
+                opacity: 1;
+                transform: translate(-50%, -50%) scale(1);
+            }
+
+        }
+    }
+
+
+}
