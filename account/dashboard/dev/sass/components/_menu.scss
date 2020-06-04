@@ -1,0 +1,76 @@
+//this scss file contains the necessary style for menu style 1, changing this file will result on change of menu containing modifier class .menu--stye1
+
+/*****************************
+	--- MENU
+*****************************/
+.top-menu-area .logo{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+/*menu style 1*/
+.menu--style1{
+  .top-menu-area{
+    background: #fff;
+  }
+  .mainmenu, .mainmenu__menu{
+    background: $pcolor;
+  }
+  .mainmenu__menu ul li {
+     &:hover{
+      a{
+        color: #333;
+      }
+    }
+    a{
+      color: #fff;
+    }
+  }
+  .searc-wrap input{
+    background: transparentize(#fff,.8);
+    border: 0;
+    color: #ffffff;
+    font-weight: 400;
+  }
+  .searc-wrap input::-webkit-input-placeholder {
+    color: #fff;
+  }
+  .searc-wrap input::-moz-placeholder{
+    color: #fff;
+  }
+  .searc-wrap input:-ms-input-placeholder{
+    color: #fff;
+  }
+  .searc-wrap .search-wrap__btn{
+    background: #fff;
+    color: $pcolor;
+  }
+}
+
+/* menu style 2 */
+.menu--style2{
+  .author-area__seller-btn, .searc-wrap input,
+  .searc-wrap .search-wrap__btn{
+    border-radius: 4px;
+  }
+  .searc-wrap .search-wrap__btn{
+    width: 60px;
+  }
+}
+
+.menu--style3{
+  .top-menu-area{
+    background: #262b30;
+    .author__notification_area ul li span.lnr{
+      color: #9ba9b7;
+    }
+    .autor__info {
+      .name{
+        color: #fff;
+      }
+      .ammount{
+        color: #bbc4ce;
+      }
+    }
+  }
+}

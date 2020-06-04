@@ -1,0 +1,59 @@
+//this page contains the style for accordion components
+/*****************************
+	--- ACCORDION
+*****************************/
+@import "../common/theme";
+.accordion, .panel-group{
+  .accordion__single, .panel-default{
+    &+.accordion__single{
+      margin-top: 20px;
+    }
+    &+.panel-default{
+      margin-top: 20px;
+    }
+    .panel-heading{
+      background: none;
+      padding: 0;
+    }
+    .panel-body{
+      font-size: 16px;
+      p{
+          margin: 0;
+          padding: 15px;
+      }
+    }
+    border: 1px solid $borderColor;
+    border-radius: 0;
+    h4{
+      font-size: 18px;
+      a{
+        line-height: 26px;
+        display: block;
+        background: #eff1f5;
+        color: #333;
+        font-weight: 400;
+        padding: 15px 27px;
+        i.lnr{
+          float: right;
+          line-height: inherit;
+        }
+      }
+    }
+    .single_acco_title, .panel-title{
+      font-size: 22px;
+      a{
+        transition: $transition;
+        &.active {
+          background: $pcolor;
+          color: #fff;
+        }
+      }
+    }
+  }
+  .single_accordion_body{
+    padding: 27px 30px;
+    p{
+      margin: 0;
+    }
+  }
+}

@@ -1,0 +1,109 @@
+// this file contains the style for table component
+/*****************************
+	-- TABLE
+*****************************/
+@import "../common/theme";
+.table_module{
+  @extend .cardify;
+  .table_header{
+    padding: 33px 25px 30px;
+    border-bottom: 1px solid #ececec;
+  }
+}
+.table{
+  thead{
+    >tr {
+      >th {
+        color: #000;
+        font-size: 16px;
+        font-weight: 500;
+        padding: 25px 0 25px 28px;
+      }
+    }
+  }
+
+  tbody{
+    >tr{
+      border-bottom: 1px solid $borderColor;
+      >td{
+        padding: 20px 0 20px 28px;
+        font-size: 16px;
+        vertical-align: middle;
+        color: #333;
+        &.author{
+          color: #000;
+          font-weight: 500;
+        }
+        &.detail a{
+          color: $pcolor;
+          font-weight: 500;
+        }
+        &.type span{
+          line-height: 26px;
+          @include rounded;
+          display: inline-block;
+          padding: 0 15px;
+          color: #fff;
+          font-weight: 500;
+          font-size: 14px;
+          &.sale{
+            background: $mcolor1;
+          }
+          &.purchase{
+            background: $mcolor2;
+          }
+          &.credited{
+            background: $mcolor3;
+          }
+          &.withdrawal{
+            background: $mcolor4;
+          }
+        }
+        &.earning{
+          color: $pcolor;
+          &.subtract{
+            color: $scolor;
+          }
+          font-weight: 500;
+        }
+        &.action {
+          padding: 0;
+          text-align: center;
+          a {
+            line-height: 34px;
+            padding: 0 15px;
+            display: inline-block;
+            margin-left: -4px;
+            text-transform: capitalize;
+            font-size: 15px;
+            @include rounded;
+            background: transparentize($scolor, 0.9);
+            &:hover {
+              background: $pcolor;
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &.withdraw__table{
+    .pending > span, .paid > span{
+      font-size: 15px;
+      line-height: 32px;
+      padding: 0 20px;
+      font-weight: 500;
+      display: inline-block;
+      border-radius: 200px;
+    }
+    .pending > span{
+      background: $pcolor;
+      color: #fff;
+    }
+    .paid > span{
+      background: transparentize($pcolor, 0.9);
+      color: $pcolor;
+    }
+  }
+}

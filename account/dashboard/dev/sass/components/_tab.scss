@@ -1,0 +1,112 @@
+// this file contains the necessary style fr tha tab element
+ul.nav-tabs {
+  border: 0;
+  li{
+    position: relative;
+    border-bottom: 1px solid $borderColor;
+    &+li{
+      border-left: 1px solid $borderColor;
+    }
+    display: inline-block;
+    margin-right: -1px;
+    a{
+      color: #000;
+      font-size: 17px;
+      text-transform: capitalize;
+      padding: 0 28px;
+      display: block;
+      margin-right: 0;
+      line-height: 70px;
+      border: none;
+      transition: 0.3s;
+      &:hover{
+        border: none;
+        background: none;
+        color: $pcolor;
+      }
+      span{
+        font-weight: 500;
+      }
+      &:before{
+        content: "";
+        position: absolute;
+        height: 3px;
+        width: 100%;
+        background: $pcolor;
+        opacity: 0;
+        left: 0;
+        transition: $transition;
+        visibility: hidden;
+      }
+      &.active{
+        &:before{
+          opacity: 1;
+          visibility: visible;
+        }
+        border-bottom: 0;
+        border: 0;
+        background: none;
+        color:$pcolor;
+      }
+    }
+    &:last-child>a{
+      padding-right: 60px;
+    }
+  }
+  &.nav--tabs2{
+    display: inline-block;
+    margin-bottom: -4px;
+   li {
+     a{
+         padding-right: 30px;
+        &::before{
+            bottom: 0;
+        }
+     }
+     border: none;
+   }
+  }
+}
+.tab{
+  .tab-content{
+    margin-top: 30px;
+  }
+}
+.tab2{
+  padding: 0 30px 30px;
+  .item-navigation{
+    text-align: center;
+    border-bottom: 1px solid $borderColor;
+  }
+}
+.tab3{
+  @extend .tab2;
+  .item-navigation{
+    text-align: left;
+  }
+  ul.nav-tabs li a{
+    padding: 0 50px;
+  }
+}
+.tab4{
+  padding: 30px;
+  overflow: hidden;
+  .item-navigation{
+    float: left;
+    width: 20%;
+    border-bottom: 0;
+    border-left: 1px solid $borderColor;
+  }
+  .tab-content{
+    width: 80%;
+    float: left;
+  }
+  ul.nav-tabs {
+    li{
+      &:before{
+        height: 100%;
+        width: 3px;
+      }
+    }
+  }
+}
