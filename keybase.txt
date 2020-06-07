@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/gizmotronn
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://acord.software
+  * I am gizmotronn (https://keybase.io/gizmotronn) on keybase.
+  * I have a public key ASAK3hHSG2n7PZRHKi-HJxfjTvJmUcjYk_Y4iqy778pQ3Qo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01200ade11d21b69fb3d94472a2f872717e34ef26651c8d893f6388aacbbefca50dd0a",
+      "host": "keybase.io",
+      "kid": "01200ade11d21b69fb3d94472a2f872717e34ef26651c8d893f6388aacbbefca50dd0a",
+      "uid": "803cca4b296949dd7a0497110b390219",
+      "username": "gizmotronn"
+    },
+    "merkle_root": {
+      "ctime": 1591545822,
+      "hash": "bc77aadeb0fc87feefa44bdf7ec59a5dc277a6664206d8a43e7292394507792a3cdcca39c3b15a3780607e84cde6cd9e3857d928cc6867309c3522c4b971d438",
+      "hash_meta": "2b430caba8932db2e77ff2f3eb023ffc1de7a4a1469a301ce6dab3686c89ed24",
+      "seqno": 16575059
+    },
+    "service": {
+      "entropy": "7cjbK2oA0OEhhzs4uFoJSPYg",
+      "hostname": "acord.software",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "5.5.0"
+  },
+  "ctime": 1591545883,
+  "expire_in": 504576000,
+  "prev": "98836f4e94e8967fdfdee56952ffe365f50d54f268ce6d622736dbedb761c45d",
+  "seqno": 7,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgCt4R0htp+z2URyovhycX407yZlHI2JP2OIqsu+/KUN0Kp3BheWxvYWTESpcCB8QgmINvTpToln/f3uVpUv/jZfUNVPJozm1iJzbb7bdhxF3EIFVgatg+T35067w7Lo7YaluQe9Ms5+zxpNlXhwHDwqZqAgHCo3NpZ8RAg6dGPpfg6gVqMc57vbPhkzUAGlJo4xX96IHaSerl2KNQUEj4+ps31QVv9mGGyy21q6hYwv/8676LtozJFvb3CqhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIPcS9PbXdZRvExrTXrUvSq6rvXrJxjp9aMrIyIp2ZE3To3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/gizmotronn
+
+==================================================================
