@@ -1,0 +1,23 @@
+{
+    "dir": "ltr",
+    "lang": "en-US",
+    "name": "AC0/RD Software",
+    "short_name": "AC0/RD Software",
+    "scope": "/",
+    "display": "browser",
+    "start_url": "https://acord.software/",
+    "background_color": "transparent",
+    "theme_color": "transparent",
+    "description": "AC0/RD Software community",
+    "orientation": "any",
+    "related_applications": [],
+    "prefer_related_applications": false,
+    "icons": [
+        {
+            "src": "https://acord.software/favicon-16x16.png",
+            "type": "image/png",
+            "sizes": "64x68"
+        }
+    ],
+    "url": "https://acord.software"
+}
