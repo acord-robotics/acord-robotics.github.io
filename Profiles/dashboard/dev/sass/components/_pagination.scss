@@ -1,0 +1,75 @@
+// this file contains for different pagination style
+/*****************************
+	--- PAGINATION
+*****************************/
+.pagination-area{
+  text-align: center;
+  &.categorised_item_pagination{
+    text-align: right;
+  }
+  .page-numbers{
+    line-height: 36px;
+    display: inline-block;
+    min-width: 48px;
+    transition: $transition;
+    background: #fff;
+    border-radius: 25px;
+    font-weight: 500;
+    margin-right: 2px;
+    color: #747b86;
+    text-align: center;
+    &:hover, &.current{
+      background: $pcolor;
+      color: #fff;
+    }
+  }
+  .prev{
+    margin-right: 15px;
+  }
+  .next{
+    margin-left: 15px;
+  }
+  .prev.page-numbers, .next.page-numbers{
+    color: #000;
+    font-size: 16px;
+    &:hover{
+      color: #fff;
+      background: $scolor;
+    }
+  }
+  &.pagination-area2{
+    padding: 38px 30px;
+    &.text-right{
+      text-align: right;
+    }
+
+    .page-numbers{
+      background: $bgcolor;
+      text-align: center;
+      color: #747b86;
+      &:hover{
+        background: $pcolor;
+        color: #fff;
+      }
+      &.prev:hover, &.next:hover{
+        background: $scolor;
+      }
+    }
+    .pagination{
+      margin: 0;
+    }
+  }
+
+  &.pagination--right{
+    text-align: right;
+    .page-numbers{
+      text-align: center;
+    }
+  }
+  .pagination {
+    display: inline-block;
+    padding-left: 0;
+    margin: 20px 0 0 0;
+    border-radius: 4px;
+  }
+}

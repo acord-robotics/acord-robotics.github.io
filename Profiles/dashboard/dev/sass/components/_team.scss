@@ -1,0 +1,120 @@
+// this file contains the style for the team component
+/*****************************
+	-- TEAM
+*****************************/
+@import "../common/theme";
+.team_area{
+  background: $bgcolor2;
+}
+.single_team_member{
+  box-shadow: 0 2px 4px transparentize(#6c6f73,.9);
+  margin-bottom: 30px;
+  figure{
+    img{
+      width: 100%;
+      border-radius: 4px 4px 0 0;
+    }
+    figcaption{
+      overflow: hidden;
+      text-align: center;
+      background: #fff;
+      position: relative;
+      border-radius: 0 0 4px 4px;
+      .name_desig{
+        padding:20px 0;
+        -webkit-transition: 0.3s;
+        -moz-transition: 0.3s;
+        -ms-transition: 0.3s;
+        -o-transition: 0.3s;
+        transition: 0.3s;
+        h4{
+          color: #000;
+          font-size: 20px;
+          line-height: 28px;
+        }
+        p{
+          font-size: 16px;
+          margin-bottom: 0;
+        }
+      }
+    }
+    .social{
+      transition: 0.3s;
+      position: absolute;
+      height: 100%;
+      width:100%;
+      left:0;
+      opacity: 0;
+      visibility: hidden;
+      top:0;
+      @include gradient;
+      transform: scale(1.2);
+      ul{
+        position: absolute;
+        width: 100%;
+        top: 50%;
+        transform: translateY(-50%);
+        li{
+          a{
+            border-radius: 50%;
+            background: #fff;
+            font-size: 16px;
+            transition: $transition;
+            span.fa-facebook{
+              color: #395799;
+            }
+            span.fa-twitter{
+              color: #19b2f5;
+            }
+            span.fa-google-plus{
+              color: #f05b44;
+            }
+            span.fa-dribbble{
+              color: #ea4c89;
+            }
+            &:hover{
+              span{
+                color: #fff;
+                -webkit-border-radius: 50%;
+                -moz-border-radius: 50%;
+                border-radius: 50%;
+                border: none;
+              }
+              span.fa-facebook{
+                background: #395799;
+              }
+              span.fa-twitter{
+                background: #19b2f5;
+              }
+              span.fa-google-plus{
+                background: #f05b44;
+              }
+              span.fa-dribbble{
+                background: #ea4c89;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &:hover{
+      figcaption{
+        .name_desig{
+          -webkit-transform: scale(.8);
+          -moz-transform: scale(.8);
+          -ms-transform: scale(.8);
+          -o-transform: scale(.8);
+          transform: scale(.8);
+          opacity: 0;
+          visibility: hidden;
+        }
+        .social{
+          transform: scale(1);
+          visibility: visible;
+          opacity: 1;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,83 @@
+// Breadcrumb-area
+
+/*****************************
+	--- BREADCRUMB
+*****************************/
+.breadcrumb-area{
+  @extend .search-area2;
+  padding-top: 52px!important;
+  padding-bottom: 50px;
+  .breadcrumb ul li a{
+    line-height: initial;
+  }
+  .page-title{
+    color: #fff;
+    font-weight: 500;
+    font-size: 30px;
+    text-transform: capitalize;
+  }
+  .breadcrumb{
+    padding-bottom: 17px;
+    ul{
+        width: 100%;
+    }
+  }
+  &.breadcrumb--center{
+    text-align: center;
+    justify-content: center;
+    padding-top: 60px;
+    padding-bottom: 27px;
+    .page_title{
+      padding-top: 30px;
+      padding-bottom: 47px;
+      h3{
+        color: #fff;
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 50px;
+      }
+      p{
+        color: #f3f3f8;
+        font-size: 30px;
+        line-height: 50px;
+        font-weight: 300;
+      }
+      p.subtitle{
+        font-size: 20px;
+      }
+    }
+    .breadcrumb{
+      padding-bottom: 0;
+
+    }
+  }
+}
+.breadcrumb{
+  padding: 0;
+  background: none;
+  margin-bottom: 0;
+  ul li{
+    display: inline-block;
+    &:after{
+      content: '/';
+      color: #fff;
+      padding: 0 7px;
+    }
+    a{
+      font-size: 15px;
+      line-height: 70px;
+      color: #fff;
+    }
+    &:last-child{
+      &:after{
+        display: none;
+      }
+    }
+    &.active a{
+      color: #bfcad7;
+    }
+  }
+  ul{
+      width: 100%;
+  }
+}
