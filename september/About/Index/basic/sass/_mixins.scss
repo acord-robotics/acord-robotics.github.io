@@ -1,0 +1,113 @@
+/*
+* TYCAN - Timeless Coming Soon Template
+* Build Date: May-October 2019
+* Last Update: October 2019
+* Author: Madeon08
+* Copyright (C) 2019-2XXX Madeon08
+* This is a premium product available exclusively here : https://themeforest.net/user/Madeon08/portfolio
+*/
+
+// WebKit font-smoothing
+// Values: none, antialiased (default), subpixel-antialiased
+@mixin font-smoothing($value: on) {
+    @if $value == on {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+    @else {
+        -webkit-font-smoothing: subpixel-antialiased;
+        -moz-osx-font-smoothing: auto;
+    }
+}
+
+$display-wide: 1920;
+$display-narrow: 375;
+
+@mixin fluid($property, $minValue, $maxValue) {
+  $x: ($maxValue - $minValue)/($display-wide - $display-narrow);
+  $y: $maxValue - $display-wide * $x;
+  #{$property}: calc(#{100*$x}vw + #{$y}px);
+}
+
+// Devices Media Queries
+$special-phone: 830px;
+$special-phone-vertical: 500px;
+$special-tablet: 1024px;
+$vertical-query: 800px;
+$landscape-phone-height: 414px;
+$landscape-phone-width: 896px;
+
+// General Media Queries
+$phone-width: 480px;
+$tablet-width: 768px;
+$small-width: 991px;
+$medium-width: 1024px;
+$notebook-width: 1280px;
+$desktop-width: 1600px;
+$large-width: 1920px;
+
+@mixin vertical {
+    @media only screen and (max-height: $vertical-query) {
+        @content;
+    }
+}
+
+@mixin landscape-phone {
+    @media screen and (max-device-height : $landscape-phone-height)  and (max-device-width : $landscape-phone-width) {
+        @content;
+    }
+}
+
+@mixin landscape-tablet {
+    @media only screen and (max-device-width: $special-tablet) and (orientation: landscape) {
+        @content;
+    }
+}
+
+@mixin phone {
+    @media only screen and (max-width: $phone-width) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media only screen and (max-width: $tablet-width) and (max-device-height: $special-tablet) {
+        @content;
+    }
+}
+
+@mixin small {
+    @media only screen and (max-width: $small-width) {
+        @content;
+    }
+}
+
+@mixin medium {
+    @media screen and (max-width: $medium-width), screen and (max-height: $vertical-query) {
+        @content;
+    }
+}
+
+@mixin notebookup {
+    @media screen and (min-width: $notebook-width) {
+        @content;
+    }
+}
+
+@mixin notebook {
+    @media only screen and (max-width: $notebook-width) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media screen and (min-width: $desktop-width) {
+        @content;
+    }
+}
+
+@mixin large {
+    @media screen and (min-width: $large-width) {
+        @content;
+    }
+}
