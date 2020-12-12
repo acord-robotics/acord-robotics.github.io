@@ -1,0 +1,47 @@
+// this file contains the styles for the progressbar components
+/*****************************
+	-- PROGRESSBAR
+*****************************/
+.progress_wrapper{
+  width: 100%;
+  display: inline-block;
+  padding: 0 35px;
+  vertical-align: middle;
+  margin-bottom: 50px;
+  .with_close{
+    width: calc(100% - 58px);
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 25px;
+  }
+  .p_cross{
+    @extend .upload_cross;
+  }
+  .progress{
+    margin-bottom: 0;
+    height: 10px;
+    background: #eff1f5;
+    box-shadow: none;
+    .progress-bar{
+      border-radius: 200px;
+      @include gradient;
+    }
+  }
+  .labels{
+    margin-bottom: 10px;
+    p{
+      color: #555;
+      font-weight: 400;
+      font-size: 16px;
+      margin: 0;
+      float: left;
+    }
+    span{
+      float: right;
+      line-height: 26px;
+      font-size: 15px;
+      color: #000;
+      font-weight: 500;
+    }
+  }
+}
