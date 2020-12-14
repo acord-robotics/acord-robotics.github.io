@@ -1,234 +1,450 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
 
-    <!-- Basic -->
-    
-<!-- Mirrored from www.similaricons.com/demos/milano/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 14 Jul 2020 09:51:13 GMT -->
-<meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">   
-   
-    <!-- Mobile Metas -->
-    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
- 
-     <!-- Site Metas -->
-    <title>AC0/RD Software | SK</title>  
-    <meta name="keywords" content="">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="author" content="Arthur Passos Samico">
+    <meta name="description" content="Build Africa">
+    <meta name="keywords" content="Become a content creator!">
+    <link rel="icon" type="image/png" href="/images/logo/build-africa-favicon.png" />
 
-    <!-- Site Icons -->
-    <link rel="shortcut icon" href="favicon-16x16.png" type="image/x-icon" />
-    <link rel="apple-touch-icon" href="favicon-16x16.png">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/pzk6ulp.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.22/dist/shoelace/shoelace.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>  
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <!-- Site CSS -->
-    <link rel="stylesheet" href="style.css">
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/custom.css">
-
-    <script src="js/modernizer.js"></script>
-
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-
-      
-    <![endif]-->
-    <script src="https://api.memberstack.io/static/memberstack.js?custom" data-memberstack-id="364dc741601f8ed38c797805d5e24ef4"> </script> 
-    <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>Build Africa</title>
 </head>
-<body> 
+<body>
+  <!-- =========================== NAV =============================================================================================    -->
+    <header>
+        <nav class="navbar">
+            <div class="logo_header" style="cursor: pointer">
+                <a href="#top">
+                <img src="/images/logo/build-africa-logo.svg" alt="Build Africa Logo"></a>
+            </div>
 
-    <!-- LOADER -->
-    <div id="preloader">
-        <img class="preloader" src="https://i.gifer.com/BwtV.gif" alt="">
-    </div><!-- end loader -->
-    <!-- END LOADER -->
+            <div id="hammenu" onclick="onClickMenu()">
+              <div id="menu">
+                  <div id="bar1" class=bar></div>
+                  <div id="bar3" class=bar></div>
+              </div>
 
-    <div id="wrapper">
-        <header class="header">
-            <div class="container-fluid">
-                <nav class="navbar navbar-default">
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                        <a class="navbar-brand" href="index.html">AC0/RD Software</a>
-                    </div>
-                    <div class="collapse navbar-collapse" id="myNavbar">
-                        <ul class="nav navbar-nav navbar-right">
-                            
-                            <li><a href="https://acord.software/account/dashboard/elijah.html">🚀 Models  ‎‎‎‎‎‎‎‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎                                       →</a></li>
-                            <li><a href="#/ms/login">Login</a></li>
-                            <li><a href="https://larbuckle.tech/">Works</a></li>
-                            <li><a href="https://devlog.acord.software">Blog</a></li>
-                            <li><a href="https://larbuckle.tech">Freelancing</a></li>
-                            <li class="social-link firstlink"><a href="https://facebook.com/droidology"><i class="fa fa-facebook"></i></a></li>
-                            <li class="social-link"><a href="https://github.com/acord-robotics"><i class="fa fa-github"></i></a></li>
-                            <li class="social-link"><a href="https://instagram.com/droidology"><i class="fa fa-instagram"></i></a></li>
-                        </ul>
-                    </div>
-                </nav><!-- end navbar -->
-            </div><!-- end container -->
-        </header><!-- end header -->
-        
-        <div class="section">
-            <div class="container">
-                <div class="row intro wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
-                    <div class="col-md-8 col-sm-12">
-                        <h1>We make human-computer interfaces<strong> to improve lives</strong>.</h1>
-                        <p>We work with many companies and developers around the world in the aerospace & computing industries, by contributing to the development of their software and participating in their competitions.</p>
+          </div>  
+            
+           <div class="nav">
+            <sl-button href="#courses" class="categories_dropdown" caret>Categories</sl-button>
+          </div>  
 
-                    </div><!-- end col -->
-                </div><!-- end row -->
+            <div class="search_bar">
+              <sl-tooltip placement="bottom-start" content="Check out what we have in our library" >
+                <sl-input class="search_field" placeholder="search topics, courses and more..." size="medium" pill>
+                    <sl-icon id="icon" name="search" slot="prefix"></sl-icon>
+                </sl-input>
+              </sl-tooltip>
+                  
+            </div>
 
-                <div class="row m45">
-                    <div class="col-md-12">
-                        <nav class="portfolio-filter wow fadeIn" data-wow-duration="1s" data-wow-delay="0.4s">
-                            <ul>
-                                <li><a class="btn btn-dark active" href="#" data-filter="*">All</a></li>
-                                <li><a class="btn btn-dark" data-toggle="tooltip" data-placement="top" title="5" href="#" data-filter=".cat1">Design</a></li>
-                                <li><a class="btn btn-dark" href="#" data-toggle="tooltip" data-placement="top" title="12" data-filter=".cat2">Games</a></li>
-                                <li><a class="btn btn-dark" href="#" data-toggle="tooltip" data-placement="top" title="21" data-filter=".cat3">NIAC / Comps</a></li>
-                                <li><a class="btn btn-dark" href="#" data-toggle="tooltip" data-placement="top" title="11" data-filter=".cat4">Python</a></li>
-                                <li><a class="btn btn-dark" href="#" data-toggle="tooltip" data-placement="top" title="11" data-filter=".cat5">Frameworks</a></li>
-                            </ul>
-                        </nav>
-                    </div>
+            <div class="nav">
+            <a class="contact_menu" href="#contact">Contact Us</a>
+            </div>
+
+            <div class="nav_login">
+                <sl-button class="login_btn_nav" size="medium" pill>Login</sl-button>
+                <sl-button class="signUp_btn_nav" size="medium" pill>Signup</sl-button>
+            </div>
+
+            <div>
+              <div class="hammenu_bg" id="menu-bg"></div>
+            </div>
+
+          </nav>
+    </header>
+<!-- =========================== HERO =============================================================================================    -->
+    <section class="hero" id="top">
+
+      <a href="#courses"><div class="arrow">
+        <span></span>
+        <span></span>
+        <span></span></a>
+      </div>
+
+            <div class="hero_login">
+                <div class="login_text">
+                    <h1 class="hero_text"><span class="blinking-cursor">|</span><span class="green">Make </span> <br> a difference</h1>
                 </div>
 
-                <div id="da-thumbs" class="row da-thumbs portfolio wow fadeIn" data-wow-duration="1s" data-wow-delay="0.6s">
-                    <div class="post-media pitem item-w1 item-h1 cat1 cat2 cat3 cat4 cat5">
-                        <a href="https://acord.software/stellarios" title="">
-                            <img src="http://www.incognitothemes.com/anno/assets/images/astro-img.png" alt="" class="img-responsive">
-                            <div>
-                                <h3>Star Sailors <small>Sci-Fi Game</small></h3>
-                            </div>
-                        </a>
-                    </div>
+                <div>
+                    <sl-form class="login_form animate__animated animate__fadeInLeftBig">
+                        <sl-input class="form_field" type="email" placeholder="Email" required></sl-input>
+                        <br>
+                        <sl-input class="form_field" type="password" placeholder="Password" toggle-password required> </sl-input>
+                        <br>
+                        <sl-checkbox class="checkbox">Remember me</sl-checkbox>
 
-                    <div class="post-media pitem item-w1 item-h1 cat3 cat4">
-                        <a href="https://ksr-ugc.imgix.net/assets/013/761/312/34907194de90cf19a74a4a82826b7681_original.png?ixlib=rb-2.1.0&crop=faces&w=1552&h=873&fit=crop&v=1474036628&auto=format&frame=1&q=92&s=0849cb795654aba97f618e57479c1c54" title="">
-                            <img src="https://miro.medium.com/max/5496/1*TNYFJ7II6zzX56TmafN32Q.jpeg" alt="" class="img-responsive">
-                            <div>
-                                <h3>Open-Source-Rover <small>Github/Acord-Robotics/</small></h3>
-                            </div>
-                        </a>
-                    </div>
+                      <div>
+                        <h5>Forgot your password?</h5>
+                      </div>
 
-                    <div class="post-media pitem item-w1 item-h1 cat4 cat5">
-                        <a href="https://devlog.acord.software/voicebox-and-apis" title="">
-                            <img src="https://9to5google.com/wp-content/uploads/sites/4/2019/07/google_assistant_instructive_prompts_1.jpg?quality=82&strip=all&w=1600" alt="" class="img-responsive">
-                            <div>
-                                <h3>Voicebox <small>Acord-Robotics/</small></h3>
-                            </div>
-                        </a>
-                    </div>
+                      <div class="hero_btn">
+                        <sl-button class="login_btn" size="medium" pill submit>Login</sl-button>
+                        <sl-button class="signUp_btn" size="medium" pill>Signup</sl-button>
+                      </div>
+                      </sl-form>
 
-                     <div class="post-media pitem item-w1 item-h1 cat4 cat5">
-                        <a href="https://acord.software/stellarios/hydejack/2020-10-22-django-getting-started/" title="">
-                            <img src="https://files.realpython.com/media/Get-Started-With-Django_Watermarked.15a1e05597bc.jpg" alt="" class="img-responsive">
-                            <div>
-                                <h3>Django Sites <small>Python Framework</small></h3>
-                            </div>
-                        </a>
+                    <div class="free animate__animated animate__heartBeat">
+                      It is free!
                     </div>
+                </div>
+            </div>
 
-                     <div class="post-media pitem item-w1 item-h1 cat3">
-                        <a href="https://www.herox.com/VenusRover" title="">
-                            <img src="https://images.fastcompany.net/image/upload/w_1280,f_auto,q_auto,fl_lossy/wp-cms/uploads/2017/08/p-1-strandbeests-clocks-and-ancient-greeks-inspired-this-venus-rover-concept-1.jpg" alt="" class="img-responsive">
-                            <div>
-                                <h3>Exploring Hell <small>HEROX</small></h3>
-                            </div>
-                        </a>
-                    </div>
-<!--
-                     <div class="post-media pitem item-w1 item-h1 cat3">
-                        <a href="single-porfolio.html" title="">
-                            <img src="uploads/portfolio_06.jpg" alt="" class="img-responsive">
-                            <div>
-                                <h3>Harry Potter <small>Ayda Oz</small></h3>
-                            </div>
-                        </a>
-                    </div>
+        <div class="hero_image animate__animated animate__fadeInDown">
 
-                     <div class="post-media pitem item-w1 item-h1 cat2">
-                        <a href="single-porfolio.html" title="">
-                            <img src="uploads/portfolio_07.jpg" alt="" class="img-responsive">
-                            <div>
-                                <h3>App shop nike shoes <small>tomas_pohl</small></h3>
-                            </div>
-                        </a>
-                    </div>
+        </div>
+      </section>
 
-                     <div class="post-media pitem item-w1 item-h1 cat1">
-                        <a href="single-porfolio.html" title="">
-                            <img src="uploads/portfolio_08.jpg" alt="" class="img-responsive">
-                            <div>
-                                <h3>Eames chair <small>Alessandra</small></h3>
-                            </div>
-                        </a>
-                    </div>
+    <!-- =========================== HERE YOU LEARN =============================================================================================    -->
+    <section class="courses" id="courses">      
+        
+        <h1 class="titles" >here you <span class="blinking-cursor">|</span><span class="orange">learn</span></h1>
+      
+            <div>
+                <sl-tab-group class="courses_tab">
+                    <sl-tab class="tab" slot="nav" panel="internet">Internet</sl-tab>
+                    <sl-tab class="tab" slot="nav" panel="gardening">Gardening</sl-tab>
+                    <sl-tab class="tab" slot="nav" panel="history">History</sl-tab>
+                    <sl-tab class="tab" slot="nav" panel="music">Music</sl-tab>
+                    <sl-tab class="tab" slot="nav" panel="photography">Photography</sl-tab>
+                    <sl-tab class="tab" slot="nav" panel="more" disabled>More</sl-tab>
+            
+                       
+                        <sl-tab-panel name="internet">
+                          
+                        <div class="cards">
+                          
+                        
+                          <sl-card class="card-overview">
+                            <img 
+                              slot="image" 
+                              src="/images/courses/google_maps.svg" 
+                              alt=""
+                            >
+                          
+                            <h2>Google Maps</h2><br>
+                            <h3 style="font-weight: 400;">Learn how to use Goggle Maps to navigate in only 2 modules.</h3>
+                            
+                          
+                            <div slot="footer">
 
-                     <div class="post-media pitem item-w1 item-h1 cat4">
-                        <a href="single-porfolio.html" title="">
-                            <img src="uploads/portfolio_12.jpg" alt="" class="img-responsive">
-                            <div>
-                                <h3>Daily UI #004 Calculator <small>X5 Fisher</small></h3>
-                            </div>
-                        </a>
-                    </div>
+                              <sl-dialog label="Ops :(" class="dialog-overview">
+                                You need to login first to have access to this content.
+                                <sl-button href="#top" slot="footer" type="primary" class="login_btn" pill>Take me there!</sl-button>
+                              </sl-dialog>
+                              
+                              <sl-button class="signUp_btn" pill>Learn Now</sl-button>
 
-                     <div class="post-media pitem item-w1 item-h1 cat2">
-                        <a href="single-porfolio.html" title="">
-                            <img src="uploads/portfolio_11.jpg" alt="" class="img-responsive">
-                            <div>
-                                <h3>Legoland Billboard <small>Mel Moyer</small></h3>
+                              <script>
+                                (() => {
+                                  const dialog = document.querySelector('.dialog-overview');
+                                  const openButton = dialog.nextElementSibling;
+                                  const closeButton = dialog.querySelector('sl-button[slot="footer"]');
+                              
+                                  openButton.addEventListener('click', () => dialog.show());
+                                  closeButton.addEventListener('click', () => dialog.hide());
+                                })();
+                              </script>
+                              
                             </div>
-                        </a>
-                    </div>
+                          </sl-card>
+            
 
-                     <div class="post-media pitem item-w1 item-h1 cat1">
-                        <a href="single-porfolio.html" title="">
-                            <img src="uploads/portfolio_09.jpg" alt="" class="img-responsive">
-                            <div>
-                                <h3>Featured brands <small>lifeasdave</small></h3>
+                        
+                          <sl-card class="card-overview">
+                            <img 
+                              slot="image" 
+                              src="/images/courses/coding_bg.svg" 
+                              alt=""
+                            >
+                          
+                            <h2>Coding</h2><br>
+                            <h3 style="font-weight: 400;">Learn the basics of HTML and CSS in only 4 hours!</h3>
+                            
+                          
+                            <div slot="footer">
+                              
+                              <sl-dialog label="Ops :(" class="dialog-overview2">
+                                You need to login first to have access to this content.
+                                <sl-button href="#top" slot="footer" type="primary" class="login_btn" pill>Take me there!</sl-button>
+                              </sl-dialog>
+                              
+                              <sl-button class="signUp_btn" pill>Learn Now</sl-button>
+
+                              <script>
+                                (() => {
+                                  const dialog = document.querySelector('.dialog-overview2');
+                                  const openButton = dialog.nextElementSibling;
+                                  const closeButton = dialog.querySelector('sl-button[slot="footer"]');
+                              
+                                  openButton.addEventListener('click', () => dialog.show());
+                                  closeButton.addEventListener('click', () => dialog.hide());
+                                })();
+                              </script>
+
                             </div>
-                        </a>
-                    </div>
+                          </sl-card>
 
-                     <div class="post-media pitem item-w1 item-h1 cat1">
-                        <a href="single-porfolio.html" title="">
-                            <img src="uploads/portfolio_10.jpg" alt="" class="img-responsive">
-                            <div>
-                                <h3>B Icon <small>jeonglayeong</small></h3>
+
+                          <sl-card class="card-overview">
+                            <img 
+                              slot="image" 
+                              src="/images/courses/word_bg.svg" 
+                              alt=""
+                            >
+                          
+                            <h2>MS Word</h2><br>
+                            <h3 style="font-weight: 400;">Learn the basics of MS Word in 3 simple modules.</h3>
+                            
+                          
+                            <div slot="footer">
+                              
+                              <sl-dialog label="Ops :(" class="dialog-overview3">
+                                You need to login first to have access to this content.
+                                <sl-button href="#top" slot="footer" type="primary" class="login_btn" pill>Take me there!</sl-button>
+                              </sl-dialog>
+                              
+                              <sl-button class="signUp_btn" pill>Learn Now</sl-button>
+
+                              <script>
+                                (() => {
+                                  const dialog = document.querySelector('.dialog-overview3');
+                                  const openButton = dialog.nextElementSibling;
+                                  const closeButton = dialog.querySelector('sl-button[slot="footer"]');
+                              
+                                  openButton.addEventListener('click', () => dialog.show());
+                                  closeButton.addEventListener('click', () => dialog.hide());
+                                })();
+                              </script>
+
+
                             </div>
-                        </a>
-                    </div>-->
-                </div><!-- end portfolio -->
+                          </sl-card>
 
-                <div class="row m45">
-                    <div class="col-md-10 col-md-offset-1">
-                        <div class="callout text-center">
-                            <h2>We strive to create software and media that enriches the lives of people around the world, whether it's through creating a game that brings people together or by writing novels that inspire people. </h2>
-                            <a href="#" class="btn btn-primary">Donate</a>
+                          <sl-card class="card-overview">
+                            <img 
+                              slot="image" 
+                              src="/images/courses/excel_bg.svg" 
+                              alt=""
+                            >
+                          
+                            <h2>MS Excel</h2><br>
+                            <h3 style="font-weight: 400;">Learn the basics of Excel in 3 simple modules.</h3>
+                            
+                          
+                            <div slot="footer">
+                              
+                              <sl-dialog label="Ops :(" class="dialog-overview4">
+                                You need to login first to have access to this content.
+                                <sl-button href="#top" slot="footer" type="primary" class="login_btn" pill>Take me there!</sl-button>
+                              </sl-dialog>
+                              
+                              <sl-button class="signUp_btn" pill>Learn Now</sl-button>
+
+                              <script>
+                                (() => {
+                                  const dialog = document.querySelector('.dialog-overview4');
+                                  const openButton = dialog.nextElementSibling;
+                                  const closeButton = dialog.querySelector('sl-button[slot="footer"]');
+                              
+                                  openButton.addEventListener('click', () => dialog.show());
+                                  closeButton.addEventListener('click', () => dialog.hide());
+                                })();
+                              </script>
+
+                            </div>
+                          </sl-card> 
+
+
                         </div>
-                    </div>
-                </div> 
-            </div><!-- end container -->
-        </div><!-- end section -->
 
-    <!-- ALL JS FILES -->
-    <script src="js/all.js"></script>
-    <!-- ALL PLUGINS -->
-    <script src="js/custom.js"></script> 
-    <script src="js/portfolio.js"></script>
-    <script src="js/hoverdir.js"></script>  
+                        </sl-tab-panel>
 
+                        <sl-tab-panel name="gardening">
+                          
+                          <div class="cards">
+                            
+                          
+                            <sl-card class="card-overview">
+                              <img 
+                                slot="image" 
+                                src="/images/courses/gardening.svg" 
+                                alt=""
+                              >
+                            
+                              <h2>Basics of Gardening</h2><br>
+                              <h3 style="font-weight: 400;">Learn how to cultivate some vegetables in your backyard in 2 hours!</h3>
+                              
+                            
+                              <div slot="footer">
+  
+                                <sl-dialog label="Ops :(" class="dialog-overview5">
+                                  You need to login first to have access to this content.
+                                  <sl-button href="#top" slot="footer" type="primary" class="login_btn" pill>Take me there!</sl-button>
+                                </sl-dialog>
+                                
+                                <sl-button class="signUp_btn" pill>Learn Now</sl-button>
+  
+                                <script>
+                                  (() => {
+                                    const dialog = document.querySelector('.dialog-overview5');
+                                    const openButton = dialog.nextElementSibling;
+                                    const closeButton = dialog.querySelector('sl-button[slot="footer"]');
+                                
+                                    openButton.addEventListener('click', () => dialog.show());
+                                    closeButton.addEventListener('click', () => dialog.hide());
+                                  })();
+                                </script>
+                                
+                              </div>
+                            </sl-card>
+                          </div>
+                        </sl-tab-panel>
+
+
+                        <sl-tab-panel name="history">
+                         
+                          <h1 class="titles" style="margin-bottom: 20px;">no content yet :(</h1> 
+                          <h3 style="text-align: center">share your knowledge with us, we'll do the rest</h3> 
+                          
+                          <img class="not_found" src="/images/courses/not_found.svg" alt="">
+
+                        </sl-tab-panel>
+
+                        <sl-tab-panel name="music">
+                         
+                          <h1 class="titles" style="margin-bottom: 20px;">no content yet :(</h1> 
+                          <h3 style="text-align: center">share your knowledge with us, we'll do the rest</h3> 
+                          
+                          <img class="not_found" src="/images/courses/not_found.svg" alt="">
+
+                        </sl-tab-panel>
+
+                        <sl-tab-panel name="photography">
+                         
+                          <h1 class="titles" style="margin-bottom: 20px;">no content yet :(</h1> 
+                          <h3 style="text-align: center">share your knowledge with us, we'll do the rest</h3> 
+                          
+                          <img class="not_found" src="/images/courses/not_found.svg" alt="">
+
+                        </sl-tab-panel>
+                      
+
+                  </sl-tab-group>
+            </div>
+          </section>
+    <!-- =========================== CREATORS =============================================================================================-->
+
+    <section class="creators">
+
+      <div class="creators_avatars_bg"></div>
+
+      
+
+       <div class="creators_section">
+
+        <div class="share_content">
+          
+            <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1101 666.05"><defs><style>.cls-1{fill:#d0cde1;}.cls-2{fill:#2f2e41;}.cls-3{fill:#ffb8b8;}.cls-4{fill:#f3a68e;}.cls-5{fill:#3f3d56;}.cls-6{fill:none;stroke:#d0cde1;stroke-miterlimit:10;stroke-width:2px;}.cls-7{opacity:0.15;isolation:isolate;}</style></defs><g id="all"><path id="right_arm" class="cls-1" d="M669.08,313.82s200.2,154.29,164.61,193-173.5,30.14-173.5,30.14l8.29-45.45,79.58-10.42-40.55-39.19-36.18,4.24Z"/><circle class="cls-2" cx="633.93" cy="214.02" r="36.4"/><path id="hair2" class="cls-2" d="M644.07,178.63a36.39,36.39,0,0,1,32,53.66,36.39,36.39,0,1,0-60.46-40A36.32,36.32,0,0,1,644.07,178.63Z"/><circle class="cls-2" cx="565.92" cy="107.03" r="106.91"/><circle class="cls-3" cx="565.01" cy="144.18" r="68.86"/><path class="cls-3" d="M516.09,165.93s9.06,83.35-5.44,92.41S594,280.09,594,280.09s-14.5-90.6,21.74-114.17Z"/><path class="cls-1" d="M603.07,243.84s27-12.6-11.88-8.11S518.8,223,518.8,223s-11.77-11.78-13.59.91,5.44,36.24-34.43,39.87-76.1-7.25-90.6,19.93-7.24,145-7.24,145S400.11,526.53,421.86,541s212-5.44,212-5.44l54.36-97.85V323.57s-7.24-39.86-58-29c0,0-32.62-7.25-30.81-23.56S603.07,243.84,603.07,243.84Z"/><path class="cls-2" d="M429.05,610.27c1.12-4.88,1.87-7.64,1.87-7.64l-.58-4-6-40.54L421.86,541C443.6,532,449,490.29,449,490.29l.82-.49,3.71-2.22h0l13.32-8,.27-.16,5.38,3.58,10.93,7.29c38.24,28.12,77.18,27.62,101.21,23.19,14.69-2.71,23.82-6.88,23.82-6.88l26.36-8.79.82-.27.81.12L652,500l.28.05,1.28.19L649.93,525l-5.19,36c13.71,7.26,25.9,20.9,36.56,37.71q3.54,5.58,6.86,11.61c2.88,5.2,5.63,10.61,8.25,16.15.32.66.63,1.33.94,2,1,2.17,2,4.36,3,6.56H424.25c.36-2.21.72-4.32,1.07-6.35a1.55,1.55,0,0,0,0-.21c.13-.68.25-1.34.36-2C426.94,619.83,428.12,614.31,429.05,610.27Z"/><path class="cls-2" d="M418.23,262s19.94,36.25,12.69,81.55,21.74,157.65,21.74,157.65l21.75-5.44s-14.5-94.23-10.87-116S467.16,272.84,449,262,418.23,262,418.23,262Z"/><path class="cls-2" d="M629,299.63l7.62,200.62,14.5,9.06s20.84-220.17,10-220.17H638.93a10,10,0,0,0-10,10C629,299.28,629,299.45,629,299.63Z"/><circle class="cls-4" cx="462.63" cy="487.57" r="9.06"/><circle class="cls-4" cx="643.84" cy="496.63" r="9.06"/><path class="cls-2" d="M506.12,58.1V127h16l20.29-21.75L539.64,127h70.49l-4.35-21.75,8.7,21.75h11.24V58.1Z"/><ellipse class="cls-3" cx="495.25" cy="129.68" rx="5.44" ry="9.97"/><ellipse class="cls-3" cx="634.78" cy="129.68" rx="5.44" ry="9.97"/><path class="cls-3" d="M671.92,495.73S589.48,480.33,584,507.5s91.51,15.4,91.51,15.4Z"/><path class="cls-3" d="M378.37,571.83l25.37,19.93s18.12,56.17,45.3,39.86-25.37-74.3-25.37-74.3l-30.81-10.87Z"/><path id="left_arm" class="cls-1" d="M405.74,272.08l-25.3,7.62S204.6,409.8,197.35,446s34.43,56.18,34.43,56.18l157.65,74.3L405.74,533,331.44,495s5.43-10.87-16.31-12.68-25.37-25.37-25.37-25.37,43.49-67.05,67.05-52.55,30.8,25.37,30.8,25.37Z"/><path class="cls-5" d="M764.6,616.48v6.07a13.49,13.49,0,0,1-.91,4.87,13.66,13.66,0,0,1-1,2A13.43,13.43,0,0,1,751.17,636H304.62a13.43,13.43,0,0,1-11.55-6.56,13.66,13.66,0,0,1-1-2,13.49,13.49,0,0,1-.91-4.87v-6.07a13.43,13.43,0,0,1,13.42-13.43h25.75v-2.82a.56.56,0,0,1,.56-.56h13.43a.54.54,0,0,1,.56.55h0v2.83h8.39v-2.83a.56.56,0,0,1,.56-.56h13.43a.54.54,0,0,1,.56.55h0v2.83h8.4v-2.83a.56.56,0,0,1,.56-.56h13.43a.54.54,0,0,1,.56.55h0v2.83h8.39v-2.83a.56.56,0,0,1,.56-.56h13.43a.54.54,0,0,1,.56.55h0v2.83h8.39v-2.83a.56.56,0,0,1,.56-.56h13.43a.54.54,0,0,1,.56.55h0v2.83h8.4v-2.83a.56.56,0,0,1,.56-.56h13.43a.54.54,0,0,1,.56.55h0v2.83H468v-2.83a.56.56,0,0,1,.56-.56h105.2a.54.54,0,0,1,.56.55h0v2.83h8.4v-2.83a.56.56,0,0,1,.56-.56h13.43a.56.56,0,0,1,.56.56v2.83h8.39v-2.83a.56.56,0,0,1,.56-.56h13.43a.54.54,0,0,1,.56.55h0v2.83h8.39v-2.83a.56.56,0,0,1,.56-.56h13.43a.54.54,0,0,1,.56.55h0v2.83h8.4v-2.83a.56.56,0,0,1,.56-.56h13.43a.55.55,0,0,1,.55.56v2.83h8.4v-2.83a.56.56,0,0,1,.56-.56H688.5a.54.54,0,0,1,.56.55h0v2.83h8.39v-2.83a.56.56,0,0,1,.56-.56h13.43a.54.54,0,0,1,.56.55h0v2.83h39.17a13.42,13.42,0,0,1,13.43,13.42Z"/><rect class="cls-5" x="161.45" y="627.42" width="733" height="2"/><path class="cls-5" d="M728.64,360.85H562.2v-3.43H486.73v3.43H319.6a11.26,11.26,0,0,0-11.26,11.25h0V600a11.26,11.26,0,0,0,11.26,11.26h409A11.27,11.27,0,0,0,739.9,600V372.11a11.26,11.26,0,0,0-11.26-11.26Z"/><circle class="cls-6" cx="524.45" cy="440.42" r="25"/><circle class="cls-1" cx="516.45" cy="449.42" r="25"/><rect class="cls-5" x="26.02" y="663.55" width="189" height="2.26"/><rect class="cls-5" x="851.02" y="663.55" width="189" height="2.26"/><path class="cls-5" d="M136.14,590.72c-19.91,32.5-13.06,72.94-13.06,72.94s39.13-12.27,59-44.78,13.06-72.94,13.06-72.94S156.05,558.21,136.14,590.72Z"/><path class="cls-4" d="M122.27,663.93l-1.14-.18c-.4-.07-41.15-6.82-65.56-36s-23.81-70.5-23.81-70.91l0-1.15,1.13.18c.41.07,41.16,6.82,65.56,36h0c24.4,29.2,23.82,70.5,23.81,70.91Z"/><path class="cls-5" d="M123.87,665l-1.09-.34c-.4-.12-39.72-12.75-59.6-45.2S49.92,546.18,50,545.77l.19-1.13,1.09.35c.4.12,39.72,12.75,59.6,45.2h0c19.88,32.45,13.27,73.23,13.2,73.63ZM51.79,547.28c-.9,6.84-4.51,42.33,13.1,71.08s50.87,41.66,57.37,44c.91-6.84,4.51-42.33-13.09-71.08h0c-17.61-28.75-50.87-41.66-57.38-44Z"/><circle class="cls-5" cx="124.32" cy="536.33" r="22"/><path id="line_left" class="cls-5" d="M399.79,258.25,273.58,131.05H214v-2h60.42l.29.3,126.5,127.5Z"/><path id="line_right" class="cls-5" d="M696.21,254.25l126.21-127.2H882v-2H821.58l-.29.3-126.5,127.5Z"/><rect class="cls-1" y="68.34" width="146" height="28.88"/><rect class="cls-1" y="112.65" width="146" height="28.88"/><rect class="cls-1" y="156.96" width="146" height="28.88"/><rect id="bar01" class="cls-7" y="68.34" width="54.4" height="28.88"/><rect id="bar02" class="cls-7" y="112.65" width="19.55" height="28.88"/><rect id="bar03" class="cls-7" y="156.96" width="97.33" height="28.88"/><rect class="cls-1" x="954.78" y="74.83" width="146.22" height="13.03"/><rect class="cls-4" x="900" y="73.14" width="28.95" height="28.95"/><rect class="cls-4" x="900" y="116.57" width="28.95" height="28.95"/><rect class="cls-4" x="900" y="160.01" width="28.95" height="28.95"/><path class="cls-5" d="M937,96.1H906v-31h31Zm-29-2h27v-27H908Z"/><rect class="cls-1" x="954.78" y="118.26" width="146.22" height="13.03"/><path class="cls-5" d="M937,139.53H906v-31h31Zm-29-2h27v-27H908Z"/><rect class="cls-1" x="954.78" y="161.69" width="146.22" height="13.03"/><path class="cls-5" d="M937,183H906V152h31Zm-29-2h27V154H908Z"/><circle class="cls-4" cx="189" cy="83.05" r="16"/><circle class="cls-4" cx="189" cy="131.05" r="16"/><circle class="cls-4" cx="189" cy="174.05" r="16"/><path class="cls-5" d="M181,96.05a17,17,0,1,1,17-17h0A17,17,0,0,1,181,96.05Zm0-32a15,15,0,1,0,15,15h0A15,15,0,0,0,181,64.05Z"/><path class="cls-5" d="M181,144.05a17,17,0,1,1,17-17h0A17,17,0,0,1,181,144.05Zm0-32a15,15,0,1,0,15,15h0A15,15,0,0,0,181,112.05Z"/><path class="cls-5" d="M181,187.05a17,17,0,1,1,17-17,17,17,0,0,1-17,17Zm0-32a15,15,0,1,0,15,15h0A15,15,0,0,0,181,155.05Z"/><path class="cls-5" d="M989,596.05h-2v-15a3,3,0,0,1,3-3h5a1,1,0,0,0,1-1v-10a1,1,0,0,0-1-1h-5a3,3,0,0,1-3-3v-5a1,1,0,0,0-1-1h-9a3,3,0,0,1-3-3v-1a1,1,0,0,0-1-1H937a1,1,0,0,0-1,1v1a3,3,0,0,1-3,3h-9a1,1,0,0,0-1,1v5a3,3,0,0,1-3,3h-5a1,1,0,0,0-1,1v10a1,1,0,0,0,1,1h6a3,3,0,0,1,3,3v15h-2v-15a1,1,0,0,0-1-1h-6a3,3,0,0,1-3-3v-10a3,3,0,0,1,3-3h5a1,1,0,0,0,1-1v-5a3,3,0,0,1,3-3h9a1,1,0,0,0,1-1v-1a3,3,0,0,1,3-3h36a3,3,0,0,1,3,3v1a1,1,0,0,0,1,1h9a3,3,0,0,1,3,3v5a1,1,0,0,0,1,1h5a3,3,0,0,1,3,3v10a3,3,0,0,1-3,3h-5a1,1,0,0,0-1,1Z"/><path class="cls-5" d="M986,666.05H925a3,3,0,0,1-3-3v-43h2v43a1,1,0,0,0,1,1h61a1,1,0,0,0,1-1v-43h2v43A3,3,0,0,1,986,666.05Z"/><rect class="cls-4" x="922" y="603.05" width="79" height="24" rx="2"/><path class="cls-5" d="M992.5,621.05h-75a3,3,0,0,1-3-3v-20a3,3,0,0,1,3-3h75a3,3,0,0,1,3,3v20A3,3,0,0,1,992.5,621.05Zm-75-24a1,1,0,0,0-1,1v20a1,1,0,0,0,1,1h75a1,1,0,0,0,1-1v-20a1,1,0,0,0-1-1Z"/><path id="smoke02" class="cls-1" d="M953,543.05h0a249.26,249.26,0,0,1-2.09-54.11L953,459.05h0C941.46,482,944.07,512.24,953,543.05Z"/><path id="smoke03" class="cls-1" d="M962,548.05h0a183.42,183.42,0,0,1-1-32.21l1-17.79h0C956.45,511.73,957.7,529.71,962,548.05Z"/><path id="smoke01" class="cls-1" d="M972.29,447.05h0a183.42,183.42,0,0,1,1,32.21l-1,17.79h0C977.84,483.38,976.59,465.39,972.29,447.05Z"/><path id="hair" class="cls-2" d="M482,40.7A106.89,106.89,0,0,1,630.18,29.49c-.88-.83-1.74-1.67-2.65-2.48A106.91,106.91,0,0,0,485.46,186.82c.91.81,1.84,1.57,2.77,2.34A106.9,106.9,0,0,1,482,40.7Z"/></g></svg>
+          
+        </div>
+
+        <h1 class="titles" style="margin: 20px;">become a content <br> creator.</h1>
+        
+        <div class="text_spacing">
+          <h2>Be part of this growing community. It will always be <span class="green">free.</span></h2>
+        </div>
+        
+        <div id="start_now">
+          <sl-button class="login_btn" size="large" pill>Start Now!</sl-button>
+        </div>  
+        </div>
+
+    </section>
+
+    <!-- =========================== OTHER PROJECTS =============================================================================================    -->
+    <section class="hero_body_img">
+      <div class="hero_body">
+        <img class="hero_body_bg" src="/images/logo/round_logo@2x.png" alt="Build africa logo">
+        <h2 id="hero_body_text">We believe in the power of education to help end poverty, and work to ensure that children in rural Africa have the best opportunity to learn.</h2>
+      </div>
+    </section>
+
+<!-- PEOPLE WE SUPPORT ============================================= -->
+    <section class="support">
+      <h1 class="titles">people we support</h1>
+      
+      <!-- Flickity HTML init -->
+        <div class="carousel"
+        data-flickity='{ "imagesLoaded": true, "percentPosition": false}'>
+        <img src="/images/carousel/carousel-01.png" alt="" />
+        <img src="/images/carousel/carousel-02.png" alt="" />
+        <img src="/images/carousel/carousel-03.png" alt="" />
+        <img src="/images/carousel/carousel-04.png" alt="" />
+        <img src="/images/carousel/carousel-05.png" alt="" />
+        <img src="/images/carousel/carousel-06.png" alt="" />
+        <img src="/images/carousel/carousel-07.png" alt="" />
+        <img src="/images/carousel/carousel-08.png" alt="" />
+        <img src="/images/carousel/carousel-09.png" alt="" />
+        </div>
+
+    </section>
+
+
+<!-- =========================== CONTACT US =============================================================================================    -->
+    <section class="contact_us">
+        <h1 class="titles">contact us</h1>
+
+        <div class="contact_wrapper">
+          <h3>Leave us a message if you have any questions</h3>
+          <sl-form class="contact_form">
+            <sl-input class="form_field" name="name" placeholder="Name" required></sl-input>
+            <br>
+            <sl-input class="form_field" name="email" placeholder="Email" required></sl-input>
+            <br>
+            <sl-textarea class="form_field" name="comment" placeholder="Message" required></sl-textarea>
+            <br>
+            <br><br>
+            <sl-button class="login_btn" type="primary" submit pill>Send</sl-button>
+          </sl-form>
+        </div>
+
+    </section>
+
+<!-- =========================== SCRIPTS     -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
+
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.22/dist/shoelace/shoelace.esm.js"></script>
+
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+    <script src="main.js"></script>
 </body>
 
-<!-- Mirrored from www.similaricons.com/demos/milano/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 14 Jul 2020 09:51:32 GMT -->
+
+<!-- =========================== FOOTER     -->
+<footer>
+  <div class="footer">
+    <img class="footer_logo" src="/images/logo/round_logo@2x.png" alt="Build Africa Logo">
+      <div>
+        <h4>2020 © All rights reserved</h4>
+      </div>
+  </div>
+</footer>
+
 </html>
