@@ -19,7 +19,15 @@
   <!--  Temporary Memberstack Code  -->
   <script src="https://api.memberstack.io/static/memberstack.js?custom" data-memberstack-id="364dc741601f8ed38c797805d5e24ef4"> </script> 
   <!-- REPLACE ↑↑ -->
-  
+  <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+<script>
+  window.OneSignal = window.OneSignal || [];
+  OneSignal.push(function() {
+    OneSignal.init({
+      appId: "f6b42406-5142-43d3-9d02-27e86173afc7",
+    });
+  });
+</script>
   
   <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
   <script>
