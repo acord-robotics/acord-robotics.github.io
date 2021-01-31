@@ -1,0 +1,281 @@
+/*! ------------------------------------------------
+   Project Name: Unio Coming Soon & Landing Page Template
+   Project Description: Unio - colorful and stylish coming soon & landing page template to kick-start your project
+   Tags: unio, coming soon, under construction, template, coming soon page, landing page, one page, html5, css3
+   Version: 1.0.0
+   Build Date: March 2020
+   Last Update: March 2020
+   This product is available exclusively on Themeforest
+   Author: mix_design
+   Author URI: http://mixdesign.club
+   File name: loader.css
+   ------------------------------------------------
+
+   ------------------------------------------------
+   Table of Contents
+   ------------------------------------------------
+    1. Loader Styles
+   ------------------------------------------------
+   Table of Contents End
+   ------------------------------------------------ */
+/* ------------------------------------------------*/
+/* Loader Styles Start */
+/* ------------------------------------------------*/
+.loader {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 9999;
+  background-color: transparent;
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: all .6s ease-in-out;
+  -o-transition: all .6s ease-in-out;
+  -moz-transition: all .6s ease-in-out;
+  transition: all .6s ease-in-out;
+}
+
+.loader.loaded {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.loader.is-animated .loader__darkscreen {
+  -webkit-animation: 1s 0.6s ease-in-out 1 both blockMove;
+     -moz-animation: 1s 0.6s ease-in-out 1 both blockMove;
+          animation: 1s 0.6s ease-in-out 1 both blockMove;
+}
+
+.loader.is-animated .loader__container {
+  -webkit-animation: 1s 0.6s ease-in-out 1 both itemsOpacity;
+     -moz-animation: 1s 0.6s ease-in-out 1 both itemsOpacity;
+          animation: 1s 0.6s ease-in-out 1 both itemsOpacity;
+}
+
+.loader__container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #121d30;
+}
+
+.loader__container .loader-content {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  bottom: auto;
+  right: auto;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+     -moz-transform: translateX(-50%) translateY(-50%);
+      -ms-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+}
+
+.loader__container .loader-content .loader-logo {
+  width: 160px;
+}
+
+.loader__container .loader-content .loader-logo img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.loader__darkscreen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #050e1e;
+  -webkit-transform: translateY(102%);
+     -moz-transform: translateY(102%);
+      -ms-transform: translateY(102%);
+          transform: translateY(102%);
+}
+
+.fadeIn {
+  -webkit-animation: fadeIn .6s 1;
+     -moz-animation: fadeIn .6s 1;
+          animation: fadeIn .6s 1;
+  -webkit-animation-fill-mode: both;
+     -moz-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+.fadeOut {
+  -webkit-animation: fadeOut .6s 1;
+     -moz-animation: fadeOut .6s 1;
+          animation: fadeOut .6s 1;
+  -webkit-animation-fill-mode: both;
+     -moz-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+@-webkit-keyframes blockMove {
+  0% {
+    -webkit-transform: translateY(102%);
+            transform: translateY(102%);
+  }
+  35% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  55% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-102%);
+            transform: translateY(-102%);
+  }
+}
+
+@-moz-keyframes blockMove {
+  0% {
+    -moz-transform: translateY(102%);
+         transform: translateY(102%);
+  }
+  35% {
+    -moz-transform: translateY(0);
+         transform: translateY(0);
+  }
+  55% {
+    -moz-transform: translateY(0);
+         transform: translateY(0);
+  }
+  100% {
+    -moz-transform: translateY(-102%);
+         transform: translateY(-102%);
+  }
+}
+
+@keyframes blockMove {
+  0% {
+    -webkit-transform: translateY(102%);
+       -moz-transform: translateY(102%);
+            transform: translateY(102%);
+  }
+  35% {
+    -webkit-transform: translateY(0);
+       -moz-transform: translateY(0);
+            transform: translateY(0);
+  }
+  55% {
+    -webkit-transform: translateY(0);
+       -moz-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-102%);
+       -moz-transform: translateY(-102%);
+            transform: translateY(-102%);
+  }
+}
+
+@-webkit-keyframes itemsOpacity {
+  0% {
+    opacity: 1;
+  }
+  35% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-moz-keyframes itemsOpacity {
+  0% {
+    opacity: 1;
+  }
+  35% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes itemsOpacity {
+  0% {
+    opacity: 1;
+  }
+  35% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@-moz-keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+/* ------------------------------------------------*/
+/* Loader Styles End */
+/* ------------------------------------------------*/
