@@ -1,0 +1,1313 @@
+<!doctype html>
+<html lang="en">
+
+
+<!-- Mirrored from html.creativegigs.net/kbdoc/kbdoc-html/layout-full.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 02 Feb 2021 06:51:31 GMT -->
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="assets/font-size/css/rvfs.css">
+    <!-- icon css-->
+    <link rel="stylesheet" href="assets/elagent-icon/style.css">
+    <link rel="stylesheet" href="assets/font-awesome/css/all.css">
+    <link rel="stylesheet" href="assets/niceselectpicker/nice-select.css">
+    <link rel="stylesheet" href="assets/animation/animate.css">
+    <link rel="stylesheet" href="assets/prism/prism.css">
+    <link rel="stylesheet" href="assets/prism/prism-coy.css">
+    <link rel="stylesheet" href="assets/mcustomscrollbar/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <title>KbDoc</title>
+</head>
+
+<body data-spy="scroll" data-target="#navbar-example3" data-offset="86" data-scroll-animation="true" class="doc full-width-doc">
+    <div id="preloader">
+        <div id="ctn-preloader" class="ctn-preloader">
+            <div class="round_spinner">
+                <div class="spinner"></div>
+                <div class="text">
+                    <img src="img/spinner_logo.png" alt="">
+                    <h4><span>kb</span>Doc</h4>
+                </div>
+            </div>
+            <h2 class="head">Did You Know?</h2>
+            <p></p>
+        </div>
+    </div>
+    <div class="body_wrapper">
+        <nav class="navbar navbar-expand-lg menu_one display_none">
+            <div class="container custom_container">
+                <a class="navbar-brand sticky_logo" href="index.html">
+                    <img src="img/logo-w.png" srcset="img/logo-w2x.png 2x" alt="logo">
+                    <img src="img/logo.png" srcset="img/logo-2x.png 2x" alt="logo">
+                </a>
+                <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="menu_toggle">
+                        <span class="hamburger">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </span>
+                        <span class="hamburger-cross">
+                            <span></span>
+                            <span></span>
+                        </span>
+                    </span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav menu ml-auto">
+                        <li class="nav-item dropdown submenu">
+                            <a href="#" class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Home</a>
+                            <i class="arrow_carrot-down_alt2 mobile_dropdown_icon" aria-hidden="true" data-toggle="dropdown"></i>
+                            <ul class="dropdown-menu">
+                               <li class="nav-item"><a href="index.html" class="nav-link">Light Knowledgebase</a></li>
+                                <li class="nav-item"><a href="index-helpdesk.html" class="nav-link">Help Desk</a></li>
+                            <li class="nav-item"><a href="index-cool.html" class="nav-link">Cool Knowledgebase</a> </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown submenu mega_menu tab-demo active">
+                            <a href="#" class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Docs</a>
+                            <i class="arrow_carrot-down_alt2 mobile_dropdown_icon" aria-hidden="true" data-toggle="dropdown"></i>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <div class="row">
+                                        <div class="col-lg-5 tabHeader">
+                                            <ul class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                                                <li class="nav-item">
+                                                    <a class="nav-link" id="v-pills-doc-tab" data-toggle="pill" href="#v-pills-doc" role="tab" aria-controls="v-pills-doc" aria-selected="true">Doc Topics</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" id="v-pills-code-tab" data-toggle="pill" href="#v-pills-code" role="tab" aria-controls="v-pills-code" aria-selected="false">Shortcodes</a>
+                                                </li>
+                                                <li class="nav-item active">
+                                                    <a class="nav-link" id="v-pills-layout-tab" data-toggle="pill" href="#v-pills-layout" role="tab" aria-controls="v-pills-layout" aria-selected="false">Layouts</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" id="v-pills-tour-tab" data-toggle="pill" href="#v-pills-tour" role="tab" aria-controls="v-pills-tour" aria-selected="false">Tour</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" id="v-pills-content-tab" data-toggle="pill" href="#v-pills-content" role="tab" aria-controls="v-pills-content" aria-selected="false">Content</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" id="v-pills-pages-tab" data-toggle="pill" href="#v-pills-pages" role="tab" aria-controls="v-pills-pages" aria-selected="false">Other Pages</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-lg-7">
+                                            <div class="tab-content tabContent" id="v-pills-tabContent">
+                                                <div class="tab-pane fade" id="v-pills-doc" role="tabpanel" aria-labelledby="v-pills-doc-tab">
+                                                    <div class="d-flex">
+                                                        <ul class="list-unstyled tab_list">
+                                                            <li>
+                                                                <a href="doc-archive.html">Doc Archive</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="doclist.html" class="active">Doc Topic</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="text">
+                                                        <a href="#">
+                                                            <p>More Categories</p>
+                                                        </a>
+                                                        <a href="doclist.html">
+                                                            <p>All docs</p>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-pane fade" id="v-pills-code" role="tabpanel" aria-labelledby="v-pills-code-tab">
+                                                    <div class="d-flex">
+                                                        <ul class="list-unstyled tab_list">
+                                                            <li><a href="tab.html">Tabs</a></li>
+                                                            <li><a href="accordion.html">Accordion</a></li>
+                                                            <li><a href="notice.html">Notice</a></li>
+                                                            <li><a href="table.html">Tables</a></li>
+                                                            <li><a href="image-pointing.html">Image Lightbox</a></li>
+                                                        </ul>
+                                                        <ul class="list-unstyled tab_list">
+                                                            <li><a href="tooltip.html">Tooltip</a></li>
+                                                            <li><a href="lightbox.html">Lightbox</a></li>
+                                                            <li><a href="can-use.html">Can I Use</a></li>
+                                                            <li><a href="footnote.html">Footnote</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="text">
+                                                        <a href="#">
+                                                            <p>More Categories</p>
+                                                        </a>
+                                                        <a href="doclist.html">
+                                                            <p>All docs</p>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-pane fade active show" id="v-pills-layout" role="tabpanel" aria-labelledby="v-pills-layout-tab">
+                                                    <div class="d-flex">
+                                                        <ul class="list-unstyled tab_list">
+                                                            <li><a href="layouts.html">Both Sidebar</a></li>
+                                                            <li><a href="layout-leftsidebar.html">Left Sidebar</a></li>
+                                                            <li><a href="layout-full.html" class="active">Full-wdith</a></li>
+                                                            <li><a href="sticky-menu.html">Sticky menu</a></li>
+                                                            <li><a href="simple-footer.html">Simple Footer</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="text">
+                                                        <a href="#">
+                                                            <p>More Categories</p>
+                                                        </a>
+                                                        <a href="#">
+                                                            <p>All docs</p>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-pane fade" id="v-pills-tour" role="tabpanel" aria-labelledby="v-pills-tour-tab">
+                                                    <div class="d-flex">
+                                                        <ul class="list-unstyled tab_list w_100">
+                                                            <li><a href="image-pointing.html">Image Hotspot</a></li>
+                                                            <li><a href="tour.html">Application Interface</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="text">
+                                                        <a href="#">
+                                                            <p>More Categories</p>
+                                                        </a>
+                                                        <a href="#">
+                                                            <p>All docs</p>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-pane fade" id="v-pills-content" role="tabpanel" aria-labelledby="v-pills-content-tab">
+                                                    <div class="d-flex">
+                                                        <ul class="list-unstyled tab_list">
+                                                            <li><a href="typography.html">Typography</a></li>
+                                                            <li><a href="code.html">Code</a></li>
+                                                            <li><a href="image.html">Image</a></li>
+                                                            <li><a href="video.html">Video</a></li>
+                                            <li><a href="keyboard-shortcuts.html">Keyboard Shortcuts</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="text">
+                                                        <a href="#">
+                                                            <p>More Categories</p>
+                                                        </a>
+                                                        <a href="#">
+                                                            <p>All docs</p>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-pane fade" id="v-pills-pages" role="tabpanel" aria-labelledby="v-pills-pages-tab">
+                                                    <div class="d-flex">
+                                                        <ul class="list-unstyled tab_list">
+                                                            <li><a href="doclist.html">Doc Topics</a>
+                                                            </li>
+                                                            <li><a href="Onepage.html">Onepage</a>
+                                                            </li>
+                                                            <li><a href="cheatsheet.html">Cheatseet</a>
+                                                            </li>
+                                                            <li><a href="changelog.html">Changelog</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="text">
+                                                        <a href="#">
+                                                            <p>More Categories</p>
+                                                        </a>
+                                                        <a href="doclist.html">
+                                                            <p>All docs</p>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown submenu">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Pages
+                            </a>
+                            <i class="arrow_carrot-down_alt2 mobile_dropdown_icon" aria-hidden="false" data-toggle="dropdown"></i>
+                            <ul class="dropdown-menu">
+                                <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                                <li class="nav-item"><a href="forums.html" class="nav-link">Forum</a></li>
+                                <li class="nav-item"><a href="signin.html" class="nav-link">Sign In</a></li>
+                                <li class="nav-item"><a href="signup.html" class="nav-link">Sign Up</a></li>
+                                <li class="nav-item"><a href="typography.html" class="nav-link">Typography</a></li>
+                                <li class="nav-item"><a href="error.html" class="nav-link">404 Error</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown submenu">
+                            <a class="nav-link dropdown-toggle" href="forums.html" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Forum
+                            </a>
+                            <i class="arrow_carrot-down_alt2 mobile_dropdown_icon" aria-hidden="false" data-toggle="dropdown"></i>
+                            <ul class="dropdown-menu">
+                                <li class="nav-item"><a href="forums.html" class="nav-link">Forums Root</a></li>
+                                <li class="nav-item"><a href="forum-topics.html" class="nav-link">Forum Topics</a></li>
+                                <li class="nav-item"><a href="forum-single.html" class="nav-link">Forum Single</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown submenu">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Products
+                            </a>
+                            <i class="arrow_carrot-down_alt2 mobile_dropdown_icon" aria-hidden="false" data-toggle="dropdown"></i>
+                            <ul class="dropdown-menu dropdown_menu_two">
+                                <li class="nav-item">
+                                    <a href="doc-archive.html" class="nav-link">
+                                        <img src="img/tick.png" alt="">
+                                        <div class="text">
+                                            <h5>KbDoc</h5>
+                                            <p>Launch Simple Websites</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="doclist.html" class="nav-link">
+                                        <img src="img/sheet.png" alt="">
+                                        <div class="text">
+                                            <h5>docall</h5>
+                                            <p>Digital Assets Subscription</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="index.html" class="nav-link">
+                                        <img src="img/shopping-bag.png" alt="">
+                                        <div class="text">
+                                            <h5>Docenvato</h5>
+                                            <p>Tutorials & Courses</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="index.html" class="nav-link">
+                                        <img src="img/gear.png" alt="">
+                                        <div class="text">
+                                            <h5>Tools</h5>
+                                            <p>Hire a Freelancer</p>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown submenu">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Blog
+                            </a>
+                            <i class="arrow_carrot-down_alt2 mobile_dropdown_icon" aria-hidden="false" data-toggle="dropdown"></i>
+                            <ul class="dropdown-menu">
+                                <li class="nav-item"><a href="blog-grid.html" class="nav-link">Blog Grid</a></li>
+                                <li class="nav-item"><a href="blog-grid-two.html" class="nav-link">Blog Grid Two</a></li>
+                                <li class="nav-item"><a href="blog-list.html" class="nav-link">Blog List</a></li>
+                                <li class="nav-item"><a href="blog-single.html" class="nav-link">Blog Details</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <a class="nav_btn" href="#">Free Trail</a>
+                </div>
+            </div>
+        </nav>
+        <div class="mobile_main_menu" id="sticky">
+            <div class="container">
+                <div class="mobile_menu_left">
+                    <button type="button" class="navbar-toggler mobile_menu_btn">
+                        <span class="menu_toggle ">
+                            <span class="hamburger">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </span>
+                        </span>
+                    </button>
+                    <a class="sticky_logo" href="index.html">
+                        <img src="img/logo-w.png" srcset="img/logo-w2x.png 2x" alt="logo">
+                        <img src="img/logo.png" srcset="img/logo-2x.png 2x" alt="logo">
+                    </a>
+                </div>
+                <div class="mobile_menu_right">
+                    <a class="nav_btn" href="#">Free Trail</a>
+                </div>
+            </div>
+        </div>
+        <div class="click_capture"></div>
+        <div class="side_menu">
+            <div class="mobile_menu_header">
+                <div class="close_nav">
+                    <i class="arrow_left"></i>
+                    <i class="icon_close"></i>
+                </div>
+                <div class="mobile_logo">
+                    <a href="#"><img src="img/logo.png" alt="logo"></a>
+                </div>
+            </div>
+            <div class="mobile_nav_wrapper">
+                <nav class="mobile_nav_top">
+                    <ul class="navbar-nav menu ml-auto">
+                        <li class="nav-item dropdown submenu">
+                            <a href="#" class="nav-link">Home</a>
+                            <i class="arrow_carrot-down_alt2 mobile_dropdown_icon"></i>
+                            <ul class="dropdown-menu">
+                                <li class="nav-item"><a href="index.html" class="nav-link">Light Knowledgebase</a></li>
+                                <li class="nav-item"><a href="index-helpdesk.html" class="nav-link">Help Desk</a></li>
+                            <li class="nav-item"><a href="index-cool.html" class="nav-link">Cool Knowledgebase</a> </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown submenu active">
+                            <a href="#" class="nav-link">Docs</a>
+                            <i class="arrow_carrot-down_alt2 mobile_dropdown_icon"></i>
+                            <ul class="dropdown-menu">
+                                <li class="nav-item"><a href="doc-archive.html" class="nav-link">Doc Archive</a></li>
+                                <li class="nav-item"><a href="doclist.html" class="nav-link">DocTopics</a></li>
+                                <li class="nav-item dropdown submenu">
+                                    <a href="#" class="nav-link">Shortcodes</a>
+                                    <i class="arrow_carrot-down_alt2 mobile_dropdown_icon"></i>
+                                    <ul class="dropdown-menu">
+                                        <li class="nav-item"><a href="accordion.html" class="nav-link">Accordion</a></li>
+                                        <li class="nav-item"><a href="tab.html" class="nav-link">Tabs</a></li>
+                                        <li class="nav-item"><a href="notice.html" class="nav-link">Notices</a></li>
+                                        <li class="nav-item"><a href="table.html" class="nav-link">Tables</a></li>
+                                        <li class="nav-item"><a href="tooltip.html" class="nav-link">Tooltip</a></li>
+                                        <li class="nav-item"><a href="image-pointing.html" class="nav-link">Image Hotspots</a></li>
+                                        <li class="nav-item"><a href="lightbox.html" class="nav-link">Lightbox</a></li>
+                                        <li class="nav-item"><a href="can-use.html" class="nav-link">Can I Use</a></li>
+                                        <li class="nav-item"><a href="changelog.html" class="nav-link">Changelog</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown submenu active">
+                                    <a href="#" class="nav-link">Layouts</a>
+                                    <i class="arrow_carrot-down_alt2 mobile_dropdown_icon"></i>
+                                    <ul class="dropdown-menu">
+                                        <li class="nav-item"><a href="layouts.html" class="nav-link">Both Sidebar</a></li>
+                                        <li class="nav-item"><a href="layout-leftsidebar.html" class="nav-link">Left Sidebar</a></li>
+                                        <li class="nav-item"><a href="layout-full.html" class="nav-link active">Full-wdith</a></li>
+                                        <li class="nav-item"><a href="sticky-menu.html" class="nav-link">Sticky menu</a></li>
+                                        <li class="nav-item"><a href="simple-footer.html" class="nav-link">Simple Footer</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown submenu">
+                                    <a href="#" class="nav-link">Others Pages</a>
+                                    <i class="arrow_carrot-down_alt2 mobile_dropdown_icon"></i>
+                                    <ul class="dropdown-menu">
+                                        <li class="nav-item"><a href="code.html" class="nav-link">Code</a></li>
+                                        <li class="nav-item"><a href="image.html" class="nav-link">Image</a></li>
+                                        <li class="nav-item"><a href="video.html" class="nav-link">Video</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown submenu">
+                            <a href="#" class="nav-link">Pages</a>
+                            <i class="arrow_carrot-down_alt2 mobile_dropdown_icon"></i>
+                            <ul class="dropdown-menu">
+                                <li class="nav-item"><a href="Onepage.html" class="nav-link">Onepage</a></li>
+                                <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                                <li class="nav-item"><a href="signin.html" class="nav-link">Sign In</a></li>
+                                <li class="nav-item"><a href="signup.html" class="nav-link">Sign Up</a></li>
+                                <li class="nav-item"><a href="typography.html" class="nav-link">Typography</a></li>
+                                <li class="nav-item"><a href="error.html" class="nav-link">404 Error</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown submenu">
+                            <a class="nav-link" href="#">
+                                Products
+                            </a>
+                            <i class="arrow_carrot-down_alt2 mobile_dropdown_icon"></i>
+                            <ul class="dropdown-menu dropdown_menu_two">
+                                <li class="nav-item">
+                                    <a href="doc-archive.html" class="nav-link">
+                                        <img src="img/tick.png" alt="">
+                                        <div class="text">
+                                            <h5>KbDoc</h5>
+                                            <p>Launch Simple Websites</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="doclist.html" class="nav-link">
+                                        <img src="img/sheet.png" alt="">
+                                        <div class="text">
+                                            <h5>docall</h5>
+                                            <p>Digital Assets Subscription</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="index.html" class="nav-link">
+                                        <img src="img/shopping-bag.png" alt="">
+                                        <div class="text">
+                                            <h5>Docenvato</h5>
+                                            <p>Tutorials & Courses</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="index.html" class="nav-link">
+                                        <img src="img/gear.png" alt="">
+                                        <div class="text">
+                                            <h5>Tools</h5>
+                                            <p>Hire a Freelancer</p>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown submenu">
+                            <a class="nav-link" href="#">
+                                Blog
+                            </a>
+                            <i class="arrow_carrot-down_alt2 mobile_dropdown_icon"></i>
+                            <ul class="dropdown-menu">
+                                <li class="nav-item"><a href="blog-grid.html" class="nav-link">Blog Grid</a></li>
+                                <li class="nav-item"><a href="blog-grid-two.html" class="nav-link">Blog Grid Two</a></li>
+                                <li class="nav-item"><a href="blog-list.html" class="nav-link">Blog List</a></li>
+                                <li class="nav-item"><a href="blog-single.html" class="nav-link">Blog Details</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="mobile_nav_bottom">
+                    <aside class="doc_left_sidebarlist">
+                        <h2>KbDoc Documentation</h2>
+                        <div class="scroll">
+                            <ul class="list-unstyled nav-sidebar">
+                                <li class="nav-item">
+                                    <a href="doclist.html" class="nav-link"><img src="img/side-nav/home.png" alt="">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="shortcode.html" class="nav-link"><img src="img/side-nav/briefcase.png" alt="briefcase">Shortcodes</a>
+                                    <span class="icon"><i class="arrow_carrot-down"></i></span>
+                                    <ul class="list-unstyled dropdown_nav">
+                                        <li><a href="tab.html">Tabs</a></li>
+                                        <li><a href="accordion.html">Accordion</a></li>
+                                        <li><a href="doclist.html">Doclist</a></li>
+                                        <li><a href="notice.html">Notices</a></li>
+                                        <li><a href="table.html">Table</a></li>
+                                        <li><a href="lightbox.html">Image Lightbox</a></li>
+                                        <li><a href="tooltip.html">Tooltip</a></li>
+                                        <li><a href="can-use.html">Can I use</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item active">
+                                    <a href="layouts.html" class="nav-link"><img src="img/side-nav/coding.png" alt="">Layouts</a>
+                                    <span class="icon"><i class="arrow_carrot-down"></i></span>
+                                    <ul class="list-unstyled dropdown_nav">
+                                        <li><a href="layouts.html">Both Sidebar</a></li>
+                                        <li><a href="layout-leftsidebar.html">Left Sidebar</a></li>
+                                        <li><a href="layout-full.html" class="active">Full-width</a></li>
+                                        <li><a href="sticky-menu.html">Sticky Menu</a></li>
+                                        <li><a href="simple-footer.html">Simple Footer</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="tour.html" class="nav-link"><img src="img/side-nav/chat1.png" alt="">Tour</a>
+                                    <span class="icon"><i class="arrow_carrot-down"></i></span>
+                                    <ul class="list-unstyled dropdown_nav">
+                                        <li><a href="image-pointing.html">Image Hotspots</a></li>
+                                        <li><a href="tour.html">Application Interface</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="typography.html" class="nav-link"><img src="img/side-nav/document.png" alt="">Content</a>
+                                    <span class="icon"><i class="arrow_carrot-down"></i></span>
+                                    <ul class="list-unstyled dropdown_nav">
+                                        <li><a href="typography.html">Typography</a></li>
+                                        <li><a href="code.html">Code</a></li>
+                                        <li><a href="image.html">Image</a></li>
+                                        <li><a href="video.html">Video</a></li>
+                                            <li><a href="keyboard-shortcuts.html">Keyboard Shortcuts</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="changelog.html" class="nav-link"><img src="img/side-nav/document2.png" alt="">Change Log</a>
+                                </li>
+                            </ul>
+                            <ul class="list-unstyled nav-sidebar coding_nav">
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link"><img src="img/side-nav/account.png" alt="">Account</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link"><img src="img/side-nav/coding.png" alt="">Development</a>
+                                </li>
+                            </ul>
+                            <ul class="list-unstyled nav-sidebar bottom_nav">
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link"><img src="img/side-nav/united-states.png" alt="">Unlted States</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link"><img src="img/side-nav/edit.png" alt="">English </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link"><img src="img/side-nav/users.png" alt="">Sign In <i class="arrow_right"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </div>
+        <section class="breadcrumb_area">
+            <img class="p_absolute bl_left" src="img/v.svg" alt="">
+            <img class="p_absolute bl_right" src="img/home_one/b_leaf.svg" alt="">
+            <img class="p_absolute star" src="img/home_one/banner_bg.png" alt="">
+            <img class="p_absolute wave_shap_one" src="img/blog-classic/shap_01.png" alt="">
+            <img class="p_absolute wave_shap_two" src="img/blog-classic/shap_02.png" alt="">
+            <img class="p_absolute one wow fadeInRight" src="img/home_one/b_man_two.png" alt="">
+            <img class="p_absolute two wow fadeInUp" data-wow-delay="0.2s" src="img/home_one/flower.png" alt="">
+            <div class="container custom_container">
+                <form action="#" class="banner_search_form banner_search_form_two">
+                    <div class="input-group">
+                        <input type="search" class="form-control" placeholder='Search ("/" to focus)'>
+                        <div class="input-group-append">
+                            <select class="custom-select" id="inlineFormCustomSelect">
+                                <option selected>All Category</option>
+                                <option value="1">Doc Archive</option>
+                                <option value="2">Doc List</option>
+                                <option value="3">KbDoc</option>
+                            </select>
+                        </div>
+                        <button type="submit"><i class="icon_search"></i></button>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <section class="page_breadcrumb">
+            <div class="container-fluid pl-60 pr-60">
+                <div class="row">
+                    <div class="col-sm-7">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                                <li class="breadcrumb-item"><a href="#">Docs</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">KbDoc WordPress Theme</li>
+                            </ol>
+                        </nav>
+                    </div>
+                    <div class="col-sm-5">
+                        <a href="#" class="date"><i class="icon_clock_alt"></i>Updated on March 03, 2020</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="doc_documentation_area doc_documentation_full_area" id="sticky_doc">
+            <div class="overlay_bg"></div>
+            <div class="container-fluid pl-60 pr-60">
+                <div class="row">
+                    <div class="col-lg-2 doc_mobile_menu display_none">
+                        <aside class="doc_left_sidebarlist">
+                            <div class="open_icon" id="left">
+                                <i class="arrow_carrot-right"></i>
+                                <i class="arrow_carrot-left"></i>
+                            </div>
+                            <div class="scroll">
+                                <ul class="list-unstyled nav-sidebar">
+                                    <li class="nav-item">
+                                        <a href="doclist.html" class="nav-link"><img src="img/side-nav/home.png" alt="">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="shortcode.html" class="nav-link"><img src="img/side-nav/briefcase.png" alt="briefcase">Shortcodes</a>
+                                        <span class="icon"><i class="arrow_carrot-down"></i></span>
+                                        <ul class="list-unstyled dropdown_nav">
+                                            <li><a href="tab.html">Tabs</a></li>
+                                            <li><a href="accordion.html">Accordion</a></li>
+                                            <li><a href="notice.html">Notices</a></li>
+                                            <li><a href="table.html">Table</a></li>
+                                            <li><a href="lightbox.html">Image Lightbox</a></li>
+                                            <li><a href="tooltip.html">Tooltip</a></li>
+                                            <li><a href="can-use.html">Can I Use</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item active">
+                                        <a href="layouts.html" class="nav-link"><img src="img/side-nav/coding.png" alt="">Layouts</a>
+                                        <span class="icon"><i class="arrow_carrot-down"></i></span>
+                                        <ul class="list-unstyled dropdown_nav">
+                                            <li><a href="layouts.html">Both Sidebar</a></li>
+                                            <li><a href="layout-leftsidebar.html">Left Sidebar</a></li>
+                                            <li><a href="layout-full.html" class="active">Full-width</a></li>
+                                            <li><a href="sticky-menu.html">Sticky Menu</a></li>
+                                            <li><a href="simple-footer.html">Simple Footer</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="tour.html" class="nav-link"><img src="img/side-nav/chat1.png" alt="">Tour</a>
+                                        <span class="icon"><i class="arrow_carrot-down"></i></span>
+                                        <ul class="list-unstyled dropdown_nav">
+                                            <li><a href="image-pointing.html">Image Hotspots</a></li>
+                                            <li><a href="tour.html">Application Interface</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="typography.html" class="nav-link"><img src="img/side-nav/document.png" alt="">Content</a>
+                                        <span class="icon"><i class="arrow_carrot-down"></i></span>
+                                        <ul class="list-unstyled dropdown_nav">
+                                            <li><a href="typography.html">Typography</a></li>
+                                            <li><a href="code.html">Code</a></li>
+                                            <li><a href="image.html">Image</a></li>
+                                            <li><a href="video.html">Video</a></li>
+                                            <li><a href="keyboard-shortcuts.html">Keyboard Shortcuts</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="changelog.html" class="nav-link"><img src="img/side-nav/document2.png" alt="">Change Log</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="changelog.html" class="nav-link"><img src="img/side-nav/document2.png" alt="">Change Log</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="changelog.html" class="nav-link"><img src="img/side-nav/document2.png" alt="">Change Log</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="changelog.html" class="nav-link"><img src="img/side-nav/document2.png" alt="">Change Log</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="changelog.html" class="nav-link"><img src="img/side-nav/document2.png" alt="">Change Log</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="changelog.html" class="nav-link"><img src="img/side-nav/document2.png" alt="">Change Log</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="changelog.html" class="nav-link"><img src="img/side-nav/document2.png" alt="">Change Log</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="changelog.html" class="nav-link"><img src="img/side-nav/document2.png" alt="">Change Log</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="changelog.html" class="nav-link"><img src="img/side-nav/document2.png" alt="">Change Log</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="changelog.html" class="nav-link"><img src="img/side-nav/document2.png" alt="">Change Log</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="changelog.html" class="nav-link"><img src="img/side-nav/document2.png" alt="">Change Log</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="changelog.html" class="nav-link"><img src="img/side-nav/document2.png" alt="">Change Log</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="changelog.html" class="nav-link"><img src="img/side-nav/document2.png" alt="">Change Log</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="changelog.html" class="nav-link"><img src="img/side-nav/document2.png" alt="">Change Log</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="changelog.html" class="nav-link"><img src="img/side-nav/document2.png" alt="">Change Log</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="changelog.html" class="nav-link"><img src="img/side-nav/document2.png" alt="">Change Log</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="changelog.html" class="nav-link"><img src="img/side-nav/document2.png" alt="">Change Log</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="changelog.html" class="nav-link"><img src="img/side-nav/document2.png" alt="">Change Log</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="changelog.html" class="nav-link"><img src="img/side-nav/document2.png" alt="">Change Log</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="changelog.html" class="nav-link"><img src="img/side-nav/document2.png" alt="">Change Log</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="changelog.html" class="nav-link"><img src="img/side-nav/document2.png" alt="">Change Log</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="changelog.html" class="nav-link"><img src="img/side-nav/document2.png" alt="">Change Log</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="changelog.html" class="nav-link"><img src="img/side-nav/document2.png" alt="">Change Log</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="changelog.html" class="nav-link"><img src="img/side-nav/document2.png" alt="">Change Log</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="changelog.html" class="nav-link"><img src="img/side-nav/document2.png" alt="">Change Log</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="changelog.html" class="nav-link"><img src="img/side-nav/document2.png" alt="">Change Log</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="changelog.html" class="nav-link"><img src="img/side-nav/document2.png" alt="">Change Log</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="changelog.html" class="nav-link"><img src="img/side-nav/document2.png" alt="">Change Log</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="changelog.html" class="nav-link"><img src="img/side-nav/document2.png" alt="">Change Log</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="changelog.html" class="nav-link"><img src="img/side-nav/document2.png" alt="">Change Log</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="changelog.html" class="nav-link"><img src="img/side-nav/document2.png" alt="">Change Log</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="changelog.html" class="nav-link"><img src="img/side-nav/document2.png" alt="">Change Log</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="changelog.html" class="nav-link"><img src="img/side-nav/document2.png" alt="">Change Log</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="changelog.html" class="nav-link"><img src="img/side-nav/document2.png" alt="">Change Log</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="changelog.html" class="nav-link"><img src="img/side-nav/document2.png" alt="">Change Log</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="changelog.html" class="nav-link"><img src="img/side-nav/document2.png" alt="">Change Log</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="changelog.html" class="nav-link"><img src="img/side-nav/document2.png" alt="">Change Log</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="changelog.html" class="nav-link"><img src="img/side-nav/document2.png" alt="">Change Log</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="changelog.html" class="nav-link"><img src="img/side-nav/document2.png" alt="">Last One</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </aside>
+                    </div>
+                    <div class="col-lg-8 col-md-8">
+                        <div id="post" class="documentation_info">
+                            <article class="documentation_body">
+                                <div class="shortcode_title">
+                                    <h1>Getting Started</h1>
+                                    <p><span>Welcome to KbDoc !</span> Get familiar with the Stripe products and explore their features:</p>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-4 col-sm-6">
+                                        <div class="media documentation_item">
+                                            <div class="icon">
+                                                <img src="img/home_one/icon/folder.png" alt="">
+                                            </div>
+                                            <div class="media-body">
+                                                <a href="#">
+                                                    <h5>Working with Docs</h5>
+                                                </a>
+                                                <p>He lost his bottle bubble and squeak knackered.!</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-sm-6">
+                                        <div class="media documentation_item">
+                                            <div class="icon">
+                                                <img src="img/home_one/icon/envelope.png" alt="">
+                                            </div>
+                                            <div class="media-body">
+                                                <a href="#">
+                                                    <h5>Formatting Content</h5>
+                                                </a>
+                                                <p>He lost his bottle bubble and squeak knackered.!</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-sm-6">
+                                        <div class="media documentation_item">
+                                            <div class="icon">
+                                                <img src="img/home_one/icon/coding.png" alt="">
+                                            </div>
+                                            <div class="media-body">
+                                                <a href="#">
+                                                    <h5>Development</h5>
+                                                </a>
+                                                <p>He lost his bottle bubble and squeak knackered.!</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-sm-6">
+                                        <div class="media documentation_item">
+                                            <div class="icon">
+                                                <img src="img/home_one/icon/smartphone.png" alt="">
+                                            </div>
+                                            <div class="media-body">
+                                                <a href="#">
+                                                    <h5>Mobile App</h5>
+                                                </a>
+                                                <p>He lost his bottle bubble and squeak knackered.!</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-sm-6">
+                                        <div class="media documentation_item">
+                                            <div class="icon">
+                                                <img src="img/home_one/icon/management.png" alt="">
+                                            </div>
+                                            <div class="media-body">
+                                                <a href="#">
+                                                    <h5>Account Management</h5>
+                                                </a>
+                                                <p>He lost his bottle bubble and squeak knackered.!</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-sm-6">
+                                        <div class="media documentation_item">
+                                            <div class="icon">
+                                                <img src="img/home_one/icon/briefcase.png" alt="">
+                                            </div>
+                                            <div class="media-body">
+                                                <a href="#">
+                                                    <h5>Shortcodes</h5>
+                                                </a>
+                                                <p>He lost his bottle bubble and squeak knackered.!</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-sm-6">
+                                        <div class="media documentation_item">
+                                            <div class="icon">
+                                                <img src="img/home_one/icon/newspaper.png" alt="">
+                                            </div>
+                                            <div class="media-body">
+                                                <a href="#">
+                                                    <h5>Productivity</h5>
+                                                </a>
+                                                <p>He lost his bottle bubble and squeak knackered.!</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-sm-6">
+                                        <div class="media documentation_item">
+                                            <div class="icon">
+                                                <img src="img/side-nav/issuin.png" alt="">
+                                            </div>
+                                            <div class="media-body">
+                                                <a href="#">
+                                                    <h5>Issuing</h5>
+                                                </a>
+                                                <p>He lost his bottle bubble and squeak knackered.!</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-sm-6">
+                                        <div class="media documentation_item">
+                                            <div class="icon">
+                                                <img src="img/home_one/icon/color-palette.png" alt="">
+                                            </div>
+                                            <div class="media-body">
+                                                <a href="#">
+                                                    <h5>Introduction</h5>
+                                                </a>
+                                                <p>He lost his bottle bubble and squeak knackered.!</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-sm-6">
+                                        <div class="media documentation_item">
+                                            <div class="icon">
+                                                <img src="img/side-nav/terminals.png" alt="">
+                                            </div>
+                                            <div class="media-body">
+                                                <a href="#">
+                                                    <h5>Terminal</h5>
+                                                </a>
+                                                <p>He lost his bottle bubble and squeak knackered.!</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-sm-6">
+                                        <div class="media documentation_item">
+                                            <div class="icon">
+                                                <img src="img/home_one/icon/android.png" alt="">
+                                            </div>
+                                            <div class="media-body">
+                                                <a href="#">
+                                                    <h5>Getting Started</h5>
+                                                </a>
+                                                <p>He lost his bottle bubble and squeak knackered.!</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-sm-6">
+                                        <div class="media documentation_item">
+                                            <div class="icon">
+                                                <img src="img/home_one/icon/lock.png" alt="">
+                                            </div>
+                                            <div class="media-body">
+                                                <a href="#">
+                                                    <h5>This Document</h5>
+                                                </a>
+                                                <p>He lost his bottle bubble and squeak knackered.!</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="border_bottom"></div>
+                            </article>
+                            <article class="get_started" id="getting">
+                                <h4 class="c_head load-order-2">Introduction</h4>
+                                <p>Owt to do with me chinwag get stuffed mate baking cakes blow off vagabond knackered faff about boot a load of old tosh <a href="#">Richard Charles</a>, cor blimey guvnor cheers fantastic butty <a href="#">A bit of how's your father down</a> the pub plastered bugger <a href="#">all mate such a fibber</a> lemon squeezy.</p>
+                                <a href="#">
+                                    <h4 class="c_head load-order-2">Add payments to your platform</h4>
+                                </a>
+                                <p>Don't get shirty with me what a plonker on your bike mate bugger all mate chip shop bits and bobs smashing mush bugger cup of char, in my flat my lady naff bubble and squeak tosser pukka barmy bog the bee's knees, elizabeth dropped a clanger cheesed.</p>
+                                <h4 class="c_head">Extend Stripe's offerings</h4>
+                                <p>Naff wellies such a fibber up the duff some dodgy chav sloshed blow off golly gosh <a href="#">jolly good hotpot gutted mate</a>, me old mucker cras mush.</p>
+                                <div class="link">
+                                    <p>Spiffing good time blimey smashing bevvy hunky-dory cor blimey guvnor elizabeth bite your arm off, bamboozled A bit of how's your father it's all gone to pot bodge.</p>
+                                </div>
+                            </article>
+                            <div class="border_bottom"></div>
+                            <article class="test_version" id="version">
+                                <h4 class="c_head">Test KbDoc Version</h4>
+                                <p>Try the KbDoc API in seconds. Create your first customer, charge, and more by following the steps below.</p>
+                                <div class="process_tab_shortcode">
+                                    <ul class="nav nav-tabs v_menu" id="myTabs" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link active" id="card-tab" data-toggle="tab" href="#card" role="tab" aria-controls="card" aria-selected="true"><span>1</span>Card</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" id="customer-tab" data-toggle="tab" href="#customer" role="tab" aria-controls="customer" aria-selected="false"><span>2</span>Customer</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" id="charge-tab" data-toggle="tab" href="#charge" role="tab" aria-controls="charge" aria-selected="false"><span>3</span>Charge</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" id="sub-tab" data-toggle="tab" href="#sub" role="tab" aria-controls="sub" aria-selected="false"><span>4</span>Subscription</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" id="success-tab" data-toggle="tab" href="#success" role="tab" aria-controls="success" aria-selected="false"><span>5</span>Success!</a>
+                                        </li>
+                                    </ul>
+                                    <div class="tab-content" id="myTabContents">
+                                        <div class="tab-pane fade show active" id="card" role="tabpanel" aria-labelledby="card-tab">
+                                            <p>Twit brilliant he legged it he nicked it amongst hotpot chinwag spend a penny lemon squeezy he lost his bottle porkies, Why it's your round happy days.</p>
+                                            <div class="version">
+                                                <div class="v_head">
+                                                    KbDoc run hello-world
+                                                </div>
+                                                <div class="v_middle">
+                                                    <p>Unable to find image <span class="red">'hello-world:latest'</span> locally</p>
+                                                    <p>latest: Pulling from library/hello-world</p>
+                                                    <p>ca4f61b1923c: Pull <span class="green">complete</span></p>
+                                                    <p>Digest: sha256:ca0eeb6fb05351dfc8759c20733c91def84cb8007aa89a5bf606bc8b315b9fc7</p>
+                                                    <p>Status: Downloaded newer image for hello-world:latest</p>
+                                                </div>
+                                                <div class="v_footer">
+                                                    <p>Hello from KbDoc!<br> This message shows that your installation appears to be working correctly. <br>...</p>
+                                                </div>
+                                            </div>
+                                            <p><span>Usage:</span> Click "Submit" to create a token.</p>
+                                        </div>
+                                        <div class="tab-pane fade" id="customer" role="tabpanel" aria-labelledby="customer-tab">
+                                            <p>Tristique omnis? Hymenaeos montes facilisi magnam facilisi ante voluptates odio nulla exercitationem tincidunt maecenas, dolores mauris praesent placeat</p>
+                                            <div class="version">
+                                                <p>Vivamus vero netus tristique venenatis excepteur nisl diamlorem nobis dolorem consequatur repellendus voluptatibus sit voluptas similique taciti pariatur, veniam, consequatur.</p>
+                                                <p>Maecenas tempore facilis temporibus quas! Eius illo optio, rhoncus expedita doloremque gravida, aptent, pariatur porro</p>
+                                                <p>Tristique omnis? Hymenaeos montes facilisi magnam facilisi ante voluptates odio nulla exercitationem tincidunt maecenas, dolores mauris praesent placeat</p>
+                                            </div>
+                                            <p><span>Usage:</span> Click "Submit" to create a token.</p>
+                                        </div>
+                                        <div class="tab-pane fade" id="charge" role="tabpanel" aria-labelledby="charge-tab">
+                                            <p>Twit brilliant he legged it he nicked it amongst hotpot chinwag spend a penny lemon squeezy he lost his bottle porkies, Why it's your round happy days.</p>
+                                            <div class="version">
+                                                <div class="v_head">
+                                                    KbDoc run hello-world
+                                                </div>
+                                                <div class="v_middle">
+                                                    <p>Unable to find image <span class="red">'hello-world:latest'</span> locally</p>
+                                                    <p>latest: Pulling from library/hello-world</p>
+                                                    <p>ca4f61b1923c: Pull <span class="green">complete</span></p>
+                                                    <p>Digest: sha256:ca0eeb6fb05351dfc8759c20733c91def84cb8007aa89a5bf606bc8b315b9fc7</p>
+                                                    <p>Status: Downloaded newer image for hello-world:latest</p>
+                                                </div>
+                                                <div class="v_footer">
+                                                    <p>Hello from KbDoc!<br> This message shows that your installation appears to be working correctly. <br>...</p>
+                                                </div>
+                                            </div>
+                                            <p><span>Usage:</span> Click "Submit" to create a token.</p>
+                                        </div>
+                                        <div class="tab-pane fade" id="sub" role="tabpanel" aria-labelledby="sub-tab">
+                                            <p>Twit brilliant he legged it he nicked it amongst hotpot chinwag spend a penny lemon squeezy he lost his bottle porkies, Why it's your round happy days.</p>
+                                            <div class="version">
+                                                <div class="v_head">
+                                                    KbDoc run hello-world
+                                                </div>
+                                                <div class="v_middle">
+                                                    <p>Unable to find image <span class="red">'hello-world:latest'</span> locally</p>
+                                                    <p>latest: Pulling from library/hello-world</p>
+                                                    <p>ca4f61b1923c: Pull <span class="green">complete</span></p>
+                                                    <p>Digest: sha256:ca0eeb6fb05351dfc8759c20733c91def84cb8007aa89a5bf606bc8b315b9fc7</p>
+                                                    <p>Status: Downloaded newer image for hello-world:latest</p>
+                                                </div>
+                                                <div class="v_footer">
+                                                    <p>Hello from KbDoc!<br> This message shows that your installation appears to be working correctly. <br>...</p>
+                                                </div>
+                                            </div>
+                                            <p><span>Usage:</span> Click "Submit" to create a token.</p>
+                                        </div>
+                                        <div class="tab-pane fade" id="success" role="tabpanel" aria-labelledby="success-tab">
+                                            <p>Twit brilliant he legged it he nicked it amongst hotpot chinwag spend a penny lemon squeezy he lost his bottle porkies, Why it's your round happy days.</p>
+                                            <div class="version">
+                                                <div class="v_head">
+                                                    KbDoc run hello-world
+                                                </div>
+                                                <div class="v_middle">
+                                                    <p>Unable to find image <span class="red">'hello-world:latest'</span> locally</p>
+                                                    <p>latest: Pulling from library/hello-world</p>
+                                                    <p>ca4f61b1923c: Pull <span class="green">complete</span></p>
+                                                    <p>Digest: sha256:ca0eeb6fb05351dfc8759c20733c91def84cb8007aa89a5bf606bc8b315b9fc7</p>
+                                                    <p>Status: Downloaded newer image for hello-world:latest</p>
+                                                </div>
+                                                <div class="v_footer">
+                                                    <p>Hello from KbDoc!<br> This message shows that your installation appears to be working correctly. <br>...</p>
+                                                </div>
+                                            </div>
+                                            <p><span>Usage:</span> Click "Submit" to create a token.</p>
+                                        </div>
+                                        <button class="btn btn-info btn-lg previous"><i class="arrow_carrot-left"></i></button>
+                                        <button class="btn btn-info btn-lg next"><i class="arrow_carrot-right"></i></button>
+                                    </div>
+                                </div>
+                            </article>
+                            <div class="border_bottom"></div>
+                            <article class="developer" id="developer">
+                                <h4 class="c_head">Features</h4>
+                                <ul class="list-unstyled tag_list">
+                                    <li><i class="icon_document_alt"></i>HTML5 & CSS3</li>
+                                    <li><i class="icon_document_alt"></i>Responsive layout (desktops, tablets, mobile devices)</li>
+                                    <li><i class="icon_document_alt"></i>Built with Bootstrap 4.3</li>
+                                    <li><i class="icon_document_alt"></i>Well structured code</li>
+                                    <li><i class="icon_document_alt"></i>About</li>
+                                    <li><i class="icon_document_alt"></i>Hinted Typography</li>
+                                </ul>
+                            </article>
+                            <div class="border_bottom"></div>
+                            <article class="code_structure">
+                                <h4 class="c_head load-order-2">Code Structure</h4>
+                                <p>HTML, css and javascript files included.</p>
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <pre class="snippet">
+                                            <code class="language-html" data-lang="css">
+                                            doc
+                                            ├── assets/
+                                            │   ├── animation/
+                                            │   ├── bootstrap/
+                                            │   ├── elagent-icon/
+                                            │   ├── magnify-pop/
+                                            │   ├── mcustomscrollbar/
+                                            │   ├── niceselectpicker/
+                                            │   ├── prism/
+                                            │   └── slick/
+                                            ├── blog-list.html
+                                            ├── about.html
+                                            ├── accordion.html
+                                            ├── alerts.html
+                                            ├── blog-grid.html
+                                            ├── blog-list.html
+                                            ├── blog-single.html
+                                            ├── blog-grid-two.html
+                                            ├── changelog.html
+                                            ├── code.html
+                                            ├── both-sidebar.html
+                                            ├── doclist.html
+                                            ├── images-pointing.html
+                                            ├── index.html
+                                            ├── index.html
+                                            ├── lightbox.html
+                                            ├── layout-sidebar.html
+                                            ├── layout-minimal.html
+                                            ├── layout-sidebar.html
+                                            ├── notice.html
+                                            ├── tables.html
+                                            ├── typography.html
+                                            └── video.html
+                                            </code>
+                                        </pre>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <pre class="snippet">
+                                            <code class="language-html" data-lang="css">
+                                            assets
+                                            ├── css/
+                                            │   ├── bootstrap.css
+                                            │   ├── bootstrap.min.css
+                                            │   ├── jquery.mCustomScrollbar.css
+                                            │   ├── magnific-popup.css
+                                            │   ├── magnific-popup.min.css
+                                            │   └── style.css
+                                            ├── doc/
+                                            ├── fontawesome/
+                                            ├── fonts/
+                                            ├── img/
+                                            ├── js/
+                                            ├── slick/
+                                            └── elagent-icon
+                                            </code>
+                                        </pre>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="help_text" id="help">
+                                <h4 class="c_head">We're here to help!</h4>
+                                <div class="help_info">
+                                    <div class="help_item">
+                                        <a href="#">
+                                            <h4>Support</h4>
+                                        </a>
+                                        <p>Car boot absolutely bladder the full monty ruddy.</p>
+                                    </div>
+                                    <div class="help_item">
+                                        <a href="#">
+                                            <h4>Samples <i class="arrow_carrot-right"></i></h4>
+                                        </a>
+                                        <p>Car boot absolutely bladder the full monty ruddy.</p>
+                                    </div>
+                                    <div class="help_item">
+                                        <a href="#">
+                                            <h4>API Discussion Board</h4>
+                                        </a>
+                                        <p>Car boot absolutely bladder the full monty ruddy.</p>
+                                    </div>
+                                </div>
+                                <div class="border_bottom"></div>
+                                <div class="row question_box">
+                                    <div class="col-lg-6">
+                                        <div class="question_text">
+                                            <h4>Questions?</h4>
+                                            <p>Cheeky that bubble and squeak fanny around bleeder hunky-dory daft <a href="#">bonnet brolly victoria</a> sponge show off show off pick your nose and blow off <a href="#">my good sir, cobblers</a> dropped.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="question_text question_text_two">
+                                            <h4>Sign up for the Developer Digest</h4>
+                                            <p>Share your email so KbDoc can send you updates about the API and developer platform.</p>
+                                            <form class="mailchimp signup_form" method="post">
+                                                <div class="input-group">
+                                                    <input type="text" class="form-control memail" placeholder="Email">
+                                                    <div class="input-group-append">
+                                                        <button type="submit">Sign Up</button>
+                                                    </div>
+                                                </div>
+                                                <p class="mchimp-errmessage" style="display: none;"></p>
+                                                <p class="mchimp-sucmessage" style="display: none;"></p>
+                                            </form>
+                                            <p>You can unsubscribe at any time. Read our privacy policy <a href="#">here</a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="border_bottom"></div>
+                                <div class="row feedback_link">
+                                    <div class="col-lg-6">
+                                        <h6><i class="icon_mail_alt"></i>Still stuck? <a href="#" data-toggle="modal" data-target="#exampleModal2">How can we help?</a></h6>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <p>Was this page helpful? <a href="#" class="h_btn">Yes</a><a href="#" class="h_btn">No</a></p>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 doc_right_mobile_menu">
+                        <div class="open_icon" id="right">
+                            <i class="arrow_carrot-left"></i>
+                            <i class="arrow_carrot-right"></i>
+                        </div>
+                        <div class="doc_rightsidebar scroll">
+                            <select id="mySelect" name="os">
+                                <option value="windows" data-content="<i class='fab fa-windows'></i> Windows">Windows</option>
+                                <option value="ios" data-content="<i class='fab fa-apple'></i> Ios">Ios</option>
+                                <option value="linux" data-content="<i class='fab fa-linux'></i> Linux">Linux</option>
+                            </select>
+                            <div id="font-switcher" class="d-flex justify-content-between align-items-center">
+                                <div id="rvfs-controllers" class="fontsize-controllers group"></div>
+                                <a href="javascript:window.print()" class="print"><i class="icon_printer"></i></a>
+                            </div>
+                            <div class="doc_switch">
+                                <label for="something" class="tab-btn tab-btns"><i class="icon_lightbulb_alt"></i></label>
+                                <input type="checkbox" name="something" id="something" class="tab_switcher">
+                                <label for="something" class="tab-btn"><i class="far fa-moon"></i></label>
+                            </div>
+                            <h6>On this page:</h6>
+                            <nav class="list-unstyled doc_menu" id="navbar-example3">
+                                <a href="#documentation" class="nav-link active">Documentation</a>
+                                <a href="#getting" class="nav-link">Getting started</a>
+                                <a href="#version" class="nav-link">Test KbDoc Version</a>
+                                <a href="#developer" class="nav-link">Not a developer?</a>
+                                <a href="#help" class="nav-link">We're here to help!</a>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="simple_footer">
+            <img class="leaf_right" src="img/home_one/leaf_footter.png" alt="">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-sm-6">
+                        <p>© 2020 All Rights Reserved by <a href="index.html">KbDoc</a></p>
+                    </div>
+                    <div class="col-sm-6 text-right">
+                        <ul class="list-unstyled f_social_icon">
+                            <li><a href="#"><i class="social_facebook"></i></a></li>
+                            <li><a href="#"><i class="social_twitter"></i></a></li>
+                            <li><a href="#"><i class="social_vimeo"></i></a></li>
+                            <li><a href="#"><i class="social_linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <div class="modal fade img_modal" id="exampleModal2" tabindex="-2" role="dialog" aria-hidden="false">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <i class=" icon_close"></i>
+        </button>
+        <div class="modal-dialog help_form" role="document">
+            <div class="modal-content">
+                <div class="shortcode_title">
+                    <h1>How can we help?</h1>
+                    <p>A premium WordPress theme with integrated Knowledge Base,<br>providing 24/7 community based support.</p>
+                </div>
+                <form action="#" class="contact_form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Name">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control" placeholder="Email">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Subject">
+                    </div>
+                    <div class="form-group">
+                        <textarea name="Message" id="massage" placeholder="Massage"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn action_btn">Send</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/pre-loader.js"> </script>
+    <script src="assets/bootstrap/js/popper.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap-select.min.js"></script>
+    <script src="assets/font-size/js/rv-jquery-fontsize-2.0.3.js"></script>
+    <script src="js/parallaxie.js"></script>
+    <script src="js/TweenMax.min.js"></script>
+    <script src="js/anchor.js"></script>
+    <script src="assets/wow/wow.min.js"></script>
+    <script src="assets/prism/prism.js"></script>
+    <script src="assets/mailchimp/plugins.js"></script>
+    <script src="assets/niceselectpicker/jquery.nice-select.min.js"></script>
+    <script src="assets/mcustomscrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+
+<!-- Mirrored from html.creativegigs.net/kbdoc/kbdoc-html/layout-full.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 02 Feb 2021 06:51:31 GMT -->
+</html>
