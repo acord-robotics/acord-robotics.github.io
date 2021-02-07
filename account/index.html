@@ -1,92 +1,2742 @@
 <!DOCTYPE html>
-<!--  Last Published: Wed May 29 2019 02:37:20 GMT+0000 (UTC)  -->
-<html data-wf-page="5cdb69c9ded4a01b277c2389" data-wf-site="5cdb69c9ded4a00da77c2385">
+<html lang="en">
+
+
+<!-- Mirrored from huro.cssninja.io/webapp-dashboards-personal-3.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 07 Feb 2021 14:54:04 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
 <head>
-  <meta charset="utf-8">
-  <title>Login</title>
-  <meta content="Login" property="og:title">
-  <meta content="width=device-width, initial-scale=1" name="viewport">
-  <link href="css/normalize.css" rel="stylesheet" type="text/css">
-  <link href="css/components.css" rel="stylesheet" type="text/css">
-  <link href="css/user-dashboard.css" rel="stylesheet" type="text/css">
-  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
-  <script type="text/javascript">WebFont.load({  google: {    families: ["Varela:400","Karla:regular,700"]  }});</script>
-  <!-- [if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" type="text/javascript"></script><![endif] -->
-  <script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script>
-  <link href="https://daks2k3a4ib2z.cloudfront.net/img/favicon.ico" rel="shortcut icon" type="image/x-icon">
-  <link href="https://daks2k3a4ib2z.cloudfront.net/img/webclip.png" rel="apple-touch-icon">
-  <!-- REPLACE ↓↓ -->
-  <!--  Temporary Memberstack Code  -->
-  <!-- Memberstack --> 
-<script src="https://api.memberstack.io/static/memberstack.js?custom" data-memberstack-id="364dc741601f8ed38c797805d5e24ef4"> </script> 
-  <!-- REPLACE ↑↑ -->
-  <!-- Crisp Chat Code -->
-  <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="9363b728-641a-400e-a03a-b3db0cb11122";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
-  <!-- Chat.js CDN -->
-  <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <!-- Required meta tags  -->
+    <script src="https://api.memberstack.io/static/memberstack.js?custom" data-memberstack-id="364dc741601f8ed38c797805d5e24ef4"> </script> 
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title> Glitch Dashboard | SK</title>
+    <link rel="icon" type="image/png" href="data:image/png;base64,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" />
+
+    <!--Core CSS -->
+    <link rel="stylesheet" href="assets/css/app.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800;900&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,600,700" rel="stylesheet">
+
 </head>
+
 <body>
-  <a data-w-id="bb7013ae-656f-0690-1c48-bd5e1e2edbaf" style="height:0PX" href="https://www.memberstack.io/dashboard-tutorial" class="tutorial-alert-bar w-inline-block">
-    <div class="video-icon"><img src="https://uploads-ssl.webflow.com/5bbfaf3252489b4c484ba9b9/5c7a1104eaea1d2cb3951624_vdieo.svg" alt="" class="video-svg"></div>
-    <div>Tutorial Video: How does this template work?</div>
-  </a>
-  <div class="login-page-wrapper"><a href="preview.html" class="login-nav-link">Preview Dashboard</a>
-    <div class="login-container w-form">
-      <div class="login-container"></div>
-      <h1 class="login-head">Login to continue</h1>
-      <form id="sign-up" name="wf-form-Sign-up-Form" data-name="Sign up Form" method="post" ms-login="true" class="memberstack-form">
-        <div class="field-wrapper"><label for="node" class="signup-label">Email address</label><input type="email" maxlength="256" required="" ms-field="email" class="signup-field w-input"></div>
-        <div class="field-wrapper"><label for="password-2" class="signup-label">Password</label><input type="password" class="signup-field w-input" maxlength="256" name="password-2" data-name="Password 2" ms-field="password" id="password-2" required=""></div>
-        <div class="secondary-action forgot-password"><a ms-forgot="true" href="#" class="login-link">Forgot password?</a></div><input type="submit" value="Login Now" data-wait="Please wait..." class="login-button w-button"></form>
-      <div class="w-form-done">
-        <div>Thank you! Your submission has been received!</div>
-      </div>
-      <div class="error-message w-form-fail">
-        <div>Oops! Something went wrong while submitting the form.</div>
-      </div>
-    </div>
-    <div memberstack-template="Client Dashboard Template" class="template-tag"><a href="http://memberstack.io" target="_blank" class="w-inline-block"></a></div>
-  </div>
-  <div data-w-id="5422bca3-e4bb-23db-1905-3fa26beede82" style="display:none" class="delete-me-welcome">
-    <div class="help-tooltip tour-tooltip">
-      <div class="help-tooltip-content">
-        <div class="help-title inline-block">Setup To-do</div>
-        <div class="relative">1. Publish this site<br>2. Create a <a href="https://app.memberstack.io/all-websites" target="_blank">MemberStack account</a><br>3. Activate your membership site  🎉🎉🎉<br></div>
-        <div class="tour-dot"></div>
-        <div class="w-embed">
-          <style>
-@keyframes tourDot {
-     0%   {box-shadow: 0 0 0 0px rgba(42, 168, 255, 0.8);}
-     100% {box-shadow: 0 0 0 80px rgba(42, 168, 255, 0);}
-}
-.tour-dot {
-	animation: tourDot 1.5s ease-out infinite;
-  }
-</style>
+    <div id="huro-app" class="app-wrapper">
+
+        <div class="app-overlay"></div>
+
+        <!-- Pageloader -->
+        <div class="pageloader is-full"></div>
+        <div class="infraloader is-full is-active"></div>
+        <nav class="navbar mobile-navbar no-shadow is-hidden-desktop is-hidden-tablet" aria-label="main navigation">
+            <div class="container">
+                <!-- Brand -->
+                <div class="navbar-brand">
+                    <!-- Mobile menu toggler icon -->
+                    <div class="brand-start">
+                        <div class="navbar-burger">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+
+                    <a class="navbar-item is-brand" href="https://acord.software">
+                        <img class="light-image" src="data:image/png;base64,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" alt="">
+                        <img class="dark-image" src="data:image/png;base64,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" alt="">
+                    </a>
+
+                    <div class="brand-end">
+                        <div class="navbar-item has-dropdown is-notification is-hidden-tablet is-hidden-desktop">
+                            <a class="navbar-link is-arrowless" href="javascript:void(0);">
+                                <i data-feather="bell"></i>
+                                <span class="new-indicator pulsate"></span>
+                            </a>
+                            <div class="navbar-dropdown is-boxed is-right">
+                                <div class="heading">
+                                    <div class="heading-left">
+                                        <h6 class="heading-title">Notifications</h6>
+                                    </div>
+                                    <div class="heading-right">
+                                        <a class="notification-link" href="https://github.com/notifications">See all</a>
+                                    </div>
+                                </div>
+                                <div class="inner has-slimscroll">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dropdown is-right is-spaced dropdown-trigger user-dropdown">
+                            <div class="is-trigger" aria-haspopup="true">
+                                <div class="profile-avatar">
+                                    <img class="avatar" src="https://static.thenounproject.com/png/901435-200.png" data-demo-src="https://static.thenounproject.com/png/901435-200.png" alt="">
+                                </div>
+                            </div>
+                            <div class="dropdown-menu" role="menu">
+                                <div class="dropdown-content">
+                                    <div class="dropdown-head">
+                                        <div class="h-avatar is-large">
+                                            <img class="avatar" src="https://static.thenounproject.com/png/901435-200.png" data-demo-src="https://static.thenounproject.com/png/901435-200.png" alt="">
+                                        </div>
+                                        <div class="meta">
+                                            <span ms-data="first-name">firstName</span>
+                                            <span>Developer</span>
+                                        </div>
+                                    </div>
+                                    <a href="#/ms/profile" class="dropdown-item is-media">
+                                        <div class="icon">
+                                            <i class="lnil lnil-user-alt"></i>
+                                        </div>
+                                        <div class="meta">
+                                            <span>Profile</span>
+                                            <span>View your profile</span>
+                                        </div>
+                                    </a>
+                                    <a class="dropdown-item is-media layout-switcher">
+                                        <div class="icon">
+                                            <i class="lnil lnil-layout"></i>
+                                        </div>
+                                        <div class="meta">
+                                            <span>Layout</span>
+                                            <span>Switch to admin/webapp</span>
+                                        </div>
+                                    </a>
+                                    <hr class="dropdown-divider">
+                                    <a href="#" class="dropdown-item is-media">
+                                        <div class="icon">
+                                            <i class="lnil lnil-briefcase"></i>
+                                        </div>
+                                        <div class="meta">
+                                            <span>Projects</span>
+                                            <span>All my projects</span>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="dropdown-item is-media">
+                                        <div class="icon">
+                                            <i class="lnil lnil-users-alt"></i>
+                                        </div>
+                                        <div class="meta">
+                                            <span>Team</span>
+                                            <span>Manage your team</span>
+                                        </div>
+                                    </a>
+                                    <hr class="dropdown-divider">
+                                    <a href="#" class="dropdown-item is-media">
+                                        <div class="icon">
+                                            <i class="lnil lnil-cog"></i>
+                                        </div>
+                                        <div class="meta">
+                                            <span>Settings</span>
+                                            <span>Account settings</span>
+                                        </div>
+                                    </a>
+                                    <hr class="dropdown-divider">
+                                    <div class="dropdown-item is-button">
+                                        <button class="button h-button is-primary is-raised is-fullwidth logout-button">
+                                            <span class="icon is-small">
+                                                    <i data-feather="log-out"></i>
+                                                </span>
+                                            <span>Logout</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+        <div class="mobile-main-sidebar">
+            <div class="inner">
+                <ul class="icon-side-menu">
+                    <li>
+                        <a href="admin-dashboards-personal-1.html" id="home-sidebar-menu-mobile">
+                            <i data-feather="activity"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="admin-grid-users-1.html" id="layouts-sidebar-menu-mobile">
+                            <i data-feather="grid"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="elements-hub.html" id="elements-sidebar-menu-mobile">
+                            <i data-feather="box"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="components-hub.html" id="components-sidebar-menu-mobile">
+                            <i data-feather="cpu"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="messaging-chat.html" id="open-messages-mobile">
+                            <i data-feather="message-circle"></i>
+                        </a>
+                    </li>
+                </ul>
+
+                <ul class="bottom-icon-side-menu">
+                    <li>
+                        <a href="javascript:" class="right-panel-trigger" data-panel="search-panel">
+                            <i data-feather="search"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i data-feather="settings"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
-      </div>
-      <div class="tour-bottom-row">
-        <div>You can delete this to-do list anytime.</div>
-      </div>
-      <div class="tour-diamond top-right"></div>
+        <div class="webapp-navbar">
+            <div class="webapp-navbar-inner">
+                <div class="left">
+                    <a href="https://acord.software/basic/account" class="brand">
+                        <img class="light-image" src="assets/img/logos/logo/logo.svg" alt="" />
+                        <img class="dark-image" src="assets/img/logos/logo/logo-light.svg" alt="" />
+                    </a>
+                    <div class="separator"></div>
+                    <!--<div class="dropdown project-dropdown dropdown-trigger is-spaced">
+                        <div class="h-avatar is-small">
+                            <span class="avatar is-fake is-h-green">
+                                    <span>H</span>
+                            </span>
+                        </div>
+                        <span class="status-indicator"></span>
+
+                        <div class="dropdown-menu" role="menu">
+                            <div class="dropdown-content">
+                                <div class="dropdown-block">
+                                    <div class="h-avatar is-small">
+                                        <span class="avatar is-fake is-warning">
+                                                <span>D</span>
+                                        </span>
+                                    </div>
+                                    <div class="meta">
+                                        <span class="dark-inverted">Delivery App Project</span>
+                                        <span>Food For Good</span>
+                                    </div>
+                                </div>
+                                <div class="dropdown-block">
+                                    <div class="h-avatar is-small">
+                                        <span class="avatar is-fake is-h-green">
+                                                <span>H</span>
+                                        </span>
+                                    </div>
+                                    <div class="meta">
+                                        <span class="dark-inverted">Health and Fitness Dashboard</span>
+                                        <span>Fit'n'Dance</span>
+                                    </div>
+                                </div>
+                                <div class="dropdown-block">
+                                    <div class="h-avatar is-small">
+                                        <span class="avatar is-fake is-info">
+                                                <span>L</span>
+                                        </span>
+                                    </div>
+                                    <div class="meta">
+                                        <span class="dark-inverted">Learning Tracker Dashboard</span>
+                                        <span>Fit'n'Dance</span>
+                                    </div>
+                                </div>
+                                <div class="dropdown-block">
+                                    <div class="h-avatar is-small">
+                                        <span class="avatar is-fake is-h-purple">
+                                                <span>B</span>
+                                        </span>
+                                    </div>
+                                    <div class="meta">
+                                        <span class="dark-inverted">Banking and Finance Dashboard</span>
+                                        <span>H Bank</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>-->
+                    <h1 id="webapp-page-title" class="title is-5">SK.15</h1>
+                </div>
+                <div class="center">
+                    <div id="webapp-navbar-menu" class="centered-links">
+                        <a id="dashboards-navbar-menu" class="centered-link centered-link-toggle" data-menu-id="dashboards-webapp-menu">
+                            <i data-feather="activity"></i>
+                            <span>Dashboards</span>
+                        </a>
+                        <!--<a id="layouts-navbar-menu" class="centered-link centered-link-toggle" data-menu-id="layouts-webapp-menu">
+                            <i data-feather="grid"></i>
+                            <span>Layouts</span>
+                        </a>
+                        <a id="elements-navbar-menu" class="centered-link centered-link-toggle" data-menu-id="elements-webapp-menu">
+                            <i data-feather="box"></i>
+                            <span>Elements</span>
+                        </a>
+                        <a id="components-navbar-menu" class="centered-link centered-link-toggle" data-menu-id="components-webapp-menu">
+                            <i data-feather="cpu"></i>
+                            <span>Components</span>
+                        </a>
+                        <a href="webapp-messaging-chat.html" class="centered-link">
+                            <i data-feather="message-circle"></i>
+                            <span>Chat</span>
+                        </a>
+                        <a class="centered-link centered-link-search">
+                            <i data-feather="search"></i>
+                            <span>Search</span>
+                        </a>-->
+                    </div>
+                    <div id="webapp-navbar-search" class="centered-search is-hidden">
+                        <div class="field">
+                            <div class="control has-icon">
+                                <input type="text" class="input is-rounded search-input" placeholder="Search records...">
+                                <div class="form-icon">
+                                    <i data-feather="search"></i>
+                                </div>
+                                <div id="webapp-navbar-search-close" class="form-icon is-right">
+                                    <i data-feather="x"></i>
+                                </div>
+                                <div class="search-results has-slimscroll"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="toolbar ml-auto">
+
+                        <div class="toolbar-link">
+                            <label class="dark-mode ml-auto">
+                                <input type="checkbox" checked>
+                                <span></span>
+                            </label>
+                        </div>
+
+                        <a class="toolbar-link right-panel-trigger" data-panel="languages-panel">
+                            <img src="assets/img/icons/flags/united-states-of-america.svg" alt="">
+                        </a>
+
+                        <div class="toolbar-notifications is-hidden-mobile">
+                            <div class="dropdown is-spaced is-dots is-right dropdown-trigger">
+                                <div class="is-trigger" aria-haspopup="true">
+                                    <i data-feather="bell"></i>
+                                    <span class="new-indicator pulsate"></span>
+                                </div>
+                                <div class="dropdown-menu" role="menu">
+                                    <div class="dropdown-content">
+                                        <div class="heading">
+                                            <div class="heading-left">
+                                                <h6 class="heading-title">Notifications</h6>
+                                            </div>
+                                            <div class="heading-right">
+                                                <a class="notification-link" href="https://github.com/notifications">See all</a>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <a class="toolbar-link right-panel-trigger" data-panel="activity-panel">
+                            <i data-feather="grid"></i>
+                        </a>
+                    </div>
+                    <div class="dropdown profile-dropdown dropdown-trigger is-spaced is-right">
+                        <img src="https://static.thenounproject.com/png/901435-200.png" data-demo-src="https://static.thenounproject.com/png/901435-200.png" alt="">
+                        <span class="status-indicator"></span>
+
+                        <div class="dropdown-menu" role="menu">
+                            <div class="dropdown-content">
+                                <div class="dropdown-head">
+                                    <div class="h-avatar is-large">
+                                        <img class="avatar" src="https://static.thenounproject.com/png/901435-200.png" data-demo-src="https://static.thenounproject.com/png/901435-200.png" alt="">
+                                    </div>
+                                    <div class="meta">
+                                        <span ms-data="first-name">firstName</span>
+                                        <span>Developer</span>
+                                    </div>
+                                </div>
+                                <a href="#/ms/profile" class="dropdown-item is-media">
+                                    <div class="icon">
+                                        <i class="lnil lnil-user-alt"></i>
+                                    </div>
+                                    <div class="meta">
+                                        <span>Profile</span>
+                                        <span>View your profile</span>
+                                    </div>
+                                </a>
+                                <hr class="dropdown-divider">
+                                <a href="#" class="dropdown-item is-media">
+                                    <div class="icon">
+                                        <i class="lnil lnil-briefcase"></i>
+                                    </div>
+                                    <div class="meta">
+                                        <span>Projects</span>
+                                        <span>All my projects</span>
+                                    </div>
+                                </a>
+                                <a href="https://github.com/acord-robotics" class="dropdown-item is-media">
+                                    <div class="icon">
+                                        <i class="lnil lnil-users-alt"></i>
+                                    </div>
+                                    <div class="meta">
+                                        <span>Team</span>
+                                        <span>Your Github Repositories</span>
+                                    </div>
+                                </a>
+                                <hr class="dropdown-divider">
+                                <a href="https://github.com/settings/profile" class="dropdown-item is-media">
+                                    <div class="icon">
+                                        <i class="lnil lnil-cog"></i>
+                                    </div>
+                                    <div class="meta">
+                                        <span>Settings</span>
+                                        <span>Account settings</span>
+                                    </div>
+                                </a>
+                                <hr class="dropdown-divider">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="webapp-subnavbar">
+
+            <!--src/partials/navbar/webapp/menus/-->
+            <div id="dashboards-webapp-menu" class="webapp-subnavbar-inner tabs-wrapper">
+                <div class="tabs-inner">
+                    <div class="tabs is-centered is-3">
+                        <ul>
+                            <li data-tab="dashboard-pages-tab" class="is-active"><a>Workbook</a></li>
+                            <li data-tab="templates-pages-tab"><a>Applications</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+
+                <div class="container">
+                    <div id="dashboard-pages-tab" class="tab-content is-active">
+                        <div class="tab-content-inner">
+                            <div class="center has-slimscroll">
+                                <div class="columns">
+                                    <div class="column is-3">
+                                        <h4 class="column-heading">Basic Files</h4>
+                                        <ul>
+                                            <li>
+                                                <a href="https://www.notion.so/skinetics/Signal-Kinetics-b91503bc794f429ab087ce9cac49bce9">
+                                                    <i class="lnil lnil-analytics-alt-1"></i>
+                                                    <span>Home V1</span>
+                                                    <i data-feather="circle"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="https://www.notion.so/skinetics/Finance-Finance-5fc3163799b54f20a6971ce600759bc7">
+                                                    <i class="lnil lnil-pie-chart"></i>
+                                                    <span>Finances</span>
+                                                    <i data-feather="circle"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="https://www.notion.so/skinetics/KinetiKast-65e55d6a24264e4185a54042c3fe1699">
+                                                    <i class="lnil lnil-stats-up"></i>
+                                                    <span>Podcasting</span>
+                                                    <i data-feather="circle"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="column is-3">
+                                        <h4 class="column-heading">Panoptes</h4>
+                                        <ul>
+                                            <li>
+                                                <a href="http://sk.acord.software/bcbdcd59d2a443c9bc278318b8ce241d#2e858833f2ef47bc85bebce88759917a">
+                                                    <i class="lnil lnil-analytics-alt-1"></i>
+                                                    <span>Monster Hunter Applet</span>
+                                                    <i data-feather="circle"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="https://www.notion.so/skinetics/Practical-Introduction-6e3cc304fa9544cbb2b101ec626131a9">
+                                                    <i class="lnil lnil-stats-up"></i>
+                                                    <span>Web Scraping</span>
+                                                    <i data-feather="circle"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="https://www.notion.so/skinetics/Numpy-036070f355c342d390968e751363f43f">
+                                                    <i class="lnil lnil-credit-card"></i>
+                                                    <span>Numpy</span>
+                                                    <i data-feather="circle"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="column is-3">
+                                        <h4 class="column-heading">Webapps</h4>
+                                        <ul>
+                                            <li>
+                                                <a href="https://www.notion.so/skinetics/df3580a648534b578ece4354498daa7d?v=5a5318ca312c4ff69ac08489909402cf&p=0f3df26b71be47c58868103374083c15">
+                                                    <i class="lnil lnil-plane-alt"></i>
+                                                    <span>Visual Identity</span>
+                                                    <i data-feather="circle"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="https://www.notion.so/skinetics/df3580a648534b578ece4354498daa7d?v=5a5318ca312c4ff69ac08489909402cf&p=09688072ff1641adbee7bb8417462389">
+                                                    <i class="lnil lnil-apartment"></i>
+                                                    <span>Patreon</span>
+                                                    <i data-feather="circle"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="https://www.notion.so/skinetics/df3580a648534b578ece4354498daa7d?v=5a5318ca312c4ff69ac08489909402cf&p=53caadc87ddb45168a8c06c3ea6e5245">
+                                                    <i class="lnil lnil-users-alt"></i>
+                                                    <span>Riordanmore</span>
+                                                    <i data-feather="circle"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <!--<div class="column is-3">
+                                        <h4 class="column-heading">Apps</h4>
+                                        <ul>
+                                            <li>
+                                                <a href="webapp-dashboards-apps-1.html">
+                                                    <i class="lnil lnil-pizza"></i>
+                                                    <span>Food Delivery</span>
+                                                    <i data-feather="circle"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="webapp-dashboards-apps-2.html">
+                                                    <i class="lnil lnil-envelope"></i>
+                                                    <span>Inbox</span>
+                                                    <i data-feather="circle"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="admin-messaging-chat.html">
+                                                    <i class="lnil lnil-bubble"></i>
+                                                    <span>Messaging V1</span>
+                                                    <i data-feather="circle"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="webapp-messaging-chat.html">
+                                                    <i class="lnil lnil-bubble"></i>
+                                                    <span>Messaging V2</span>
+                                                    <i data-feather="circle"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="templates-pages-tab" class="tab-content">
+                        <div class="tab-content-inner">
+                            <div class="center has-slimscroll">
+                                <div class="columns">
+                                    <div class="column is-3">
+                                        <h4 class="column-heading">Programming</h4>
+                                        <ul>
+                                            <li>
+                                                <a href="https://glitch.com/dashboard?group=owned&sortColumn=boost&sortDirection=DESC&page=1&showAll=false&filterDomain=">
+                                                    <i class="lnil lnil-layout"></i>
+                                                    <span>Glitch</span>
+                                                    <i data-feather="circle"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="https://github.com/acord-robotics">
+                                                    <i class="lnil lnil-layout"></i>
+                                                    <span>Github</span>
+                                                    <i data-feather="circle"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="https://gitlab.com/acord-robotics">
+                                                    <i class="lnil lnil-layout"></i>
+                                                    <span>Gitlab</span>
+                                                    <i data-feather="circle"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="https://signal-kinetics.atlassian.net/jira">
+                                                    <i class="lnil lnil-layout"></i>
+                                                    <span>Jira</span>
+                                                    <i data-feather="circle"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="column is-3">
+                                        <h4 class="column-heading">Webapps</h4>
+                                        <ul>
+                                            <li>
+                                                <a href="https://app.memberstack.io/memberships">
+                                                    <i class="lnil lnil-layout"></i>
+                                                    <span>Memberstack</span>
+                                                    <i data-feather="circle"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="https://app.netlify.com/start">
+                                                    <i class="lnil lnil-layout"></i>
+                                                    <span>Netlify</span>
+                                                    <i data-feather="circle"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="https://zapier.com/">
+                                                    <i class="lnil lnil-layout"></i>
+                                                    <span>Zapier</span>
+                                                    <i data-feather="circle"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <!--<div class="column is-3">
+                                        <h4 class="column-heading">Widgets</h4>
+                                        <ul>
+                                            <li>
+                                                <a href="webapp-dashboards-charts-apex.html">
+                                                    <i class="lnil lnil-pie-chart-alt"></i>
+                                                    <span>Apex Charts</span>
+                                                    <i data-feather="circle"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="webapp-dashboards-charts-billboardjs.html">
+                                                    <i class="lnil lnil-bar-chart"></i>
+                                                    <span>Billboard JS</span>
+                                                    <i data-feather="circle"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="webapp-dashboards-widgets-ui.html">
+                                                    <i class="lnil lnil-layout-alt-1"></i>
+                                                    <span>UI Widgets</span>
+                                                    <i data-feather="circle"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="webapp-dashboards-widgets-creative.html">
+                                                    <i class="lnil lnil-layout-alt-2"></i>
+                                                    <span>Creative Widgets</span>
+                                                    <i data-feather="circle"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="webapp-dashboards-widgets-list.html">
+                                                    <i class="lnil lnil-layout-alt-1"></i>
+                                                    <span>List Widgets</span>
+                                                    <i data-feather="circle"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="webapp-dashboards-widgets-stats.html">
+                                                    <i class="lnil lnil-layout-alt-1"></i>
+                                                    <span>Stat Widgets</span>
+                                                    <i data-feather="circle"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="column is-3">
+                                        <h4 class="column-heading">Wizard</h4>
+                                        <ul>
+                                            <li>
+                                                <a href="wizard-v1.html">
+                                                    <span>Wizard V1</span>
+                                                    <i data-feather="circle"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="/webapp-form-layouts-1.html">
+                                                    <span>Form V1</span>
+                                                    <i data-feather="circle"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="/webapp-form-layouts-2.html">
+                                                    <span>Form V2</span>
+                                                    <i data-feather="circle"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="/webapp-form-layouts-3.html">
+                                                    <span>Form V3</span>
+                                                    <i data-feather="circle"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="/webapp-form-layouts-4.html">
+                                                    <span>Form V4</span>
+                                                    <i data-feather="circle"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--src/partials/navbar/webapp/menus/-->
+            <div id="layouts-webapp-menu" class="webapp-subnavbar-inner tabs-wrapper is-active">
+                <div class="tabs-inner">
+                    <div class="tabs is-centered is-4">
+                        <ul>
+                            <li data-tab="list-pages-tab" class="is-active"><a>List Views</a></li>
+                            <li data-tab="grid-pages-tab"><a>Grid Views</a></li>
+                            <li data-tab="app-pages-tab"><a>Pages</a></li>
+                            <li data-tab="utility-pages-tab"><a>Utility</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+
+                <div class="container">
+                    <div id="list-pages-tab" class="tab-content is-active">
+                        <div class="tab-content-inner">
+                            <div class="center has-slimscroll">
+                                <div class="columns">
+                                    <div class="column is-3">
+                                        <h4 class="column-heading">Lists</h4>
+                                        <ul>
+                                            <li>
+                                                <a href="webapp-list-view-1.html">
+                                                    <i class="lnil lnil-list-alt"></i>
+                                                    <span>List View V1</span>
+                                                    <i data-feather="circle"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="webapp-list-view-2.html">
+                                                    <i class="lnil lnil-list-alt"></i>
+                                                    <span>List View V2</span>
+                                                    <i data-feather="circle"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="webapp-list-view-3.html">
+                                                    <i class="lnil lnil-list-alt"></i>
+                                                    <span>List View V3</span>
+                                                    <i data-feather="circle"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="webapp-list-view-4.html">
+                                                    <i class="lnil lnil-list-alt"></i>
+                                                    <span>List View V4</span>
+                                                    <i data-feather="circle"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="column is-3">
+                                        <h4 class="column-heading">Flex Lists</h4>
+                                        <ul>
+                                            <li>
+                                                <a href="webapp-list-flex-1.html">
+                                                    <i class="lnil lnil-list-alt-1"></i>
+                                                    <span>Flex List V1</span>
+                                                    <i data-feather="circle"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="webapp-list-flex-2.html">
+                                                    <i class="lnil lnil-list-alt-1"></i>
+                                                    <span>Flex List V2</span>
+                                                    <i data-feather="circle"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="webapp-list-flex-3.html">
+                                                    <i class="lnil lnil-list-alt-1"></i>
+                                                    <span>Flex List V3</span>
+                                                    <i data-feather="circle"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="column is-3">
+                                        <h4 class="column-heading">Datatables</h4>
+                                        <ul>
+                                            <li>
+                                                <a href="webapp-list-datatable-1.html">
+                                                    <i class="lnil lnil-layout-alt"></i>
+                                                    <span>Datatable V1</span>
+                                                    <i data-feather="circle"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="webapp-list-datatable-2.html">
+                                                    <i class="lnil lnil-layout-alt"></i>
+                                                    <span>Datatable V2</span>
+                                                    <i data-feather="circle"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="webapp-list-datatable-3.html">
+                                                    <i class="lnil lnil-layout-alt"></i>
+                                                    <span>Datatable V3</span>
+                                                    <i data-feather="circle"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="webapp-list-datatable-4.html">
+                                                    <i class="lnil lnil-layout-alt"></i>
+                                                    <span>Datatable V4</span>
+                                                    <i data-feather="circle"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="column is-3">
+                                        <a href="https://cssninja.io/" target="_blank" class="column-placeholder">
+                                            <img class="light-image" src="assets/img/icons/misc/buoy.svg" alt="">
+                                            <img class="dark-image" src="assets/img/icons/misc/buoy-dark.svg" alt="">
+                                            <h3>Support</h3>
+                                        </a>
+                                        <a href="https://docs.huro.cssninja.io/" target="_blank" class="column-placeholder">
+                                            <img class="light-image" src="assets/img/icons/misc/docs.svg" alt="">
+                                            <img class="dark-image" src="assets/img/icons/misc/docs-dark.svg" alt="">
+                                            <h3>Documentation</h3>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="grid-pages-tab" class="tab-content">
+                        <div class="tab-content-inner">
+                            <div class="center has-slimscroll">
+                                <div class="columns">
+                                    <div class="column is-3">
+                                        <h4 class="column-heading">Cards</h4>
+                                        <ul>
+                                            <li>
+                                                <a href="webapp-grid-cards-1.html">
+                                                    <i class="lnil lnil-grid-alt"></i>
+                                                    <span>Card Grid V1</span>
+                                                    <i data-feather="circle"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="webapp-grid-cards-2.html">
+                                                    <i class="lnil lnil-grid-alt"></i>
+                                                    <span>Card Grid V2</span>
+                                                    <i data-feather="circle"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="webapp-grid-cards-3.html">
+                                                    <i class="lnil lnil-grid-alt"></i>
+                                                    <span>Card Grid V3</span>
+                                                    <i data-feather="circle"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="webapp-grid-cards-4.html">
+                                                    <i class="lnil lnil-grid-alt"></i>
+                                                    <span>Card Grid V4</span>
+                                                    <i data-feather="circle"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="column is-3">
+                                        <h4 class="column-heading">Tiles</h4>
+                                        <ul>
+                                            <li>
+                                                <a href="webapp-grid-tiles-1.html">
+                                                    <i class="lnil lnil-layout-alt-2"></i>
+                                                    <span>Tile Grid V1</span>
+                                                    <i data-feather="circle"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="webapp-grid-tiles-2.html">
+                                                    <i class="lnil lnil-layout-alt-2"></i>
+                                                    <span>Tile Grid V2</span>
+                                                    <i data-feather="circle"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="webapp-grid-tiles-3.html">
+                                                    <i class="lnil lnil-layout-alt-2"></i>
+                                                    <span>Tile Grid V3</span>
+                                                    <i data-feather="circle"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="column is-3">
+                                        <h4 class="column-heading">Users</h4>
+                                        <ul>
+                                            <li>
+                                                <a href="webapp-grid-users-1.html">
+                                                    <i class="lnil lnil-users-alt"></i>
+                                                    <span>User Grid V1</span>
+                                                    <i data-feather="circle"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="webapp-grid-users-2.html">
+                                                    <i class="lnil lnil-users-alt"></i>
+                                                    <span>User Grid V2</span>
+                                                    <i data-feather="circle"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="webapp-grid-users-3.html">
+                                                    <i class="lnil lnil-users-alt"></i>
+                                                    <span>User Grid V3</span>
+                                                    <i data-feather="circle"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="webapp-grid-users-4.html">
+                                                    <i class="lnil lnil-users-alt"></i>
+                                                    <span>User Grid V4</span>
+                                                    <i data-feather="circle"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="column is-3">
+                                        <a href="https://cssninja.io/" target="_blank" class="column-placeholder">
+                                            <img class="light-image" src="assets/img/icons/misc/buoy.svg" alt="">
+                                            <img class="dark-image" src="assets/img/icons/misc/buoy-dark.svg" alt="">
+                                            <h3>Support</h3>
+                                        </a>
+                                        <a href="https://docs.huro.cssninja.io/" target="_blank" class="column-placeholder">
+                                            <img class="light-image" src="assets/img/icons/misc/docs.svg" alt="">
+                                            <img class="dark-image" src="assets/img/icons/misc/docs-dark.svg" alt="">
+                                            <h3>Documentation</h3>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="app-pages-tab" class="tab-content">
+                        <div class="tab-content-inner">
+                            <div class="center has-slimscroll">
+                                <div class="columns">
+                                    <div class="column is-3">
+                                        <h4 class="column-heading">Personal</h4>
+                                        <ul>
+                                            <li>
+                                                <a href="webapp-profile-view.html">
+                                                    <i class="lnil lnil-user-alt"></i>
+                                                    <span>Profile</span>
+                                                    <i data-feather="circle"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="webapp-profile-edit-1.html">
+                                                    <i class="lnil lnil-pencil"></i>
+                                                    <span>Edit Profile</span>
+                                                    <i data-feather="circle"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="webapp-profile-notifications.html">
+                                                    <i class="lnil lnil-notification"></i>
+                                                    <span>Notifications</span>
+                                                    <i data-feather="circle"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="webapp-profile-settings.html">
+                                                    <i class="lnil lnil-cog"></i>
+                                                    <span>Settings</span>
+                                                    <i data-feather="circle"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="column is-3">
+                                        <h4 class="column-heading">Pages</h4>
+                                        <ul>
+                                            <li>
+                                                <a href="auth-login-1.html">
+                                                    <i class="lnil lnil-pointer-right"></i>
+                                                    <span>Login v1</span>
+                                                    <i data-feather="circle"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="auth-login-2.html">
+                                                    <i class="lnil lnil-pointer-right"></i>
+                                                    <span>Login v2</span>
+                                                    <i data-feather="circle"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="auth-login-3.html">
+                                                    <i class="lnil lnil-pointer-right"></i>
+                                                    <span>Login v3</span>
+                                                    <i data-feather="circle"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="auth-signup-2.html">
+                                                    <i class="lnil lnil-crown"></i>
+                                                    <span>Signup v1</span>
+                                                    <i data-feather="circle"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="auth-signup-3.html">
+                                                    <i class="lnil lnil-crown"></i>
+                                                    <span>Signup v2</span>
+                                                    <i data-feather="circle"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="auth-signup-1.html">
+                                                    <i class="lnil lnil-crown"></i>
+                                                    <span>Signup Flow</span>
+                                                    <i data-feather="circle"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="column is-3">
+                                        <h4 class="column-heading">Subpages</h4>
+                                        <ul>
+                                            <li>
+                                                <a href="webapp-saas-billing.html">
+                                                    <i class="lnil lnil-credit-card"></i>
+                                                    <span>Saas Billing</span>
+                                                    <i data-feather="circle"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="webapp-welcome.html">
+                                                    <i class="lnil lnil-door-alt"></i>
+                                                    <span>Welcome</span>
+                                                    <i data-feather="circle"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="webapp-action-page-1.html">
+                                                    <i class="lnil lnil-thunderbolt"></i>
+                                                    <span>Action Page V1</span>
+                                                    <i data-feather="circle"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="webapp-action-page-2.html">
+                                                    <i class="lnil lnil-thunderbolt"></i>
+                                                    <span>Action Page V2</span>
+                                                    <i data-feather="circle"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="webapp-search-results.html">
+                                                    <i class="lnil lnil-search-alt"></i>
+                                                    <span>Search Results</span>
+                                                    <i data-feather="circle"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="webapp-search-empty.html">
+                                                    <i class="lnil lnil-search-alt"></i>
+                                                    <span>Empty Search</span>
+                                                    <i data-feather="circle"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="column is-3">
+                                        <h4 class="column-heading">Projects</h4>
+                                        <ul>
+                                            <li>
+                                                <a href="webapp-projects-projects.html">
+                                                    <i class="lnil lnil-grid-alt"></i>
+                                                    <span>Projects V1</span>
+                                                    <i data-feather="circle"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="webapp-projects-projects-2.html">
+                                                    <i class="lnil lnil-grid-alt"></i>
+                                                    <span>Projects V2</span>
+                                                    <i data-feather="circle"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="webapp-projects-projects-3.html">
+                                                    <i class="lnil lnil-grid-alt"></i>
+                                                    <span>Projects V3</span>
+                                                    <i data-feather="circle"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="webapp-projects-project.html">
+                                                    <i class="lnil lnil-layout"></i>
+                                                    <span>Project Details</span>
+                                                    <i data-feather="circle"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="webapp-kanban-board.html">
+                                                    <i class="lnil lnil-layout-alt-1"></i>
+                                                    <span>Project Board</span>
+                                                    <i data-feather="circle"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="utility-pages-tab" class="tab-content">
+                        <div class="tab-content-inner">
+                            <div class="center has-slimscroll">
+                                <div class="columns">
+                                    <div class="column is-3">
+                                        <h4 class="column-heading">Utility</h4>
+                                        <ul>
+                                            <li>
+                                                <a href="webapp-utility-account-confirm.html">
+                                                    <i class="lnil lnil-thunderbolt"></i>
+                                                    <span>Confirm Account</span>
+                                                    <i data-feather="circle"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="webapp-utility-promotion.html">
+                                                    <i class="lnil lnil-magnet"></i>
+                                                    <span>Promotion Page</span>
+                                                    <i data-feather="circle"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="webapp-utility-invoice.html">
+                                                    <i class="lnil lnil-calculator-alt"></i>
+                                                    <span>Invoice</span>
+                                                    <i data-feather="circle"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="admin-utility-status.html">
+                                                    <i class="lnil lnil-checkmark-circle"></i>
+                                                    <span>App Status</span>
+                                                    <i data-feather="circle"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="column is-3">
+                                        <h4 class="column-heading">Onboarding</h4>
+                                        <ul>
+                                            <li>
+                                                <a href="webapp-onboarding-page-1.html">
+                                                    <i class="lnil lnil-train"></i>
+                                                    <span>Onboarding V1</span>
+                                                    <i data-feather="circle"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="webapp-onboarding-page-2.html">
+                                                    <i class="lnil lnil-train-alt"></i>
+                                                    <span>Onboarding V2</span>
+                                                    <i data-feather="circle"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="webapp-onboarding-page-3.html">
+                                                    <i class="lnil lnil-car"></i>
+                                                    <span>Onboarding V3</span>
+                                                    <i data-feather="circle"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="webapp-onboarding-page-4.html">
+                                                    <i class="lnil lnil-car-alt"></i>
+                                                    <span>Onboarding V4</span>
+                                                    <i data-feather="circle"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="webapp-onboarding-page-5.html">
+                                                    <i class="lnil lnil-train-alt"></i>
+                                                    <span>Onboarding V5</span>
+                                                    <i data-feather="circle"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="column is-3">
+                                        <h4 class="column-heading">Error</h4>
+                                        <ul>
+                                            <li>
+                                                <a href="error-page-1.html">
+                                                    <i class="lnil lnil-cross-circle"></i>
+                                                    <span>Error Page V1</span>
+                                                    <i data-feather="circle"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="error-page-2.html">
+                                                    <i class="lnil lnil-cross-circle"></i>
+                                                    <span>Error Page V2</span>
+                                                    <i data-feather="circle"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="error-page-3.html">
+                                                    <i class="lnil lnil-cross-circle"></i>
+                                                    <span>Error Page V3</span>
+                                                    <i data-feather="circle"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="error-page-4.html">
+                                                    <i class="lnil lnil-cross-circle"></i>
+                                                    <span>Error Page V4</span>
+                                                    <i data-feather="circle"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="error-page-5.html">
+                                                    <i class="lnil lnil-cross-circle"></i>
+                                                    <span>Error Page V5</span>
+                                                    <i data-feather="circle"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="column is-3">
+                                        <a href="https://cssninja.io/" target="_blank" class="column-placeholder">
+                                            <img class="light-image" src="assets/img/icons/misc/buoy.svg" alt="">
+                                            <img class="dark-image" src="assets/img/icons/misc/buoy-dark.svg" alt="">
+                                            <h3>Support</h3>
+                                        </a>
+                                        <a href="https://docs.huro.cssninja.io/" target="_blank" class="column-placeholder">
+                                            <img class="light-image" src="assets/img/icons/misc/docs.svg" alt="">
+                                            <img class="dark-image" src="assets/img/icons/misc/docs-dark.svg" alt="">
+                                            <h3>Documentation</h3>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--src/partials/navbar/webapp/menus/-->
+            <div id="elements-webapp-menu" class="webapp-subnavbar-inner tabs-wrapper">
+                <div class="tabs-inner">
+                    <div class="tabs is-centered is-2">
+                        <ul>
+                            <li data-tab="elements-basic-pages-tab" class="is-active"><a>Basic UI</a></li>
+                            <li data-tab="elements-forms-pages-tab"><a>Form Controls</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+
+                <div class="container">
+                    <div id="elements-basic-pages-tab" class="tab-content is-active">
+                        <div class="tab-content-inner">
+                            <div class="center has-slimscroll">
+                                <div class="columns">
+                                    <div class="column is-3">
+                                        <h4 class="column-heading">General</h4>
+                                        <ul>
+                                            <li>
+                                                <a href="elements-hub.html">
+                                                    <i class="lnil lnil-home"></i>
+                                                    <span>Elements Hub</span>
+                                                    <i data-feather="circle"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="elements-colors.html">
+                                                    <i class="lnil lnil-color-palette"></i>
+                                                    <span>Colors</span>
+                                                    <i data-feather="circle"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="elements-helpers.html">
+                                                    <i class="lnil lnil-help"></i>
+                                                    <span>Helpers</span>
+                                                    <i data-feather="circle"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="column is-3">
+                                        <h4 class="column-heading">Icons</h4>
+                                        <ul>
+                                            <li>
+                                                <a href="elements-icons-lnil.html">
+                                                    <span>Line Icons Light</span>
+                                                    <i data-feather="circle"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="elements-icons-lnir.html">
+                                                    <span>Line Icons Regular</span>
+                                                    <i data-feather="circle"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="elements-icons-fa.html">
+                                                    <span>Font Awesome 5</span>
+                                                    <i data-feather="circle"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="elements-icons-feather.html">
+                                                    <span>Feather Icons</span>
+                                                    <i data-feather="circle"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="column is-3">
+                                        <h4 class="column-heading">Base</h4>
+                                        <ul>
+                                            <li>
+                                                <a href="elements-buttons.html">
+                                                    <span>Buttons</span>
+                                                    <i data-feather="circle"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="elements-blocks.html">
+                                                    <span>Blocks</span>
+                                                    <i data-feather="circle"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="elements-content.html">
+                                                    <span>Content</span>
+                                                    <i data-feather="circle"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="elements-tags.html">
+                                                    <span>Tags</span>
+                                                    <i data-feather="circle"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="column is-3">
+                                        <h4 class="column-heading">Advanced</h4>
+                                        <ul>
+                                            <li>
+                                                <a href="elements-cards-basic.html">
+                                                    <span>Basic Cards</span>
+                                                    <i data-feather="circle"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="elements-cards-advanced.html">
+                                                    <span>Advanced Cards</span>
+                                                    <i data-feather="circle"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="elements-cards-bulma.html">
+                                                    <span>Bulma Cards</span>
+                                                    <i data-feather="circle"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="elements-table.html">
+                                                    <span>Table</span>
+                                                    <i data-feather="circle"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="elements-tooltips.html">
+                                                    <span>Tooltips</span>
+                                                    <i data-feather="circle"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="elements-forms-pages-tab" class="tab-content">
+                        <div class="tab-content-inner">
+                            <div class="center has-slimscroll">
+                                <div class="columns">
+                                    <div class="column is-3">
+                                        <h4 class="column-heading">Input</h4>
+                                        <ul>
+                                            <li>
+                                                <a href="elements-forms-inputs.html">
+                                                    <span>Inputs</span>
+                                                    <i data-feather="circle"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="elements-forms-addons.html">
+                                                    <span>Input Addons</span>
+                                                    <i data-feather="circle"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="elements-forms-textarea.html">
+                                                    <span>Textarea</span>
+                                                    <i data-feather="circle"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="column is-3">
+                                        <h4 class="column-heading">Selects</h4>
+                                        <ul>
+                                            <li>
+                                                <a href="elements-forms-selects.html">
+                                                    <span>Regular</span>
+                                                    <i data-feather="circle"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="elements-forms-custom.html">
+                                                    <span>Custom</span>
+                                                    <i data-feather="circle"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="elements-forms-file.html">
+                                                    <span>File Input</span>
+                                                    <i data-feather="circle"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="column is-3">
+                                        <h4 class="column-heading">Toggles</h4>
+                                        <ul>
+                                            <li>
+                                                <a href="elements-forms-checkboxes.html">
+                                                    <span>Checkboxes</span>
+                                                    <i data-feather="circle"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="elements-forms-radios.html">
+                                                    <span>Radio Buttons</span>
+                                                    <i data-feather="circle"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="elements-forms-switch.html">
+                                                    <span>Switches</span>
+                                                    <i data-feather="circle"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="column is-3">
+                                        <a href="https://cssninja.io/" target="_blank" class="column-placeholder">
+                                            <img class="light-image" src="assets/img/icons/misc/buoy.svg" alt="">
+                                            <img class="dark-image" src="assets/img/icons/misc/buoy-dark.svg" alt="">
+                                            <h3>Support</h3>
+                                        </a>
+                                        <a href="https://docs.huro.cssninja.io/" target="_blank" class="column-placeholder">
+                                            <img class="light-image" src="assets/img/icons/misc/docs.svg" alt="">
+                                            <img class="dark-image" src="assets/img/icons/misc/docs-dark.svg" alt="">
+                                            <h3>Documentation</h3>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!--src/partials/navbar/webapp/menus/-->
+            <div id="components-webapp-menu" class="webapp-subnavbar-inner tabs-wrapper">
+                <div class="tabs-inner">
+                    <div class="tabs is-centered is-2">
+                        <ul>
+                            <li data-tab="components-basic-pages-tab" class="is-active"><a>UI Components</a></li>
+                            <li data-tab="components-plugins-pages-tab"><a>JS Plugins</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+
+                <div class="container">
+                    <div id="components-basic-pages-tab" class="tab-content is-active">
+                        <div class="tab-content-inner">
+                            <div class="center has-slimscroll">
+                                <div class="columns">
+                                    <div class="column is-3">
+                                        <h4 class="column-heading">General</h4>
+                                        <ul>
+                                            <li>
+                                                <a href="components-avatars.html">
+                                                    <span>Avatars</span>
+                                                    <i data-feather="circle"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="components-accordion-basic.html">
+                                                    <span>Accordion</span>
+                                                    <i data-feather="circle"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="components-accordion-collapse.html">
+                                                    <span>Collapse</span>
+                                                    <i data-feather="circle"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="components-accordion-images.html">
+                                                    <span>Image Accordion</span>
+                                                    <i data-feather="circle"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="components-breadcrumb.html">
+                                                    <span>Breadcrumb</span>
+                                                    <i data-feather="circle"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="column is-3">
+                                        <h4 class="column-heading">Interaction</h4>
+                                        <ul>
+                                            <li>
+                                                <a href="components-loader.html">
+                                                    <span>Loader</span>
+                                                    <i data-feather="circle"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="components-dropdown.html">
+                                                    <span>Dropdown</span>
+                                                    <i data-feather="circle"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="components-modal.html">
+                                                    <span>Modal Dialogs</span>
+                                                    <i data-feather="circle"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="components-tabs-regular.html">
+                                                    <span>Regular Tabs</span>
+                                                    <i data-feather="circle"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="components-tabs-slider.html">
+                                                    <span>Slider Tabs</span>
+                                                    <i data-feather="circle"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="column is-3">
+                                        <h4 class="column-heading">Presentation</h4>
+                                        <ul>
+                                            <li>
+                                                <a href="components-icon-box.html">
+                                                    <span>Icon Box</span>
+                                                    <i data-feather="circle"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="components-messages.html">
+                                                    <span>Message</span>
+                                                    <i data-feather="circle"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="components-progress.html">
+                                                    <span>Progress</span>
+                                                    <i data-feather="circle"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="components-snacks.html">
+                                                    <span>Snacks</span>
+                                                    <i data-feather="circle"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="column is-3">
+                                        <h4 class="column-heading">Flex Table</h4>
+                                        <ul>
+
+                                            <li>
+                                                <a href="components-table-flex.html">
+                                                    <span>Base Table</span>
+                                                    <i data-feather="circle"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="components-table-flex-compact.html">
+                                                    <span>Compact Table</span>
+                                                    <i data-feather="circle"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="components-table-flex-media.html">
+                                                    <span>Media Table</span>
+                                                    <i data-feather="circle"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="components-table-flex-advanced.html">
+                                                    <span>Advanced Table</span>
+                                                    <i data-feather="circle"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="components-plugins-pages-tab" class="tab-content">
+                        <div class="tab-content-inner">
+                            <div class="center has-slimscroll">
+                                <div class="columns">
+                                    <div class="column is-3">
+                                        <ul>
+                                            <li>
+                                                <a href="components-plugins-alertify.html">
+                                                    <span>Alertify</span>
+                                                    <i data-feather="circle"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="components-plugins-autocomplete.html">
+                                                    <span>Autocomplete</span>
+                                                    <i data-feather="circle"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="components-plugins-datepicker.html">
+                                                    <span>Datepicker</span>
+                                                    <i data-feather="circle"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="components-plugins-choices.html">
+                                                    <span>Choices JS</span>
+                                                    <i data-feather="circle"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="column is-3">
+                                        <ul>
+                                            <li>
+                                                <a href="components-plugins-filepond.html">
+                                                    <span>Filepond</span>
+                                                    <i data-feather="circle"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="components-plugins-lightgallery.html">
+                                                    <span>Light Gallery</span>
+                                                    <i data-feather="circle"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="components-plugins-videogallery.html">
+                                                    <span>Video Gallery</span>
+                                                    <i data-feather="circle"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="components-plugins-video-player.html">
+                                                    <span>Video Player</span>
+                                                    <i data-feather="circle"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="column is-3">
+                                        <ul>
+                                            <li>
+                                                <a href="components-plugins-toasts.html">
+                                                    <span>Toast Messages</span>
+                                                    <i data-feather="circle"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="components-plugins-webuipopover.html">
+                                                    <span>WebUI Popovers</span>
+                                                    <i data-feather="circle"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="components-plugins-nouislider.html">
+                                                    <span>NoUI Slider</span>
+                                                    <i data-feather="circle"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="components-plugins-editor-summernote.html">
+                                                    <span>Summernote</span>
+                                                    <i data-feather="circle"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="components-plugins-editor-sun.html">
+                                                    <span>Sun Editor</span>
+                                                    <i data-feather="circle"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="column is-3">
+                                        <a href="https://cssninja.io/" target="_blank" class="column-placeholder">
+                                            <img class="light-image" src="assets/img/icons/misc/buoy.svg" alt="">
+                                            <img class="dark-image" src="assets/img/icons/misc/buoy-dark.svg" alt="">
+                                            <h3>Support</h3>
+                                        </a>
+                                        <a href="https://docs.huro.cssninja.io/" target="_blank" class="column-placeholder">
+                                            <img class="light-image" src="assets/img/icons/misc/docs.svg" alt="">
+                                            <img class="dark-image" src="assets/img/icons/misc/docs-dark.svg" alt="">
+                                            <h3>Documentation</h3>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div id="languages-panel" class="right-panel-wrapper is-languages">
+            <div class="panel-overlay"></div>
+
+            <div class="right-panel">
+                <div class="right-panel-head">
+                    <h3>Select Language</h3>
+                    <a class="close-panel">
+                        <i data-feather="chevron-right"></i>
+                    </a>
+                </div>
+                <div class="right-panel-body has-slimscroll">
+                    <div class="languages-boxes">
+                        <div class="language-box">
+                            <div class="language-option">
+                                <input type="radio" name="language_selection" checked>
+                                <div class="language-option-inner">
+                                    <img src="assets/img/icons/flags/united-states-of-america.svg" alt="">
+                                    <div class="indicator">
+                                        <i data-feather="check"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="language-box">
+                            <div class="language-option">
+                                <input type="radio" name="language_selection">
+                                <div class="language-option-inner">
+                                    <img src="assets/img/icons/flags/france.svg" alt="">
+                                    <div class="indicator">
+                                        <i data-feather="check"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="language-box">
+                            <div class="language-option">
+                                <input type="radio" name="language_selection">
+                                <div class="language-option-inner">
+                                    <img src="assets/img/icons/flags/spain.svg" alt="">
+                                    <div class="indicator">
+                                        <i data-feather="check"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="language-box">
+                            <div class="language-option">
+                                <input type="radio" name="language_selection">
+                                <div class="language-option-inner">
+                                    <img src="assets/img/icons/flags/germany.svg" alt="">
+                                    <div class="indicator">
+                                        <i data-feather="check"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="language-box">
+                            <div class="language-option">
+                                <input type="radio" name="language_selection">
+                                <div class="language-option-inner">
+                                    <img src="assets/img/icons/flags/mexico.svg" alt="">
+                                    <div class="indicator">
+                                        <i data-feather="check"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="language-box">
+                            <div class="language-option">
+                                <input type="radio" name="language_selection">
+                                <div class="language-option-inner">
+                                    <img src="assets/img/icons/flags/china.svg" alt="">
+                                    <div class="indicator">
+                                        <i data-feather="check"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="img-wrap has-text-centered">
+                        <img class="light-image" src="assets/img/illustrations/right-panel/languages.svg" alt="">
+                        <img class="dark-image" src="assets/img/illustrations/right-panel/languages-dark.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="activity-panel" class="right-panel-wrapper is-activity">
+            <div class="panel-overlay"></div>
+
+            <div class="right-panel">
+                <div class="right-panel-head">
+                    <h3>Activity</h3>
+                    <a class="close-panel">
+                        <i data-feather="chevron-right"></i>
+                    </a>
+                </div>
+                <div class="tabs-wrapper is-triple-slider is-squared">
+                    <div class="tabs-inner">
+                        <div class="tabs">
+                            <ul>
+                                <li data-tab="team-side-tab" class="is-active"><a><span>Drive</span></a></li>
+                                <li data-tab="projects-side-tab"><a><span>Projects</span></a></li>
+                                <li data-tab="projects-side-tab"><a href="https://glitch.com/@signal-kinetics"><span>Glitch</span></a></li>
+                                <!--<li data-tab="schedule-side-tab"><a><span>Timeline</span></a></li>-->
+                                <li class="tab-naver"></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="right-panel-body">
+                        <div id="team-side-tab" class="tab-content is-active">
+                            <!--Team Member-->
+                            <a data-ms-content="dashboards"></a><iframe src="https://drive.google.com/embeddedfolderview?id=1LQOiL__kBZB5ik7pIRpBMWbUMzo5d3q2#list" style="width:100%; height:600px; border:0;"></iframe></a>
+                        </div>
+
+                        <div id="projects-side-tab" class="tab-content">
+                            <!--Project-->
+                            <div class="project-card">
+                                <div class="project-inner">
+                                    <img class="project-avatar" src="https://img.icons8.com/bubbles/2x/api.png" data-demo-src="https://img.icons8.com/bubbles/2x/api.png" alt="">
+                                    <div class="meta">
+                                        <span>Arcadia -> Panoptes</span>
+                                        <span>DataScience/Python</span>
+                                    </div>
+                                    <a href="https://signal-kinetics.atlassian.net/browse/DSP" class="link">
+                                        <i data-feather="arrow-right"></i>
+                                    </a>
+                                </div>
+                                <div class="project-foot">
+                                    <progress class="progress is-primary is-tiny" value="31" max="100">31%</progress>
+                                    <div class="foot-stats">
+                                        <span></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--Project-->
+                            <div class="project-card">
+                                <div class="project-inner">
+                                    <img class="project-avatar" src="https://cdn4.iconfinder.com/data/icons/logos-brands-5/24/unity-512.png" data-demo-src="https://cdn4.iconfinder.com/data/icons/logos-brands-5/24/unity-512.png" alt="">
+                                    <div class="meta">
+                                        <span>Arcadia -> Games</span>
+                                        <span>Unity</span>
+                                    </div>
+                                    <a href="https://signal-kinetics.atlassian.net/browse/UPK" class="link">
+                                        <i data-feather="arrow-right"></i>
+                                    </a>
+                                </div>
+                                <div class="project-foot">
+                                    <progress class="progress is-primary is-tiny" value="16" max="100">16%</progress>
+                                    <div class="foot-stats">
+                                        <span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="schedule-side-tab" class="tab-content">
+                            <!--Timeline-->
+                            <div class="icon-timeline">
+                                <!--Timeline item-->
+                                <div class="timeline-item">
+                                    <div class="timeline-icon">
+                                        <i data-feather="phone-call"></i>
+                                    </div>
+                                    <div class="timeline-content">
+                                        <p>Call Danny at Colby's</p>
+                                        <span>Today - 11:30am</span>
+                                    </div>
+                                </div>
+                                <!--Timeline item-->
+                                <div class="timeline-item">
+                                    <div class="timeline-icon">
+                                        <img class="avatar" src="https://via.placeholder.com/150x150" data-demo-src="assets/img/avatars/photos/7.jpg" alt="">
+                                    </div>
+                                    <div class="timeline-content">
+                                        <p>Meeting with Alice</p>
+                                        <span>Today - 01:00pm</span>
+                                    </div>
+                                </div>
+                                <!--Timeline item-->
+                                <div class="timeline-item">
+                                    <div class="timeline-icon">
+                                        <i data-feather="message-circle"></i>
+                                    </div>
+                                    <div class="timeline-content">
+                                        <p>Answer Annie's message</p>
+                                        <span>Today - 01:45pm</span>
+                                    </div>
+                                </div>
+                                <!--Timeline item-->
+                                <div class="timeline-item">
+                                    <div class="timeline-icon">
+                                        <i data-feather="mail"></i>
+                                    </div>
+                                    <div class="timeline-content">
+                                        <p>Send new campaign</p>
+                                        <span>Today - 02:30pm</span>
+                                    </div>
+                                </div>
+                                <!--Timeline item-->
+                                <div class="timeline-item">
+                                    <div class="timeline-icon">
+                                        <i data-feather="smile"></i>
+                                    </div>
+                                    <div class="timeline-content">
+                                        <p>Project review</p>
+                                        <span>Today - 03:30pm</span>
+                                    </div>
+                                </div>
+                                <!--Timeline item-->
+                                <div class="timeline-item">
+                                    <div class="timeline-icon">
+                                        <i data-feather="phone-call"></i>
+                                    </div>
+                                    <div class="timeline-content">
+                                        <p>Call Trisha Jackson</p>
+                                        <span>Today - 05:00pm</span>
+                                    </div>
+                                </div>
+                                <!--Timeline item-->
+                                <div class="timeline-item">
+                                    <div class="timeline-icon">
+                                        <i data-feather="feather"></i>
+                                    </div>
+                                    <div class="timeline-content">
+                                        <p>Write proposal for Don</p>
+                                        <span>Today - 06:00pm</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+        <div class="mobile-subsidebar">
+            <div class="inner">
+                <div class="sidebar-title">
+                    <h3>Dashboards</h3>
+                </div>
+
+                <ul class="submenu" data-simplebar>
+                    <li class="has-children">
+                        <div class="collapse-wrap">
+                            <a href="javascript:void(0);" class="parent-link">Personal <i data-feather="chevron-right"></i></a>
+                        </div>
+                        <ul>
+                            <li>
+                                <a class="is-submenu" href="admin-dashboards-personal-1.html">
+                                    <i class="lnil lnil-analytics-alt-1"></i>
+                                    <span>Personal V1</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="is-submenu" href="admin-dashboards-personal-2.html">
+                                    <i class="lnil lnil-pie-chart"></i>
+                                    <span>Personal V2</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="is-submenu" href="admin-dashboards-personal-3.html">
+                                    <i class="lnil lnil-stats-up"></i>
+                                    <span>Personal V3</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="has-children">
+                        <div class="collapse-wrap">
+                            <a href="javascript:void(0);" class="parent-link">Finance <i data-feather="chevron-right"></i></a>
+                        </div>
+                        <ul>
+                            <li>
+                                <a class="is-submenu" href="admin-dashboards-finance-1.html">
+                                    <i class="lnil lnil-analytics-alt-1"></i>
+                                    <span>Analytics Dashboard</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="is-submenu" href="admin-dashboards-finance-2.html">
+                                    <i class="lnil lnil-stats-up"></i>
+                                    <span>Stocks Dashboard</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="is-submenu" href="admin-dashboards-finance-3.html">
+                                    <i class="lnil lnil-credit-card"></i>
+                                    <span>Sales Dashboard</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="has-children">
+                        <div class="collapse-wrap">
+                            <a href="javascript:void(0);" class="parent-link">Banking <i data-feather="chevron-right"></i></a>
+                        </div>
+                        <ul>
+                            <li>
+                                <a class="is-submenu" href="admin-dashboards-banking-1.html">
+                                    <i class="lnil lnil-bank"></i>
+                                    <span>Banking V1</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="is-submenu" href="admin-dashboards-banking-2.html">
+                                    <i class="lnil lnil-bank"></i>
+                                    <span>Banking V2</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="is-submenu" href="admin-dashboards-banking-3.html">
+                                    <i class="lnil lnil-bank"></i>
+                                    <span>Banking V3</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="has-children">
+                        <div class="collapse-wrap">
+                            <a href="javascript:void(0);" class="parent-link">Business <i data-feather="chevron-right"></i></a>
+                        </div>
+                        <ul>
+                            <li>
+                                <a class="is-submenu" href="admin-dashboards-business-1.html">
+                                    <i class="lnil lnil-plane-alt"></i>
+                                    <span>Flights Booking</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="is-submenu" href="admin-dashboards-business-2.html">
+                                    <i class="lnil lnil-apartment"></i>
+                                    <span>Company Board</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="is-submenu" href="admin-dashboards-business-3.html">
+                                    <i class="lnil lnil-users-alt"></i>
+                                    <span>HR Board</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="is-submenu" href="admin-dashboards-business-4.html">
+                                    <i class="lnil lnil-graduate"></i>
+                                    <span>Course Board</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="has-children">
+                        <div class="collapse-wrap">
+                            <a href="javascript:void(0);" class="parent-link">Lifestyle <i data-feather="chevron-right"></i></a>
+                        </div>
+                        <ul>
+                            <li>
+                                <a class="is-submenu" href="admin-dashboards-lifestyle-1.html">
+                                    <i class="lnil lnil-cardiology"></i>
+                                    <span>Influencer</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="is-submenu" href="admin-dashboards-lifestyle-2.html">
+                                    <i class="lnil lnil-cloud-sun"></i>
+                                    <span>Hobbies</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="is-submenu" href="admin-dashboards-lifestyle-3.html">
+                                    <i class="lnil lnil-hospital-alt-3"></i>
+                                    <span>Health</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="is-submenu" href="admin-dashboards-lifestyle-4.html">
+                                    <i class="lnil lnil-books"></i>
+                                    <span>Writer</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="is-submenu" href="admin-dashboards-lifestyle-5.html">
+                                    <i class="lnil lnil-video-alt-1"></i>
+                                    <span>Video</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="has-children">
+                        <div class="collapse-wrap">
+                            <a href="javascript:void(0);" class="parent-link">Ecommerce <i data-feather="chevron-right"></i></a>
+                        </div>
+                        <ul>
+                            <li>
+                                <a class="is-submenu" href="admin-dashboards-ecommerce-1.html">
+                                    <i class="lnil lnil-cart"></i>
+                                    <span>Ecommerce V1</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="has-children">
+                        <div class="collapse-wrap">
+                            <a href="javascript:void(0);" class="parent-link">Apps <i data-feather="chevron-right"></i></a>
+                        </div>
+                        <ul>
+                            <li>
+                                <a class="is-submenu" href="admin-dashboards-apps-1.html">
+                                    <i class="lnil lnil-pizza"></i>
+                                    <span>Food Delivery</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="is-submenu" href="admin-dashboards-apps-2.html">
+                                    <i class="lnil lnil-envelope"></i>
+                                    <span>Inbox</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="is-submenu" href="admin-messaging-chat.html">
+                                    <i class="lnil lnil-bubble"></i>
+                                    <span>Messaging V1</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="is-submenu" href="webapp-messaging-chat.html">
+                                    <i class="lnil lnil-bubble"></i>
+                                    <span>Messaging V2</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="divider"></li>
+                    <li>
+                        <a href="wizard-v1.html">Wizard</a>
+                    </li>
+                    <li class="divider"></li>
+                    <li class="has-children">
+                        <div class="collapse-wrap">
+                            <a href="javascript:void(0);" class="parent-link">Charts <i data-feather="chevron-right"></i></a>
+                        </div>
+                        <ul>
+                            <li>
+                                <a class="is-submenu" href="admin-dashboards-charts-apex.html">
+                                    <i class="lnil lnil-pie-chart-alt"></i>
+                                    <span>Apex Charts</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="is-submenu" href="admin-dashboards-charts-billboardjs.html">
+                                    <i class="lnil lnil-bar-chart"></i>
+                                    <span>Billboard JS</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="has-children">
+                        <div class="collapse-wrap">
+                            <a href="javascript:void(0);" class="parent-link">Widgets <i data-feather="chevron-right"></i></a>
+                        </div>
+                        <ul>
+                            <li>
+                                <a class="is-submenu" href="admin-dashboards-widgets-ui.html">
+                                    <i class="lnil lnil-layout-alt-1"></i>
+                                    <span>UI Widgets</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="is-submenu" href="admin-dashboards-widgets-creative.html">
+                                    <i class="lnil lnil-layout-alt-2"></i>
+                                    <span>Creative Widgets</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="is-submenu" href="admin-dashboards-widgets-list.html">
+                                    <i class="lnil lnil-layout-alt-1"></i>
+                                    <span>List Widgets</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="is-submenu" href="admin-dashboards-widgets-stats.html">
+                                    <i class="lnil lnil-layout-alt-2"></i>
+                                    <span>Stat Widgets</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="has-children">
+                        <div class="collapse-wrap">
+                            <a href="javascript:void(0);" class="parent-link">Form Layouts <i
+                                        data-feather="chevron-right"></i></a>
+                        </div>
+                        <ul>
+                            <li>
+                                <a class="is-submenu" href="admin-form-layouts-1.html">
+                                    <i class="lnil lnil-passport"></i>
+                                    <span>Form Layout V1</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="is-submenu" href="admin-form-layouts-2.html">
+                                    <i class="lnil lnil-passport"></i>
+                                    <span>Form Layout V2</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="is-submenu" href="admin-form-layouts-3.html">
+                                    <i class="lnil lnil-passport"></i>
+                                    <span>Form Layout V3</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="is-submenu" href="admin-form-layouts-4.html">
+                                    <i class="lnil lnil-passport"></i>
+                                    <span>Form Layout V4</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="has-children">
+                        <div class="collapse-wrap">
+                            <a href="javascript:void(0);" class="parent-link">Starters <i data-feather="chevron-right"></i></a>
+                        </div>
+                        <ul>
+                            <li>
+                                <a class="is-submenu" href="admin-blank-page-1.html">
+                                    <i class="lnil lnil-layout"></i>
+                                    <span>Regular Sidebar</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="is-submenu" href="admin-blank-page-2.html">
+                                    <i class="lnil lnil-layout"></i>
+                                    <span>Curved Sidebar</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="is-submenu" href="admin-blank-page-3.html">
+                                    <i class="lnil lnil-layout"></i>
+                                    <span>Colored Sidebar</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="is-submenu" href="admin-blank-page-4.html">
+                                    <i class="lnil lnil-layout"></i>
+                                    <span>Curved Colored</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="is-submenu" href="webapp-blank-page-1.html">
+                                    <i class="lnil lnil-layout-alt-1"></i>
+                                    <span>Regular Navbar</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="is-submenu" href="webapp-blank-page-2.html">
+                                    <i class="lnil lnil-layout-alt-1"></i>
+                                    <span>Fading Navbar</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="is-submenu" href="webapp-blank-page-3.html">
+                                    <i class="lnil lnil-layout-alt-1"></i>
+                                    <span>Colored Navbar</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="is-submenu" href="webapp-blank-page-4.html">
+                                    <i class="lnil lnil-layout-alt-1"></i>
+                                    <span>Dropdown Navbar</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="is-submenu" href="webapp-blank-page-5.html">
+                                    <i class="lnil lnil-layout-alt-1"></i>
+                                    <span>Colored Dropdown</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- Content Wrapper -->
+        <div id="app-dashboards" class="view-wrapper is-webapp" data-page-title="Dashboard" data-naver-offset="150" data-menu-item="#dashboards-navbar-menu" data-mobile-item="#home-sidebar-menu-mobile">
+
+            <div class="page-content-wrapper">
+                <div class="page-content is-relative">
+
+                    <div class="page-title has-text-centered is-webapp">
+
+                        <div class="title-wrap">
+                            <h1 class="title is-4">Dashboard</h1>
+                        </div>
+
+                        <div class="toolbar ml-auto">
+
+                            <div class="toolbar-link">
+                                <label class="dark-mode ml-auto">
+                                    <input type="checkbox" checked>
+                                    <span></span>
+                                </label>
+                            </div>
+
+                            <a class="toolbar-link right-panel-trigger" data-panel="languages-panel">
+                                <img src="assets/img/icons/flags/united-states-of-america.svg" alt="">
+                            </a>
+
+                            <div class="toolbar-notifications is-hidden-mobile">
+                                <div class="dropdown is-spaced is-dots is-right dropdown-trigger">
+                                    <div class="is-trigger" aria-haspopup="true">
+                                        <i data-feather="bell"></i>
+                                        <span class="new-indicator pulsate"></span>
+                                    </div>
+                                    <div class="dropdown-menu" role="menu">
+                                        <div class="dropdown-content">
+                                            <div class="heading">
+                                                <div class="heading-left">
+                                                    <h6 class="heading-title">Notifications</h6>
+                                                </div>
+                                                <div class="heading-right">
+                                                    <a class="notification-link" href="admin-profile-notifications.html">See all</a>
+                                                </div>
+                                            </div>
+                                            <ul class="notification-list">
+                                                <li>
+                                                    <a class="notification-item">
+                                                        <div class="img-left">
+                                                            <img class="user-photo" alt="" src="https://via.placeholder.com/150x150" data-demo-src="assets/img/avatars/photos/7.jpg" />
+                                                        </div>
+                                                        <div class="user-content">
+                                                            <p class="user-info"><span class="name">Alice C.</span> left a comment.</p>
+                                                            <p class="time">1 hour ago</p>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="notification-item">
+                                                        <div class="img-left">
+                                                            <img class="user-photo" alt="" src="https://via.placeholder.com/150x150" data-demo-src="assets/img/avatars/photos/12.jpg" />
+                                                        </div>
+                                                        <div class="user-content">
+                                                            <p class="user-info"><span class="name">Joshua S.</span> uploaded a file.</p>
+                                                            <p class="time">2 hours ago</p>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="notification-item">
+                                                        <div class="img-left">
+                                                            <img class="user-photo" alt="" src="https://via.placeholder.com/150x150" data-demo-src="assets/img/avatars/photos/13.jpg" />
+                                                        </div>
+                                                        <div class="user-content">
+                                                            <p class="user-info"><span class="name">Tara S.</span> sent you a message.</p>
+                                                            <p class="time">2 hours ago</p>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="notification-item">
+                                                        <div class="img-left">
+                                                            <img class="user-photo" alt="" src="https://via.placeholder.com/150x150" data-demo-src="assets/img/avatars/photos/25.jpg" />
+                                                        </div>
+                                                        <div class="user-content">
+                                                            <p class="user-info"><span class="name">Melany W.</span> left a comment.</p>
+                                                            <p class="time">3 hours ago</p>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <a class="toolbar-link right-panel-trigger" data-panel="activity-panel">
+                                <i data-feather="grid"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="page-content-inner">
+
+                        <!--Personal Dashboard V3-->
+                        <div class="personal-dashboard personal-dashboard-v3 has-webapp-spacing">
+
+                            <div class="columns">
+
+                                <div class="column is-8">
+                                    <div class="columns is-multiline is-flex-tablet-p">
+
+                                        <div class="column is-6">
+                                            <div class="dashboard-card is-welcome">
+                                                <div class="welcome-title">
+                                                    <h3 class="dark-inverted">Hi <span ms-data="first-name">firstName</span></h3>
+                                                    <p>.</p>
+                                                </div>
+                                                <div class="welcome-progress">
+                                                    <div id="welcome-gauge" class="gauge"></div>
+                                                    <div class="meta">
+                                                        <span>Your Progress</span>
+                                                        <span class="dark-inverted">Outstanding 🎉</span>
+                                                    </div>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+
+                                        <div class="column is-6">
+                                            <div class="stats-wrapper">
+                                                <div class="columns is-multiline is-flex-tablet-p">
+                                                    <div class="column is-6">
+                                                        <div class="dashboard-card">
+                                                            <div class="media-flex-center">
+                                                                <div class="h-icon is-info is-rounded">
+                                                                    <i data-feather="clock"></i>
+                                                                </div>
+                                                                <div class="flex-meta">
+                                                                    <span>62K</span>
+                                                                    <span>Minutes</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="column is-6">
+                                                        <div class="dashboard-card">
+                                                            <div class="media-flex-center">
+                                                                <div class="h-icon is-purple is-rounded">
+                                                                    <i data-feather="radio"></i>
+                                                                </div>
+                                                                <div class="flex-meta">
+                                                                    <span>263</span>
+                                                                    <span>Interviews</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="column is-6">
+                                                        <div class="dashboard-card">
+                                                            <div class="media-flex-center">
+                                                                <div class="h-icon is-green is-rounded">
+                                                                    <i data-feather="user-check"></i>
+                                                                </div>
+                                                                <div class="flex-meta">
+                                                                    <span>49</span>
+                                                                    <span>Approved</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="column is-6">
+                                                        <div class="dashboard-card">
+                                                            <div class="media-flex-center">
+                                                                <div class="h-icon is-orange is-rounded">
+                                                                    <i data-feather="frown"></i>
+                                                                </div>
+                                                                <div class="flex-meta">
+                                                                    <span>214</span>
+                                                                    <span>Rejected</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="column is-6 h-hidden-mobile h-hidden-tablet-p">
+                                            <img src="assets/img/illustrations/dashboards/personal/interviews.svg" alt="">
+                                        </div>
+
+                                        <div class="column is-6">
+                                            <div class="dashboard-card">
+                                                <div id="interviews-chart"></div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="column is-4">
+                                    <div class="widget picker-widget">
+                                        <div class="widget-toolbar">
+                                            <div class="left">
+                                                <a class="action-icon">
+                                                    <i data-feather="chevron-left"></i>
+                                                </a>
+                                            </div>
+                                            <div class="center">
+                                                <h3>February 2021</h3>
+                                            </div>
+                                            <div class="right">
+                                                <a class="action-icon">
+                                                    <i data-feather="chevron-right"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <table class="calendar">
+
+                                            <thead>
+
+                                                <tr>
+
+                                                    <td>Mon</td>
+                                                    <td>Tue</td>
+                                                    <td>Wed</td>
+                                                    <td>Thu</td>
+                                                    <td>Fri</td>
+                                                    <td>Sat</td>
+                                                    <td>Sun</td>
+
+                                                </tr>
+
+                                            </thead>
+
+                                            <tbody>
+
+                                                <tr>
+                                                    <td class="prev-month">29</td>
+                                                    <td class="prev-month">30</td>
+                                                    <td class="prev-month">31</td>
+                                                    <td>1</td>
+                                                    <td>2</td>
+                                                    <td>3</td>
+                                                    <td>4</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>5</td>
+                                                    <td>6</td>
+                                                    <td>7</td>
+                                                    <td>8</td>
+                                                    <td>9</td>
+                                                    <td>10</td>
+                                                    <td>11</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>12</td>
+                                                    <td>13</td>
+                                                    <td>14</td>
+                                                    <td>15</td>
+                                                    <td>16</td>
+                                                    <td>17</td>
+                                                    <td class="current-day">18</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>19</td>
+                                                    <td>20</td>
+                                                    <td>21</td>
+                                                    <td>22</td>
+                                                    <td>23</td>
+                                                    <td>24</td>
+                                                    <td>25</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>26</td>
+                                                    <td>27</td>
+                                                    <td>28</td>
+                                                    <td>29</td>
+                                                    <td>30</td>
+                                                    <td>31</td>
+                                                    <td class="next-month">1</td>
+                                                </tr>
+
+                                            </tbody>
+
+                                        </table>
+                                    </div>
+
+                                    <!--<a href="#" class="dashboard-card is-interview">
+                                        <div class="media-flex-center">
+                                            <div class="h-avatar">
+                                                <img class="avatar" src="https://via.placeholder.com/150x150" data-demo-src="assets/img/avatars/photos/32.jpg" data-user-popover="28" alt="">
+                                            </div>
+                                            <div class="flex-meta">
+                                                <span>Jonathan K.</span>
+                                                <span>08:00 - 09:00</span>
+                                            </div>
+                                            <div class="flex-end">
+                                                <i data-feather="chevron-right"></i>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="dashboard-card is-interview">
+                                        <div class="media-flex-center">
+                                            <div class="h-avatar">
+                                                <img class="avatar" src="https://via.placeholder.com/150x150" data-demo-src="assets/img/avatars/photos/19.jpg" data-user-popover="17" alt="">
+                                            </div>
+                                            <div class="flex-meta">
+                                                <span>Greta K.</span>
+                                                <span>10:30 - 11:00</span>
+                                            </div>
+                                            <div class="flex-end">
+                                                <i data-feather="chevron-right"></i>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="dashboard-card is-interview">
+                                        <div class="media-flex-center">
+                                            <div class="h-avatar">
+                                                <img class="avatar" src="https://via.placeholder.com/150x150" data-demo-src="assets/img/avatars/photos/12.jpg" data-user-popover="2" alt="">
+                                            </div>
+                                            <div class="flex-meta">
+                                                <span>Joshua S.</span>
+                                                <span>02:30 - 03:00</span>
+                                            </div>
+                                            <div class="flex-end">
+                                                <i data-feather="chevron-right"></i>
+                                            </div>
+                                        </div>
+                                    </a>-->
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <!-- Concatenated plugins -->
+        <script src="assets/js/app.js"></script>
+
+        <!-- Huro js -->
+        <script src="assets/js/functions.js"></script>
+        <script src="assets/js/main.js"></script>
+        <script src="assets/js/components.js"></script>
+        <script src="assets/js/popover.js"></script>
+        <script src="assets/js/widgets.js"></script>
+
+
+        <!-- Additional Features -->
+        <script src="assets/js/touch.js"></script>
+
+        <!-- Landing page js -->
+
+        <!-- Dashboards js -->
+
+
+        <script src="assets/js/personal-3.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- Charts js -->
+
+
+        <!--Forms-->
+
+        <!--Wizard-->
+
+        <!-- Layouts js -->
+
+
+
+
+
+
+
+
+
+
+
+
+        <script src="assets/js/syntax.js"></script>
     </div>
-  </div>
-  <script src="https://d1tdp7z6w94jbb.cloudfront.net/js/jquery-3.3.1.min.js" type="text/javascript" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-  <script src="js/user-dashboard.js" type="text/javascript"></script>
-  <!-- [if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif] -->
-  <div memberstack-template="Client Dashboard Template"></div>
-  <!-- Crisp + MemberStack -->
-  <script>
-    MemberStack.onReady.then(function(member) {
-    var email = member["email"]
-    var name = member["first-name"]
-    if (member.loggedIn) {
-        try{
-            $crisp.push(["set", "user:email", [email] ])
-            $crisp.push(["set", "user:nickname", [name] ])
-          } catch(e) {}
-    }
-})
-</script>
 </body>
+
+
+<!-- Mirrored from huro.cssninja.io/webapp-dashboards-personal-3.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 07 Feb 2021 15:00:11 GMT -->
 </html>
