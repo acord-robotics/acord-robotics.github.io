@@ -30,123 +30,62 @@
   <meta http-equiv="refresh" content="0;url=/">
 </noscript></head>
 <body class="temp">
+  
   <div data-collapse="medium" data-animation="default" data-duration="400" class="navbar w-nav"><a href="http://ar.skinetics.tech" class="brand w-nav-brand"><img src="../images/heart.svg" alt=""></a>
-    <nav role="navigation" class="homepage-nav-menu w-nav-menu"><a href="../basic/account" class="nav-link w-nav-link w--current">My account</a>
-      <!--<a ms-hide="premium" href="../premium/account.html" class="nav-link w-inline-block">
-        <div class="inline-block">Premium</div>
-        <div class="black-tooltip">
-          <div>This link is only visible to premium members 😁</div>
-          <div class="black-diamond"></div>
-        </div>-->
-      </a><a href="#" ms-profile="true" class="nav-link w-nav-link">Profile</a><a href="http://ar.skinetics.tech/basic/shoelace.html" class="nav-link w-nav-link">See Shoelace</a><a data-ms-content="dashboards" href="http://ar.skinetics.tech/account" class="button navbar-cta w-nav-link">My Workspace</a></nav>
+    
+    
     <div class="menu-button w-nav-button">
-      <div class="w-icon-nav-menu"></div>
+      <div class="w-icon-nav-menu">
+        
+      </div>
     </div>
   </div>
-  <div class="delete-me-section">
-    <h1 class="account-h1">My Account</h1>
-    <div class="w-richtext">
-      <p>Welcome to your profile! Let's take a look at what you can do:</p>
-      <ul>
-        <li>Browse exclusive updates from the SK team (custmizable feed based on cookies?)</li>
-        <li>Play demo games while we get them ready for you</li>
-      </ul>
-	   
-      
+  <center>
+    <sl-button-group> 
+        <sl-button><a href="https://keybase.io">Keybase</a></sl-button>
+        <sl-button><a href="https://github.com/codespaces">Codespaces</a></sl-button>
+        <sl-dropdown>
+          <sl-button slot="trigger" type="primary" caret>Account</sl-button>
+          <sl-menu>
+            <sl-menu-item><a href="#" ms-profile="true">Profile</a></sl-menu-item>
+            <sl-menu-item><a href="http://ar.skinetics.tech/account">Workspace</a></sl-menu-item>
+            <sl-menu-item><a href="https://cli.skinetics.tech/3142a2a44ac041078567be7218c7b661">My Homebase</a></sl-menu-item>
+          </sl-menu>
+        </sl-dropdown>
+      </sl-button-group>  
     </br>
-    </br>
-    </br>
-<!--
-    <a data-ms-content="dashboards"><h1>Your apps</h1></a>
-          <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
-          <link rel="stylesheet" href="css/core.css">
-          <a data-ms-content="dashboards" href="https://app.memberstack.io/members" class="action-button shadow animate blue">Memberstack</a>
-          </br>
-          </br>
-          </br>
-          <a data-ms-content="dashboards" href="https://www.notion.so/skinetics/Homebase-Liam-3142a2a44ac041078567be7218c7b661" class="action-button shadow animate red">Homebase</a>
-          </br>
-          </br>
-          </br>
-          <a data-ms-content="dashboards" href="https://www.notion.so/skinetics/a951a4a90754460b8ecd34c469601195?v=8c1272d7af1f42d3acf91ae3e783b0de" class="action-button shadow animate green">Projects</a>
-          </br>
-          </br>
-          </br>
-          <a data-ms-content="dashboards" href="https://signal-kinetics.atlassian.net/jira" class="action-button shadow animate yellow">Jira</a>
-            <style>body
-{
-	padding: 50px;
-}
-
-.animate
-{
-	transition: all 0.1s;
-	-webkit-transition: all 0.1s;
-}
-
-.action-button
-{
-	position: relative;
-	padding: 10px 40px;
-  margin: 0px 10px 10px 0px;
-  float: left;
-	border-radius: 10px;
-	font-family: 'Pacifico', cursive;
-	font-size: 25px;
-	color: #FFF;
-	text-decoration: none;	
-}
-
-.blue
-{
-	background-color: #3498DB;
-	border-bottom: 5px solid #2980B9;
-	text-shadow: 0px -2px #2980B9;
-}
-
-.red
-{
-	background-color: #E74C3C;
-	border-bottom: 5px solid #BD3E31;
-	text-shadow: 0px -2px #BD3E31;
-}
-
-.green
-{
-	background-color: #82BF56;
-	border-bottom: 5px solid #669644;
-	text-shadow: 0px -2px #669644;
-}
-
-.yellow
-{
-	background-color: #F2CF66;
-	border-bottom: 5px solid #D1B358;
-	text-shadow: 0px -2px #D1B358;
-}
-
-.action-button:active
-{
-	transform: translate(0px,5px);
-  -webkit-transform: translate(0px,5px);
-	border-bottom: 1px solid;
-}</style>
-
-    </br>
-    </br>
-    </br>
-    </br>
-    </br>
-    </br>
-    </br>
-    </br>
-
-      <a data-ms-content="dashboards"><h1>Your files</h1></a>
+  </br>
+</br>
+</br>
+</center>
+<center>
+<h1 class="account-h1">My Account</h1>
+<div class="w-richtext">
+  <p>
+    Welcome to your account! Let's take a look around at what's going on in your world.
+  </p>
+</div>
+</center>
+  <div class="delete-me-section"> 
+    <sl-tab-group class="hydrated">
+      <sl-tab slot="nav" panel="general" id="tab-1" class="hydrated" aria-controls="tab-panel-1" active="">Game Dev</sl-tab>
+      <sl-tab slot="nav" panel="custom" id="tab-2" class="hydrated" aria-controls="tab-panel-2">Python</sl-tab>
+      <sl-tab slot="nav" panel="disabled" disabled="" id="tab-3" class="hydrated">Web Apps - Coming soon</sl-tab>
+      <sl-tab slot="nav" panel="disabled" disabled="" id="tab-4" class="hydrated"><a href="https://glitch.com/@signal-kinetics">SK Glitch</a></sl-tab>
     
-    <a data-ms-content="dashboards"><h2>ASDC</h2></a>
-      <a data-ms-content="dashboards"><iframe src="https://drive.google.com/embeddedfolderview?id=1LQOiL__kBZB5ik7pIRpBMWbUMzo5d3q2#list" style="width:100%; height:600px; border:0;"></iframe></a>
-      
-    </div>-->
+      <sl-tab-panel name="general" id="tab-panel-1" class="hydrated" aria-labelledby="tab-1" active="" style="display: block;">Unity Web RTC:
+           
+    <div class="glitch-embed-wrap" style="height: 420px; width: 100%;">
+      <iframe src="https://glitch.com/embed/#!/embed/unity-webrtc?path=README.md&amp;previewSize=0" title="unity-webrtc on Glitch" allow="geolocation; microphone; camera; midi; vr; encrypted-media" style="height: 100%; width: 100%; border: 0;">
+      </iframe>
+    </div></sl-tab-panel>
+      <sl-tab-panel name="custom" id="tab-panel-2" class="hydrated" aria-labelledby="tab-2" style="display: none;">Reddit saved items
+        <iframe frameborder="0" width="100%" height="500px" src="https://replit.com/@IrisDroidology/RedditCSV?lite=true">          
+        </iframe></sl-tab-panel>
+      <sl-tab-panel name="disabled" id="tab-panel-3" class="hydrated" style="display: none;"></sl-tab-panel>
+      <sl-tab-panel name="disabled" id="tab-panel-4" class="hydrated" style="display: none;">This is a disabled tab panel.</sl-tab-panel>
+    </sl-tab-group>
+
   </div>
   <!--<iframe src='https://www.embed.com/app/arcade/invaders.html' style='width: 1400px; height: 1400px;' scrolling='no' frameBorder='0'></iframe>-->
   <script src="https://d1tdp7z6w94jbb.cloudfront.net/js/jquery-3.3.1.min.js" type="text/javascript" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
