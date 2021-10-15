@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from pixelstarships.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 15 Oct 2021 06:15:01 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8" />
+
+
+    <title>PIXEL STARSHIPS: 8BIT STARSHIP MANAGEMENT MMORPG</title>
+    <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta name="Description" content="Launching on Kickstarter, The World's First 8Bit Starship Management MMORPG." />
+    <meta name="Keywords" content="FTL, Kickstarter, mmorpg, online, multiplayer, eve, game, iphone, ipad" />
+
+    <!-- style the google translate banner so that it doesn't appear since it's so ugly and pointless-->
+    <style type="text/css">
+        iframe.goog-te-banner-frame {
+            display: none !important;
+        }
+    </style>
+    <style type="text/css">
+        body {
+            position: static !important;
+            top: 0px !important;
+        }
+    </style>
+
+    <script src="bundles/jquerye5c1?v=ZWrRJHanEQVfkRR6oT7Wa5O_D3WWh3tCLhvgWGYI5rQ1"></script>
+
+
+
+    <!-- Styles.Render("~/Content/css")  -->
+    <script src="bundles/modernizr4846?v=jmdBhqkI3eMaPZJduAyIYBj7MpXrGd2ZqmHAOSNeYcg1"></script>
+
+    
+    <link rel="stylesheet" href="Content/WebAndMobile.css">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css" />
+    <link href="Content/ClipedIcons.css" rel="stylesheet" />
+
+    
+
+
+    <style type="text/css">
+
+
+        /*#sidebar {
+            border: 1px solid rgb(238, 206, 160);
+        }*/
+
+
+    </style>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!--<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    <!-- Latest compiled and minified CSS -->
+    <!-- use <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css"> -->
+    <!-- Optional theme -->
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">-->
+    <!--
+    <link rel="stylesheet" type="text/css"
+            media="screen and (max-device-width: 480px)"
+            href="/Content/Mobile.css" />
+        -->
+
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'http://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-63019663-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+
+
+
+
+    <!-- twitter -->
+    <script>
+        window.twttr = (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0],
+                t = window.twttr || {};
+            if (d.getElementById(id)) return t;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "https://platform.twitter.com/widgets.js";
+            fjs.parentNode.insertBefore(js, fjs);
+
+            t._e = [];
+            t.ready = function (f) {
+                t._e.push(f);
+            };
+
+            return t;
+        }(document, "script", "twitter-wjs"));</script>
+
+
+
+
+    <script type="text/javascript">
+
+        var scrollToElement = function (el, ms) {
+            var speed = (ms) ? ms : 600;
+            $('html,body').animate({
+                scrollTop: $(el).offset().top
+            }, speed);
+        }
+
+    </script>
+
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(".moveClick").on("click", function (e) {
+                // prevent default action
+                e.preventDefault();
+
+                // get id of target div (placed in href attribute of anchor element)
+                // and pass it to the scrollToElement function
+                // also, use 2000 as an argument for the scroll speed (2 seconds, 2000 milliseconds)
+                scrollToElement($(this).attr('href'), 500);
+            });
+        });
+
+    </script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
+    <script src="Content/scripts/pixelstarships/app.js"></script>
+
+    <style>
+
+
+        /*.dropdown-link {
+            color: #9D9D9D;
+            padding-left:20px;
+            padding-bottom:20px;
+        }
+
+        .dropdown-colour {
+            background-color: #0F0F17;
+            border: 2px solid #B76617;
+        }*/
+
+
+    </style>
+
+</head>
+<body>
+
+    <div id="body">
+
+        <div id="fb-root"></div>
+        <script>
+            (function (d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) return;
+                js = d.createElement(s); js.id = id;
+                js.src = "http://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3&appId=388482707929017";
+                fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));</script>
+
+        <!--RenderSection("featured", required: false)-->
+
+        <nav id="navHeader" class="navbar navbar-inverse  navbar-fixed-top">
+
+            <div id="menuNavBar" class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#headerContainer">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                    <a class="navbar-brand" id="logoHeader" href="index.html"><img style="text-align: center !important;" src="Content/images/logo_2.png" width="221" height="40" /></a>
+                </div>
+                <div class="collapse navbar-collapse" id="headerContainer">
+                    <ul class="nav navbar-nav ">
+
+                        <!-- <li><a href="#background" class="moveClick">Home</a></li>    class="active
+    <li><a href="#gameSection" class="moveClick">Game</a></li>
+    <li><a href="#forum" class="moveClick">Forum</a></li>
+    <li><a href="#shop" class="moveClick">Shop</a></li>
+    <li><a href="#gameSection" class="moveClick">Download</a></li>
+    <li><a href="#connectWithUsSection" class="moveClick">Support</a></li>"-->
+
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="Account/Login7e83.html">Sales</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="Account/Login30fa.html">My Ship</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  Rates<svg style="line-height: 20px" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 -3 16 16"><path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" /></svg>
+                            </a>
+                            <div class="dropdown-menu dropdown-colour" aria-labelledby="navbarDropdown" style="width: 250px">
+                                <a class="dropdown-link dropdown-item" href="Home/ScratchyProbabilities.html">Scratchy Probabilities</a><br />
+                                <a class="dropdown-link dropdown-item" href="Home/DoveStoreStatistics.html">Dove Store Statistics</a><br />
+                                <a class="dropdown-link dropdown-item" href="Home/MissionLootRates.html">Mission Loot Rates</a><br />
+                                <a class="dropdown-link dropdown-item" href="Home/DrawCharacterRates.html">Draw Character Rates</a>
+                            </div>
+                        </li>
+
+                        <li id="facebookHeaderElement"><a target="_blank" href="http://www.facebook.com/pixelstarships"><img id="facebookHeader" src="Content/images/fb_black.png" alt="Facebook" onmouseover="this.src='Content/images/fb_blue.png';" onmouseout="this.src='Content/images/fb_black.png'" />  </a></li>
+                        <li id="twitterHeaderElement"><a target="_blank" href="http://www.twitter.com/pixelstarships"><img id="twitterHeader" src="Content/images/twitter.png" alt="Tumblr" onmouseover="this.src='Content/images/twitter-colour.png';" onmouseout="this.src='Content/images/twitter.png'" /></a></li>
+                        <li id="tumblrHeaderElement"><a target="_blank" href="http://pixelstarships.tumblr.com/"><img id="tumblrHeader" src="Content/images/tumblr.png" alt="Tumblr" onmouseover="this.src='Content/images/tumblr_hover.png';" onmouseout="this.src='Content/images/tumblr.png'" /></a></li>
+                        <li id="instagramHeaderElement"><a target="_blank" href="http://instagram.com/pixelstarships"><img id="instagramHeader" src="Content/images/insta01.png" alt="Tumblr" onmouseover="this.src='Content/images/insta02.png';" onmouseout="this.src='Content/images/insta01.png'" /></a></li>
+                        <li id="discordHeaderElement"><a target="_blank" href="http://discord.gg/pss"><img id="discordHeader" src="Content/images/discord01.png" alt="Discord" onmouseover="this.src='Content/images/discord02.png';" onmouseout="this.src='Content/images/discord01.png'" /></a></li>
+                        <li id="redditHeaderElement"><a target="_blank" href="https://www.reddit.com/r/PixelStarships/"><img id="redditHeader" src="Content/images/reddit01.png" alt="Reddit" onmouseover="this.src='Content/images/reddit02.png';" onmouseout="this.src='Content/images/reddit01.png'" /></a></li>
+
+                        <li id="redditHeaderElement" class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img id="redditHeader" src="Content/images/globe01.png" alt="World links" onmouseover="this.src='Content/images/globe02.png';" onmouseout="this.src='Content/images/globe01.png'" />
+                            </a>
+                            <div class="dropdown-menu dropdown-colour" aria-labelledby="navbarDropdown">
+                                <a target="_blank" class="dropdown-link dropdown-item" href="https://discord.gg/vDGJNph">Discord [RU]</a><br />
+                                <a target="_blank" class="dropdown-link dropdown-item" href="https://vk.com/pixelstarshipsofficial">VK [RU]</a><br />
+                                <a target="_blank" class="dropdown-link dropdown-item" href="https://weibo.com/u/5374597037">Weibo [CN]</a>
+                            </div>
+                        </li>
+                    </ul>
+                    
+                    
+
+<ul class="nav navbar-nav navbar-right">
+        <li><a href="Account/Login.html">Log in</a></li>
+</ul>
+                </div>
+            </div>  <!-- container-fluid -->
+        </nav>
+
+
+
+
+        <div id="background">
+            
+
+            
+
+
+<script src="https://polyfill.io/v3/polyfill.min.js?version=3.52.1&amp;features=fetch"></script>
+<script src="https://js.stripe.com/v3/"></script>
+
+<div class="row">
+    <div class="col-sm-1" id="leftCol">
+
+
+        <div class="sidenav hidden-xs hidden-sm" id="sidebar">
+            <ul class="nav nav-stacked img-rounded" style="border: 1px solid rgb(238, 206, 160);margin-left: 10px;">
+                <li><a href="#gameSection" class="moveClick">Game</a></li>
+                <li><a href="#shop" class="moveClick">Shop</a></li>
+                <li><a href="#download" class="moveClick">Download</a></li>
+                <li><a href="#connectWithUsSection" class="moveClick">Support</a></li>
+                <li><a href="#home" class="moveClick" style="font-size: 0.9rem">Back to top</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="col-sm-10">
+        <div class="container" id="home">
+            <div class="row" id="pixelStarshipsLogoSection">
+                <img class="img-responsive" id="pixelStarshipslogo" src="Content/images/logo_1_-missile.png" width="742" height="481" alt="Pixel Starships" />
+                <div id="pixelStarshipsAbout">
+                    <p style="margin: 0px !important;">Welcome to Pixel Starships,</p>
+                    <p style="margin: 0px !important;">The world's first full control
+                    <p style="margin: 0px !important;">starship management</p>
+                    <p style="margin: 0px !important;">strategy sci-fi mmorpg</p>
+                </div>
+            </div>
+            <!--
+        <div id="pixelStarshipsAbout">
+            <p style="margin: 0px !important;">Welcome to Pixel Starships,</p>
+            <p style="margin: 0px !important;">The world's first full control
+            <p style="margin: 0px !important;">starship management</p>
+            <p style="margin: 0px !important;">strategy sci-fi mmorpg</p>
+        </div>-->
+        </div>
+
+        <div id="download" class="cd-section">
+
+            <div class="container">
+                <img class="img-responsive" id="savySodaLogo1" src="Content/images/savysoda.png" alt="Savy Soda logo" />
+            </div>
+
+            <div class="mobileShow">
+                <a href="https://geo.itunes.apple.com/au/app/pixel-starships-8bit-space/id321756558?mt=8&amp;at=10l4Mh"><img id="downloadButton" class="img-responsive" src="Content/images/downloadButton.png" /></a>
+            </div>
+
+            <div class="mobileShow">
+                <a href="https://geo.itunes.apple.com/au/app/pixel-starships-8bit-space/id321756558?mt=8&amp;at=10l4Mh"><img style="margin: 0 auto; margin-top: 1%; margin-bottom: 1%;" class="img-responsive" src="Content/images/macAppStore.png" /></a>
+            </div>
+
+
+            <div class="mobileShow">
+                <a href="https://play.google.com/store/apps/details?id=com.savysoda.pixelstarships"><img style="margin: 0 auto; margin-top: 1%;  margin-bottom: 1%;" class="img-responsive" src="Content/images/googleplaybadge.png" /></a>
+            </div>
+
+            <div class="mobileShow">
+                <a href="https://store.steampowered.com/app/378760/Pixel_Starships/"><img style="margin: 0 auto; margin-top: 2%; margin-bottom: 2%;" class="img-responsive" src="Content/images/Logo_SteamEarlyAccess.png" /></a>
+            </div>
+
+
+            <div class="mobileShow">
+                <a href="https://discord.com/invite/pss"><img style="margin: 0 auto; margin-top: 2%; margin-bottom: 2%;" class="img-responsive" src="https://pixelstarships.s3.amazonaws.com/DiscordBanner.png" /></a>
+            </div>
+
+
+            <div class="mobileShow">
+                <a href="https://www.reddit.com/r/PixelStarships/"><img style="margin: 0 auto; margin-top: 2%; margin-bottom: 2%;" class="img-responsive" src="https://pixelstarships.s3.amazonaws.com/RedditBanner.png" /></a>
+            </div>
+
+            <div class="mobileShow">
+                <a href="https://www.kickstarter.com/projects/savysoda/pixel-starships-galaxy"><img style="margin: 0 auto; margin-top: 3%;" class="img-responsive" src="Content/images/kickstarter-logo-white.png" /></a>
+            </div>
+        </div>
+
+        <div class="container">
+
+            <div id="gameSection" class="row cd-section">
+                <div class="sectionLabel">The Game</div>
+                <div class="col-lg-6 col-lg-push-6" style="padding-left: 2%;">
+                    <p>Welcome to Pixel Starships, The world's first full control starship management strategy sci-fi mmorpg game in an 8bit massive online universe.</p>
+                    <p>Take your crew on an epic journey to explore space.</p>
+                    <p>You can download this game <a href="https://geo.itunes.apple.com/au/app/pixel-starships-8bit-space/id321756558?mt=8&amp;at=10l4Mh">here.</a></p>
+                    <p>Pixel Starships is community driven, please post your suggestions on our facebook page.</p>
+                    <p>Please follow/like our facebook page on the left to be in the loop on the latest news and updates and release details or submit your email to get a notification of major event.</p>
+
+                </div>
+
+
+                <div class="col-lg-6 col-lg-pull-6">
+
+
+                    <!--<div id="youtubeIframe2" class="embed-responsive embed-responsive-4by3"> -->
+                    <div id="youtubeIframe2" class="embed-responsive embed-responsive-16by9">
+                        <iframe id="youtubeIframe1" style="border: 2px solid rgb(37,171,215);" class="embed-responsive-item" width="560" height="400" frameborder="0" scrolling="no" src="https://www.kickstarter.com/projects/1685976258/pixel-starships-8bit-starship-management-strategy/widget/video.html"></iframe>
+
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+
+        <div class="container">
+            <div id="connectWithStarCaptain" class="sectionLabel">Galaxy News</div>
+            <div id="connectWithUsSection" class="row cd-section">
+
+                <div class="col-lg-6 col-md-6">
+
+                    <div class="fb-page facebookBorder" data-href="https://www.facebook.com/pixelstarships" data-width="500" data-height="400" data-hide-cover="false" data-show-facepile="false" data-show-posts="true" data-small-header="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/pixelstarships"><a href="https://www.facebook.com/pixelstarships">Pixel Starships</a></blockquote></div></div>
+
+                </div>
+
+                <div class="col-lg-6 col-md-6">
+
+                    <div style="margin: 0 auto !important;">
+                        <a id="twitterSection" class="twitter-timeline"
+                           data-widget-id="617276202366013440"
+                           href="https://twitter.com/pixelstarships"
+                           width="500"
+                           height="400">
+                            Tweets by PixelStarships
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <br /> <br />
+        <!--
+         <div class="container">
+             <div id="androidBetaForum" class="sectionLabel">Android beta forum</div>
+             <div class="row" style="width: 95%; margin-left: 3px;">
+
+                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="androidIframe" style="background-color: white;">
+                     <iframe id="forum_embed"
+                             src="javascript:void(0)"
+                             scrolling="no"
+                             frameborder="0"
+                             width="100%"
+                             height="700"></iframe>
+                     <script type="text/javascript">
+                         document.getElementById('forum_embed').src =
+                            'https://groups.google.com/forum/embed/?place=forum/pixelstarships'
+                            + '&showsearch=true&showpopout=true&showtabs=false'
+                            + '&parenturl=' + encodeURIComponent(window.location.href);
+                     </script>
+                 </div>
+             </div>
+        </div>
+    -->
+
+        
+        
+
+    <div class="container">
+        <div id="shop" class="cd-section"></div>
+        <div class="sectionLabel">Shop</div>
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <div style="color: rgb(238, 206, 160); font-family: bitfont;">
+                        <div>
+                            <img src="https://pixelstarships.s3.amazonaws.com/6356.png" alt="Promotion Image" class="col-lg-6 col-md-6 col-sm-12"/>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <h3>
+
+                                Fashionably Late (Supporter Pack) - $45
+                            </h3>
+                            <div>
+                                <p>
+                                    Did you miss out on our Kickstarter Campaign, but still want to support Pixel Starships Development
+                                </p>
+                                <p>
+
+Special Crew: Doge<br />
+Special Room: Dog Kennel<br />
+Special Crew: Engineer Bob<br />
+Special System: Phaser<br />
+Special System: Warp Drive<br />
+                                </p>
+
+                                <br />
+                            </div>
+                        <form action="https://www.pixelstarships.com//Home/StripeCheckout" method="POST">
+                            <input type="hidden" name="productName" value="FashionablyLate(SupporterPack)" /> 
+
+                                        <div style="width: 300px;">
+                                            <input type="hidden" name="quantity" value="1" />
+                                            <button type="submit" class="btn" style="background-color: #78b657; color: #fff">Purchase</button>
+                                        </div>
+                        </form>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <br />
+            <div class="row">
+                <div class="col-lg-12">
+                    <div style="color: rgb(238, 206, 160); font-family: bitfont;">
+                        <div>
+                            <img src="https://pixelstarships.s3.amazonaws.com/6355.png" alt="Promotion Image" class="col-lg-6 col-md-6 col-sm-12"/>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <h3>
+
+                                Development Contribution - $1
+                            </h3>
+                            <div>
+                                <p>
+                                    Share the Love! Make a Development Contribution! In return you get nothing... except a great feeling
+                                </p>
+                                <p>
+
+Donate any amount you like from $1.. it&#39;s up to you :D<br />
+Donations over $60 receive a optional mention in our Credits Page.<br />
+                                </p>
+
+                                <br />
+                            </div>
+                        <form action="https://www.pixelstarships.com//Home/StripeCheckout" method="POST">
+                            <input type="hidden" name="productName" value="DevelopmentContribution" /> 
+
+                                    <div style="width: 300px;">
+                                        <button type="submit" class="btn" style="background-color: #78b657; color: #fff; width: 100px;">Purchase</button>
+                                    </div>
+                        </form>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <br />
+
+    </div>
+
+
+        <!--
+                <div class="container">
+                    <div id="shop" class="sectionLabel">Shop</div>
+                    <p class="shopDescription">If you missed out on our early access kickstarter, Star Capt'n has engaged his time-warp machine and flew across the 8-bit galaxy to bring you and your friends some purchase options!</p>
+                    <div id="shopSection" class="row">
+
+                        <div class="col-lg-4 col-md-4">
+                            <p class="shopInfoHeader">Early Access + Game + Exclusive Content + Credits</p>
+                            <a href="#" class="thumbnail" style="background: none; border: none;">
+                                <img class="newsItem" src="~/Content/images/starship-lift.gif" alt="Early Access + Game + Exclusive Content + Credits" />
+                                <div class="shopInfoDetails">
+                                <p>Gain early alpha + Beta access to the game before public launch!</p>
+                                <p>In addition you receive these extra in-game content:</p>
+                                <p>1. 4,000 Bonus StarBux (40USD value)</p>
+                                <p>2. You get special character Bob the Engineer, and a special warp drive (not available post launch)</p>
+                                <p>3. Arsenal Phaser weapon, an exclusive powerful weapon only for early access members</p>
+                                </div>
+                            </a>
+                        </div>
+
+
+
+
+                        <div class="col-lg-4 col-md-4">
+
+                            <p class="shopInfoHeader">Game + Credits</p>
+                            <a href="#" class="thumbnail" style="background: none; border: none;">
+                                <img class="newsItem" src="~/Content/images/icon-ver1.jpg" alt="Game + Credits" />
+                                <div class="shopInfoDetails">
+                                <p>Pixel Starships Early Supporter</p>
+                                <p>You appear in game credits</p>
+                                <p>Copy of the game on release on all platforms on launch</p>
+                                </div>
+                            </a>
+
+
+
+                        </div>
+
+
+                        <div class="col-lg-4 col-md-4">
+
+                            <p class="shopInfoHeader">IMMEDIATE ALPHA ACCESS (Limited Quantity)</p>
+                            <a href="#" class="thumbnail" style="background: none; border: none;">
+                                <img class="newsItem" src="~/Content/images/icon-ver1.jpg" alt="Game + Credits" />
+                                <div class="shopInfoDetails">
+                                <p>Gain Immediate Alpha Access NOW! (require iOS 8 compatible Device)</p>
+                                <p>Gain Beta Access once available.</p>
+                                <p>And of-course access to public release.</p>
+                                <p>You will receive your alpha key within 48 hours of payment.</p>
+                                </div>
+                            </a>
+
+
+                        </div>
+
+
+                      </div>
+                </div>
+        -->
+        <!--
+        <div id="forum" style="margin-top: 5%; background-color:#000000;">
+
+            <script type="text/javascript" src="http://phxij27haw.embed.talkiforum.com/embed/1.js"></script>
+
+        </div>
+        -->
+
+
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-12">
+
+                    <div ng-app="PixelStarshipsApp" class="subscription">
+                        <fieldset ng-controller="subscriptionController">
+                            <div>
+                                <hgroup class="subscriptionText">
+                                    <h2>Subscribe to the Pixel Starships Email List for Exclusive Updates!</h2>
+                                </hgroup>
+                            </div>
+                            <label class="resultReturned">{{status}}</label>
+                            <legend></legend>
+                            <form name="userForm" ng-submit="subscribe()">
+                                <ol>
+                                    <li>
+
+                                        <label class="whiteText">Email address</label>
+                                        <input class="inputText" ng-model="emailAddress" name="email" type="email" ng-required="true" ng-pattern="/^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/" />
+                                        <p ng-show="userForm.email.$invalid && !userForm.email.$pristine" class="help-block">Please enter a valid email address!.</p>
+                                    </li>
+
+                                </ol>
+
+                                <button type="submit" class="btn btn-primary subscribeSubmitButton" ng-disabled="userForm.$invalid">Subscribe</button>
+                            </form>
+                        </fieldset>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+        </div>
+
+
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid" style="border-top: 2px solid #b76617;">
+
+                <div class="headerContainer">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="#"><img src="Content/images/savysoda.png" alt="Savy Soda logo" /></a>
+                    </div>
+                    <div>
+                        <ul class="nav navbar-nav" style="font-family: bitFont; font-weight: bold;">
+                            <li><a href="PrivacyPolicy.html">Terms & Conditions</a></li>
+                            <li><a href="EULA.html">EULA</a></li>
+                            <li><a href="mailto:mail@savysoda.com">Contact Us</a></li>
+                            <li><a href="mailto:mail@savysoda.com">Support</a></li>
+                            <li><a href="Credits.html">Credits</a></li>
+                            <li><a href="HallOfFame.html">Hall Of Fame</a></li>
+                            <li><a href="Home/ScratchyProbabilities.html">Scratchy Probabilities</a></li>
+                            <li><a href="Home/DoveStoreStatistics.html">Dove Store Statistics</a></li>
+
+                            <li><a href="Home/MissionLootRates.html">Mission Loot Rates</a></li>
+
+                            <li><a href="Home/DrawCharacterRates.html">Draw Character Rates</a></li>
+
+                            <li><a href="https://www.pixelstarships.com//Account/ForgotPassword">Forgot Password?</a></li>
+                            <li><a href="https://www.pixelstarships.com//Account/ChangeUsername">Change Username?</a></li>
+
+                            <!--<li><a href="https://groups.google.com/forum/#!forum/pixelstarships">Forum</a></li>-->
+                        </ul>
+                    </div>
+                    <div class="row" style="padding-bottom:0.5%">
+                        <div class="col text-center">
+                            <div id="google_translate_element"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+
+
+        <!-- Latest compiled and minified JavaScript -->
+        <!--
+        <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+        -->
+
+
+
+
+    </div>
+
+
+    <!--Scripts.Render("~/bundles/jquery")-->
+    <script src="bundles/jqueryval3bde?v=W9TvuIHavf4YwBdK4INTdpJ0MxSZvUjNeZU3m_Fb8YE1"></script>
+
+    
+
+    <script>
+        //render the google translate widget at the bottom
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({ pageLanguage: 'en', includedLanguages: 'en,ru,es,fr,de,it,ko,ja,zh-CN,zh-TW', layout: google.translate.TranslateElement.InlineLayout.SIMPLE }, 'google_translate_element');
+        }
+    </script>
+    <script type="text/javascript" src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</body>
+
+<!-- Mirrored from pixelstarships.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 15 Oct 2021 06:15:54 GMT -->
+</html>
